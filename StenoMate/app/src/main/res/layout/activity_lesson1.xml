@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".Lessons.Lesson1Activity">
 
+    <!-- Background Image (full screen, at bottom layer) --> 
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/stenomate_bg2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Background Image (full screen, at bottom layer) -->
     <LinearLayout

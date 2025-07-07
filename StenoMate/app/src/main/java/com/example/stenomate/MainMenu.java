@@ -21,7 +21,7 @@ import java.util.List;
 public class MainMenu extends AppCompatActivity {
 
     EditText SearchEditTextId;
-    LinearLayout LearningMaterialsId, DictionaryId, AssessmentId;
+    LinearLayout LearningMaterialsId, DictionaryId, AssessmentId, QuizzesId;
     TextView AboutUsId;
 
     List<DictionaryListItem> itemList;
@@ -38,12 +38,13 @@ public class MainMenu extends AppCompatActivity {
         LearningMaterialsId = findViewById(R.id.learningMaterialsId);
         DictionaryId = findViewById(R.id.dictionaryId);
         AssessmentId = findViewById(R.id.assessmentsId);
+        QuizzesId = findViewById(R.id.quizId);
 
         SearchEditTextId = findViewById(R.id.searchEditTextId);
         AboutUsId = findViewById(R.id.aboutUsId);
 
         LearningMaterialsId.setOnClickListener(View -> {
-            IntentManager(LearningMaterialsActivity.class);
+            IntentManager(LessonHistoryBackground.class);
         });
 
         DictionaryId.setOnClickListener(View -> {
@@ -52,6 +53,10 @@ public class MainMenu extends AppCompatActivity {
 
         AssessmentId.setOnClickListener(View -> {
             IntentManager(AssessmentList.class);
+        });
+
+        QuizzesId.setOnClickListener(View -> {
+            IntentManager(QuizzesList.class);
         });
 
         AboutUsId.setOnClickListener(View -> {

@@ -12,10 +12,12 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.stenomate.Lessons.Lesson1Activity;
+import com.example.stenomate.Lessons.Lesson2Activity;
+import com.example.stenomate.Lessons.Lesson3Activity;
 
 public class LearningMaterialsActivity extends AppCompatActivity {
 
-    LinearLayout LessonOneId;
+    LinearLayout FoundationMenu, LessonOneId, LessonTwoId, LessonThreeId;
 
 
     @Override
@@ -23,14 +25,30 @@ public class LearningMaterialsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learning_materials);
 
-        LessonOneId = findViewById(R.id.lessonOneId);
+        FoundationMenu = findViewById(R.id.foundationMenu);
+
+        FoundationMenu.setOnClickListener(View -> {
+            Intent intent = new Intent(LearningMaterialsActivity.this, LessonMenu.class);
+            startActivity(intent);
+        });
+
+        /*LLessonTwoId = findViewById(R.id.lessonTwoId);
+        //LessonThreeId = findViewById(R.id.lessonThreeId);
 
         LessonOneId.setOnClickListener(View -> {
             Intent intent = new Intent(LearningMaterialsActivity.this, Lesson1Activity.class);
             startActivity(intent);
         });
 
+        LessonTwoId.setOnClickListener(View -> {
+            Intent intent = new Intent(LearningMaterialsActivity.this, Lesson2Activity.class);
+            startActivity(intent);
+        });*/
 
+        /*LessonThreeId.setOnClickListener(View -> {
+            Intent intent = new Intent(LearningMaterialsActivity.this, Lesson3Activity.class);
+            startActivity(intent);
+        });*/
 
 
 

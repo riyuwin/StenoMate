@@ -13,7 +13,25 @@
         android:theme="@style/Theme.StenoMate"
         tools:targetApi="31">
         <activity
+            android:name=".AssessmentGuide"
+            android:exported="false" />
+        <activity
+            android:name=".QuizzesList"
+            android:exported="false" />
+        <activity
+            android:name=".QuizzesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LessonHistoryBackground"
+            android:exported="false" />
+        <activity
+            android:name=".LessonMenu"
+            android:exported="false" />
+        <activity
             android:name=".AssessmentList"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson3Activity"
             android:exported="false" />
         <activity
             android:name=".Lessons.Lesson2Activity"

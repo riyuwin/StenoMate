@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#47000000">
+
+    <TextView
+        android:id="@+id/countdownTextView"
+        android:text="Starting in: 3"
+        android:fontFamily="@font/kanit_regular"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
+
+
+</LinearLayout>

@@ -1,9 +1,14 @@
 package com.example.stenomate;
 
 import android.app.Dialog;
+import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -11,46 +16,50 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.stenomate.Sqlite.MyDatabaseHelper;
+
+import java.sql.Time;
 import java.util.ArrayList;
-import java.util.List;
 
 public class AssessmentActivity extends AppCompatActivity {
 
-    Button NextBtn;
     ImageView ImageHolder;
-    LinearLayout Answer1Id, Answer2Id, Answer3Id, Answer4Id;
-    TextView QuestionNoText, RemarksText;
-
-    List<AnswerListItem> answerItemList;
-    List<AnswerListItem> lessonItemList;
-    int LessonNumber;
-    int CurrentQuestionNumber = 1;
-    int NumberCorrectAnswer = 0;
-    int TotalQuestionNumber = 0;
+    private Dialog countdownDialog;
+    private TextView countdownTextView;
+    TextView TimerNoId;
+    private CountDownTimer countDownTimer;
+    LinearLayout TranslationKeyLinear, AnswerLinear;
+    Button SubmitBtn;
+    EditText AnswerEditText;
+    ArrayList<String> answersList;
+    int lesson_number;
+    MyDatabaseHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_assessment);
 
-        LessonNumber = getIntent().getIntExtra("lesson_number", 0);
+        dbHelper = new MyDatabaseHelper(this); // ✅ Initialize dbHelper here
 
+        Intent intent = getIntent();
+        lesson_number = intent.getIntExtra("lesson_number", 0);
+
+        Toast.makeText(this, "Lesson Number: " + lesson_number, Toast.LENGTH_SHORT).show();
+
+        TranslationKeyLinear = findViewById(R.id.translationKeyLinear);
+        AnswerLinear = findViewById(R.id.answerLinear);
         ImageHolder = findViewById(R.id.stenoImageHolder);
-        Answer1Id = findViewById(R.id.answer1Id);
-        Answer2Id = findViewById(R.id.answer2Id);
-        Answer3Id = findViewById(R.id.answer3Id);
-        Answer4Id = findViewById(R.id.answer4Id);
-        NextBtn = findViewById(R.id.nextBtn);
+        TimerNoId = findViewById(R.id.timerNoId);
+        SubmitBtn = findViewById(R.id.submitBtn);
+        AnswerEditText = findViewById(R.id.answerEditText);
 
-        QuestionNoText = findViewById(R.id.questionNoId);
-        RemarksText = findViewById(R.id.remarksId);
+        if (lesson_number == 1){
+            ImageHolder.setImageResource(R.drawable.dictionary_asset);
+        } else if (lesson_number == 2) {
+            ImageHolder.setImageResource(R.drawable.assessment_asset);
+        }
 
-        PopulateDictionary();
-        AssessmentIntiliazer(LessonNumber);
-        showConfirmationDialog();
-    }
-
-    public void AssessmentIntiliazer(int lessonNumber) {
         ImageHolder.setOnClickListener(v -> {
             Dialog dialog = new Dialog(AssessmentActivity.this, android.R.style.Theme_Black_NoTitleBar_Fullscreen);
             dialog.setContentView(R.layout.dialog_fullscreen_image);
@@ -62,150 +71,50 @@ public class AssessmentActivity extends AppCompatActivity {
             dialog.show();
         });
 
-        lessonItemList = new ArrayList<>();
-        for (AnswerListItem item : answerItemList) {
-            if (item.getLessonNumber() == lessonNumber) {
-                lessonItemList.add(item);
-            }
-        }
-
-        TotalQuestionNumber = lessonItemList.size();
-
-        if (!lessonItemList.isEmpty() && (CurrentQuestionNumber - 1) < TotalQuestionNumber) {
-            AnswerListItem currentItem = lessonItemList.get(CurrentQuestionNumber - 1);
-
-            ImageHolder.setImageResource(currentItem.getImageResId());
-            ((TextView) Answer1Id.getChildAt(0)).setText(currentItem.getChoiceA());
-            ((TextView) Answer2Id.getChildAt(0)).setText(currentItem.getChoiceB());
-            ((TextView) Answer3Id.getChildAt(0)).setText(currentItem.getChoiceC());
-            ((TextView) Answer4Id.getChildAt(0)).setText(currentItem.getChoiceD());
-
-            QuestionNoText.setText("Question " + CurrentQuestionNumber + " of " + TotalQuestionNumber);
-        } else {
-            // Quiz complete
-            showResultDialog();
-            return;
-
-
-            //Toast.makeText(this, "Assessment complete! Correct answers: " + NumberCorrectAnswer + "/" + TotalQuestionNumber, Toast.LENGTH_LONG).show();
-            //finish(); // or go to another screen
-            //return;
-        }
-
-        Answer1Id.setOnClickListener(View -> AnswerChecker(lessonNumber, CurrentQuestionNumber, "Answer 1"));
-        Answer2Id.setOnClickListener(View -> AnswerChecker(lessonNumber, CurrentQuestionNumber, "Answer 2"));
-        Answer3Id.setOnClickListener(View -> AnswerChecker(lessonNumber, CurrentQuestionNumber, "Answer 3"));
-        Answer4Id.setOnClickListener(View -> AnswerChecker(lessonNumber, CurrentQuestionNumber, "Answer 4"));
-    }
-
-    public void AnswerChecker(int lessonNumber, int currentPosition, String answerName) {
-        for (AnswerListItem item : answerItemList) {
-            if (item.getLessonNumber() == lessonNumber && item.getQuestionNumber() == currentPosition) {
-                if (item.getAnswerKey().equals(answerName)) {
-                    RemarksText.setText("Correct Answer");
-                    highlightAnswer(item.getAnswerKey(), R.drawable.correct_answer_container);
-                    NumberCorrectAnswer++;
-                } else {
-                    RemarksText.setText("Wrong Answer");
-                    highlightAnswer(answerName, R.drawable.wrong_answer_container);
-                    highlightAnswer(item.getAnswerKey(), R.drawable.correct_answer_container);
-                }
-                break;
-            }
-        }
-
-        DisableButtons();
-        NextBtn.setVisibility(View.VISIBLE);
-
-        NextBtn.setOnClickListener(view -> {
-            CurrentQuestionNumber++;
-            ResetElements();
-            EnableButtons();
-            AssessmentIntiliazer(LessonNumber);
-            NextBtn.setVisibility(View.GONE);
+        SubmitBtn.setOnClickListener(v -> {
+            String answer = String.valueOf(AnswerEditText.getText());
+            AnswerChecker(lesson_number, answer);
         });
+
+        showTimerDialog();
+        AnswerListGenerator();
     }
 
-    private void highlightAnswer(String answerKey, int backgroundRes) {
-        switch (answerKey) {
-            case "Answer 1":
-                Answer1Id.setBackgroundResource(backgroundRes);
-                break;
-            case "Answer 2":
-                Answer2Id.setBackgroundResource(backgroundRes);
-                break;
-            case "Answer 3":
-                Answer3Id.setBackgroundResource(backgroundRes);
-                break;
-            case "Answer 4":
-                Answer4Id.setBackgroundResource(backgroundRes);
-                break;
-        }
-    }
-
-    public void ResetElements() {
-        NextBtn.setVisibility(View.INVISIBLE);
-        RemarksText.setText("");
-        Answer1Id.setBackgroundResource(R.drawable.answer_container);
-        Answer2Id.setBackgroundResource(R.drawable.answer_container);
-        Answer3Id.setBackgroundResource(R.drawable.answer_container);
-        Answer4Id.setBackgroundResource(R.drawable.answer_container);
-    }
-
-    public void DisableButtons() {
-        Answer1Id.setEnabled(false);
-        Answer2Id.setEnabled(false);
-        Answer3Id.setEnabled(false);
-        Answer4Id.setEnabled(false);
-    }
-
-    public void EnableButtons() {
-        Answer1Id.setEnabled(true);
-        Answer2Id.setEnabled(true);
-        Answer3Id.setEnabled(true);
-        Answer4Id.setEnabled(true);
-    }
-
-    public void PopulateDictionary() {
-        answerItemList = new ArrayList<>();
-        answerItemList.add(new AnswerListItem(R.drawable.lesson1_asset_3_say, 1, 1, "Answer 2", "saves", "say", "seam", "sane"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson1_asset_5_safe, 1, 2, "Answer 1", "safe", "saves", "say", "sane"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson1_asset_6_face, 1, 3, "Answer 4", "fees", "fee", "fay", "face"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson1_asset_50_fay, 1, 4, "Answer 3", "face", "fee", "fees", "fay"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson1_asset_8_save, 1, 5, "Answer 2", "save", "vase", "saves", "vases"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson1_asset_3_say, 2, 1, "Answer 2", "saves123", "say123", "seam123", "sane123"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson1_asset_5_safe, 2, 2, "Answer 1", "safe123", "saves123", "say123", "sane123"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson1_asset_6_face, 2, 3, "Answer 4", "fees", "fee", "fay", "face"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson1_asset_50_fay, 2, 4, "Answer 3", "face", "fee", "fees", "fay"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson1_asset_8_save, 2, 5, "Answer 2", "save", "vase", "saves", "vases"));
-    }
-
-    private void showConfirmationDialog() {
+    private void showConfirmationDialog(float percentage, String answer) {
         new androidx.appcompat.app.AlertDialog.Builder(this)
-                .setTitle("Start Assessment")
-                .setMessage("Are you ready to start the quiz for Lesson " + LessonNumber + "?")
+                .setTitle("Confirmation")
+                .setMessage("Are you sure you want to submit? This action cannot be undone.")
                 .setCancelable(false)
-                .setPositiveButton("Yes", (dialog, which) -> {
-                    AssessmentIntiliazer(LessonNumber); // Start the quiz
+                .setPositiveButton("Confirm", (dialog, which) -> {
+                    insertAssessment(percentage, answer);
                 })
-                .setNegativeButton("No", (dialog, which) -> {
-                    finish(); // Exit the activity
+                .setNegativeButton("Back", (dialog, which) -> {
+                    //finish(); // Exit the activity
                 })
                 .show();
     }
 
-    private void showResultDialog() {
-        int wrongAnswers = TotalQuestionNumber - NumberCorrectAnswer;
+    public void insertAssessment(float percentage, String answer){
+        boolean isInserted = dbHelper.insertAssessment(lesson_number, percentage, answer);
+        if (isInserted) {
+            Toast.makeText(this, "Assessment added in " + lesson_number, Toast.LENGTH_SHORT).show();
+            showResultDialog(percentage);
+        } else {
+            Toast.makeText(this, "Failed to add Assessment", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void showResultDialog(float percentage) {
+        String remarks = (percentage >= 75) ? "Status: ✅ Passed" : "Status: ❌ Failed";
+        String message = "Similarity: " + percentage + "%\n" + remarks;
 
         new androidx.appcompat.app.AlertDialog.Builder(this)
                 .setTitle("Assessment Complete!")
-                .setMessage("Your Score:\nCorrect: " + NumberCorrectAnswer + "\nWrong: " + wrongAnswers)
+                .setMessage(message)
                 .setCancelable(false)
-                .setPositiveButton("Retry", (dialog, which) -> {
-                    // Reset values and restart assessment
-                    CurrentQuestionNumber = 1;
-                    NumberCorrectAnswer = 0;
-                    AssessmentIntiliazer(LessonNumber);
+                .setPositiveButton("View Attempts", (dialog, which) -> {
+                    // TODO: View Attempts values and restart assessment
+                    showAttemptsDialog();
                 })
                 .setNegativeButton("Back", (dialog, which) -> {
                     finish(); // Exit the activity
@@ -214,13 +123,157 @@ public class AssessmentActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    public void onBackPressed() {
-        // Reset all variables
-        CurrentQuestionNumber = 1;
-        NumberCorrectAnswer = 0;
-        LessonNumber = 0;
+    private void showAttemptsDialog() {
+        Cursor cursor = dbHelper.getAllAssessments(); // Get all assessments
+        StringBuilder messageBuilder = new StringBuilder();
 
-        super.onBackPressed();
+        int attemptIndex = 1;
+        if (cursor != null && cursor.moveToFirst()) {
+            do {
+                int lessonNum = cursor.getInt(cursor.getColumnIndexOrThrow("lesson_number"));
+                if (lessonNum == lesson_number) {
+                    float percentage = cursor.getFloat(cursor.getColumnIndexOrThrow("percentage"));
+                    String datetime = cursor.getString(cursor.getColumnIndexOrThrow("datetime"));
+
+                    messageBuilder.append("Attempt ").append(attemptIndex).append(":\n");
+                    messageBuilder.append("• Percentage: ").append(percentage).append("%\n");
+                    messageBuilder.append("• Date: ").append(datetime).append("\n\n");
+
+                    attemptIndex++;
+                }
+            } while (cursor.moveToNext());
+            cursor.close();
+        }
+
+        if (attemptIndex == 1) {
+            messageBuilder.append("No attempts found for this lesson.");
+        }
+
+        new androidx.appcompat.app.AlertDialog.Builder(this)
+                .setTitle("List of Attempts for Lesson " + lesson_number)
+                .setMessage(messageBuilder.toString())
+                .setCancelable(false)
+                .setNegativeButton("Back", (dialog, which) -> {
+                    Intent intent = new Intent(AssessmentActivity.this, AssessmentList.class);
+                    startActivity(intent);
+                    finish(); // optional: close the current activity
+                })
+                .show();
+
+    }
+
+
+
+    private void showTimerDialog() {
+        countdownDialog = new Dialog(this);
+        countdownDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        countdownDialog.setContentView(R.layout.dialog_countdown); // create this layout
+        countdownDialog.setCancelable(false); // prevent closing manually
+
+        countdownTextView = countdownDialog.findViewById(R.id.countdownTextView);
+        countdownDialog.show();
+
+        // Start 3-second countdown
+        new CountDownTimer(3000, 1000) {
+            int secondsLeft = 3;
+
+            @Override
+            public void onTick(long millisUntilFinished) {
+                countdownTextView.setText("Starting in: " + secondsLeft);
+                secondsLeft--;
+            }
+
+            @Override
+            public void onFinish() {
+                countdownDialog.dismiss();
+                // Optionally start something here (e.g., start quiz)
+                startTimer(1);
+            }
+        }.start();
+    }
+
+    private void startTimer(int minutes) {
+        long millisInFuture = minutes * 60 * 1000; // Convert minutes to milliseconds
+
+        countDownTimer = new CountDownTimer(millisInFuture, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                int seconds = (int) (millisUntilFinished / 1000);
+                int minutesLeft = seconds / 60;
+                int secondsLeft = seconds % 60;
+                String timeFormatted = String.format("%02d:%02d", minutesLeft, secondsLeft);
+                TimerNoId.setText("\uD83D\uDD52 " + timeFormatted);
+            }
+
+            @Override
+            public void onFinish() {
+                TimerNoId.setText("\uD83D\uDD52 00:00");
+                // Optionally do something when timer ends
+                TranslationKeyLinear.setVisibility(View.GONE);
+                AnswerLinear.setVisibility(View.VISIBLE);
+
+            }
+        }.start();
+    }
+
+    public int calculateSimilarityPercentage(String input, String correctAnswer) {
+        input = input.trim().toLowerCase();
+        correctAnswer = correctAnswer.trim().toLowerCase();
+
+        int maxLength = Math.max(input.length(), correctAnswer.length());
+        if (maxLength == 0) return 100;
+
+        int distance = levenshteinDistance(input, correctAnswer);
+        int similarity = (int) ((1 - (double) distance / maxLength) * 100);
+        return similarity;
+    }
+
+    public int levenshteinDistance(String s1, String s2) {
+        int[] costs = new int[s2.length() + 1];
+        for (int i = 0; i <= s1.length(); i++) {
+            int lastValue = i;
+            for (int j = 0; j <= s2.length(); j++) {
+                if (i == 0)
+                    costs[j] = j;
+                else {
+                    if (j > 0) {
+                        int newValue = costs[j - 1];
+                        if (s1.charAt(i - 1) != s2.charAt(j - 1))
+                            newValue = Math.min(Math.min(newValue, lastValue), costs[j]) + 1;
+                        costs[j - 1] = lastValue;
+                        lastValue = newValue;
+                    }
+                }
+            }
+            if (i > 0)
+                costs[s2.length()] = lastValue;
+        }
+        return costs[s2.length()];
+    }
+
+    public void AnswerChecker(int lessonNumber, String answer) {
+        int index = lessonNumber - 1;
+
+        if (index >= 0 && index < answersList.size()) {
+            String correctAnswer = answersList.get(index);
+            int similarity = calculateSimilarityPercentage(answer, correctAnswer);
+
+            if (similarity >= 90) { // you can set threshold
+                //Toast.makeText(this, "Correct Answer!", Toast.LENGTH_SHORT).show();
+                showConfirmationDialog(similarity, answer);
+            } else {
+                //Toast.makeText(this, "Wrong Answer!", Toast.LENGTH_SHORT).show();
+                showConfirmationDialog(similarity, answer);
+            }
+        } else {
+            Toast.makeText(this, "No answer found for lesson " + lessonNumber, Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
+    public void AnswerListGenerator(){
+        answersList = new ArrayList<>();
+        answersList.add("Hello World!");
+        answersList.add("Hello World12!");
     }
 }
