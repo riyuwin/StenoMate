@@ -100,7 +100,7 @@ public class AssessmentActivity extends AppCompatActivity {
             Toast.makeText(this, "Assessment added in " + lesson_number, Toast.LENGTH_SHORT).show();
             showResultDialog(percentage);
         } else {
-            Toast.makeText(this, "Failed to add Assessment", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Failed to add Assessment123", Toast.LENGTH_SHORT).show();
         }
     }
 
