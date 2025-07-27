@@ -1,0 +1,1341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lessons.Lesson17Activity">
+
+    <!-- Background Image (full screen, at bottom layer) -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Background Image (full screen, at bottom layer) -->
+    <LinearLayout
+        android:id="@+id/linearContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_top_rect_shape"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@drawable/steno_mate_white_logo2" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="left"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/aboutUsId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="Lesson 17"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/white_rect_shape"
+                    android:orientation="vertical"
+                    android:padding="30dp"
+                    android:gravity="left">
+
+                    <TextView
+                        android:id="@+id/nameContentId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kanit_medium"
+                        android:text="Principles"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="1    Brief Forms     When you have learned the following eight brief forms, you will have learned more that half the brief forms of Gregg Shorthand."
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="gentlemen"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_1_gentlemen"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="company"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_2_company"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="short"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_3_short"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="morning"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_4_morning"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="manufacture"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_5_manufacture"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="important"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="importance"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_6_important"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="where"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_7_where"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="next"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_8_next"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kanit_medium"
+                        android:text="2    Word Beginnings Per-, Pur-    The word beginnings per-, pur- are represented by p-r."
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kanit_medium"
+                        android:text="Spell: pur-s-n, person; pur-chay-a-s, purchase"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kanit_bold"
+                        android:text="Per-"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="person"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_9_person"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="perfect"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_10_perfect"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="persist"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_11_persist"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="personal"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_12_personal"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="permanent"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_13_permanent"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="perhaps"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_15_perhaps"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="permit"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_14_permit"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="personnel"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_16_personnel"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="persuade"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_17_persuade"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_bold"
+                        android:text="Pur-"
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="purchase"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_18_purchase"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="purple"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_19_purple"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="purpose"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_20_purpose"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_bold"
+                        android:text="De-"
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="delay"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_21_delay"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="deposit"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_22_deposit"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="decide"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_23_decide"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="deserve"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_24_deserve"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="deliver"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_25_deliver"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="decision"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_26_decision"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="desirable"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_27_desirable"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="depended"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_28_depended"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="design"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_29_design"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_bold"
+                        android:text="Di-"
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+
+                    <!-- Continue from 30 to 32 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="direct"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_30_direct"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="direction"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder31"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_31_direction"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="directly"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson17_asset_32_directly"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="Building Transcription Skills"
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_bold"
+                        android:text="4 SIMILAR-WORDS DRILL"
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="The English language contains many groups of words that sound alike, but each member of the group is spelled differently and has its own meaning."
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_bold"
+                        android:text="Example: sent (dispatched); scent (a smell); cent (a coin)."
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="In addition, there are many groups of words that sound almost alike."
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_bold"
+                        android:text="Example: defer (to put off); differ (to disagree)."
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="The secretary who is not alert may, while transcribing, select the wrong member of the group, with the result that the transcript makes no sense. "
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="In this lesson and in a number of other lessons that follow, you will find a Similar-Words Drill that will call to your attention similar words which may cause the unwary transcriber to stumble."
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="Study these words carefully."
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_bold"
+                        android:text="SIMILAR-WORDS DRILL – personal, personnel"
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_bold"
+                        android:text="personal Individual; private; pertaining to the person or body."
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dirty_white_shape"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/stenoImageHolder33"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/lesson17_asset_33"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="He is traveling on personal business."
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="You should watch your personal appearance with care."
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="personnel The people who work for a firm; the staff."
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dirty_white_shape"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/stenoImageHolder34"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/lesson17_asset_34"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="Yesterday I read your personnel policies booklet."
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="You can rely on our personnel to give you good service"
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+
+
+
+
+                    <!--Break here-->
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
