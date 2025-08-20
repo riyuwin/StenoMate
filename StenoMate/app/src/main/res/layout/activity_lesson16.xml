@@ -85,7 +85,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_medium"
+                        android:fontFamily="@font/kanit_bold"
                         android:text="1 Oi The sound of oi, as in toy, is represented by"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -94,7 +94,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_medium"
+                        android:fontFamily="@font/kanit_light"
                         android:text="Spell: b-oi, boy"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -110,7 +110,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="vertical" >
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -118,7 +118,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="boy"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -132,8 +133,10 @@
                                 android:id="@+id/stenoImageHolder1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_1_boy" />
+                                android:src="@drawable/lesson16_asset_1_boy"/>
+
                         </LinearLayout>
+
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -147,7 +150,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="oil"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -161,7 +165,8 @@
                                 android:id="@+id/stenoImageHolder2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_2_oil" />
+                                android:src="@drawable/lesson16_asset_2_oil"/>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -176,7 +181,9 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="annoy"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -190,8 +197,10 @@
                                 android:id="@+id/stenoImageHolder3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_3_annoy" />
+                                android:src="@drawable/lesson16_asset_3_annoy"/>
+
                         </LinearLayout>
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -204,7 +213,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="vertical" >
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -212,7 +221,9 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="toy"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -226,9 +237,9 @@
                                 android:id="@+id/stenoImageHolder4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_4_toy" />
-                        </LinearLayout>
+                                android:src="@drawable/lesson16_asset_4_toy"/>
 
+                        </LinearLayout>
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -241,7 +252,9 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="spoil"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -255,7 +268,8 @@
                                 android:id="@+id/stenoImageHolder5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_5_spoil" />
+                                android:src="@drawable/lesson16_asset_5_spoil"/>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -270,7 +284,9 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="point"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -284,7 +300,9 @@
                                 android:id="@+id/stenoImageHolder6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_6_point" />
+                                android:src="@drawable/lesson16_asset_6_point"/>
+
+
                         </LinearLayout>
                     </LinearLayout>
 
@@ -298,7 +316,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="vertical" >
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -306,7 +324,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="join"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -320,7 +339,7 @@
                                 android:id="@+id/stenoImageHolder7"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_7_join" />
+                                android:src="@drawable/lesson16_asset_7_join"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -335,7 +354,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="boil"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -349,7 +369,7 @@
                                 android:id="@+id/stenoImageHolder8"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_8_boil" />
+                                android:src="@drawable/lesson16_asset_8_boil"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -364,7 +384,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="appoint"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"/>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -378,14 +399,14 @@
                                 android:id="@+id/stenoImageHolder9"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_9_appoint" />
+                                android:src="@drawable/lesson16_asset_9_appoint"/>
                         </LinearLayout>
                     </LinearLayout>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_medium"
+                        android:fontFamily="@font/kanit_light"
                         android:text="2 Men The sound of men is represented by joining m and n into one long forward stroke."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -393,22 +414,46 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:background="@drawable/dirty_white_shape"
-                        android:orientation="vertical"
-                        android:layout_marginTop="10dp">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
 
-                        <ImageView
-                            android:id="@+id/stenoImageHolder10"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/lesson16_asset_10_men"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="Men"
+                                android:textColor="#4D4A4A"
+                                android:textSize="12dp"  />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/dirty_white_shape"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/stenoImageHolder10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/lesson16_asset_10_men"/>
+
+                        </LinearLayout>
                     </LinearLayout>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_medium"
+                        android:fontFamily="@font/kanit_light"
                         android:text="Compare:"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -424,7 +469,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="vertical" >
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -432,7 +477,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="knee"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -446,7 +492,7 @@
                                 android:id="@+id/stenoImageHolder11"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_11_knee" />
+                                android:src="@drawable/lesson16_asset_11_knee"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -461,7 +507,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="me"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -475,7 +522,7 @@
                                 android:id="@+id/stenoImageHolder12"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_12_me" />
+                                android:src="@drawable/lesson16_asset_12_me"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -490,7 +537,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="many"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -504,15 +552,15 @@
                                 android:id="@+id/stenoImageHolder13"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_13_many" />
+                                android:src="@drawable/lesson16_asset_13_many"/>
                         </LinearLayout>
                     </LinearLayout>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_medium"
-                        android:text="Spell:men-e, many"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="Spell: men-e, many"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -527,7 +575,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="vertical" >
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -535,7 +583,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="men"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -549,7 +598,8 @@
                                 android:id="@+id/stenoImageHolder14"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_14_men" />
+                                android:src="@drawable/lesson16_asset_14_men"/>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -564,7 +614,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="mentioned"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -578,7 +629,8 @@
                                 android:id="@+id/stenoImageHolder15"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_15_mentioned" />
+                                android:src="@drawable/lesson16_asset_15_mentioned"/>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -593,7 +645,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="businessmen"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -607,8 +660,10 @@
                                 android:id="@+id/stenoImageHolder16"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_16_businessmen" />
+                                android:src="@drawable/lesson16_asset_businessmen"/>
+
                         </LinearLayout>
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -621,7 +676,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="vertical" >
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -629,7 +684,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="meant"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -643,7 +699,8 @@
                                 android:id="@+id/stenoImageHolder17"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_17_meant" />
+                                android:src="@drawable/lesson16_asset_meant"/>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -658,7 +715,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="women"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -672,7 +730,8 @@
                                 android:id="@+id/stenoImageHolder18"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_18_women" />
+                                android:src="@drawable/lesson16_asset_women"/>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -687,7 +746,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="mended"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -701,8 +761,10 @@
                                 android:id="@+id/stenoImageHolder19"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_19_mended" />
+                                android:src="@drawable/lesson16_asset_16_mended"/>
+
                         </LinearLayout>
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -715,7 +777,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="vertical" >
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -723,7 +785,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="mental"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -737,7 +800,7 @@
                                 android:id="@+id/stenoImageHolder20"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_20_mental" />
+                                android:src="@drawable/lesson16_asset_17_mental"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -752,7 +815,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="salesmen"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -766,7 +830,7 @@
                                 android:id="@+id/stenoImageHolder21"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_21_salesmen" />
+                                android:src="@drawable/lesson16_asset_18_salesman"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -779,9 +843,11 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/kanit_light"
-                                android:text="Immense"
+                                android:text="immense"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"
+                                />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -795,27 +861,29 @@
                                 android:id="@+id/stenoImageHolder22"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_22_immense" />
+                                android:src="@drawable/lesson16_asset_19_immense"/>
                         </LinearLayout>
+
                     </LinearLayout>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_medium"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_light"
                         android:text="3 Min, Mon, Man The similar sounding combinations min, mon, and man are also represented by the long forward stroke that represents men."
                         android:textColor="#4D4A4A"
-                        android:textSize="12dp"
-                        android:layout_marginTop="10dp"/>
+                        android:textSize="12dp" />
+
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_medium"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_light"
                         android:text="Spell: men-e-t, minute; men-r, manner"
                         android:textColor="#4D4A4A"
-                        android:textSize="12dp"
-                        android:layout_marginTop="10dp"/>
+                        android:textSize="12dp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -827,7 +895,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="vertical" >
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -835,7 +903,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="minute"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -849,7 +918,7 @@
                                 android:id="@+id/stenoImageHolder23"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_23_minute" />
+                                android:src="@drawable/lesson16_asset_20_minute"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -864,7 +933,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="month"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -878,7 +948,7 @@
                                 android:id="@+id/stenoImageHolder24"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_24_month" />
+                                android:src="@drawable/lesson16_asset_21_month"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -893,7 +963,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="manner"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -907,8 +978,9 @@
                                 android:id="@+id/stenoImageHolder25"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_25_manner" />
+                                android:src="@drawable/lesson16_asset_22_manner"/>
                         </LinearLayout>
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -921,7 +993,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="vertical" >
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -929,7 +1001,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="minimum"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -943,7 +1016,7 @@
                                 android:id="@+id/stenoImageHolder26"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_26_minimum" />
+                                android:src="@drawable/lesson16_asset_23_minimum"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -958,7 +1031,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="money"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -972,7 +1046,7 @@
                                 android:id="@+id/stenoImageHolder27"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_27_money" />
+                                android:src="@drawable/lesson16_asset_24_money"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -987,7 +1061,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="manage"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1001,36 +1076,38 @@
                                 android:id="@+id/stenoImageHolder28"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_28_manage" />
+                                android:src="@drawable/lesson16_asset_25_manage"/>
                         </LinearLayout>
+
                     </LinearLayout>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_medium"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_light"
                         android:text="4 Ye, Ya Ye, as in year, is represented by the e circle; ya, as in yard, by the a circle."
                         android:textColor="#4D4A4A"
-                        android:textSize="12dp"
-                        android:layout_marginTop="10dp"/>
+                        android:textSize="12dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_medium"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_light"
                         android:text="Spell: e-r, year; a-ärd, yard"
                         android:textColor="#4D4A4A"
-                        android:textSize="12dp"
-                        android:layout_marginTop="10dp"/>
+                        android:textSize="12dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_bold"
                         android:text="Ye"
                         android:textColor="#4D4A4A"
-                        android:textSize="12dp"
-                        android:layout_marginTop="10dp"/>
+                        android:textSize="12dp" />
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -1042,7 +1119,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="vertical" >
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -1050,7 +1127,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="year"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1064,7 +1142,7 @@
                                 android:id="@+id/stenoImageHolder29"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_29_year" />
+                                android:src="@drawable/lesson16_asset_26_year"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -1079,7 +1157,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="yellow"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1093,7 +1172,7 @@
                                 android:id="@+id/stenoImageHolder30"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_30_yellow" />
+                                android:src="@drawable/lesson16_asset_27_yellow"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -1108,7 +1187,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="yield"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1122,7 +1202,7 @@
                                 android:id="@+id/stenoImageHolder31"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_31_yield" />
+                                android:src="@drawable/lesson16_asset_28_yield"/>
                         </LinearLayout>
                     </LinearLayout>
 
@@ -1136,7 +1216,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="vertical" >
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -1144,7 +1224,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="yet"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1158,7 +1239,7 @@
                                 android:id="@+id/stenoImageHolder32"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_32_yet" />
+                                android:src="@drawable/lesson16_asset_29_yet"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -1173,7 +1254,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="yes"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1187,7 +1269,7 @@
                                 android:id="@+id/stenoImageHolder33"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_33_yes" />
+                                android:src="@drawable/lesson16_asset_30_yes"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -1202,7 +1284,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="yielded"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1216,18 +1299,18 @@
                                 android:id="@+id/stenoImageHolder34"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_34_yielded" />
+                                android:src="@drawable/lesson16_asset_31_yielded"/>
                         </LinearLayout>
                     </LinearLayout>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_medium"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kanit_light"
                         android:text="Ya"
                         android:textColor="#4D4A4A"
-                        android:textSize="12dp"
-                        android:layout_marginTop="10dp"/>
+                        android:textSize="12dp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -1239,7 +1322,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="vertical" >
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -1247,7 +1330,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="yard"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1261,7 +1345,7 @@
                                 android:id="@+id/stenoImageHolder35"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_35_yard" />
+                                android:src="@drawable/lesson16_asset_32_yard"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -1276,7 +1360,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="yarn"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1290,7 +1375,7 @@
                                 android:id="@+id/stenoImageHolder36"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_36_yarn" />
+                                android:src="@drawable/lesson16_asset_33_yarn"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -1305,7 +1390,8 @@
                                 android:fontFamily="@font/kanit_light"
                                 android:text="Yale"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12dp"  />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -1319,7 +1405,7 @@
                                 android:id="@+id/stenoImageHolder37"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/lesson16_asset_37_yale" />
+                                android:src="@drawable/lesson16_asset_34_yale"/>
                         </LinearLayout>
                     </LinearLayout>
 

@@ -18,7 +18,7 @@ public class Lesson18Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lesson10);
+        setContentView(R.layout.activity_lesson18);
 
         for (int i = 0; i < 61; i++) {
             int resId = getResources().getIdentifier("stenoImageHolder" + (i + 1), "id", getPackageName());
