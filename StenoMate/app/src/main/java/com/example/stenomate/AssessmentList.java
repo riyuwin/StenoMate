@@ -8,6 +8,7 @@ import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,17 +19,30 @@ import androidx.core.content.res.ResourcesCompat;
 
 import com.example.stenomate.Sqlite.MyDatabaseHelper;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
 public class AssessmentList extends AppCompatActivity {
 
     MyDatabaseHelper dbHelper;
+    ImageView BackIcon;
+    ArrayList<Integer> GroupItemNumberList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_assessment_list);
+
+        PopulateAssessmentItemGroup();
+
+        BackIcon = findViewById(R.id.backIcon);
+
+        BackIcon.setOnClickListener(view -> {
+            Intent intent = new Intent(AssessmentList.this, MainMenu.class);
+            startActivity(intent);
+        });
 
         dbHelper = new MyDatabaseHelper(this);
 
@@ -46,9 +60,12 @@ public class AssessmentList extends AppCompatActivity {
         if (cursor != null && cursor.moveToFirst()) {
             do {
                 int lessonNumber = cursor.getInt(cursor.getColumnIndexOrThrow("lesson_number"));
+                int lesson_group_number = cursor.getInt(cursor.getColumnIndexOrThrow("lesson_group_number"));
                 float percentage = cursor.getFloat(cursor.getColumnIndexOrThrow("percentage"));
 
-                if (percentage >= 75) {
+                //Toast.makeText(this, "LessonNumber: " + lessonNumber + "LessonGroupNumber: " + lesson_group_number, Toast.LENGTH_SHORT).show();
+
+                if (GroupItemNumberList.get(lessonNumber - 1) == lesson_group_number && percentage >= 75) {
                     passedLessons.add(lessonNumber + 1);
                 }
             } while (cursor.moveToNext());
@@ -126,7 +143,7 @@ public class AssessmentList extends AppCompatActivity {
             if (isEnabled) {
                 int finalI = i;
                 outerLayout.setOnClickListener(v -> {
-                    Intent intent = new Intent(AssessmentList.this, AssessmentGuide.class);
+                    Intent intent = new Intent(AssessmentList.this, AssessmentListItemGroup.class);
                     intent.putExtra("lesson_number", finalI);
                     startActivity(intent);
                 });
@@ -145,4 +162,9 @@ public class AssessmentList extends AppCompatActivity {
         float density = getResources().getDisplayMetrics().density;
         return Math.round((float) dp * density);
     }
+
+    public void PopulateAssessmentItemGroup(){
+        GroupItemNumberList = new ArrayList<>(Arrays.asList(3, 5, 1, 1, 6, 1, 1, 5, 1, 1, 5, 1, 1, 6, 1, 1, 6, 1, 1, 5, 1, 1, 6, 1, 1, 5, 1, 1, 6, 1, 1, 5, 1, 1, 6, 1, 1, 4, 1, 1, 5, 1, 1, 6));
+    }
+
 }

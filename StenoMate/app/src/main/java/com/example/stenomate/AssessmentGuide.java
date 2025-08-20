@@ -19,6 +19,7 @@ public class AssessmentGuide extends AppCompatActivity {
     ImageView GuideImageHolder;
     TextView HeaderText, ContentText;
 
+    int lesson_number, assessment_list_group_name;
     MyDatabaseHelper dbHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +36,8 @@ public class AssessmentGuide extends AppCompatActivity {
         }*/
 
         Intent intent = getIntent();
-        int lesson_number = intent.getIntExtra("lesson_number", 0);
+        lesson_number = intent.getIntExtra("lesson_number", 0);
+        assessment_list_group_name = intent.getIntExtra("assessment_list_group_name", 0);
 
         LinearContainer = findViewById(R.id.linearContainer);
 
@@ -63,6 +65,7 @@ public class AssessmentGuide extends AppCompatActivity {
                 } else if (indexNumber == 2) {
                     Intent intent = new Intent(AssessmentGuide.this, AssessmentActivity.class);
                     intent.putExtra("lesson_number", lesson_number);
+                    intent.putExtra("assessment_list_group_name", assessment_list_group_name);
                     startActivity(intent);
                 }
             }

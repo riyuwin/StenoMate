@@ -19,6 +19,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/black_top_rect_shape_no_radius"
+        android:padding="5dp">
+
+        <!-- Back icon -->
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:src="@drawable/back_vector" />
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/steno_mate_white_logo2" />
+
+    </RelativeLayout>
+
     <!-- Background Image (full screen, at bottom layer) -->
     <LinearLayout
         android:id="@+id/linearContainer"
@@ -27,183 +54,59 @@
         android:gravity="left"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_marginTop="80dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/black_top_rect_shape"
+            android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:gravity="left"
+            android:background="@drawable/white_rect_content_w_radius"
+            android:elevation="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/kanit_medium"
+                android:text="Assessment Lesson List"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"/>
 
             <ImageView
+                android:layout_width="50dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/black_top_rect_shape_no_radius" />
+
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:src="@drawable/steno_mate_white_logo2" />
-
-        </LinearLayout>
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="left" >
-
-                <TextView
-                    android:id="@+id/aboutUsId"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/kanit_medium"
-                    android:text="Select Lesson"
-                    android:textColor="#000000"
-                    android:textSize="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginBottom="20dp"/>
-
-                <!--<TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/kanit_light"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-                    android:textColor="#000000"
-                    android:textSize="12dp"
-                    android:layout_marginBottom="20dp"
-                    android:padding="16dp"/>-->
+                android:layout_height="match_parent" >
 
                 <LinearLayout
                     android:id="@+id/parentLinearLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:padding="16dp">
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
 
-                    <!--<LinearLayout
-                        android:id="@+id/lessonOneId"
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        android:background="@drawable/gray_rect_shape"
-                        android:orientation="vertical"
-                        android:padding="16dp"
-                        android:layout_marginBottom="20dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:background="@drawable/dirty_white_shape"
-                            android:gravity="center">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
-                                android:text="Lesson 1"
-                                android:letterSpacing="0.01"
-                                android:textColor="#C5000000"
-                                android:textSize="20dp" />
-
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_regular"
-                                android:text="Read now"
-                                android:letterSpacing="0.01"
-                                android:textColor="#C5000000"
-                                android:textSize="12dp" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>-->
-
-                    <!--<LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        android:background="@drawable/gray_rect_shape"
-                        android:orientation="vertical"
-                        android:padding="16dp"
-                        android:layout_marginBottom="20dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:background="@drawable/dirty_white_shape"
-                            android:gravity="center">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
-                                android:text="Lesson 2"
-                                android:letterSpacing="0.01"
-                                android:textColor="#C5000000"
-                                android:textSize="20dp" />
-
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_regular"
-                                android:text="Read now"
-                                android:letterSpacing="0.01"
-                                android:textColor="#C5000000"
-                                android:textSize="12dp" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        android:background="@drawable/gray_rect_shape"
-                        android:orientation="vertical"
-                        android:padding="16dp"
-                        android:layout_marginBottom="20dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:background="@drawable/dirty_white_shape"
-                            android:gravity="center">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
-                                android:text="Lesson 3"
-                                android:letterSpacing="0.01"
-                                android:textColor="#C5000000"
-                                android:textSize="20dp" />
-
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_regular"
-                                android:text="Read now"
-                                android:letterSpacing="0.01"
-                                android:textColor="#C5000000"
-                                android:textSize="12dp" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>-->
+                    <!-- Contents here -->
 
                 </LinearLayout>
 
-            </LinearLayout>
+            </ScrollView>
 
-        </ScrollView>
+        </LinearLayout>
 
     </LinearLayout>
 

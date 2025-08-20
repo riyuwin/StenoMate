@@ -13,6 +13,12 @@
         android:theme="@style/Theme.StenoMate"
         tools:targetApi="31">
         <activity
+            android:name=".AssessmentListItemGroup"
+            android:exported="false" />
+        <activity
+            android:name=".AssessmentItemNumbers"
+            android:exported="false" />
+        <activity
             android:name=".AssessmentGuide"
             android:exported="false" />
         <activity

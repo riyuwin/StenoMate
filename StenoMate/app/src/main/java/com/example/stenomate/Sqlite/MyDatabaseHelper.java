@@ -21,6 +21,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     public static final String COLUMN_ID = "id";
     public static final String COLUMN_ASSESSMENT_PERCENTAGE = "percentage";
     public static final String COLUMN_LESSON_NUMBER = "lesson_number";
+    public static final String COLUMN_LESSON_GROUP_NUMBER = "lesson_group_number";
     public static final String COLUMN_ASSESSMENT_DATETIME = "datetime";
     public static final String COLUMN_ASSESSMENT_ANSWER = "answer";
 
@@ -35,6 +36,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         String CREATE_TABLE = "CREATE TABLE " + TABLE_ASSESSMENT_NAME + " (" +
                 COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COLUMN_LESSON_NUMBER + " TEXT, " +
+                COLUMN_LESSON_GROUP_NUMBER + " TEXT, " +
                 COLUMN_ASSESSMENT_PERCENTAGE + " TEXT, " +
                 COLUMN_ASSESSMENT_ANSWER + " TEXT, " +
                 COLUMN_ASSESSMENT_DATETIME + " TEXT)";
@@ -50,7 +52,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     }
 
     // Insert Data
-    public boolean insertAssessment(int lessonNumber, float percentage, String answer) {
+    public boolean insertAssessment(int lessonNumber, int lessonGroupNumber, float percentage, String answer) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
 
@@ -58,6 +60,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         String currentDateTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(new Date());
 
         values.put(COLUMN_LESSON_NUMBER, lessonNumber);
+        values.put(COLUMN_LESSON_GROUP_NUMBER, lessonGroupNumber);
         values.put(COLUMN_ASSESSMENT_PERCENTAGE, percentage);
         values.put(COLUMN_ASSESSMENT_ANSWER, answer);
         values.put(COLUMN_ASSESSMENT_DATETIME, currentDateTime); // ✅ Correct value here

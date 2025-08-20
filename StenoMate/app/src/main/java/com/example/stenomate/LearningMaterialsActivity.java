@@ -17,7 +17,7 @@ import com.example.stenomate.Lessons.Lesson3Activity;
 
 public class LearningMaterialsActivity extends AppCompatActivity {
 
-    LinearLayout FoundationMenu, LessonOneId, LessonTwoId, LessonThreeId;
+    LinearLayout FoundationMenu, AdvanceMenu, HistoryMenu;
 
 
     @Override
@@ -26,9 +26,17 @@ public class LearningMaterialsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_learning_materials);
 
         FoundationMenu = findViewById(R.id.foundationMenu);
+        AdvanceMenu = findViewById(R.id.advanceMenu);
 
         FoundationMenu.setOnClickListener(View -> {
             Intent intent = new Intent(LearningMaterialsActivity.this, LessonMenu.class);
+            intent.putExtra("lesson_type", "Short");
+            startActivity(intent);
+        });
+
+        AdvanceMenu.setOnClickListener(View -> {
+            Intent intent = new Intent(LearningMaterialsActivity.this, LessonMenu.class);
+            intent.putExtra("lesson_type", "Advance");
             startActivity(intent);
         });
 

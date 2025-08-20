@@ -170,6 +170,8 @@
                             android:layout_height="wrap_content"
                             android:hint="Answer"
                             android:textSize="14dp"
+                            android:minLines="5"
+                            android:maxLines="12"
                             android:fontFamily="@font/kanit_regular"/>
 
 

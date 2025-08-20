@@ -33,12 +33,21 @@
             android:layout_height="wrap_content"
             android:background="@drawable/black_top_rect_shape"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="20dp">
 
-            <ImageView
+            <AutoCompleteTextView
+                android:id="@+id/searchEditTextId"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:src="@drawable/steno_mate_white_logo2" />
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_search_bar_shape"
+                android:fontFamily="@font/kanit_light"
+                android:gravity="center"
+                android:hint="🔍 Search"
+                android:padding="5dp"
+                android:inputType="text"
+                android:completionThreshold="1"
+                android:dropDownHeight="wrap_content"
+                />
 
         </LinearLayout>
 
