@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryActivity">
+
+    <!-- Background Image (full screen, at bottom layer) -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/stenomate_bg2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    <!-- Background Image (full screen, at bottom layer) -->
+    <LinearLayout
+        android:id="@+id/linearContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_top_rect_shape"
+            android:orientation="vertical"
+            android:padding="5dp">
+ 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black_top_rect_shape_no_radius" >
+
+                <!-- Back icon -->
+                <ImageView
+                    android:id="@+id/backIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:padding="10dp"
+                    android:src="@drawable/back_vector" />
+
+                <!-- Logo -->
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/steno_mate_white_logo2" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="left"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/white_rect_shape"
+                    android:orientation="vertical"
+                    android:padding="30dp"
+                    android:gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/aboutUsId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/kanit_medium"
+                        android:text="HISTORY OF GREGG SHORTHAND"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:id="@+id/stenoImageHolder1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/history_1"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/nameContentId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kanit_medium"
+                        android:text="GREGG SHORTHAND, THE UNIVERSAL SYSTEM"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/contentText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="Gregg Shorthand was first published on May 28, 1888, and has been learned and used successfully by millions of writers throughout the entire world. Gregg Shorthand was written in English but has been successfully adapted to numerous other languages, including Spanish and French. The terms shorthand and Gregg are synonymous to most people. Gregg Shorthand is the universal system of shorthand; it is used by more shorthand writers than any other system in the world. "
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="Gregg Shorthand is used by secretaries as a tool that enables them to obtain and hold interesting and rewarding positions. It is used by business and professional people who are relieved of the burden of writing longhand in making notes, preparing important papers, and drafting reports."
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kanit_light"
+                        android:text=" The success of any system of shorthand rests on the merits of its alphabet. The Gregg alphabet is the most logical, consistent, and efficient shorthand alphabet devised in more than 2,000 years of shorthand history. The fact that this alphabet, virtually without change, has been the basis of Gregg Shorthand for more than 90 years is a tribute to the genius of its inventor, John Robert Gregg."
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageView
+                            android:id="@+id/stenoImageHolder2"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/history_2"/>
+
+                        <ImageView
+                            android:id="@+id/stenoImageHolder3"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/history_3"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kanit_medium"
+                        android:text="Gregg Shorthand for Colleges, Volume One, Series 90 "
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="The Series 90 revision of Gregg Shorthand was first published in the ninetieth anniversary year of the Gregg system. This revision involves a small number of system changes which have been deemed desirable to make learning and writing Gregg Shorthand even easier and more consistent. A major change has been made in the order of presentation of the theory principles. This change was made to provide better, more logical business letters even in the very early lessons in the text. Teachers will find the system changes to be logical and the teaching and learning suggestions helpful. "
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="To meet the needs of business schools, colleges, junior colleges, community colleges, universities and other post-high school institutions, Gregg Shorthand, Series 90, has been made available in a college edition. This edition provides shorthand instructional materials that are different from those used in high schools, materials that are more challenging and that are geared to the interests of the more mature college student."
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageView
+                            android:id="@+id/stenoImageHolder4"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/history_4"/>
+
+                        <ImageView
+                            android:id="@+id/stenoImageHolder5"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/history_5"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageView
+                            android:id="@+id/stenoImageHolder6"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/history_6"/>
+
+                        <ImageView
+                            android:id="@+id/stenoImageHolder7"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/history_7"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

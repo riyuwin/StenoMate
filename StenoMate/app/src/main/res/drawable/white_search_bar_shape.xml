@@ -15,5 +15,5 @@
     <!-- Border -->
     <stroke
         android:width="2dp"
-        android:color="#1D000000" />
+        android:color="#36000000" />
 </shape>

@@ -1,10 +1,12 @@
 package com.example.stenomate;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,11 +23,15 @@ public class DictionaryActivity extends AppCompatActivity {
     AutoCompleteTextView autoCompleteTextView;
     ArrayAdapter<String> searchAdapter;
     List<String> searchWords; // for index 1 only
+    ImageView BackIcon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dictionary);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+
+        BackIcon = findViewById(R.id.backIcon);
 
         SearchEditTextId = findViewById(R.id.searchEditTextId);
 
@@ -97,6 +103,11 @@ public class DictionaryActivity extends AppCompatActivity {
             intent.putExtra("item_image", itemList.get(position).imageResId);
             intent.putExtra("item_title", itemList.get(position).Title); // optionally send title or content
             intent.putExtra("item_content", itemList.get(position).Content);
+            startActivity(intent);
+        });
+
+        BackIcon.setOnClickListener(v -> {
+            Intent intent = new Intent(DictionaryActivity.this, MainMenu.class);
             startActivity(intent);
         });
 
@@ -173,5 +184,12 @@ public class DictionaryActivity extends AppCompatActivity {
         itemList.add(new DictionaryListItem(R.drawable.lesson1_asset_32_tea, "tea", "t-e"));
         itemList.add(new DictionaryListItem(R.drawable.lesson1_asset_41_date, "date", "d-a-t"));
         itemList.add(new DictionaryListItem(R.drawable.lesson1_asset_47_dash, "Fay", ""));
+    }
+
+    @SuppressLint("MissingSuperCall")
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(DictionaryActivity.this, MainMenu.class);
+        startActivity(intent);
     }
 }

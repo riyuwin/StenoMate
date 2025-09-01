@@ -1,5 +1,6 @@
 package com.example.stenomate;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
@@ -28,6 +29,7 @@ public class MainMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 
         LearningMaterialsId = findViewById(R.id.learningMaterialsId);
         DictionaryId = findViewById(R.id.dictionaryId);
@@ -38,7 +40,8 @@ public class MainMenu extends AppCompatActivity {
         AboutUsId = findViewById(R.id.aboutUsId);
 
         LearningMaterialsId.setOnClickListener(View -> {
-            IntentManager(LessonHistoryBackground.class);
+            //IntentManager(LessonHistoryBackground.class); // LearningMaterialsActivity
+            IntentManager(LearningMaterialsActivity.class);
         });
 
         DictionaryId.setOnClickListener(View -> {
@@ -62,5 +65,12 @@ public class MainMenu extends AppCompatActivity {
         Intent intent = new Intent(MainMenu.this, activityName);
         startActivity(intent);
     }
+
+    @SuppressLint("MissingSuperCall")
+    @Override
+    public void onBackPressed() {
+
+    }
+
 
 }

@@ -1,5 +1,6 @@
 package com.example.stenomate;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Color;
@@ -34,6 +35,7 @@ public class AssessmentList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_assessment_list);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 
         PopulateAssessmentItemGroup();
 
@@ -107,7 +109,7 @@ public class AssessmentList extends AppCompatActivity {
                     ViewGroup.LayoutParams.MATCH_PARENT,
                     ViewGroup.LayoutParams.MATCH_PARENT
             ));
-            innerLayout.setBackground(ContextCompat.getDrawable(this, R.drawable.dirty_white_shape));
+            innerLayout.setBackground(ContextCompat.getDrawable(this, R.drawable.dirty_white_shape_1));
             innerLayout.setGravity(Gravity.CENTER);
 
             // Title
@@ -167,4 +169,10 @@ public class AssessmentList extends AppCompatActivity {
         GroupItemNumberList = new ArrayList<>(Arrays.asList(3, 5, 1, 1, 6, 1, 1, 5, 1, 1, 5, 1, 1, 6, 1, 1, 6, 1, 1, 5, 1, 1, 6, 1, 1, 5, 1, 1, 6, 1, 1, 5, 1, 1, 6, 1, 1, 4, 1, 1, 5, 1, 1, 6));
     }
 
+    @SuppressLint("MissingSuperCall")
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(AssessmentList.this, MainMenu.class);
+        startActivity(intent);
+    }
 }

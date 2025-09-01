@@ -1,5 +1,6 @@
 package com.example.stenomate;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -7,6 +8,7 @@ import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -48,10 +50,15 @@ import com.example.stenomate.Lessons.Lesson9Activity;
 
 public class LessonMenu extends AppCompatActivity {
 
+    ImageView BackIcon;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson_menu);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+
+        BackIcon = findViewById(R.id.backIcon);
 
         Intent intent = getIntent();
         String lesson_type = intent.getStringExtra("lesson_type");
@@ -63,6 +70,10 @@ public class LessonMenu extends AppCompatActivity {
             generateAdvanceHandLessonsLinearLayout();
         }
 
+        BackIcon.setOnClickListener(v -> {
+            Intent nav_intent = new Intent(LessonMenu.this, LearningMaterialsActivity.class);
+            startActivity(nav_intent);
+        });
     }
 
     private void generateShortHandLessonsLinearLayout() {
@@ -90,7 +101,7 @@ public class LessonMenu extends AppCompatActivity {
                     ViewGroup.LayoutParams.MATCH_PARENT,
                     ViewGroup.LayoutParams.MATCH_PARENT
             ));
-            innerLayout.setBackground(ContextCompat.getDrawable(this, R.drawable.dirty_white_shape));
+            innerLayout.setBackground(ContextCompat.getDrawable(this, R.drawable.dirty_white_shape_1));
             innerLayout.setGravity(Gravity.CENTER);
 
             // Title TextView
@@ -228,7 +239,7 @@ public class LessonMenu extends AppCompatActivity {
                     ViewGroup.LayoutParams.MATCH_PARENT,
                     ViewGroup.LayoutParams.MATCH_PARENT
             ));
-            innerLayout.setBackground(ContextCompat.getDrawable(this, R.drawable.dirty_white_shape));
+            innerLayout.setBackground(ContextCompat.getDrawable(this, R.drawable.dirty_white_shape_1));
             innerLayout.setGravity(Gravity.CENTER);
 
             // Title TextView
@@ -325,6 +336,13 @@ public class LessonMenu extends AppCompatActivity {
     private int dpToPx(int dp) {
         float density = getResources().getDisplayMetrics().density;
         return Math.round((float) dp * density);
+    }
+
+    @SuppressLint("MissingSuperCall")
+    @Override
+    public void onBackPressed() {
+        Intent nav_intent = new Intent(LessonMenu.this, LearningMaterialsActivity.class);
+        startActivity(nav_intent);
     }
 
 

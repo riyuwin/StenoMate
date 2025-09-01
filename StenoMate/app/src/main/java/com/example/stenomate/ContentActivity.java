@@ -1,6 +1,8 @@
 package com.example.stenomate;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -11,11 +13,15 @@ public class ContentActivity extends AppCompatActivity {
 
     TextView TitleText, ContentText;
     ImageView ImageHolder;
+    ImageView BackIcon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_content);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+
+        BackIcon = findViewById(R.id.backIcon);
 
         int imageResId = getIntent().getIntExtra("item_image", R.drawable.stenomate_logo); // default fallback
         String title = getIntent().getStringExtra("item_title");
@@ -39,5 +45,18 @@ public class ContentActivity extends AppCompatActivity {
             fullImage.setOnClickListener(view -> dialog.dismiss()); // tap to close
             dialog.show();
         });
+
+        BackIcon.setOnClickListener(v -> {
+            Intent intent = new Intent(ContentActivity.this, DictionaryActivity.class);
+            startActivity(intent);
+        });
+    }
+
+
+    @SuppressLint("MissingSuperCall")
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(ContentActivity.this, DictionaryActivity.class);
+        startActivity(intent);
     }
 }

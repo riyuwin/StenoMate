@@ -6,4 +6,11 @@
     </style>
 
     <style name="Theme.StenoMate" parent="Base.Theme.StenoMate" />
+
+    <style name="FadeAnimation">
+        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+    </style>
 </resources>

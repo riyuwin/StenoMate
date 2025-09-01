@@ -2,6 +2,7 @@ package com.example.stenomate;
 
 import static com.google.android.material.internal.ViewUtils.dpToPx;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Color;
@@ -41,6 +42,7 @@ public class AssessmentListItemGroup extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_assessment_list_item_group);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 
         PopulateAssessmentItemGroup();
 
@@ -182,4 +184,10 @@ public class AssessmentListItemGroup extends AppCompatActivity {
         GroupItemNumberList = new ArrayList<>(Arrays.asList(3, 5, 1, 1, 6, 1, 1, 5, 1, 1, 5, 1, 1, 6, 1, 1, 6, 1, 1, 5, 1, 1, 6, 1, 1, 5, 1, 1, 6, 1, 1, 5, 1, 1, 6, 1, 1, 4, 1, 1, 5, 1, 1, 6));
     }
 
+    @SuppressLint("MissingSuperCall")
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(AssessmentListItemGroup.this, AssessmentList.class);
+        startActivity(intent);
+    }
 }

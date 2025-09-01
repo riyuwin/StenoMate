@@ -1,9 +1,11 @@
 package com.example.stenomate;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,14 +21,24 @@ public class LearningMaterialsActivity extends AppCompatActivity {
 
     LinearLayout FoundationMenu, AdvanceMenu, HistoryMenu;
 
+    ImageView BackIcon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learning_materials);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+
+        BackIcon = findViewById(R.id.backIcon);
 
         FoundationMenu = findViewById(R.id.foundationMenu);
         AdvanceMenu = findViewById(R.id.advanceMenu);
+        HistoryMenu = findViewById(R.id.historyMenu);
+
+        HistoryMenu.setOnClickListener(View -> {
+            Intent intent = new Intent(LearningMaterialsActivity.this, HistoryActivity.class);
+            startActivity(intent);
+        });
 
         FoundationMenu.setOnClickListener(View -> {
             Intent intent = new Intent(LearningMaterialsActivity.this, LessonMenu.class);
@@ -40,25 +52,22 @@ public class LearningMaterialsActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        /*LLessonTwoId = findViewById(R.id.lessonTwoId);
-        //LessonThreeId = findViewById(R.id.lessonThreeId);
 
-        LessonOneId.setOnClickListener(View -> {
-            Intent intent = new Intent(LearningMaterialsActivity.this, Lesson1Activity.class);
+        BackIcon.setOnClickListener(v -> {
+            Intent intent = new Intent(LearningMaterialsActivity.this, MainMenu.class);
             startActivity(intent);
         });
-
-        LessonTwoId.setOnClickListener(View -> {
-            Intent intent = new Intent(LearningMaterialsActivity.this, Lesson2Activity.class);
-            startActivity(intent);
-        });*/
-
-        /*LessonThreeId.setOnClickListener(View -> {
-            Intent intent = new Intent(LearningMaterialsActivity.this, Lesson3Activity.class);
-            startActivity(intent);
-        });*/
 
 
 
     }
+
+
+    @SuppressLint("MissingSuperCall")
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(LearningMaterialsActivity.this, MainMenu.class);
+        startActivity(intent);
+    }
+
 }

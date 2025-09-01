@@ -39,6 +39,8 @@ public class QuizzesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quizzes);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+
         LessonNumber = getIntent().getIntExtra("lesson_number", 0);
 
         ImageHolder = findViewById(R.id.stenoImageHolder);
@@ -1199,10 +1201,12 @@ public class QuizzesActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         // Reset all variables
-        CurrentQuestionNumber = 1;
-        NumberCorrectAnswer = 0;
-        LessonNumber = 0;
+        //CurrentQuestionNumber = 1;
+        //NumberCorrectAnswer = 0;
+        //LessonNumber = 0;
 
-        super.onBackPressed();
+        //super.onBackPressed();
     }
+
+
 }

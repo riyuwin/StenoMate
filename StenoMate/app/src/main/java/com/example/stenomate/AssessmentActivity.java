@@ -1,5 +1,6 @@
 package com.example.stenomate;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
 import android.database.Cursor;
@@ -38,6 +39,7 @@ public class AssessmentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_assessment);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 
         dbHelper = new MyDatabaseHelper(this);
 
@@ -1258,5 +1260,12 @@ public class AssessmentActivity extends AppCompatActivity {
                         "Under the circumstances, I will need an itemized memorandum of the work you did in order to be able to present your bill to our controller for payment. Would you be good enough to supply the information on the form that is enclosed. A self-addressed, stamped envelope is provided for your convenience. Sincerely yours",
                 1
         ));
+    }
+
+
+    @SuppressLint("MissingSuperCall")
+    @Override
+    public void onBackPressed() {
+
     }
 }

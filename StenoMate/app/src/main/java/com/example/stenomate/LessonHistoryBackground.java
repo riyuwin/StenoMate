@@ -1,5 +1,6 @@
 package com.example.stenomate;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.LinearLayout;
@@ -17,6 +18,7 @@ public class LessonHistoryBackground extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson_history_background);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 
         LinearContainer = findViewById(R.id.linearContainer);
 
@@ -26,4 +28,11 @@ public class LessonHistoryBackground extends AppCompatActivity {
         });
 
     }
+
+    @SuppressLint("MissingSuperCall")
+    @Override
+    public void onBackPressed() {
+
+    }
+
 }
