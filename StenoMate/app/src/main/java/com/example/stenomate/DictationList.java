@@ -12,11 +12,14 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 import com.example.stenomate.Sqlite.MyDatabaseHelper;
 
@@ -25,7 +28,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class AssessmentList extends AppCompatActivity {
+public class DictationList extends AppCompatActivity {
 
     MyDatabaseHelper dbHelper;
     ImageView BackIcon;
@@ -34,7 +37,7 @@ public class AssessmentList extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_assessment_list);
+        setContentView(R.layout.activity_dictation_list);
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 
         Intent get_intent = getIntent();
@@ -46,7 +49,7 @@ public class AssessmentList extends AppCompatActivity {
         BackIcon = findViewById(R.id.backIcon);
 
         BackIcon.setOnClickListener(view -> {
-            Intent intent = new Intent(AssessmentList.this, AssessmentCategory.class);
+            Intent intent = new Intent(DictationList.this, DictationCategory.class);
             startActivity(intent);
         });
 
@@ -68,19 +71,22 @@ public class AssessmentList extends AppCompatActivity {
 
     private Set<Integer> getPassedLessonNumbers() {
         Set<Integer> passedLessons = new HashSet<>();
-        Cursor cursor = dbHelper.getAllLessonPassed();
+        Cursor cursor = dbHelper.getAllDictations();
 
         if (cursor != null && cursor.moveToFirst()) {
             do {
-                int lessonNumber = cursor.getInt(cursor.getColumnIndexOrThrow("lesson_number"));
-                int lesson_group_number = cursor.getInt(cursor.getColumnIndexOrThrow("lesson_group_number"));
-                float percentage = cursor.getFloat(cursor.getColumnIndexOrThrow("percentage"));
+                int lessonNumber = cursor.getInt(cursor.getColumnIndexOrThrow("dictation_lesson_number"));
+                int lesson_group_number = cursor.getInt(cursor.getColumnIndexOrThrow("dictation_lesson_group_number"));
 
                 //Toast.makeText(this, "LessonNumber: " + lessonNumber + "LessonGroupNumber: " + lesson_group_number, Toast.LENGTH_SHORT).show();
 
-                if (GroupItemNumberList.get(lessonNumber - 1) == lesson_group_number && percentage >= 75) {
+                if (GroupItemNumberList.get(lessonNumber - 1) == lesson_group_number) {
                     passedLessons.add(lessonNumber + 1);
                 }
+//                if (lessonNumber == lesson_number) {
+//                    passedLessons.add(lesson_group_number + 1);
+//                }
+                //passedLessons.add(lessonNumber + 1);
             } while (cursor.moveToNext());
 
             cursor.close();
@@ -156,7 +162,7 @@ public class AssessmentList extends AppCompatActivity {
             if (isEnabled) {
                 int finalI = i;
                 outerLayout.setOnClickListener(v -> {
-                    Intent intent = new Intent(AssessmentList.this, AssessmentListItemGroup.class);
+                    Intent intent = new Intent(DictationList.this, DictationListItemGroup.class);
                     intent.putExtra("lesson_number", finalI);
                     startActivity(intent);
                 });
@@ -183,7 +189,7 @@ public class AssessmentList extends AppCompatActivity {
     @SuppressLint("MissingSuperCall")
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(AssessmentList.this, AssessmentCategory.class);
+        Intent intent = new Intent(DictationList.this, DictationCategory.class);
         startActivity(intent);
     }
 }

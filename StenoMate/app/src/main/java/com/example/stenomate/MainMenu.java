@@ -21,7 +21,7 @@ import java.util.List;
 
 public class MainMenu extends AppCompatActivity {
 
-    LinearLayout LearningMaterialsId, DictionaryId, AssessmentId, QuizzesId;
+    LinearLayout LearningMaterialsId, DictionaryId, AssessmentId, QuizzesId, DictationId;
     TextView AboutUsId;
 
 
@@ -35,6 +35,7 @@ public class MainMenu extends AppCompatActivity {
         DictionaryId = findViewById(R.id.dictionaryId);
         AssessmentId = findViewById(R.id.assessmentsId);
         QuizzesId = findViewById(R.id.quizId);
+        DictationId = findViewById(R.id.dictationId);
 
 
         AboutUsId = findViewById(R.id.aboutUsId);
@@ -49,11 +50,15 @@ public class MainMenu extends AppCompatActivity {
         });
 
         AssessmentId.setOnClickListener(View -> {
-            IntentManager(AssessmentList.class);
+            IntentManager(AssessmentCategory.class);
         });
 
         QuizzesId.setOnClickListener(View -> {
-            IntentManager(QuizzesList.class);
+            IntentManager(QuizCategory.class);
+        });
+
+        DictationId.setOnClickListener(View -> {
+            IntentManager(DictationCategory.class);
         });
 
         AboutUsId.setOnClickListener(View -> {

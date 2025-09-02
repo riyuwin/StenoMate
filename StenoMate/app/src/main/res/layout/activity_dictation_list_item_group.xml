@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QuizzesList">
+    tools:context=".DictationListItemGroup">
+
 
     <!-- Background Image (full screen, at bottom layer) -->
     <ImageView
@@ -26,6 +27,15 @@
         android:background="@drawable/black_top_rect_shape_no_radius"
         android:padding="5dp">
 
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/steno_mate_white_logo2" />
+
         <!-- Back icon -->
         <ImageView
             android:id="@+id/backIcon"
@@ -35,14 +45,6 @@
             android:layout_alignParentStart="true"
             android:padding="10dp"
             android:src="@drawable/back_vector" />
-
-        <!-- Logo -->
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/steno_mate_white_logo2" />
 
     </RelativeLayout>
 
@@ -70,11 +72,12 @@
             android:elevation="8dp">
 
             <TextView
+                android:id="@+id/assessmentLessonText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/kanit_medium"
-                android:text="Quiz Lesson List"
+                android:text="Dictation List"
                 android:textColor="#000000"
                 android:textSize="20dp"
                 android:layout_marginTop="30dp"
@@ -100,7 +103,56 @@
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp">
 
-                    <!-- Contents here -->
+                    <!--
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/assessment_contianer">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:paddingLeft="30dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_semibold"
+                                android:text="Group A"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_light"
+                                android:text="Duration: 1 min"
+                                android:textColor="#000000"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingRight="20dp">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/attempt_now_btn"
+                                android:padding="5dp"
+                                android:scaleType="centerInside" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    -->
 
                 </LinearLayout>
 
@@ -109,5 +161,6 @@
         </LinearLayout>
 
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

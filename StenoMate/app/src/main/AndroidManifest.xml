@@ -13,6 +13,24 @@
         android:theme="@style/Theme.StenoMate"
         tools:targetApi="31">
         <activity
+            android:name=".DictationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DictationListItemGroup"
+            android:exported="false" />
+        <activity
+            android:name=".DictationList"
+            android:exported="false" />
+        <activity
+            android:name=".DictationCategory"
+            android:exported="false" />
+        <activity
+            android:name=".AssessmentCategory"
+            android:exported="false" />
+        <activity
+            android:name=".QuizCategory"
+            android:exported="false" />
+        <activity
             android:name=".HistoryActivity"
             android:exported="false" />
         <activity

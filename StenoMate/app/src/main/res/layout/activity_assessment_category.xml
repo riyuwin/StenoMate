@@ -5,10 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LearningMaterialsActivity">
+    tools:context=".AssessmentCategory">
 
     <!-- Background Image (full screen, at bottom layer) -->
-
     <ImageView
         android:id="@+id/backgroundImage"
         android:layout_width="match_parent"
@@ -20,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Background Image (full screen, at bottom layer) --> 
+    <!-- Background Image (full screen, at bottom layer) -->
     <LinearLayout
         android:id="@+id/linearContainer"
         android:layout_width="match_parent"
@@ -83,67 +82,16 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Select Type of Lesson"
+                    android:text="Select Assessment Category"
                     android:textColor="#000000"
                     android:textSize="20dp"
-                    android:layout_marginTop="30dp"
                     android:layout_marginBottom="20dp"/>
-
-                <!--<TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/kanit_light"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-                    android:textColor="#000000"
-                    android:textSize="12dp"
-                    android:layout_marginBottom="20dp"
-                    android:padding="16dp"/>-->
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="16dp">
-
-                    <LinearLayout
-                        android:id="@+id/historyMenu"
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        android:background="@drawable/gray_rect_shape"
-                        android:orientation="vertical"
-                        android:padding="16dp"
-                        android:layout_marginBottom="20dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:background="@drawable/dirty_white_shape_1"
-                            android:gravity="center">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
-                                android:text="History"
-                                android:letterSpacing="0.01"
-                                android:textColor="#C5000000"
-                                android:textSize="20dp" />
-
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_regular"
-                                android:text="Read now"
-                                android:letterSpacing="0.01"
-                                android:textColor="#C5000000"
-                                android:textSize="12dp" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/foundationMenu"

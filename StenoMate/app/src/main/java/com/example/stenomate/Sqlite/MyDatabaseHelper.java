@@ -14,7 +14,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
     // Database Info
     private static final String DATABASE_NAME = "Steno.db";
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
 
     // Table and Columns
     public static final String TABLE_ASSESSMENT_NAME = "assessments";
@@ -24,6 +24,15 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     public static final String COLUMN_LESSON_GROUP_NUMBER = "lesson_group_number";
     public static final String COLUMN_ASSESSMENT_DATETIME = "datetime";
     public static final String COLUMN_ASSESSMENT_ANSWER = "answer";
+
+    // Dictation Table and Columns
+    public static final String TABLE_DICTATION_NAME = "dictations";
+    public static final String COLUMN_DICTATION_ID = "id";
+    public static final String COLUMN_DICTATION_LESSON_NUMBER = "dictation_lesson_number";
+    public static final String COLUMN_DICTATION_GROUP_NUMBER = "dictation_lesson_group_number";
+    public static final String COLUMN_DICTATION_ATTEMPT = "dictation_attempt";
+    public static final String COLUMN_DICTATION_DATETIME = "datetime";
+
 
 
     public MyDatabaseHelper(Context context) {
@@ -41,6 +50,15 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
                 COLUMN_ASSESSMENT_ANSWER + " TEXT, " +
                 COLUMN_ASSESSMENT_DATETIME + " TEXT)";
         db.execSQL(CREATE_TABLE);
+
+        // Dictation Table
+        String CREATE_DICTATION_TABLE = "CREATE TABLE " + TABLE_DICTATION_NAME + " (" +
+                COLUMN_DICTATION_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                COLUMN_DICTATION_LESSON_NUMBER + " TEXT, " +
+                COLUMN_DICTATION_GROUP_NUMBER + " TEXT, " +
+                COLUMN_DICTATION_ATTEMPT + " TEXT, " +
+                COLUMN_DICTATION_DATETIME + " TEXT)";
+        db.execSQL(CREATE_DICTATION_TABLE);
     }
 
 
@@ -84,6 +102,47 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         return db.rawQuery("SELECT * FROM " + TABLE_ASSESSMENT_NAME, null);
     }
+
+    public boolean insertDictation(int lessonNumber, int groupNumber) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        String query = "SELECT MAX(" + COLUMN_DICTATION_ATTEMPT + ") FROM " + TABLE_DICTATION_NAME +
+                " WHERE " + COLUMN_DICTATION_LESSON_NUMBER + "=? AND " + COLUMN_DICTATION_GROUP_NUMBER + "=?";
+        Cursor cursor = db.rawQuery(query, new String[]{String.valueOf(lessonNumber), String.valueOf(groupNumber)});
+
+        int nextAttempt = 1;
+        if (cursor.moveToFirst() && !cursor.isNull(0)) {
+            nextAttempt = cursor.getInt(0) + 1; // increment
+        }
+        cursor.close();
+
+        String currentDateTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(new Date());
+
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_DICTATION_LESSON_NUMBER, lessonNumber);
+        values.put(COLUMN_DICTATION_GROUP_NUMBER, groupNumber);
+        values.put(COLUMN_DICTATION_ATTEMPT, nextAttempt);
+        values.put(COLUMN_DICTATION_DATETIME, currentDateTime);
+
+        long result = db.insert(TABLE_DICTATION_NAME, null, values);
+        return result != -1;
+    }
+
+    public Cursor getAllDictations() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        return db.rawQuery("SELECT * FROM " + TABLE_DICTATION_NAME, null);
+    }
+
+    public Cursor getAttemptsByLessonAndGroup(int lessonNum, int groupNum) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        return db.rawQuery(
+                "SELECT * FROM " + TABLE_DICTATION_NAME +
+                        " WHERE dictation_lesson_number = ? AND dictation_lesson_group_number = ?" +
+                        " ORDER BY id ASC",
+                new String[]{String.valueOf(lessonNum), String.valueOf(groupNum)}
+        );
+    }
+
 
 
 }

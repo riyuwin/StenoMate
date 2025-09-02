@@ -1,7 +1,5 @@
 package com.example.stenomate;
 
-import static com.google.android.material.internal.ViewUtils.dpToPx;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
@@ -12,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,7 +26,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class AssessmentListItemGroup extends AppCompatActivity {
+public class DictationListItemGroup extends AppCompatActivity {
 
     MyDatabaseHelper dbHelper;
 
@@ -41,7 +38,7 @@ public class AssessmentListItemGroup extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_assessment_list_item_group);
+        setContentView(R.layout.activity_dictation_list_item_group);
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 
         PopulateAssessmentItemGroup();
@@ -52,11 +49,16 @@ public class AssessmentListItemGroup extends AppCompatActivity {
         Intent get_intent = getIntent();
         lesson_number = get_intent.getIntExtra("lesson_number", -1);
 
-        LessonNumberText.setText("Assessment No. " + lesson_number);
+        LessonNumberText.setText("Dictation No. " + lesson_number);
 
 
         BackIcon.setOnClickListener(view -> {
-            Intent intent = new Intent(AssessmentListItemGroup.this, AssessmentList.class);
+            Intent intent = new Intent(DictationListItemGroup.this, DictationList.class);
+            if (lesson_number >= 1 && lesson_number <= 23){
+                intent.putExtra("lesson_type", "Short");
+            } else if (lesson_number >= 24 && lesson_number <= 45){
+                intent.putExtra("lesson_type", "Advance");
+            }
             startActivity(intent);
         });
 
@@ -72,15 +74,14 @@ public class AssessmentListItemGroup extends AppCompatActivity {
 
     private Set<Integer> getPassedLessonNumbers() {
         Set<Integer> passedLessons = new HashSet<>();
-        Cursor cursor = dbHelper.getAllLessonPassed();
+        Cursor cursor = dbHelper.getAllDictations();
 
         if (cursor != null && cursor.moveToFirst()) {
             do {
-                int lessonNumber = cursor.getInt(cursor.getColumnIndexOrThrow("lesson_number"));
-                int lesson_group_number = cursor.getInt(cursor.getColumnIndexOrThrow("lesson_group_number"));
-                float percentage = cursor.getFloat(cursor.getColumnIndexOrThrow("percentage"));
+                int lessonNumber = cursor.getInt(cursor.getColumnIndexOrThrow("dictation_lesson_number"));
+                int lesson_group_number = cursor.getInt(cursor.getColumnIndexOrThrow("dictation_lesson_group_number"));
 
-                if (lessonNumber == lesson_number && percentage >= 75) {
+                if (lessonNumber == lesson_number) {
                     passedLessons.add(lesson_group_number + 1);
                 }
             } while (cursor.moveToNext());
@@ -160,9 +161,9 @@ public class AssessmentListItemGroup extends AppCompatActivity {
             if (isEnabled) {
                 int finalI = i;
                 container.setOnClickListener(v -> {
-                    Intent intent = new Intent(AssessmentListItemGroup.this, AssessmentGuide.class);
+                    Intent intent = new Intent(DictationListItemGroup.this, DictationActivity.class);
                     intent.putExtra("lesson_number", lesson_number);
-                    intent.putExtra("assessment_list_group_name", finalI);
+                    intent.putExtra("dictation_list_group_name", finalI);
                     startActivity(intent);
                 });
             } else {
@@ -187,7 +188,7 @@ public class AssessmentListItemGroup extends AppCompatActivity {
     @SuppressLint("MissingSuperCall")
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(AssessmentListItemGroup.this, AssessmentList.class);
+        Intent intent = new Intent(DictationListItemGroup.this, DictationList.class);
         if (lesson_number >= 1 && lesson_number <= 23){
             intent.putExtra("lesson_type", "Short");
         } else if (lesson_number >= 24 && lesson_number <= 45){
