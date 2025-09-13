@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/stenomate_bg2"
+        android:src="@drawable/steno_bg_4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,7 @@
                 <!-- Back icon -->
                 <ImageView
                     android:id="@+id/backIcon"
-                    android:layout_width="50dp"
+                    android:layout_width="70dp"
                     android:layout_height="50dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
@@ -59,7 +59,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/steno_mate_white_logo2" />
+                    android:src="@drawable/logo_landscape_1" />
 
             </RelativeLayout>
 
@@ -154,6 +154,45 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/kanit_bold"
                                 android:text="Advance"
+                                android:letterSpacing="0.01"
+                                android:textColor="#C5000000"
+                                android:textSize="20dp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_regular"
+                                android:text="Read now"
+                                android:letterSpacing="0.01"
+                                android:textColor="#C5000000"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/specializedMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@drawable/gray_rect_shape"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:layout_marginBottom="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:background="@drawable/dirty_white_shape_1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_bold"
+                                android:text="Specialized Shorthand"
                                 android:letterSpacing="0.01"
                                 android:textColor="#C5000000"
                                 android:textSize="20dp" />

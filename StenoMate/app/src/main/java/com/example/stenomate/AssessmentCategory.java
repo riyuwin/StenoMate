@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class AssessmentCategory extends AppCompatActivity {
 
-    LinearLayout FoundationMenu, AdvanceMenu;
+    LinearLayout FoundationMenu, AdvanceMenu, SpecializedMenu;
 
     ImageView BackIcon;
 
@@ -28,6 +28,7 @@ public class AssessmentCategory extends AppCompatActivity {
 
         FoundationMenu = findViewById(R.id.foundationMenu);
         AdvanceMenu = findViewById(R.id.advanceMenu);
+        SpecializedMenu = findViewById(R.id.specializedMenu);
 
         FoundationMenu.setOnClickListener(View -> {
             Intent intent = new Intent(AssessmentCategory.this, AssessmentList.class);
@@ -38,6 +39,12 @@ public class AssessmentCategory extends AppCompatActivity {
         AdvanceMenu.setOnClickListener(View -> {
             Intent intent = new Intent(AssessmentCategory.this, AssessmentList.class);
             intent.putExtra("lesson_type", "Advance");
+            startActivity(intent);
+        });
+
+        SpecializedMenu.setOnClickListener(View -> {
+            Intent intent = new Intent(AssessmentCategory.this, AssessmentList.class);
+            intent.putExtra("lesson_type", "Specialized");
             startActivity(intent);
         });
 

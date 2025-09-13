@@ -71,18 +71,20 @@ public class QuizzesList extends AppCompatActivity {
 
 
         if (lesson_type.equals("Short")){
-            generateShortHandLessonsLinearLayout();
+            generateFoundationShortHandLessonsLinearLayout();
         } else if (lesson_type.equals("Advance")){
             generateAdvanceHandLessonsLinearLayout();
+        } else if (lesson_type.equals("Specialized")){
+            generateSpecializedHandLessonsLinearLayout();
         }
 
 
     }
 
-    private void generateShortHandLessonsLinearLayout() {
+    private void generateFoundationShortHandLessonsLinearLayout() {
         LinearLayout parentLayout = findViewById(R.id.parentLinearLayout); // Replace with your actual parent container
 
-        for (int i = 1; i <= 23; i++) {
+        for (int i = 1; i <= 15; i++) {
             // Outer container
             LinearLayout outerLayout = new LinearLayout(this);
             outerLayout.setId(View.generateViewId());
@@ -200,38 +202,6 @@ public class QuizzesList extends AppCompatActivity {
                     Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
                     intent.putExtra("lesson_number", 15);
                     startActivity(intent);
-                } if (finalI == 16) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
-                    intent.putExtra("lesson_number", 16);
-                    startActivity(intent);
-                } if (finalI == 17) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
-                    intent.putExtra("lesson_number", 17);
-                    startActivity(intent);
-                } if (finalI == 18) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
-                    intent.putExtra("lesson_number", 18);
-                    startActivity(intent);
-                } if (finalI == 19) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
-                    intent.putExtra("lesson_number", 19);
-                    startActivity(intent);
-                } if (finalI == 20) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
-                    intent.putExtra("lesson_number", 20);
-                    startActivity(intent);
-                } if (finalI == 21) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
-                    intent.putExtra("lesson_number", 21);
-                    startActivity(intent);
-                } if (finalI == 22) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
-                    intent.putExtra("lesson_number", 22);
-                    startActivity(intent);
-                } if (finalI == 23) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
-                    intent.putExtra("lesson_number", 23);
-                    startActivity(intent);
                 }
             });
 
@@ -244,7 +214,7 @@ public class QuizzesList extends AppCompatActivity {
     private void generateAdvanceHandLessonsLinearLayout() {
         LinearLayout parentLayout = findViewById(R.id.parentLinearLayout); // Replace with your actual parent container
 
-        for (int i = 24; i <= 45; i++) {
+        for (int i = 16; i <= 30; i++) {
             // Outer container
             LinearLayout outerLayout = new LinearLayout(this);
             outerLayout.setId(View.generateViewId());
@@ -302,7 +272,39 @@ public class QuizzesList extends AppCompatActivity {
             // Optional: add click listener
             int finalI = i;
             outerLayout.setOnClickListener(v -> {
-                if (finalI == 24) {
+                if (finalI == 16) {
+                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    intent.putExtra("lesson_number", 16);
+                    startActivity(intent);
+                } if (finalI == 17) {
+                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    intent.putExtra("lesson_number", 17);
+                    startActivity(intent);
+                } if (finalI == 18) {
+                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    intent.putExtra("lesson_number", 18);
+                    startActivity(intent);
+                } if (finalI == 19) {
+                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    intent.putExtra("lesson_number", 19);
+                    startActivity(intent);
+                } if (finalI == 20) {
+                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    intent.putExtra("lesson_number", 20);
+                    startActivity(intent);
+                } if (finalI == 21) {
+                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    intent.putExtra("lesson_number", 21);
+                    startActivity(intent);
+                } if (finalI == 22) {
+                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    intent.putExtra("lesson_number", 22);
+                    startActivity(intent);
+                } if (finalI == 23) {
+                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    intent.putExtra("lesson_number", 23);
+                    startActivity(intent);
+                } if (finalI == 24) {
                     Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
                     intent.putExtra("lesson_number", 24);
                     startActivity(intent);
@@ -330,7 +332,78 @@ public class QuizzesList extends AppCompatActivity {
                     Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
                     intent.putExtra("lesson_number", 30);
                     startActivity(intent);
-                } if (finalI == 31) {
+                }
+            });
+
+
+            // Add to parent
+            parentLayout.addView(outerLayout);
+        }
+    }
+
+
+    private void generateSpecializedHandLessonsLinearLayout() {
+        LinearLayout parentLayout = findViewById(R.id.parentLinearLayout); // Replace with your actual parent container
+
+        for (int i = 31; i <= 45; i++) {
+            // Outer container
+            LinearLayout outerLayout = new LinearLayout(this);
+            outerLayout.setId(View.generateViewId());
+            outerLayout.setOrientation(LinearLayout.VERTICAL);
+            outerLayout.setLayoutParams(new LinearLayout.LayoutParams(
+                    ViewGroup.LayoutParams.MATCH_PARENT,
+                    dpToPx(120)
+            ));
+            outerLayout.setBackground(ContextCompat.getDrawable(this, R.drawable.gray_rect_shape));
+            outerLayout.setPadding(dpToPx(16), dpToPx(16), dpToPx(16), dpToPx(16));
+            LinearLayout.LayoutParams outerParams = (LinearLayout.LayoutParams) outerLayout.getLayoutParams();
+            outerParams.setMargins(0, 0, 0, dpToPx(20));
+            outerLayout.setLayoutParams(outerParams);
+
+            // Inner container
+            LinearLayout innerLayout = new LinearLayout(this);
+            innerLayout.setOrientation(LinearLayout.VERTICAL);
+            innerLayout.setLayoutParams(new LinearLayout.LayoutParams(
+                    ViewGroup.LayoutParams.MATCH_PARENT,
+                    ViewGroup.LayoutParams.MATCH_PARENT
+            ));
+            innerLayout.setBackground(ContextCompat.getDrawable(this, R.drawable.dirty_white_shape_1));
+            innerLayout.setGravity(Gravity.CENTER);
+
+            // Title TextView
+            TextView title = new TextView(this);
+            title.setLayoutParams(new LinearLayout.LayoutParams(
+                    ViewGroup.LayoutParams.WRAP_CONTENT,
+                    ViewGroup.LayoutParams.WRAP_CONTENT
+            ));
+            title.setText("Lesson " + i);
+            title.setTypeface(ResourcesCompat.getFont(this, R.font.kanit_bold));
+            title.setTextColor(Color.parseColor("#C5000000"));
+            title.setLetterSpacing(0.01f);
+            title.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 20);
+
+            // Subtitle TextView
+            TextView subtitle = new TextView(this);
+            subtitle.setLayoutParams(new LinearLayout.LayoutParams(
+                    ViewGroup.LayoutParams.WRAP_CONTENT,
+                    ViewGroup.LayoutParams.WRAP_CONTENT
+            ));
+            subtitle.setText("Read now");
+            subtitle.setTypeface(ResourcesCompat.getFont(this, R.font.kanit_regular));
+            subtitle.setTextColor(Color.parseColor("#C5000000"));
+            subtitle.setLetterSpacing(0.01f);
+            subtitle.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 12);
+
+            // Add title and subtitle to inner layout
+            innerLayout.addView(title);
+            innerLayout.addView(subtitle);
+
+            // Add inner layout to outer layout
+            outerLayout.addView(innerLayout);
+            // Optional: add click listener
+            int finalI = i;
+            outerLayout.setOnClickListener(v -> {
+                 if (finalI == 31) {
                     Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
                     intent.putExtra("lesson_number", 31);
                     startActivity(intent);

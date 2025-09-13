@@ -58,10 +58,13 @@ public class AssessmentList extends AppCompatActivity {
 
         if (lesson_type.equals("Short")){
             // Generate the lesson cards
-            generateLessonsLinearLayout(passedLessons, 1, 23);
+            generateLessonsLinearLayout(passedLessons, 1, 15);
         } else if (lesson_type.equals("Advance")){
             // Generate the lesson cards
-            generateLessonsLinearLayout(passedLessons, 24, 45);
+            generateLessonsLinearLayout(passedLessons, 16, 30);
+        } else if (lesson_type.equals("Specialized")){
+            // Generate the lesson cards
+            generateLessonsLinearLayout(passedLessons, 31, 45);
         }
 
     }

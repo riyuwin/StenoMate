@@ -32,13 +32,20 @@ import com.example.stenomate.Lessons.Lesson17Activity;
 import com.example.stenomate.Lessons.Lesson18Activity;
 import com.example.stenomate.Lessons.Lesson19Activity;
 import com.example.stenomate.Lessons.Lesson1Activity;
+import com.example.stenomate.Lessons.Lesson20Activity;
 import com.example.stenomate.Lessons.Lesson21Activity;
 import com.example.stenomate.Lessons.Lesson22Activity;
 import com.example.stenomate.Lessons.Lesson24Activity;
+import com.example.stenomate.Lessons.Lesson25Activity;
 import com.example.stenomate.Lessons.Lesson26Activity;
+import com.example.stenomate.Lessons.Lesson27Activity;
+import com.example.stenomate.Lessons.Lesson28Activity;
 import com.example.stenomate.Lessons.Lesson29Activity;
 import com.example.stenomate.Lessons.Lesson2Activity;
+import com.example.stenomate.Lessons.Lesson30Activity;
 import com.example.stenomate.Lessons.Lesson32Activity;
+import com.example.stenomate.Lessons.Lesson34Activity;
+import com.example.stenomate.Lessons.Lesson37Activity;
 import com.example.stenomate.Lessons.Lesson3Activity;
 import com.example.stenomate.Lessons.Lesson41Activity;
 import com.example.stenomate.Lessons.Lesson4Activity;
@@ -65,9 +72,11 @@ public class LessonMenu extends AppCompatActivity {
 
 
         if (lesson_type.equals("Short")){
-            generateShortHandLessonsLinearLayout();
+            generateFoundationShortHandLessonsLinearLayout();
         } else if (lesson_type.equals("Advance")){
-            generateAdvanceHandLessonsLinearLayout();
+            generateAdvancedShortHandLessonsLinearLayout();
+        } else if (lesson_type.equals("Specialized")){
+            generateSpecializedHandLessonsLinearLayout();
         }
 
         BackIcon.setOnClickListener(v -> {
@@ -76,10 +85,10 @@ public class LessonMenu extends AppCompatActivity {
         });
     }
 
-    private void generateShortHandLessonsLinearLayout() {
+    private void generateFoundationShortHandLessonsLinearLayout() {
         LinearLayout parentLayout = findViewById(R.id.parentLinearLayout); // Replace with your actual parent container
 
-        for (int i = 1; i <= 23; i++) {
+        for (int i = 1; i <= 15; i++) {
             // Outer container
             LinearLayout outerLayout = new LinearLayout(this);
             outerLayout.setId(View.generateViewId());
@@ -182,29 +191,6 @@ public class LessonMenu extends AppCompatActivity {
                 } if (finalI == 15) {
                     Intent intent = new Intent(LessonMenu.this, Lesson15Activity.class);
                     startActivity(intent);
-                } if (finalI == 16) {
-                    Intent intent = new Intent(LessonMenu.this, Lesson16Activity.class);
-                    startActivity(intent);
-                } if (finalI == 17) {
-                    Intent intent = new Intent(LessonMenu.this, Lesson17Activity.class);
-                    startActivity(intent);
-                } if (finalI == 18) {
-                    Intent intent = new Intent(LessonMenu.this, Lesson18Activity.class);
-                    startActivity(intent);
-                } if (finalI == 19) {
-                    Intent intent = new Intent(LessonMenu.this, Lesson19Activity.class);
-                    startActivity(intent);
-                } if (finalI == 20) {
-                    // wala pa
-                } if (finalI == 21) {
-                    Intent intent = new Intent(LessonMenu.this, Lesson21Activity.class);
-                    startActivity(intent);
-                } if (finalI == 22) {
-                    Intent intent = new Intent(LessonMenu.this, Lesson22Activity.class);
-                    startActivity(intent);
-                } if (finalI == 23) {
-                    Intent intent = new Intent(LessonMenu.this, Lesson32Activity.class);
-                    startActivity(intent);
                 }
             });
 
@@ -214,10 +200,10 @@ public class LessonMenu extends AppCompatActivity {
         }
     }
 
-    private void generateAdvanceHandLessonsLinearLayout() {
+    private void generateAdvancedShortHandLessonsLinearLayout() {
         LinearLayout parentLayout = findViewById(R.id.parentLinearLayout); // Replace with your actual parent container
 
-        for (int i = 24; i <= 45; i++) {
+        for (int i = 16; i <= 30; i++) {
             // Outer container
             LinearLayout outerLayout = new LinearLayout(this);
             outerLayout.setId(View.generateViewId());
@@ -275,38 +261,140 @@ public class LessonMenu extends AppCompatActivity {
             // Optional: add click listener
             int finalI = i;
             outerLayout.setOnClickListener(v -> {
-                if (finalI == 24) {
+                if (finalI == 16) {
+                    Intent intent = new Intent(LessonMenu.this, Lesson16Activity.class);
+                    startActivity(intent);
+                } if (finalI == 17) {
+                    Intent intent = new Intent(LessonMenu.this, Lesson17Activity.class);
+                    startActivity(intent);
+                } if (finalI == 18) {
+                    Intent intent = new Intent(LessonMenu.this, Lesson18Activity.class);
+                    startActivity(intent);
+                } if (finalI == 19) {
+                    Intent intent = new Intent(LessonMenu.this, Lesson19Activity.class);
+                    startActivity(intent);
+                } if (finalI == 20) {
+                    Intent intent = new Intent(LessonMenu.this, Lesson20Activity.class);
+                    startActivity(intent);
+                } if (finalI == 21) {
+                    Intent intent = new Intent(LessonMenu.this, Lesson21Activity.class);
+                    startActivity(intent);
+                } if (finalI == 22) {
+                    Intent intent = new Intent(LessonMenu.this, Lesson22Activity.class);
+                    startActivity(intent);
+                } if (finalI == 23) {
+                    Intent intent = new Intent(LessonMenu.this, Lesson32Activity.class);
+                    startActivity(intent);
+                } if (finalI == 24) {
                     Intent intent = new Intent(LessonMenu.this, Lesson24Activity.class);
                     startActivity(intent);
                 } if (finalI == 25) {
-                    // wala pa
+                    Intent intent = new Intent(LessonMenu.this, Lesson25Activity.class);
+                    startActivity(intent);
                 } if (finalI == 26) {
                     Intent intent = new Intent(LessonMenu.this, Lesson26Activity.class);
                     startActivity(intent);
                 } if (finalI == 27) {
-                    // wala pa
+                    Intent intent = new Intent(LessonMenu.this, Lesson27Activity.class);
+                    startActivity(intent);
                 } if (finalI == 28) {
-                    // wala pa
+                    Intent intent = new Intent(LessonMenu.this, Lesson28Activity.class);
+                    startActivity(intent);
                 } if (finalI == 29) {
                     Intent intent = new Intent(LessonMenu.this, Lesson29Activity.class);
                     startActivity(intent);
                 } if (finalI == 30) {
-                    // wala pa
-                } if (finalI == 31) {
-                    // wala pa
+                    Intent intent = new Intent(LessonMenu.this, Lesson30Activity.class);
+                    startActivity(intent);
+                }
+            });
+
+
+            // Add to parent
+            parentLayout.addView(outerLayout);
+        }
+    }
+
+    private void generateSpecializedHandLessonsLinearLayout() {
+        LinearLayout parentLayout = findViewById(R.id.parentLinearLayout); // Replace with your actual parent container
+
+        for (int i = 31; i <= 45; i++) {
+            // Outer container
+            LinearLayout outerLayout = new LinearLayout(this);
+            outerLayout.setId(View.generateViewId());
+            outerLayout.setOrientation(LinearLayout.VERTICAL);
+            outerLayout.setLayoutParams(new LinearLayout.LayoutParams(
+                    ViewGroup.LayoutParams.MATCH_PARENT,
+                    dpToPx(120)
+            ));
+            outerLayout.setBackground(ContextCompat.getDrawable(this, R.drawable.gray_rect_shape));
+            outerLayout.setPadding(dpToPx(16), dpToPx(16), dpToPx(16), dpToPx(16));
+            LinearLayout.LayoutParams outerParams = (LinearLayout.LayoutParams) outerLayout.getLayoutParams();
+            outerParams.setMargins(0, 0, 0, dpToPx(20));
+            outerLayout.setLayoutParams(outerParams);
+
+            // Inner container
+            LinearLayout innerLayout = new LinearLayout(this);
+            innerLayout.setOrientation(LinearLayout.VERTICAL);
+            innerLayout.setLayoutParams(new LinearLayout.LayoutParams(
+                    ViewGroup.LayoutParams.MATCH_PARENT,
+                    ViewGroup.LayoutParams.MATCH_PARENT
+            ));
+            innerLayout.setBackground(ContextCompat.getDrawable(this, R.drawable.dirty_white_shape_1));
+            innerLayout.setGravity(Gravity.CENTER);
+
+            // Title TextView
+            TextView title = new TextView(this);
+            title.setLayoutParams(new LinearLayout.LayoutParams(
+                    ViewGroup.LayoutParams.WRAP_CONTENT,
+                    ViewGroup.LayoutParams.WRAP_CONTENT
+            ));
+            title.setText("Lesson " + i);
+            title.setTypeface(ResourcesCompat.getFont(this, R.font.kanit_bold));
+            title.setTextColor(Color.parseColor("#C5000000"));
+            title.setLetterSpacing(0.01f);
+            title.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 20);
+
+            // Subtitle TextView
+            TextView subtitle = new TextView(this);
+            subtitle.setLayoutParams(new LinearLayout.LayoutParams(
+                    ViewGroup.LayoutParams.WRAP_CONTENT,
+                    ViewGroup.LayoutParams.WRAP_CONTENT
+            ));
+            subtitle.setText("Read now");
+            subtitle.setTypeface(ResourcesCompat.getFont(this, R.font.kanit_regular));
+            subtitle.setTextColor(Color.parseColor("#C5000000"));
+            subtitle.setLetterSpacing(0.01f);
+            subtitle.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 12);
+
+            // Add title and subtitle to inner layout
+            innerLayout.addView(title);
+            innerLayout.addView(subtitle);
+
+            // Add inner layout to outer layout
+            outerLayout.addView(innerLayout);
+            // Optional: add click listener
+            int finalI = i;
+            outerLayout.setOnClickListener(v -> {
+                if (finalI == 31) {
+                    Intent intent = new Intent(LessonMenu.this, Lesson13Activity.class);
+                    startActivity(intent);
                 } if (finalI == 32) {
                     Intent intent = new Intent(LessonMenu.this, Lesson32Activity.class);
                     startActivity(intent);
                 } if (finalI == 33) {
                     // wala pa
                 } if (finalI == 34) {
-                    // wala pa
+                    Intent intent = new Intent(LessonMenu.this, Lesson34Activity.class);
+                    startActivity(intent);
                 } if (finalI == 35) {
-                    // wala pa
+                    Intent intent = new Intent(LessonMenu.this, Lesson19Activity.class);
+                    startActivity(intent);
                 } if (finalI == 36) {
                     // wala pa
                 } if (finalI == 37) {
-                    // wala pa
+                    Intent intent = new Intent(LessonMenu.this, Lesson37Activity.class);
+                    startActivity(intent);
                 } if (finalI == 38) {
                     // wala pa
                 } if (finalI == 39) {

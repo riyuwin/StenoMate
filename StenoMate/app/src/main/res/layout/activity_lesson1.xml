@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/stenomate_bg2"
+        android:src="@color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,10 +36,13 @@
             android:orientation="vertical"
             android:padding="5dp">
 
+            <!-- Logo -->
             <ImageView
-                android:layout_width="match_parent"
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
                 android:layout_height="60dp"
-                android:src="@drawable/steno_mate_white_logo2" />
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo_landscape_1" />
 
         </LinearLayout>
 

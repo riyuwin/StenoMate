@@ -41,14 +41,13 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/black_top_rect_shape_no_radius" >
 
-
                 <!-- Logo -->
                 <ImageView
                     android:id="@+id/logo"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/steno_mate_white_logo2" />
+                    android:src="@drawable/logo_landscape_1" />
 
             </RelativeLayout>
 

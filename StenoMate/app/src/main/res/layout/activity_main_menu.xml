@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@color/white"
+        android:src="@drawable/steno_bg_4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,30 +68,32 @@
             android:orientation="vertical"
             android:padding="5dp">
 
-            <ImageView
+            <!--<ImageView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:src="@drawable/steno_mate_white_logo2" />
+                android:src="@drawable/logo_landscape_1" />-->
 
         </LinearLayout>
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:layout_gravity="center">
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="50dp">
 
-                    <!--<ImageView
+                    <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:padding="30dp"
-                        android:layout_marginTop="40dp"
-                        android:src="@drawable/steno_mate_logo1" />-->
+                        android:padding="5dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/logo_landscape_2" />
 
                     <HorizontalScrollView
                         android:layout_width="match_parent"
@@ -109,182 +111,110 @@
                             <!-- Learning Materials -->
                             <LinearLayout
                                 android:id="@+id/learningMaterialsId"
-                                android:layout_width="280dp"
-                                android:layout_height="250dp"
+                                android:layout_width="300dp"
+                                android:layout_height="270dp"
                                 android:layout_marginLeft="80dp"
+                                android:layout_marginStart="20dp"
                                 android:layout_marginEnd="40dp"
                                 android:layout_marginRight="40dp"
-                                android:background="@drawable/menu_items_gray"
                                 android:gravity="center"
                                 android:orientation="vertical"
-                                android:padding="16dp"
                                 android:elevation="10dp">
 
                                 <ImageView
-                                    android:layout_width="190dp"
-                                    android:layout_height="170dp"
-                                    android:padding="20dp"
-                                    android:src="@drawable/learning_materials_asset" />
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/learning_materials_element1" />
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:fontFamily="@font/kanit_regular"
-                                    android:text="Learning Materials"
-                                    android:textColor="#000000"
-                                    android:textSize="22dp" />
                             </LinearLayout>
 
                             <!-- Dictionary -->
                             <LinearLayout
                                 android:id="@+id/dictionaryId"
-                                android:layout_width="280dp"
-                                android:layout_height="250dp"
+                                android:layout_width="300dp"
+                                android:layout_height="270dp"
                                 android:layout_marginEnd="40dp"
                                 android:layout_marginRight="40dp"
-                                android:background="@drawable/menu_items_gray"
                                 android:gravity="center"
                                 android:orientation="vertical"
-                                android:padding="16dp"
                                 android:elevation="10dp">
 
                                 <ImageView
-                                    android:layout_width="190dp"
-                                    android:layout_height="170dp"
-                                    android:padding="20dp"
-                                    android:src="@drawable/dictionary_asset" />
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/steno_translation_element2" />
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:fontFamily="@font/kanit_regular"
-                                    android:text="Steno Translations"
-                                    android:textColor="#000000"
-                                    android:textSize="22dp" />
                             </LinearLayout>
 
                             <!-- Quiz -->
                             <LinearLayout
                                 android:id="@+id/quizId"
-                                android:layout_width="280dp"
-                                android:layout_height="250dp"
+                                android:layout_width="300dp"
+                                android:layout_height="270dp"
                                 android:layout_marginEnd="40dp"
                                 android:layout_marginRight="40dp"
-                                android:background="@drawable/menu_items_gray"
                                 android:gravity="center"
                                 android:orientation="vertical"
-                                android:padding="16dp"
                                 android:elevation="10dp">
-
-                                <ImageView
-                                    android:layout_width="190dp"
-                                    android:layout_height="170dp"
-                                    android:padding="20dp"
-                                    android:src="@drawable/assessment_asset" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:fontFamily="@font/kanit_regular"
-                                    android:text="Quizzes"
-                                    android:textColor="#000000"
-                                    android:textSize="22dp" />
 
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/menu_bg1" />
+                                    android:src="@drawable/quizzes_elements_1" />
+
                             </LinearLayout>
 
                             <!-- Assessments -->
                             <LinearLayout
                                 android:id="@+id/assessmentsId"
-                                android:layout_width="280dp"
-                                android:layout_height="250dp"
+                                android:layout_width="300dp"
+                                android:layout_height="270dp"
                                 android:layout_marginEnd="40dp"
                                 android:layout_marginRight="40dp"
-                                android:background="@drawable/menu_items_gray"
                                 android:gravity="center"
                                 android:orientation="vertical"
-                                android:padding="16dp"
                                 android:elevation="10dp">
 
                                 <ImageView
-                                    android:layout_width="190dp"
-                                    android:layout_height="170dp"
-                                    android:padding="20dp"
-                                    android:src="@drawable/assessment_asset" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:fontFamily="@font/kanit_regular"
-                                    android:text="Assessments"
-                                    android:textColor="#000000"
-                                    android:textSize="22dp" />
-
-                                <ImageView
-                                    android:id="@+id/backgroundImage"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/menu_bg1" />
+                                    android:src="@drawable/assessments_element1" />
+
                             </LinearLayout>
 
                             <!-- Dictation -->
                             <LinearLayout
                                 android:id="@+id/dictationId"
-                                android:layout_width="280dp"
-                                android:layout_height="250dp"
+                                android:layout_width="300dp"
+                                android:layout_height="270dp"
                                 android:layout_marginEnd="40dp"
                                 android:layout_marginRight="40dp"
-                                android:background="@drawable/menu_items_gray"
                                 android:gravity="center"
                                 android:orientation="vertical"
-                                android:padding="16dp"
                                 android:elevation="10dp">
-
-                                <ImageView
-                                    android:layout_width="190dp"
-                                    android:layout_height="170dp"
-                                    android:padding="20dp"
-                                    android:src="@drawable/assessment_asset" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:fontFamily="@font/kanit_regular"
-                                    android:text="Dictation"
-                                    android:textColor="#000000"
-                                    android:textSize="22dp" />
 
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/menu_bg1" />
+                                    android:src="@drawable/dictation_element1" />
+
                             </LinearLayout>
 
                         </LinearLayout>
                     </HorizontalScrollView>
 
 
-                    <TextView
-                        android:id="@+id/aboutUsId"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="70dp"
-                        android:fontFamily="@font/kanit_regular"
-                        android:text="About Us?"
-                        android:textColor="#000000"
-                        android:textSize="22dp" />
+                <LinearLayout
+                    android:id="@+id/aboutUsId"
+                    android:layout_width="200dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="80dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/about_us">
+
+                </LinearLayout>
+
 
             </LinearLayout>
 

@@ -35,10 +35,13 @@
             android:orientation="vertical"
             android:padding="5dp">
 
+            <!-- Logo -->
             <ImageView
-                android:layout_width="match_parent"
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:src="@drawable/steno_mate_white_logo2" />
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo_landscape_1" />
 
         </LinearLayout>
 

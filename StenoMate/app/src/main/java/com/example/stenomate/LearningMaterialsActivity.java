@@ -19,7 +19,7 @@ import com.example.stenomate.Lessons.Lesson3Activity;
 
 public class LearningMaterialsActivity extends AppCompatActivity {
 
-    LinearLayout FoundationMenu, AdvanceMenu, HistoryMenu;
+    LinearLayout FoundationMenu, AdvanceMenu, HistoryMenu, SpecializedMenu;
 
     ImageView BackIcon;
 
@@ -34,6 +34,7 @@ public class LearningMaterialsActivity extends AppCompatActivity {
         FoundationMenu = findViewById(R.id.foundationMenu);
         AdvanceMenu = findViewById(R.id.advanceMenu);
         HistoryMenu = findViewById(R.id.historyMenu);
+        SpecializedMenu = findViewById(R.id.specializedMenu);
 
         HistoryMenu.setOnClickListener(View -> {
             Intent intent = new Intent(LearningMaterialsActivity.this, HistoryActivity.class);
@@ -49,6 +50,12 @@ public class LearningMaterialsActivity extends AppCompatActivity {
         AdvanceMenu.setOnClickListener(View -> {
             Intent intent = new Intent(LearningMaterialsActivity.this, LessonMenu.class);
             intent.putExtra("lesson_type", "Advance");
+            startActivity(intent);
+        });
+
+        SpecializedMenu.setOnClickListener(View -> {
+            Intent intent = new Intent(LearningMaterialsActivity.this, LessonMenu.class);
+            intent.putExtra("lesson_type", "Specialized");
             startActivity(intent);
         });
 

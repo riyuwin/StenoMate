@@ -8,6 +8,16 @@
     tools:context=".AboutUs"
     android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/steno_bg_4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <!-- Scrollable content -->
     <ScrollView
         android:id="@+id/scrollView"
@@ -31,12 +41,13 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/black_top_rect_shape_no_radius" >
+                    android:background="@drawable/black_top_rect_shape_no_radius"
+                    android:padding="5dp">
 
                     <!-- Back icon -->
                     <ImageView
                         android:id="@+id/backIcon"
-                        android:layout_width="50dp"
+                        android:layout_width="70dp"
                         android:layout_height="50dp"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentStart="true"
@@ -49,7 +60,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="50dp"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/steno_mate_white_logo2" />
+                        android:src="@drawable/logo_landscape_1" />
 
                 </RelativeLayout>
 
@@ -122,7 +133,7 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="20dp"
                         android:fontFamily="@font/kanit_medium"
-                        android:text="Juan Dela Cruz"
+                        android:text="NICOLE B. GOCE"
                         android:textColor="#000000"
                         android:textSize="16dp" />
 
@@ -132,11 +143,119 @@
                         android:layout_gravity="center"
                         android:layout_marginBottom="20dp"
                         android:fontFamily="@font/kanit_light"
-                        android:text="Course"
+                        android:text="BSOA-4A"
                         android:textColor="#000000"
                         android:textSize="12dp" />
                 </LinearLayout>
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/dirty_white_shape_1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/stenomate_logo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/kanit_medium"
+                        android:text="KRISTIAN ANDREI A. GUBAN"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="BSOA-4A"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginBottom="30dp">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/dirty_white_shape_1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/stenomate_logo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/kanit_medium"
+                        android:text="MIRA JOYCE D. TERNIDA"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="BSOA-4A"
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- Researchers Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/kanit_medium"
+                android:text="Adviser"
+                android:textColor="#000000"
+                android:textSize="20dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -184,56 +303,6 @@
                         android:textSize="12dp" />
                 </LinearLayout>
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="16dp"
-                android:layout_marginBottom="30dp">
-
-                <LinearLayout
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:background="@drawable/dirty_white_shape_1"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/stenomate_logo" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="20dp"
-                        android:fontFamily="@font/kanit_medium"
-                        android:text="Juan Dela Cruz"
-                        android:textColor="#000000"
-                        android:textSize="16dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginBottom="20dp"
-                        android:fontFamily="@font/kanit_light"
-                        android:text="Course"
-                        android:textColor="#000000"
-                        android:textSize="12dp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <!-- Repeat researcher cards as needed... -->
 
         </LinearLayout>
     </ScrollView>

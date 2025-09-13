@@ -22,7 +22,7 @@ import java.util.List;
 public class MainMenu extends AppCompatActivity {
 
     LinearLayout LearningMaterialsId, DictionaryId, AssessmentId, QuizzesId, DictationId;
-    TextView AboutUsId;
+    LinearLayout AboutUsId;
 
 
     @Override

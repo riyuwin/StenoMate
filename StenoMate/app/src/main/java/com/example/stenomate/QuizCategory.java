@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class QuizCategory extends AppCompatActivity {
 
-    LinearLayout FoundationMenu, AdvanceMenu;
+    LinearLayout FoundationMenu, AdvanceMenu, SpecializedMenu;
 
     ImageView BackIcon;
 
@@ -28,6 +28,7 @@ public class QuizCategory extends AppCompatActivity {
 
         FoundationMenu = findViewById(R.id.foundationMenu);
         AdvanceMenu = findViewById(R.id.advanceMenu);
+        SpecializedMenu = findViewById(R.id.specializedMenu);
 
         FoundationMenu.setOnClickListener(View -> {
             Intent intent = new Intent(QuizCategory.this, QuizzesList.class);
@@ -41,13 +42,16 @@ public class QuizCategory extends AppCompatActivity {
             startActivity(intent);
         });
 
+        SpecializedMenu.setOnClickListener(View -> {
+            Intent intent = new Intent(QuizCategory.this, QuizzesList.class);
+            intent.putExtra("lesson_type", "Specialized");
+            startActivity(intent);
+        });
 
         BackIcon.setOnClickListener(v -> {
             Intent intent = new Intent(QuizCategory.this, MainMenu.class);
             startActivity(intent);
         });
-
-
 
     }
 
