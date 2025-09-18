@@ -285,7 +285,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 1,
                 2,
                 R.drawable.lesson2_assessment_group_a,
-                "1 Ray Stone may phone me at my home.  2 Lee may fail writing. 3 My whole right side is sore. 4 My train leaves at seven; Dale Reeve's train leaves later. 5 Steven may buy a mail meter.",
+                "Hello World!",
                 1
         ));
         assessmentList.add(new AssessmentItem(
@@ -336,7 +336,52 @@ public class AssessmentActivity extends AppCompatActivity {
                 3,
                 1,
                 R.drawable.lesson2_assessment_group_a,
-                "Hi!",
+                "1 Mr. Peters will write four plays.\n" +
+                        "2 My niece reads at a slow pace. I am not pleased.\n" +
+                        "3 Our wills are inside our steel safe in our library.\n" +
+                        "4 I have pride in our home.\n" +
+                        "5 I will read Mary's brief at home. Please leave it in my library\n" +
+                        "6 Our sales? in our Reno store are high, I am indeed pleased.\n" +
+                        "7 Our sales in our Erie store are low.\n",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                3,
+                2,
+                R.drawable.lesson2_assessment_group_b,
+                "8 I have a slight pain in my right ear. I will stay inside.\n" +
+                        "9 I will mail Mr. Deering a brief note.\n" +
+                        "\n" +
+                        "10 Mr. Paine, a well-known labor leader, will buy my home in Maine.\n" +
+                        "11 I am driving home in an hour or so. Please notify my niece. \n" +
+                        "12 My neighbor, Mr. Peter Bates, saved my life.\n" +
+                        "13 Fay made a will in Mary's favor.\n" +
+                        "14 Mr. Blair's neighbors are polo players.\n",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                3,
+                3,
+                R.drawable.lesson2_assessment_group_c,
+                "15 I realize I am late.\n" +
+                        "16 My niece owns an airplane. It flies at 350 miles an hour.\n" +
+                        "17 I will sign a lease in May.\n" +
+                        "18 I have placed my deed in our private safe.\n" +
+                        "19 Our papers are in my file.\n" +
+                        "20 Mr. Bates stayed in my library an hour or so writing a paper.\n" +
+                        "21 Please buy me a spare tire.\n",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                3,
+                4,
+                R.drawable.lesson2_assessment_group_d,
+                "22 I am not failing filing, I might fail in typing.\n" +
+                        "23 I need a file in my library. Please buy it in Mr. Blair's store.\n" +
+                        "24 I hear Mr. Stone will remain in Spain.\n" +
+                        "25 I will read my evening paper at home.\n" +
+                        "26 He will see Mr. Stone in Rome in May.\n" +
+                        "27 Mr. Ray will not buy a home in Mobile. He will buy a home in Moline.\n",
                 1
         ));
         // Lesson 4 -----------------------------------------------------------------------------
@@ -415,8 +460,28 @@ public class AssessmentActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 6,
                 1,
-                R.drawable.lesson5_assessment_group_f,
-                "Hi!",
+                R.drawable.lesson6_assessment_group_a,
+                "Mrs. Vail: In his note of May 18 our salesman, Mr. Harry Ruth, writes that you broke a bone in your left leg while skiing last week, but he adds that the break is healing fast. In fact, he tells me that it is healing so well that you will go home in a week or ten days. \n" +
+                        "     Why not plan to stay four or five days with me at my cabin near Lake Pine. I have a guest room that you can sleep in. We can have our meals in a little diner that is close to my cabin.\n" +
+                        "     Are you in favor of my plan? Edith Harper\n",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                6,
+                2,
+                R.drawable.lesson6_assessment_group_b,
+                "Mr. Sweet: As you know, Harty Allen is not happy with the salary he is making as our tire salesman in Dallas. He said he wrote you two letters to that effect. \n" +
+                        "     Last evening I had an hour's meeting with him at my motel, but I do not feel I made him happy. If you do not increase his salary, I am afraid we will lose him.\n" +
+                        "     Harry is a fine salesman. Can you give him a raise effective in April or May? Mark Palmer",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                6,
+                3,
+                R.drawable.lesson6_assessment_group_c,
+                "Dear Ned: Last night while eating in the main dining room of the Three Acres Motel in Dallas, I had a real I surprise. Bill Wade, whom I had not seen since our high school days, came in. I had an hour's visit with him.\n" +
+                        "     It seems that he owns a travel service in Dallas that is doing well. He has a little girl who is in the first grade.\n" +
+                        "     If you care to telephone Bill, you can get him at (206) 555-8172. You can ask him to try to get you tickets to a Dallas game. Henry Lopez",
                 1
         ));
         // Lesson 7 -----------------------------------------------------------------------------
@@ -476,8 +541,65 @@ public class AssessmentActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 9,
                 1,
-                R.drawable.lesson5_assessment_group_f,
-                "Hi!",
+                R.drawable.lesson9_assessment_group_a,
+                "To the Stall: Because our salespeople need a good deal more space to operate efficiently, we are going to move them to the first floor, a location which the National Television Corporation is planning to vacate. They will move on or before July 18.\n" +
+                        "     We plan to proceed with our move on the 19th of July 3 Therefore, I would like all members of the sales section to finish their preparations for moving well before 5 o'clock on July 18. The movers will be here at 9 o'clock on July 19. If no hitch occurs, the sales section will be operating efficiently again by July 21 at the latest.\n" +
+                        "     I know that I can rely on your cooperation as well as on your patience while this move is taking place. Beth Sweeney",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                9,
+                2,
+                R.drawable.lesson9_assessment_group_b,
+                "Dear Jim: As you may know, Harry Smith will be twenty-one on\n" +
+                        "June 28. In honor of this occasion, I am planning to have a birthday celebration for him on that day at my efficiency cabin in Ocean Grove. I am inviting seven or eight of his college classmates to this celebration.\n" +
+                        "     Are you free on June 28? If you are, please plan to be in Ocean Grove an hour or so before 5 o'clock.\n" +
+                        "     I sincerely hope, Jim, that we will see you on June 28. Yours very truly,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                9,
+                3,
+                R.drawable.lesson9_assessment_group_c,
+                "Corporation, has not paid his bill for $650 in spite of the four collection letters we wrote him.\n" +
+                        "     Please arrange to visit Mr. Baker to see if you can get his check for $650.\n" +
+                        "     May I caution you, Mrs. Abbey, to be patient but firm with him. As I am sure I need not tell you, his goodwill means a great deal to our firm. C.F. Miller",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                9,
+                4,
+                R.drawable.lesson9_assessment_group_d,
+                "Operations, to the National Hotel in Memphis. Please make sure that they reach the National Hotel before March 20, the day on which I am to address a group of 300 clothing store owners.\n" +
+                        "     Mr. Keith, the chairman of the meeting l said he would be happy to place a leaflet on each chair in the meeting room if the leaflets arrive at the National Hotel by 4 o'clock on March 19. \n" +
+                        "     I am pleased to have the chance to talk to these people, They are fine prospects for the service we offer to the clothing trade, Sincerely yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                9,
+                5,
+                R.drawable.lesson9_assessment_group_e,
+                "To the Staff: It is with a heavy heart that I write this letter to the staff. I have the sad task of telling you that our treasurer, Mrs. Mary Gates, will retire on July 30. As you will remember, Mrs. Gates had a severe stroke early in March. While she is rapidly regaining her health, her physician feels that she would be wise to retire.\n" +
+                        "     Mrs. Gates has served our firm with efficiency since 1970. We will all miss her patient advice as well as her inspiration.\n" +
+                        "     No action will be taken to fill Mrs.Gates position before the fall. A. Smith",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                9,
+                6,
+                R.drawable.lesson9_assessment_group_f,
+                "attached pamphlet listing the finest vacation hotels inthe West will help you with your\n" +
+                        "planning.\n" +
+                        "     In all of these hotels you can get a fine room for as little as $50 a day, which includes three meals a day.\n" +
+                        "     Before you make a final selection of a vacation hotel, why not stop in at the National Travel Agency. We have ten efficient people on our staff who will help you select a vacation hotel that will provide you with the greatest pleasure at the lowest cost. Sincerely yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                9,
+                7,
+                R.drawable.lesson9_assessment_group_g,
+                "To the Staff: I am sure that there are occasions on which you have professional visitors with whom you would like to talk privately. Please feel free to take your visitors to Room 15.\n" +
+                        "     This room has three chairs as well as a large desk. If you need to provide more chairs, you can borrow those in Room 17. Helen J. Smith",
                 1
         ));
         // Lesson 10 -----------------------------------------------------------------------------
@@ -541,8 +663,47 @@ public class AssessmentActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 12,
                 1,
-                R.drawable.lesson11_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson12_assessment_group_a,
+                "Dear Ethel: Early this week while Mary and I were shopping on Park\n" +
+                        "Avenue, I bought a set of records for your children. I am sending them by parcel post to your West Street office in Flint marked \"Do not open before Christmas.\" They should arrive well before Christmas. Please drop me a note when they reach you\n" +
+                        "     Mary and I had hoped that we could spend Christmas with you and the children, but I have had word from our Atlanta plant that they are having labor problems. Therefore, we canceled our plans. If we can arrange it, we will visit you after I get back from Atlanta. \n" +
+                        "     Have a Merry Christmas! Sincerely yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                12,
+                2,
+                R.drawable.lesson12_assessment_group_b,
+                "Dear National Cardholder: We are highly gratified that since 1975 we have been able to increase the benefits offered to National card- holders, but there has been no increase in our fee. The pressures of inflation, though, make it necessary for National to raise its fee from $15 to $20 an increase of 33 1/3 percent. The $20 fee will be in effect in July.\n" +
+                        "     While we are increasing our fee, we are happy to be able to tell you that we are adding five new services to the large list of those that we have been offering since 1978. The attached pamphlet lists them on page 18 and page 19.\n" +
+                        "     We sincerely hope that it will not be necessary to increase our fee again. Yours very truly,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                12,
+                3,
+                R.drawable.lesson12_assessment_group_c,
+                "Dear Madam: It is a pleasure to learn from your letter of June 18 that our staff rendered efficient service to your treasurer, Mr. Ruth, and his sister, Mrs. Sweet, on their trip from Dallas to the West Coast on our airline.\n" +
+                        "     We do not often get letters like yours. Most people write a letter only when they feel that our services have not been good.\n" +
+                        "     We assure you that we will strive to serve all our riders with the same efficiency which moved you to write your letter of June 18. Sincerely yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                12,
+                4,
+                R.drawable.lesson12_assessment_group_d,
+                "Dear Sir: Could you spare mean hour or so at your office during the week of July 18? I would like to show you a novel plan that I have prepared for getting people to pay bills that are past due.\n" +
+                        "     Simply indicate on the attached card when I may call. As I said, it will take me only an hour to show you the way my plan operates. Sincerely yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                12,
+                5,
+                R.drawable.lesson12_assessment_group_e,
+                "Dear Friend: Our treasurer is a little worried. He says that you owe the National Printing Corporation $450 which should have been paid by March 15.\n" +
+                        "     If your firm is having cash-flow problems – we have them too! – and cannot spare $450, we know we can arrange for you to settle your bill in a way that will not strain your\n" +
+                        "finances.\n" +
+                        "     But we have to hear from you! Sincerely yours,",
                 1
         ));
         // Lesson 13 -----------------------------------------------------------------------------
@@ -613,8 +774,50 @@ public class AssessmentActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 15,
                 1,
-                R.drawable.lesson14_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson15_assessment_group_a,
+                "Dear Dr. Quinn: One thing you can do to let the people of Winfield learn about the valuable services or goods your business makes available to them is to place your ads in the Winfield News, which reaches about 50 percent more readers in this region than the Winfield Post.\n" +
+                        "     Any ad you place in our paper will reach about Y 800.000 thinking people whose respect we have won since our paper first appeared in 1930.\n" +
+                        "     The Winfield News will assist you in building your sales. No matter what you sell or what you produce, you will be ables to reach the largest possible number of prospects when you place your ads in our paper. Let our capable research staff help you prepare a well-planned campaign that will produce a sizable increase in your sales.\n" +
+                        "     Our rates are listed on the enclosed circular, Dr. Quinn. You will find them quite reasonable. Yours very truly,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                15,
+                2,
+                R.drawable.lesson15_assessment_group_b,
+                "Dear Dr. Sweet: What do you think is the most valuable thing one can possess as the owner of a business? Most business people who were queried replied that there was nothing more valuable than a fine credit rating. I think you will agree that they are right.\n" +
+                        "     You have a favorable credit rating with us, Dr. Sweet, but you could jeopardize it it we do not receive a check from you by June 26 for $90 to pay for the repair work we did on\n" +
+                        "your car recently.\n" +
+                        "     Do not do anything that would harm your credit rating; send us your check for $90 today. Yours very truly,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                15,
+                3,
+                R.drawable.lesson15_assessment_group_c,
+                "Dear Dr. Dwight: If your home is insured at yesterday’s prices, just hope that it does not catch on fire. Inflation has raised the value of all the things you own. This means that it would cost more to replace or install anything you lose than your insurance would provide. That is why it is vital for you to be sure that your insurance keeps up with inflation.\n" +
+                        "     It you are wise, you will have your insurance coverage restudied by a reliable, capable independent broker. If you don’t have an independent broker and would like to talk to one,\n" +
+                        "call me before noon any weekday at 555-8261. I will be glad to give you the name of one who is located near your home or your business. Do this soon, today if possible. Sincerely yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                15,
+                4,
+                R.drawable.lesson15_assessment_group_d,
+                "Dear Sir: If you are an investor and want reliable advice on what stocks to order, what stocks to hold, and what stocks to sell, we invite you to talk with Mr. Henry Baker, head of our research section.\n" +
+                        "     After weighing what you tell him about your needs, he will be able to tell you what stocks you should order, what stocks (if any) you should sell, and what stocks you should\n" +
+                        "hold.\n" +
+                        "     To learn more about what. Mr. Baker can do for you, stop in to see him during the noon hour at our office at 15 Park Street. Or if you prefer, call him. His number is 555-8720. Sincerely yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                15,
+                5,
+                R.drawable.lesson15_assessment_group_e,
+                "Dear Madam: To operate smoothly, your business needs a favorable flow of working capital. When people are slow in paying their bills, they can cut into your available supply of cash, and there is always the chance 2that a number of people may not be able to pay their bills at all.\n" +
+                        "     By asking people to pay their bills firmly and in a friendly way, you will resolve your collection problems and increase your receipts.\n" +
+                        "     As you will see by the samples I am enclosing. our collection stickers make efficient reminders. They are brief and they are friendly.\n" +
+                        "     Why not try them. An order card is enclosed. Sincerely yours,",
                 1
         ));
         // Lesson 16 -----------------------------------------------------------------------------
@@ -682,8 +885,33 @@ public class AssessmentActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 18,
                 1,
-                R.drawable.lesson14_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson18_assessment_group_a,
+                "Recently a studying the activities of a person in business revealed that a normal working day was spent as follows: 9 percent writing, 16 percent reading, 30 percent talking, and 45 percent listening. One important fact emerges from this study – listening occupies more working hours than anything else. Yet research indicates that most of us listen with only about 25 percent efficiency.\n" +
+                        "     If you are to succeed in business, you must have good listening habits.\n" +
+                        "     There are two types of listening – active and passive. When we listen passively, we absorb only a portion of a person's words. We can get by with passive listening when we chat with friends or talk with a relative on the telephone. In these cases it does not matter the next day if we do not remember anything that has been said.\n" +
+                        "     Active listening, though, necessitates mental action by the listener in order to remember what is being said. You must be able to decide when you can get by with passive listening and when you must be an active listener.",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                18,
+                2,
+                R.drawable.lesson18_assessment_group_b,
+                "     Speed of Talking and Listening. The average person talks about 125 words a minute, but a listener can \"hear\" speech at the rate of at least 300 words a minute, Thus it is easy 12 for the mind to wander while it is waiting to receive details.\n" +
+                        "     During the last two decades, educators have been giving thought to speeding up reading. Because skill in listening is thought by many to be just as important as reading skill, steps are being taken in many schools today which should help learners listen more effectively. There are even a number of companies where valuable short courses are being offered to learners to  help them get more from what they hear.",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                18,
+                3,
+                R.drawable.lesson18_assessment_group_c,
+                "During the years you are in school – and later in your business life and personal, activities – you will profit by making good notes. You will listen to your teachers in classes. You will read from books and magazines and all types of printed matter. You will hear speeches and debates on current topics.\n" +
+                        "     If you could remember all you hear, you would have no need for notes. But important facts slip from your mind quickly, and soon you cannot remember them. You may not recall this morning things that were said yesterday afternoon. You cannot possibly remember most of what you read and hear if you do not make notes.\n" +
+                        "     Making good notes should help you in three important ways:\n" +
+                        "     1. You will learn more and learn it more quickly.\n" +
+                        "     2. You will remember more of what you hear and what you read.\n" +
+                        "     3. You will study and work more efficiently.\n" +
+                        "     It is a well-known fact that you learn more and learn faster by doing – that is, keeping your mind involved with what you are trying to absorb. When you make notes, you cannot avoid learning. The act of making notes helps you remember more too.\n" +
+                        "     Work hard to perfect your note making skills. They will be of value to you the rest of your life.",
                 1
         ));
         // Lesson 19 -----------------------------------------------------------------------------
@@ -742,8 +970,51 @@ public class AssessmentActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 21,
                 1,
-                R.drawable.lesson14_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson21_assessment_group_a,
+                "Dear Dr. Fenton: The fact that there has been an energy shortage for several years does not mean that you have to be content with insufficient lighting. You can obtain very good light by simply installing Winston energy-saving lamps, the finest lamps manufactured today.\n" +
+                        "     No other lamps for sale today can compare with Winston lamps. They get more light out of every watt than any other type of lamp. This means that you can cut down considerably on power usage without sacrificing the advantages of outstanding lighting. About the only things you should do is replace completely your present lamps with new Winston lamps.\n" +
+                        "     There are Winston lamps for whatever residential lighting needs you may have. We suggest that you install Winston lamps immediately. You will be making a very wise move. Sincerely yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                21,
+                2,
+                R.drawable.lesson21_assessment_group_b,
+                "Dear Lieutenant Trenton: As president of the National Dental Schools, may I tell you how very glad we were yesterday when we were told that you will be able to take part in our meeting at Mountain Lake on the morning of July 15. I am confident this will be a very well attended meeting. Everyone will want to take advantage of the unique opportunity to hear you.\n" +
+                        "     Whatever topic you select will certainly be accepted by the board of directors of the National Dental Schools. But may I suggest a topic likes \"How To Train Outstanding Dental Assistants.“ Incidentally, please plan to join Mr. and Mrs. Swift and severals of our officers for dinner at the Yale restaurant on July 16. Sincerely yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                21,
+                3,
+                R.drawable.lesson21_assessment_group_c,
+                "Gentlemen: The hardest way to find out about insurance is by accident. There are hidden dangers in every operation. They suddenly materialize into accidents when you least anticipate them.\n" +
+                        "     At the Continental Insurance Company we work very hard to help our policyholders protect their businesses against accidents which suddenly arise. We have helped thousands of businesses like yours whenever they needed insurance help quickly. We confidently believe we could help you too.\n" +
+                        "     If you would like to find out more about the many advantages of obtaining your insurance from the Continental Insurance Company, we suggest that you write us. We will be glad to send you several circulars that outline our polices in detail. Better yet, call our insurance counselor, Ms. Mary White, at 555-9271. Sincerely yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                21,
+                4,
+                R.drawable.lesson21_assessment_group_d,
+                "Dear Professor Brothers: Ever since the United Food Store was established at 15 Park Street in 1930, it has been our policy to:\n" +
+                        "     1. Do what is honest and to the best advantage of every purchaser.\n" +
+                        "     2. Give outstanding values and fair treatment to everyone.\n" +
+                        "     3. Give every person the most value for his or her money.\n" +
+                        "     4. Maintain the very highest possible food standards.\n" +
+                        "     5. Give fast and efficient service.\n" +
+                        "     We think this policy is the reason why we have won the business of thousands of persons and why they order their food from us year after year.\n" +
+                        "     If you have not yet been in our store, we suggest that you buy your next food supply from us soon. We are confident that once you do, you will decide that you do not want to shop elsewhere. Yours very truly,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                21,
+                5,
+                R.drawable.lesson21_assessment_group_e,
+                "Mr. Quill: I am shipping to the Dallas office 300 copies of the enclosed circular advertising our printing presses.\n" +
+                        "     It is of great importance that these circulars be mailed to our dealers by\n" +
+                        "March 18. Please see that the mailing is completed by that date.\n" +
+                        "     Thank you for attending to this important matter for me. C.C. Cook",
                 1
         ));
         // Lesson 22 -----------------------------------------------------------------------------
@@ -810,8 +1081,18 @@ public class AssessmentActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 24,
                 1,
-                R.drawable.lesson23_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson24_assessment_group_a,
+                "Over the past few years we have been hearing a great deal of talk about consumer problems and complaints. What should consumers do when they have complaints?\n" +
+                        "     Consumers who feel that a department store or other retail establishment has not treated them fairly may be torn between a desire for revenge and the hope that by making a complaint they can get better treatment next time.\n" +
+                        "     Seeking revenge is certain to create even more problems. What is needed is a cool head and an organized plan for solving the problem.\n" +
+                        "     When To Complain. You should consider making a complaint whenever you are not happy with a product and feel it has failed to measure up to its advertising claims. If there has been an error, honest and reputable merchants will generally want to know about it and will appreciate the opportunity to make an adjustment. It would be to their advantage if you would call a problem to their attention immediately.\n" +
+                        "     Reliable dealers and manufacturers want to hear about the problems their customers are having with their products. They have devoted time and energy over the years to building their businesses. They value their old customers and the new ones they have won, and they sincerely want to keep them happy. They will often thank you for telling them about any problem you have had with their products.\n" +
+                        "     Where To Complain. The merchant from whom you made your purchase is the best person to start with. Before you talk to the merchant, be sure you know what corrective action you plan to ask for. Then assemble all receipts and other records relating to the purchase. When you present your case to the merchant, be fair and reasonable, but definitely do not be timid.\n" +
+                        "     What Next? If the merchant cannot or will not help you, you should consider complaining to the manufacturer. In most cases good manufacturers are glad to know how customers feel about their products. Most products carry the name of the manufacturer and the address of the company. Present your complaint in full in a letter. Allow several\n" +
+                        "weeks for a reply so that the manufacturer can have an opportunity to, investigate your complaint.\n" +
+                        "     If your letter is not acknowledged after a reasonable time and you have not been able to get any action on your complaint, you might want to consider more stringent measures. For instance, one thing you could do is write a second letter and send a copy to business agencies that are concerned with consumer affairs. The agency that most consumers think of initially is the Better Business Bureau, The bureau, which is well known for its efficiency, handles complaints without charge, but it insists that every complaint be in writing. This helps the staff to be certain that they have the facts straight before they take action on a problem.\n" +
+                        "     Identifying Problems. An important consumer problem that is not easy to solve is that of the silent victim. No one can answer the question as to how many silent victims there are. Many are silent because they do not know that they have been deceived. Others do not like to admit that they were victims of a fraud. Still others do not know where to go for help.\n" +
+                        "     We suggest that it is very important that all consumers be urged to make complaints that are legitimate and valid.",
                 1
         ));
         // Lesson 25 -----------------------------------------------------------------------------
@@ -870,8 +1151,38 @@ public class AssessmentActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 27,
                 1,
-                R.drawable.lesson26_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson27_assessment_group_a,
+                "Dear Mrs. Lang: As you probably read in yesterday's newspaper, Long Island Florists will operate as a division of the Spring Street Seed Company beginning next Friday, November 12.\n" +
+                        "     Long Island Florists has been serving Long Island ever since 1920. It consists of an attractive shop and six air-conditioned greenhouses.\n" +
+                        "     In my opinion, this new addition to our business makes us the only complete flower organization in Long Island. My uncle, Mr. Roy Banks, is the new manager. Stop in soon and speak to him regarding your particular flower needs. He has been in the flower business for more than ten years and has lots of ideas on flower arrangements. Flowers are his favorite subject of conversation.\n" +
+                        "     At this time I would like to thank you for placing your orders with us regularly. You have made this new addition to our business possible. I hope, Mrs. Lang, we will have many opportunities to serve you. Sincerely yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                27,
+                2,
+                R.drawable.lesson27_assessment_group_b,
+                "Dear Mr. Lincoln: Your newspaper advertising business is quite valuable, Undoubtedly you have spent many years building up the strength and reputation of your business and making it a success. You have probably invested every spare dollar in it. If you were to die suddenly, you would certainly wish to pass it along in good condition to your heirs.\n" +
+                        "     One thing you should think about, of course, is that Uncle Sam will insist on his full share. Your state will demand an additional share, This could cause your heirs great difficulty. Do you have any idea how or where they will get the necessary cash without selling part of their business? In our opinion, this will not be a problem for them if you immediately take out our regular business insurance. Our representative, Ms. Lydia Yale, will be glad to give you full details on this subject. She will be able to work with you to help you choose a plan that will be best for your particular needs.\n" +
+                        "     Jot down on the enclosed card when Ms. Yale may call to speak with you regarding our business insurance. Then send the card to us in the envelope that we have provided. Sincerely yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                27,
+                3,
+                R.drawable.lesson27_assessment_group_c,
+                "Dear Ms. Strong: You have probably read our advertisement in the afternoon edition of your local newspaper regarding the opening of the drive-in branch of our bank directly across the street from the Franklin bus station. We are particularly proud of this branch because it is our first.\n" +
+                        "     It is a sign of the general progress we are making. In our opinion, the additional banking accommodation of this branch will enable us to do a satisfactory job of meeting every regular banking need of each of our clients.\n" +
+                        "     We suggest that you stop in and let us show you our new branch. We think you will like it. The branch will be open from nine in the morning until four in the afternoon. Cordially yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                27,
+                4,
+                R.drawable.lesson27_assessment_group_d,
+                "Dear Dr. Underwood: Yesterday I was requested to make a short speech at the banquet of the Newspaper Editors Association on the advantages of automation in the printing industry. The banquet will be held Monday, January 18, at the General Manufacturing Company building in St. Louis, Missouri, at 7 o'clock in the evening. L am unable to accept this very flattering invitation because of several rather important engagements I made for January 18.\n" +
+                        "     In my opinion, you are without question the acknowledged leader in the subject area of automation and can share many of your ideas concerning new developments in the field with the group. I wonder whether you could attend the meeting and take over this special assignment for me.\n" +
+                        "     An addressed envelope, which does not need any postage, is enclosed. Please use it to let me know whether you can take my place. Sincerely yours,",
                 1
         ));
         // Lesson 28 -----------------------------------------------------------------------------
@@ -940,13 +1251,21 @@ public class AssessmentActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 30,
                 1,
-                R.drawable.lesson29_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson30_assessment_group_a,
+                "Where does the money we use come from? If your next-door neighbor, Mr. Worth, needed to have some important typing done, he might request you to do it. You might work for about an hour in the morning on the job. When you successfully completed this short job, he should pay you, say, $4 for the work. You know that the $4 you now have in your hand came from Mr. Worth, but where did he get the money?\n" +
+                        "     Mr. Worth works for the World Publishing Company and is responsible for public relations in that company, and the $4 he paid you was part of the money he receives for his services to that progressive, efficient business organization. It is probably safe to assume that the company earned that money through selling new editions of its textbooks and its other publications to schools and to students. And where did they get the money prior to that? We could go on asking this difficult question endlessly as the money passes from one hand to another. Yet we know that every single dollar bill must have been created by somebody and there must have been a person who received it for the first time.\n" +
+                        "     If we were to trace a particular $10 note back through enough exchanges, we would very quickly find, in our opinion, that it came from a commercial bank. The chances are strong that a person received the note after drawing an ordinary check against a checking account and presenting it to a teller at a bank. The $10 bill was part of the currency that the person received.\n" +
+                        "     For a satisfactory understanding of how money gets into the hands of thoughtful people like you and me, we must learn some basic considerations regarding the subject of checking accounts.\n" +
+                        "     When you have a checking account, you have the advantage of greater safety in the handling of money. As many people undoubtedly know from sad experiences, currency and coins may be stolen or lost. When that happens, they are usually gone for good. On the other hand, if you lose a blank check, no damage has been done because no one but you can withdraw money from your account.\n" +
+                        "     A regular checking account makes it easy to take care of most payments. Instead of personally going to the gas company, to the water company, or to the newspaper office, all you need to do is write out checks for the exact amounts involved, place the checks in envelopes, and mail them to your creditors.\n" +
+                        "     A checking account is really a necessity if you wish to send money far away or just to make payments to places outside the city in which you live.\n" +
+                        "     Your checking account will give you a valuable record of the payments you have made. Your bank will send you a monthly statement showing the deposits you have made and the checks you have written. Your canceled checks will be enclosed with your statement.\n" +
+                        "     An even more i practical advantage of a checking account is the fact that your canceled checks are proof of payment. In the days or years ahead, if a question ever arises as to whether or not you paid a bill, your canceled check is usually recognized as positive proof that payment was made.",
                 1
         ));
         // Lesson 31 -----------------------------------------------------------------------------
         assessmentList.add(new AssessmentItem(
-                30,
+                31,
                 1,
                 R.drawable.lesson29_assessment_group_a,
                 "Hi!",
@@ -1007,8 +1326,61 @@ public class AssessmentActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 33,
                 1,
-                R.drawable.lesson32_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson33_assessment_group_a,
+                "Dear Mr. Bradford: Thank you for your order of Saturday, December 15, for a copy of the Executives Correspondence Manual. This publication, unfortunately, had a disappointing sale. It did not meet its sales forecast and was declared out of print several months ago.\n" +
+                        "     Until two weeks ago, we had a small quantity of the manual in the home office, but the supply was exhausted a few days ago. I also checked with our warehouses in Chicago, New York, and Fort Worth, but my efforts met with no success. Furthermore, even the author could not furnish us with a copy.\n" +
+                        "     I have an idea, Mr. Bradford, that you will readily be able to obtain a copy from the General Publishing Company on Fourth Street in Fort Collins, which specializes in used books. They also usually carry a stock of books that have been declared out of print. About two weeks ago they filled an order for us for a unique book that a good customer wished to purchase.\n" +
+                        "     I am sorry we cannot give you more helpful information at this time. Sincerely yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                33,
+                2,
+                R.drawable.lesson33_assessment_group_b,
+                "Dear Ms. Hartford: Two days ago, Ms. Hartford, I became your personal banker. Your former personal banker, Mrs. Mildred Ford, left us a week ago and accepted a responsible position with the federal government in Albany. \n" +
+                        "     I am here to furnish you with any information you need and to answer whatever questions you may have about your account, our services, and any other financial matters.\n" +
+                        "     Please stop in during your lunch hour sometime soon, Ms. Hartford. I would appreciate the opportunity of meeting you informally and having a discussion with you. Sincerely yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                33,
+                3,
+                R.drawable.lesson33_assessment_group_c,
+                "Dear Mrs. Overmeyer: At theWorth Furniture Store we do more than sell furniture that is comfortable, has character, and represents extraordinary value. Throughout our years in the furniture business, we have been selling gracious living.\n" +
+                        "     The family that purchases furniture from us also obtains the advantage of having the services of a practical, experienced, and skillful designer. This designer is a person who can discuss with you objectively the type of furniture you need and how it should be placed in your home.\n" +
+                        "     We suggest that you call us to request a definite appointment with a designer. Your call will, of course, place you under no obligation. Sincerely yours.",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                33,
+                4,
+                R.drawable.lesson33_assessment_group_d,
+                "Dear Mr. Ahern: When you purchase furniture from the Royal Furniture Company, there is never any charge for the services of our world-famous designers. Furthermore, there is no charge for their well-recognized talent. When you buy furniture from us, the only thing you pay for is the furniture you buy and nothing else.\n" +
+                        "     Isn't this the type of furniture company you would like to deal with? We think it is. Come in the next time you are in' the area and let us describe all our services to you personally. You will easily see why we are the largest furniture company in the state. Sincerely yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                33,
+                5,
+                R.drawable.lesson33_assessment_group_e,
+                "Gentlemen: A few moments ago I read in yesterday afternoon's edition of the newspaper an item to the effect that I am to speak at the New York State Furniture Manufacturers convention at its regular annual meeting on Friday, January 18. The article also says that I am to speak on computers, data processing and automation in the business forecasting area. These are all subjects on which I have done considerable research",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                33,
+                6,
+                R.drawable.lesson33_assessment_group_f,
+                "You can easily understand why this item was particularly disturbing to me when I tell you that I am actually scheduled to speak on Saturday morning, January 19. This means that I will probably have a small audience, if any.\n" +
+                        "     Can you print a correction immediately regarding my speaking engagement? Sincerely yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                33,
+                7,
+                R.drawable.lesson33_assessment_group_g,
+                "Dear Dr. Langdon: Two years ago the Progressive Furniture Company was selected to furnish the efficiency apartments in eight of the most successful leisure home complexes in California. Why were we chosen to do this? Because in our opinion we are the acknowledged, foremost leader in the field of leisure-living furniture. Our furniture is so well constructed that it will last practically forever.\n" +
+                        "     Are you presently thinking of building a leisure home somewhere in California? If you are, it is important for you to see us. We can help you make selections here in our Chicago showrooms, and you can rest assured that everything will be exactly to your liking when your furniture is installed in your leisure home.\n" +
+                        "     Would you like an advertising circular that describes our complete line of dining room, bedroom, and living room suites? We will be glad to send you one if you will fill out, sign, and mail the enclosed short form to us in the envelope we have provided. Very truly yours,",
                 1
         ));
         // Lesson 34 -----------------------------------------------------------------------------
@@ -1073,8 +1445,27 @@ public class AssessmentActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 36,
                 1,
-                R.drawable.lesson35_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson36_assessment_group_a,
+                "Business and professional people, public officials, and government executives recognize that the administrative secretary of today has achieved a position of respect and esteem through hard work, difficult study, and creative effort. The person in this position often has the title of executive secretary or assistant and may have earned the rating off professional secretary. The person may have even won an award or received some other honor in the secretarial field.\n" +
+                        "     Many business people feel that the executive secretary is as valuable to a company as its manufacturing plant or its equipment or, in some instances, the boss.\n" +
+                        "     The competent, efficient secretary is further described as a kind of all-purpose staff member – a diplomat, a helpful researcher, and a \"business lawyer.\"\n" +
+                        "     Secretaries to top executives usually earn between $15,000 and $25,000 a year after a few years of experience – and they are well worth the money. Working at the top level of management, they must be able to keep an office running smoothly and must have the objective judgment to know when to issue orders in the boss's name. They conserve the boss's time by screening telephone calls, visitors, and correspondence. But they keep the boss well informed on all important details. They are sensitive to undercurrents in human relations and are ready to resolve internal and external problems promptly when they discover them.\n" +
+                        "     A secretary has been characterized as one who can think for the boss, act for the boss, anticipate the boss's wishes, and help to increase the company's productivity.\n" +
+                        "     The right secretary can convey a favorable image, please friends, and soothe enemies.\n" +
+                        "     The proficient secretary must be\n" +
+                        "able to accomplish a great quantity of work, and the work must be\n" +
+                        "completely accurate. When a secretary corresponds with an executive in another company, that secretary actually represents his or her entire organization in the executive's eyes. If a letter contains an error, the company's image could be damaged. But if the letter is perfect, very good feelings will be created.\n" +
+                        "     Extensive interviews with 300 executives recently revealed that secretaries were spending almost 60 percent of their time with some of the minor operations of the business, such as handling forms, typing reports, and acknowledging general correspondence. They were spending about 10 percent of their time attending meetings and more than 15 percent making phone calls which could easily have been handled by a competent assistant. Unfortunately, only about 15 percent of their time was actually devoted to practical planning. Still, this survey clearly reveals why business executives attach so much importance to having capable secretaries and why they want responsible persons who cannot only handle the ordinary routine work but can also serve as their assistants and free their time for long-range planning, the most important part of an executives job.\n" +
+                        "     Throughout the years secretarial positions have been filled largely by women. A few years ago, though, many business organizations started actively looking for both men and women secretaries who had the makings of future executives.\n" +
+                        "     The job of professional secretary never looked brighter than it does today. And it is expected to look even brighter in the days ahead.",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                36,
+                2,
+                R.drawable.lesson36_assessment_group_b,
+                "It is sometimes said that the person who gets ahead in business is the person who can follow through. Exactly what does this mean? All it really means is that the person who can stick with a particular job until it is satisfactorily completed is the one who will probably receive credit for doing the work. It is usually very easy to begin a job. It takes diligence and effort, though, to stay with a job until it is successfully finished. The person who can initiate a job is a valuables asset to a company, of course. But the person who can follow through is of much greater importance.\n" +
+                        "     Do not accept a job if you think that you cannot finish it. But once you have accepted a job, you should take advantage of every opportunity to turn out a completely finished product. You should do this no matter how long it takes or how much effort you must expend. When you follow through on every project you undertake, you will soon be recognized as a person who gets things done. In addition, you will be well on your way up the ladder of success.",
                 1
         ));
         // Lesson 37 -----------------------------------------------------------------------------
@@ -1127,10 +1518,58 @@ public class AssessmentActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 39,
                 1,
-                R.drawable.lesson38_assessment_group_a,
+                R.drawable.lesson39_assessment_group_a,
                 "Dear Mr. Brooks: After almost a year of work, a special committee consisting of responsible business executives of our town completed the most objective transportation survey in our history. The survey cost the town government about $25,000.\n" +
                         "The transportation committee submitted a comprehensive memorandum offering four alternative solutions to our transportation needs, together with supporting statistics and photographs. We think the time has definitely arrived when we must decide what the character of our transportation system should be in the future.\n" +
                         "On Saturday morning, November 18, we will hold an important public meeting in the faculty lounge of the Fifth Street School to discuss the survey. We hope you will find it convenient to attend. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                39,
+                2,
+                R.drawable.lesson39_assessment_group_b,
+                "Dear Ms. Temple: Here is an opportunity that an opera lover like you should not pass by. Never before have we been able to make such an attractive offer to our subscribers.\n" +
+                        "     Enclosed is an advertising circular listing 50 high-fidelity recordings. Each recording features recognized, well-known, and outstanding opera personalities. We will send you as many of these high-fidelity recordings as you wish for the surprisingly low price of only $2 apiece. Simply indicate on the order blank at the bottom of the circular the high-fidelity recordings you want and return the blank to us, together with your check, in the envelope we have provided.\n" +
+                        "     Take advantage of this unusual offer today, Ms. Temple. When you receive the recordings, play them for five days. If after that time you have not convinced yourself that these recordings are the finest in tonal quality and clarity, you may return them. We will speedily refund your money. Very truly yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                39,
+                3,
+                R.drawable.lesson39_assessment_group_c,
+                "Dear Mrs. Gates: Thank you for registering at the Ryan Hotel, Mrs. Gates.\n" +
+                        "     Did you ever stop to think what a\n" +
+                        "compact facility the Ryan Hotel actually is? When you walk around the hotel, you will find that it is almost a small city in itself.\n" +
+                        "     Some of our employees you see every day, but many are unseen. Even though they work hard behind the scenes, they themselves are seldom seen. The enclosed descriptive booklet will introduce you to all those who serve you and will tell you about their particular responsibilities.\n" +
+                        "     As you probably know, the Ryan Hotel has a personality of its own. It has won for itself an impressive reputation for the quality of its services.\n" +
+                        "     We hope that you enjoy yourself while you are here with us. If we can do anything to make your stay more satisfying, do not hesitate to call us. Sincerely  yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                39,
+                4,
+                R.drawable.lesson39_assessment_group_d,
+                "Gentlemen: When I talked with Mr. Knox a short time ago. I discussed with him the possibility that the faculty of the World Cortespondence Schools might hold its general annual meeting at the Hotel Worth. The faculty members voted yesterday to avail themselves of your facilities on October 15, 16, and 17.\n" +
+                        "     Would you be good enough, therefore, to reserve single rooms for the faculty members I have listed on the enclosed form. I will also need a large suite for myself in which I can hold faculty conferences and entertain guests between the hours of nine and eleven each morning.\n" +
+                        "     I would appreciate it if you would acknowledge these reservations as soon as possible. Sincerely yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                39,
+                5,
+                R.drawable.lesson39_assessment_group_e,
+                "Dear Mr. Underwood: As I am sure you will agree, there are times when you critically need objective information on a particular subject, like insurance. You might need this information in order to formulate plans or to make an extremely important business decision, but you might not know just where to find a it. When this happens, come to us, the Public Insurance Information Company.\n" +
+                        "     We have substantial quantities of information in our files. In all probability, we can supply the information you want immediately. If we ourselves don't have the information we know where to look for it. We have overnight access from several other sources to any ordinary business information that has been published in newspapers and other publications in the last ten years.\n" +
+                        "     Call us, Mr. Underwood, when you have a question regarding any aspect of casualty, liability, or other type of insurance, Yours very truly,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                39,
+                6,
+                R.drawable.lesson39_assessment_group_f,
+                "Dear Mr. Stern: Many people want to live in the suburbs, but they are not thinking of actual home ownership. They are interested in living in an efficiency apartment. These people do not wish to be tied down to a house with its hardships, difficulties, and troubles. They do not want the responsibility of having to write checks each month for utility bills. They do not want the responsibility of maintaining a yard. They want to be able to write one check to cover all expenses.\n" +
+                        "     As you probably know, these people have substantially different interests from those who own houses. They ordinarily have more time and money too purchase the things they desire.\n" +
+                        "     Our magazine, The Apartment Dweller, is published for people of this character. Our present circulation is about 500,000. If you haven't seen a copy, we will be glad t o send you one. Just fill out the enclosed card and return it to us. When we receive it, we will send you your first copy immediately. It won't take long, Mr. Stern, for you to prove to yourself that The Apartment Dweller is unquestionably the medium in which you should advertise. Sincerely yours,",
                 1
         ));
         // Lesson 40 -----------------------------------------------------------------------------
@@ -1258,6 +1697,53 @@ public class AssessmentActivity extends AppCompatActivity {
                 "Dear Mr. Long: Subject: Your Bill of December 18.\n" +
                         " Yesterday morning Dr. White. head of our publications division, transmitted to me your bill of December 18 together with his correspondence with you regarding the modifications of the specifications for our faculty library at the Transportation Building at 3104 West 18 Street. As you know, he wrote you that in his opinion the modifications made were of a minor character and that the figure of $550 is exceedingly high. \n" +
                         "Under the circumstances, I will need an itemized memorandum of the work you did in order to be able to present your bill to our controller for payment. Would you be good enough to supply the information on the form that is enclosed. A self-addressed, stamped envelope is provided for your convenience. Sincerely yours",
+                1
+        ));
+        // Lesson 45 -----------------------------------------------------------------------------
+        assessmentList.add(new AssessmentItem(
+                45,
+                1,
+                R.drawable.lesson45_assessment_group_a,
+                "Ladies and Gentlemen: Beginning Monday, June 15, Ms. Mary Edwards will be responsible for supervising the development of a marketing plan for the Quinn Anthology for which we have recently contracted. As I wrote you in my memorandum of April 15, we expect that this important acquisition will ultimately sell over 5 million copies and will bring in somewhere in the neighborhood of $45 million in revenue.\n" +
+                        "     We feel that the Quinn Anthology is in good, capable hands. Fred Farmers",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                45,
+                2,
+                R.drawable.lesson45_assessment_group_b,
+                "Ladies and Gentlemen: Beginning Monday, June 15, Ms. Mary Edwards will be responsible for supervising the development of a marketing plan for the Quinn Anthology for which we have recently contracted. As I wrote you in my memorandum of April 15, we expect that this important acquisition will ultimately sell over 5 million copies and will bring in somewhere in the neighborhood of $45 million in revenue.\n" +
+                        "     We feel that the Quinn Anthology is in good, capable hands. Fred Farmers",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                45,
+                3,
+                R.drawable.lesson45_assessment_group_c,
+                "Ladies and Gentlemen: Beginning Monday, June 15, Ms. Mary Edwards will be responsible for supervising the development of a marketing plan for the Quinn Anthology for which we have recently contracted. As I wrote you in my memorandum of April 15, we expect that this important acquisition will ultimately sell over 5 million copies and will bring in somewhere in the neighborhood of $45 million in revenue.\n" +
+                        "     We feel that the Quinn Anthology is in good, capable hands. Fred Farmers",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                45,
+                4,
+                R.drawable.lesson45_assessment_group_d,
+                "Dear Ms. Torres: You will be interested in the results of a statistical study recently conducted by the Empire Opinion Research Company for the government. The study included important executives, superintendents, and general managers in 42 business neighborhoods throughout the state. The study indicated that 75 percent of those who were consulted regularly read The World Telegraph. We are, with some justification, exceedingly proud of this extraordinary record.\n" +
+                        "     When you advertise in our newspaper, you can expect substantial results because it is the place where forward-thinking business executives look for facts and figures that ultimately influence their business decisions.\n" +
+                        "     Place your advertising messages in The World Telegraph, Ms. Torres. They will be read not only by those who have won their way to the top but also by those who are on their\n" +
+                        "way upward.\n" +
+                        "     We look forward to receiving your first advertisement. Sincerely yours,",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                45,
+                5,
+                R.drawable.lesson45_assessment_group_e,
+                "Dear Mr. Poland: As you know, one of our consultants, Dr. Lee Chang, had an opportunity to examine the lawn in the backyard of your manufacturing plant on Market Street yesterday morning. He forwarded his report directly to us today. On the basis of his complete report, we are very happy to give you an estimate in the neighborhood of $500 for reconditioning your lawn as follows:\n" +
+                        "     1. Reseed the lawn, which is 40 feet by 100 feet.\n" +
+                        "     2. Furnish the 40 pounds of Grade A grass seed required for the job.\n" +
+                        "     3. Continue to care for the lawn for a period of two complete years.\n" +
+                        "     If this estimate meets with your approval, we suggest that you let us know immediately. We will then begin work promptly so that your lawn will have the advantage of the early spring growing weather. Incidentally, we guarantee that the actual cost will never exceed the estimate by more than 10 percent under any circumstances. Sincerely yours,\n",
                 1
         ));
     }

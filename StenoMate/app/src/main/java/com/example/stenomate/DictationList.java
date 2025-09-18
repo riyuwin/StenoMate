@@ -187,7 +187,7 @@ public class DictationList extends AppCompatActivity {
     }
 
     public void PopulateAssessmentItemGroup(){
-        GroupItemNumberList = new ArrayList<>(Arrays.asList(3, 5, 1, 1, 6, 1, 1, 5, 1, 1, 5, 1, 1, 6, 1, 1, 6, 1, 1, 5, 1, 1, 6, 1, 1, 5, 1, 1, 6, 1, 1, 5, 1, 1, 6, 1, 1, 4, 1, 1, 5, 1, 1, 6));
+        GroupItemNumberList = new ArrayList<>(Arrays.asList(3, 5, 4, 1, 6, 3, 1, 5, 7, 1, 5, 5, 1, 6, 5, 1, 6, 3, 1, 5, 5, 1, 6, 1, 1, 5, 4, 1, 6, 1, 1, 5, 7, 1, 6, 2, 1, 4, 6, 1, 5, 5, 1, 6, 5));
     }
 
     @SuppressLint("MissingSuperCall")

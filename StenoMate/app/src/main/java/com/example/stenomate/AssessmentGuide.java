@@ -55,14 +55,14 @@ public class AssessmentGuide extends AppCompatActivity {
 
                     HeaderText.setText("Your Time is Ticking! ⏳");
                     ContentText.setText("Once you start the assessment, you will be given a time limit to complete it. When the time is up, the image will be hidden, and you will need to type your answer in the provided field.");
-                    GuideImageHolder.setImageResource(R.drawable.assessment_asset);
+                    GuideImageHolder.setImageResource(R.drawable.assessment_element);
 
                 } else if (indexNumber == 1) {
                     indexNumber++;
 
                     HeaderText.setText("Best of luck! \uD83D\uDE80");
                     ContentText.setText("When you're ready, hit the button and let the challenge begin. Goodluck!");
-                    GuideImageHolder.setImageResource(R.drawable.dictionary_asset);
+                    GuideImageHolder.setImageResource(R.drawable.dictation_element);
 
                 } else if (indexNumber == 2) {
                     Intent intent = new Intent(AssessmentGuide.this, AssessmentActivity.class);

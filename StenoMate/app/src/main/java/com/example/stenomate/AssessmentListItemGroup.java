@@ -57,6 +57,13 @@ public class AssessmentListItemGroup extends AppCompatActivity {
 
         BackIcon.setOnClickListener(view -> {
             Intent intent = new Intent(AssessmentListItemGroup.this, AssessmentList.class);
+            if (lesson_number >= 1 && lesson_number <= 15){
+                intent.putExtra("lesson_type", "Short");
+            } else if (lesson_number >= 16 && lesson_number <= 30){
+                intent.putExtra("lesson_type", "Advance");
+            } else if (lesson_number >= 31 && lesson_number <= 45){
+                intent.putExtra("lesson_type", "Specialized");
+            }
             startActivity(intent);
         });
 
@@ -181,18 +188,21 @@ public class AssessmentListItemGroup extends AppCompatActivity {
     }
 
     public void PopulateAssessmentItemGroup(){
-        GroupItemNumberList = new ArrayList<>(Arrays.asList(3, 5, 1, 1, 6, 1, 1, 5, 1, 1, 5, 1, 1, 6, 1, 1, 6, 1, 1, 5, 1, 1, 6, 1, 1, 5, 1, 1, 6, 1, 1, 5, 1, 1, 6, 1, 1, 4, 1, 1, 5, 1, 1, 6));
+        GroupItemNumberList = new ArrayList<>(Arrays.asList(3, 5, 4, 1, 6, 3, 1, 5, 7, 1, 5, 5, 1, 6, 5, 1, 6, 3, 1, 5, 5, 1, 6, 1, 1, 5, 4, 1, 6, 1, 1, 5, 7, 1, 6, 2, 1, 4, 6, 1, 5, 5, 1, 6, 5));
     }
 
     @SuppressLint("MissingSuperCall")
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(AssessmentListItemGroup.this, AssessmentList.class);
-        if (lesson_number >= 1 && lesson_number <= 23){
+        if (lesson_number >= 1 && lesson_number <= 15){
             intent.putExtra("lesson_type", "Short");
-        } else if (lesson_number >= 24 && lesson_number <= 45){
+        } else if (lesson_number >= 16 && lesson_number <= 30){
             intent.putExtra("lesson_type", "Advance");
+        } else if (lesson_number >= 31 && lesson_number <= 45){
+            intent.putExtra("lesson_type", "Specialized");
         }
+
         startActivity(intent);
     }
 }

@@ -2,10 +2,14 @@ package com.example.stenomate;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -23,6 +27,7 @@ public class MainMenu extends AppCompatActivity {
 
     LinearLayout LearningMaterialsId, DictionaryId, AssessmentId, QuizzesId, DictationId;
     LinearLayout AboutUsId;
+    ImageView Logo;
 
 
     @Override
@@ -36,9 +41,16 @@ public class MainMenu extends AppCompatActivity {
         AssessmentId = findViewById(R.id.assessmentsId);
         QuizzesId = findViewById(R.id.quizId);
         DictationId = findViewById(R.id.dictationId);
-
-
         AboutUsId = findViewById(R.id.aboutUsId);
+        Logo = findViewById(R.id.logo);
+
+        Animation fadeIn = AnimationUtils.loadAnimation(this, R.anim.trans_fade_in);
+        LearningMaterialsId.startAnimation(fadeIn);
+        DictionaryId.startAnimation(fadeIn);
+        AssessmentId.startAnimation(fadeIn);
+        QuizzesId.startAnimation(fadeIn);
+        DictationId.startAnimation(fadeIn);
+
 
         LearningMaterialsId.setOnClickListener(View -> {
             //IntentManager(LessonHistoryBackground.class); // LearningMaterialsActivity
@@ -64,6 +76,8 @@ public class MainMenu extends AppCompatActivity {
         AboutUsId.setOnClickListener(View -> {
             IntentManager(AboutUs.class);
         });
+
+
     }
 
     public void IntentManager(Class<?> activityName) {
