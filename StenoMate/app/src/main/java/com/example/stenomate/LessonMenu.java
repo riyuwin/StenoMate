@@ -44,10 +44,17 @@ import com.example.stenomate.Lessons.Lesson29Activity;
 import com.example.stenomate.Lessons.Lesson2Activity;
 import com.example.stenomate.Lessons.Lesson30Activity;
 import com.example.stenomate.Lessons.Lesson32Activity;
+import com.example.stenomate.Lessons.Lesson33Activity;
 import com.example.stenomate.Lessons.Lesson34Activity;
+import com.example.stenomate.Lessons.Lesson36Activity;
 import com.example.stenomate.Lessons.Lesson37Activity;
+import com.example.stenomate.Lessons.Lesson38Activity;
+import com.example.stenomate.Lessons.Lesson39Activity;
 import com.example.stenomate.Lessons.Lesson3Activity;
+import com.example.stenomate.Lessons.Lesson40Activity;
 import com.example.stenomate.Lessons.Lesson41Activity;
+import com.example.stenomate.Lessons.Lesson42Activity;
+import com.example.stenomate.Lessons.Lesson43Activity;
 import com.example.stenomate.Lessons.Lesson4Activity;
 import com.example.stenomate.Lessons.Lesson5Activity;
 import com.example.stenomate.Lessons.Lesson6Activity;
@@ -383,7 +390,8 @@ public class LessonMenu extends AppCompatActivity {
                     Intent intent = new Intent(LessonMenu.this, Lesson32Activity.class);
                     startActivity(intent);
                 } if (finalI == 33) {
-                    // wala pa
+                    Intent intent = new Intent(LessonMenu.this, Lesson33Activity.class);
+                    startActivity(intent);
                 } if (finalI == 34) {
                     Intent intent = new Intent(LessonMenu.this, Lesson34Activity.class);
                     startActivity(intent);
@@ -391,23 +399,29 @@ public class LessonMenu extends AppCompatActivity {
                     Intent intent = new Intent(LessonMenu.this, Lesson19Activity.class);
                     startActivity(intent);
                 } if (finalI == 36) {
-                    // wala pa
+                    Intent intent = new Intent(LessonMenu.this, Lesson36Activity.class);
+                    startActivity(intent);
                 } if (finalI == 37) {
                     Intent intent = new Intent(LessonMenu.this, Lesson37Activity.class);
                     startActivity(intent);
                 } if (finalI == 38) {
-                    // wala pa
+                    Intent intent = new Intent(LessonMenu.this, Lesson38Activity.class);
+                    startActivity(intent);
                 } if (finalI == 39) {
-                    // wala pa
+                    Intent intent = new Intent(LessonMenu.this, Lesson39Activity.class);
+                    startActivity(intent);
                 } if (finalI == 40) {
-                    // wala pa
+                    Intent intent = new Intent(LessonMenu.this, Lesson40Activity.class);
+                    startActivity(intent);
                 } if (finalI == 41) {
                     Intent intent = new Intent(LessonMenu.this, Lesson41Activity.class);
                     startActivity(intent);
                 } if (finalI == 42) {
-                    // wala pa
+                    Intent intent = new Intent(LessonMenu.this, Lesson42Activity.class);
+                    startActivity(intent);
                 } if (finalI == 43) {
-                    // wala pa
+                    Intent intent = new Intent(LessonMenu.this, Lesson43Activity.class);
+                    startActivity(intent);
                 } if (finalI == 44) {
                     // wala pa
                 } if (finalI == 45) {
