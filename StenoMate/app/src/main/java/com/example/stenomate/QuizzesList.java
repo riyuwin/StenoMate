@@ -12,40 +12,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-import com.example.stenomate.Lessons.Lesson10Activity;
-import com.example.stenomate.Lessons.Lesson11Activity;
-import com.example.stenomate.Lessons.Lesson12Activity;
-import com.example.stenomate.Lessons.Lesson13Activity;
-import com.example.stenomate.Lessons.Lesson14Activity;
-import com.example.stenomate.Lessons.Lesson15Activity;
-import com.example.stenomate.Lessons.Lesson16Activity;
-import com.example.stenomate.Lessons.Lesson17Activity;
-import com.example.stenomate.Lessons.Lesson18Activity;
-import com.example.stenomate.Lessons.Lesson19Activity;
-import com.example.stenomate.Lessons.Lesson1Activity;
-import com.example.stenomate.Lessons.Lesson21Activity;
-import com.example.stenomate.Lessons.Lesson22Activity;
-import com.example.stenomate.Lessons.Lesson24Activity;
-import com.example.stenomate.Lessons.Lesson26Activity;
-import com.example.stenomate.Lessons.Lesson29Activity;
-import com.example.stenomate.Lessons.Lesson2Activity;
-import com.example.stenomate.Lessons.Lesson32Activity;
-import com.example.stenomate.Lessons.Lesson3Activity;
-import com.example.stenomate.Lessons.Lesson41Activity;
-import com.example.stenomate.Lessons.Lesson4Activity;
-import com.example.stenomate.Lessons.Lesson5Activity;
-import com.example.stenomate.Lessons.Lesson6Activity;
-import com.example.stenomate.Lessons.Lesson7Activity;
-import com.example.stenomate.Lessons.Lesson8Activity;
-import com.example.stenomate.Lessons.Lesson9Activity;
 
 public class QuizzesList extends AppCompatActivity {
 

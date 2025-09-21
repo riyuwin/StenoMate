@@ -55,7 +55,9 @@ public class DictationActivity extends AppCompatActivity {
         btnSpeak = findViewById(R.id.btnSpeak);
         heartbeat = findViewById(R.id.heartbeat);
 
+        Toast.makeText(this, "Dictation No. " + lesson_number + " - " + assessment_list_group_name, Toast.LENGTH_SHORT).show();
         DictationNumber.setText("Dictation No. " + lesson_number + " - " + assessment_list_group_name);
+
 
         // To generate dictation list
         DictationListGenerator();
@@ -154,13 +156,13 @@ public class DictationActivity extends AppCompatActivity {
     private void showResultDialog() {
         new androidx.appcompat.app.AlertDialog.Builder(this)
                 .setTitle("Dictation Finished")
-                .setMessage("Would you like to retry or go back?")
+                .setMessage("Would you like to retry or mark this dictation as completed?")
                 .setCancelable(false)
                 .setPositiveButton("Retry", (dialog, which) -> {
                     // enable button again for retry
                     btnSpeak.setEnabled(true);
                 })
-                .setNegativeButton("Back", (dialog, which) -> {
+                .setNegativeButton("Completed", (dialog, which) -> {
                     Intent intent = new Intent(DictationActivity.this, DictationList.class);
                     if (lesson_number >= 1 && lesson_number <= 23){
                         intent.putExtra("lesson_type", "Short");

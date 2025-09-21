@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <application
         android:allowBackup="true"
@@ -11,9 +11,144 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.StenoMate"
-        tools:targetApi="31">
+        tools:targetApi="31" >
         <activity
-            android:name=".DictationActivity"
+            android:name=".Lessons.Sample"
+            android:exported="false" /> <!-- Lesson Activities -->
+        <activity
+            android:name=".Lessons.Lesson1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson7Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson8Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson9Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson10Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson11Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson12Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson13Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson14Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson15Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson16Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson17Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson18Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson19Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson20Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson21Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson22Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson23Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson24Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson25Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson26Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson27Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson28Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson29Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson30Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson31Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson32Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson33Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson34Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson35Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson36Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson37Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson38Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson39Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson40Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson41Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson42Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson43Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson44Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Lessons.Lesson45Activity"
             android:exported="false" />
         <activity
             android:name=".DictationListItemGroup"
@@ -55,15 +190,6 @@
             android:name=".AssessmentList"
             android:exported="false" />
         <activity
-            android:name=".Lessons.Lesson3Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Lessons.Lesson2Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Lessons.Lesson1Activity"
-            android:exported="false" />
-        <activity
             android:name=".ContentActivity"
             android:exported="false" />
         <activity
@@ -82,8 +208,11 @@
             android:name=".MainMenu"
             android:exported="false" />
         <activity
+            android:name=".DictationActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

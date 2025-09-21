@@ -11,15 +11,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.example.stenomate.Lessons.Lesson10Activity;
 import com.example.stenomate.Lessons.Lesson11Activity;
@@ -55,6 +50,8 @@ import com.example.stenomate.Lessons.Lesson40Activity;
 import com.example.stenomate.Lessons.Lesson41Activity;
 import com.example.stenomate.Lessons.Lesson42Activity;
 import com.example.stenomate.Lessons.Lesson43Activity;
+import com.example.stenomate.Lessons.Lesson44Activity;
+import com.example.stenomate.Lessons.Lesson45Activity;
 import com.example.stenomate.Lessons.Lesson4Activity;
 import com.example.stenomate.Lessons.Lesson5Activity;
 import com.example.stenomate.Lessons.Lesson6Activity;
@@ -155,48 +152,63 @@ public class LessonMenu extends AppCompatActivity {
             outerLayout.setOnClickListener(v -> {
                 if (finalI == 1) {
                     Intent intent = new Intent(LessonMenu.this, Lesson1Activity.class);
+                    intent.putExtra("lesson_type", "Short");
                     startActivity(intent);
                 } if (finalI == 2) {
                     Intent intent = new Intent(LessonMenu.this, Lesson2Activity.class);
+                    intent.putExtra("lesson_type", "Short");
                     startActivity(intent);
                 } if (finalI == 3) {
                     Intent intent = new Intent(LessonMenu.this, Lesson3Activity.class);
+                    intent.putExtra("lesson_type", "Short");
                     startActivity(intent);
                 } if (finalI == 4) {
                     Intent intent = new Intent(LessonMenu.this, Lesson4Activity.class);
+                    intent.putExtra("lesson_type", "Short");
                     startActivity(intent);
                 } if (finalI == 5) {
                     Intent intent = new Intent(LessonMenu.this, Lesson5Activity.class);
+                    intent.putExtra("lesson_type", "Short");
                     startActivity(intent);
                 } if (finalI == 6) {
                     Intent intent = new Intent(LessonMenu.this, Lesson6Activity.class);
+                    intent.putExtra("lesson_type", "Short");
                     startActivity(intent);
                 } if (finalI == 7) {
                     Intent intent = new Intent(LessonMenu.this, Lesson7Activity.class);
+                    intent.putExtra("lesson_type", "Short");
                     startActivity(intent);
                 } if (finalI == 8) {
                     Intent intent = new Intent(LessonMenu.this, Lesson8Activity.class);
+                    intent.putExtra("lesson_type", "Short");
                     startActivity(intent);
                 } if (finalI == 9) {
                     Intent intent = new Intent(LessonMenu.this, Lesson9Activity.class);
+                    intent.putExtra("lesson_type", "Short");
                     startActivity(intent);
                 } if (finalI == 10) {
                     Intent intent = new Intent(LessonMenu.this, Lesson10Activity.class);
+                    intent.putExtra("lesson_type", "Short");
                     startActivity(intent);
                 } if (finalI == 11) {
                     Intent intent = new Intent(LessonMenu.this, Lesson11Activity.class);
+                    intent.putExtra("lesson_type", "Short");
                     startActivity(intent);
                 } if (finalI == 12) {
                     Intent intent = new Intent(LessonMenu.this, Lesson12Activity.class);
+                    intent.putExtra("lesson_type", "Short");
                     startActivity(intent);
                 } if (finalI == 13) {
                     Intent intent = new Intent(LessonMenu.this, Lesson13Activity.class);
+                    intent.putExtra("lesson_type", "Short");
                     startActivity(intent);
                 } if (finalI == 14) {
                     Intent intent = new Intent(LessonMenu.this, Lesson14Activity.class);
+                    intent.putExtra("lesson_type", "Short");
                     startActivity(intent);
                 } if (finalI == 15) {
                     Intent intent = new Intent(LessonMenu.this, Lesson15Activity.class);
+                    intent.putExtra("lesson_type", "Short");
                     startActivity(intent);
                 }
             });
@@ -270,48 +282,63 @@ public class LessonMenu extends AppCompatActivity {
             outerLayout.setOnClickListener(v -> {
                 if (finalI == 16) {
                     Intent intent = new Intent(LessonMenu.this, Lesson16Activity.class);
+                    intent.putExtra("lesson_type", "Advance");
                     startActivity(intent);
                 } if (finalI == 17) {
                     Intent intent = new Intent(LessonMenu.this, Lesson17Activity.class);
+                    intent.putExtra("lesson_type", "Advance");
                     startActivity(intent);
                 } if (finalI == 18) {
                     Intent intent = new Intent(LessonMenu.this, Lesson18Activity.class);
+                    intent.putExtra("lesson_type", "Advance");
                     startActivity(intent);
                 } if (finalI == 19) {
                     Intent intent = new Intent(LessonMenu.this, Lesson19Activity.class);
+                    intent.putExtra("lesson_type", "Advance");
                     startActivity(intent);
                 } if (finalI == 20) {
                     Intent intent = new Intent(LessonMenu.this, Lesson20Activity.class);
+                    intent.putExtra("lesson_type", "Advance");
                     startActivity(intent);
                 } if (finalI == 21) {
                     Intent intent = new Intent(LessonMenu.this, Lesson21Activity.class);
+                    intent.putExtra("lesson_type", "Advance");
                     startActivity(intent);
                 } if (finalI == 22) {
                     Intent intent = new Intent(LessonMenu.this, Lesson22Activity.class);
+                    intent.putExtra("lesson_type", "Advance");
                     startActivity(intent);
                 } if (finalI == 23) {
                     Intent intent = new Intent(LessonMenu.this, Lesson32Activity.class);
+                    intent.putExtra("lesson_type", "Advance");
                     startActivity(intent);
                 } if (finalI == 24) {
                     Intent intent = new Intent(LessonMenu.this, Lesson24Activity.class);
+                    intent.putExtra("lesson_type", "Advance");
                     startActivity(intent);
                 } if (finalI == 25) {
                     Intent intent = new Intent(LessonMenu.this, Lesson25Activity.class);
+                    intent.putExtra("lesson_type", "Advance");
                     startActivity(intent);
                 } if (finalI == 26) {
                     Intent intent = new Intent(LessonMenu.this, Lesson26Activity.class);
+                    intent.putExtra("lesson_type", "Advance");
                     startActivity(intent);
                 } if (finalI == 27) {
                     Intent intent = new Intent(LessonMenu.this, Lesson27Activity.class);
+                    intent.putExtra("lesson_type", "Advance");
                     startActivity(intent);
                 } if (finalI == 28) {
                     Intent intent = new Intent(LessonMenu.this, Lesson28Activity.class);
+                    intent.putExtra("lesson_type", "Advance");
                     startActivity(intent);
                 } if (finalI == 29) {
                     Intent intent = new Intent(LessonMenu.this, Lesson29Activity.class);
+                    intent.putExtra("lesson_type", "Advance");
                     startActivity(intent);
                 } if (finalI == 30) {
                     Intent intent = new Intent(LessonMenu.this, Lesson30Activity.class);
+                    intent.putExtra("lesson_type", "Advance");
                     startActivity(intent);
                 }
             });
@@ -385,47 +412,64 @@ public class LessonMenu extends AppCompatActivity {
             outerLayout.setOnClickListener(v -> {
                 if (finalI == 31) {
                     Intent intent = new Intent(LessonMenu.this, Lesson13Activity.class);
+                    intent.putExtra("lesson_type", "Specialized");
                     startActivity(intent);
                 } if (finalI == 32) {
                     Intent intent = new Intent(LessonMenu.this, Lesson32Activity.class);
+                    intent.putExtra("lesson_type", "Specialized");
                     startActivity(intent);
                 } if (finalI == 33) {
                     Intent intent = new Intent(LessonMenu.this, Lesson33Activity.class);
+                    intent.putExtra("lesson_type", "Specialized");
                     startActivity(intent);
                 } if (finalI == 34) {
                     Intent intent = new Intent(LessonMenu.this, Lesson34Activity.class);
+                    intent.putExtra("lesson_type", "Specialized");
                     startActivity(intent);
                 } if (finalI == 35) {
                     Intent intent = new Intent(LessonMenu.this, Lesson19Activity.class);
+                    intent.putExtra("lesson_type", "Specialized");
                     startActivity(intent);
                 } if (finalI == 36) {
                     Intent intent = new Intent(LessonMenu.this, Lesson36Activity.class);
+                    intent.putExtra("lesson_type", "Specialized");
                     startActivity(intent);
                 } if (finalI == 37) {
                     Intent intent = new Intent(LessonMenu.this, Lesson37Activity.class);
+                    intent.putExtra("lesson_type", "Specialized");
                     startActivity(intent);
                 } if (finalI == 38) {
                     Intent intent = new Intent(LessonMenu.this, Lesson38Activity.class);
+                    intent.putExtra("lesson_type", "Specialized");
                     startActivity(intent);
                 } if (finalI == 39) {
                     Intent intent = new Intent(LessonMenu.this, Lesson39Activity.class);
+                    intent.putExtra("lesson_type", "Specialized");
                     startActivity(intent);
                 } if (finalI == 40) {
                     Intent intent = new Intent(LessonMenu.this, Lesson40Activity.class);
+                    intent.putExtra("lesson_type", "Specialized");
                     startActivity(intent);
                 } if (finalI == 41) {
                     Intent intent = new Intent(LessonMenu.this, Lesson41Activity.class);
+                    intent.putExtra("lesson_type", "Specialized");
                     startActivity(intent);
                 } if (finalI == 42) {
                     Intent intent = new Intent(LessonMenu.this, Lesson42Activity.class);
+                    intent.putExtra("lesson_type", "Specialized");
                     startActivity(intent);
                 } if (finalI == 43) {
                     Intent intent = new Intent(LessonMenu.this, Lesson43Activity.class);
+                    intent.putExtra("lesson_type", "Specialized");
                     startActivity(intent);
                 } if (finalI == 44) {
-                    // wala pa
+                    Intent intent = new Intent(LessonMenu.this, Lesson44Activity.class);
+                    intent.putExtra("lesson_type", "Specialized");
+                    startActivity(intent);
                 } if (finalI == 45) {
-                    // wala pa
+                    Intent intent = new Intent(LessonMenu.this, Lesson45Activity.class);
+                    intent.putExtra("lesson_type", "Specialized");
+                    startActivity(intent);
                 }
             });
 
@@ -433,6 +477,11 @@ public class LessonMenu extends AppCompatActivity {
             // Add to parent
             parentLayout.addView(outerLayout);
         }
+    }
+
+    public  void LaunchIntent(Class<?> targetActivity){
+        Intent intent = new Intent(LessonMenu.this, targetActivity);
+        startActivity(intent);
     }
 
     private int dpToPx(int dp) {
