@@ -736,7 +736,8 @@ public class QuizzesActivity extends AppCompatActivity {
         answerItemList.add(new AnswerListItem(R.drawable.lesson12_asset_19_dealer, 12, 19, "Answer 3", "shape", "stage", "dealer", "safe"));
         answerItemList.add(new AnswerListItem(R.drawable.lesson12_asset_20_chief, 12, 20, "Answer 1", "chief", "say", "reach", "solo"));
         answerItemList.add(new AnswerListItem(R.drawable.lesson12_asset_21_space, 12, 21, "Answer 1", "space", "share", "stone", "safe"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson12_asset_23_4, 12, 22, "Answer 4", "10", "stage", "5", "4"));
+
+        /*answerItemList.add(new AnswerListItem(R.drawable.lesson12_asset_23_4, 12, 22, "Answer 4", "10", "stage", "5", "4"));
         answerItemList.add(new AnswerListItem(R.drawable.lesson12_asset_24_5, 12, 23, "Answer 3", "session", "space", "5", "series"));
         answerItemList.add(new AnswerListItem(R.drawable.lesson12_asset_25_6, 12, 24, "Answer 3", "dealer", "stage", "6", "say"));
         answerItemList.add(new AnswerListItem(R.drawable.lesson12_asset_26_7, 12, 25, "Answer 3", "shape", "session", "7", "stage"));
@@ -744,7 +745,7 @@ public class QuizzesActivity extends AppCompatActivity {
         answerItemList.add(new AnswerListItem(R.drawable.lesson12_asset_28_9, 12, 27, "Answer 2", "need", "9", "dealer", "stage"));
         answerItemList.add(new AnswerListItem(R.drawable.lesson12_asset_29_10, 12, 28, "Answer 3", "say", "share", "10", "space"));
         answerItemList.add(new AnswerListItem(R.drawable.lesson12_asset_30_11, 12, 29, "Answer 1", "11", "seethe", "reach", "safe"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson12_asset_31_12, 12, 30, "Answer 4", "space", "say", "chief", "12"));
+        answerItemList.add(new AnswerListItem(R.drawable.lesson12_asset_31_12, 12, 30, "Answer 4", "space", "say", "chief", "12"));*/
 
         // Lesson 13
         answerItemList.add(new AnswerListItem(R.drawable.lesson13_asset_1_work, 13, 1, "Answer 3", "wall", "well", "work", "works"));
@@ -968,7 +969,8 @@ public class QuizzesActivity extends AppCompatActivity {
         answerItemList.add(new AnswerListItem(R.drawable.lesson18_asset_22_missed, 18, 22, "Answer 2", "miss", "missed", "mister", "mist"));
         answerItemList.add(new AnswerListItem(R.drawable.lesson18_asset_23_planned, 18, 23, "Answer 3", "plan", "planner", "planned", "planet"));
         answerItemList.add(new AnswerListItem(R.drawable.lesson18_asset_24_mailed, 18, 24, "Answer 4", "mail", "mailer", "main", "mailed"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson18_asset_25_1, 18, 25, "Answer 1", "1", "2", "3", "4"));
+
+        /*answerItemList.add(new AnswerListItem(R.drawable.lesson18_asset_25_1, 18, 25, "Answer 1", "1", "2", "3", "4"));
         answerItemList.add(new AnswerListItem(R.drawable.lesson18_asset_26_2, 18, 26, "Answer 2", "1", "2", "3", "4"));
         answerItemList.add(new AnswerListItem(R.drawable.lesson18_asset_27_3, 18, 27, "Answer 3", "1", "2", "3", "4"));
         answerItemList.add(new AnswerListItem(R.drawable.lesson18_asset_28_4, 18, 28, "Answer 4", "1", "2", "3", "4"));
@@ -983,7 +985,7 @@ public class QuizzesActivity extends AppCompatActivity {
         answerItemList.add(new AnswerListItem(R.drawable.lesson18_asset_37_13, 18, 37, "Answer 1", "13", "14", "15", "16"));
         answerItemList.add(new AnswerListItem(R.drawable.lesson18_asset_38_14, 18, 38, "Answer 2", "13", "14", "15", "16"));
         answerItemList.add(new AnswerListItem(R.drawable.lesson18_asset_39_15, 18, 39, "Answer 3", "13", "14", "15", "16"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson18_asset_40_16, 18, 40, "Answer 4", "13", "14", "15", "16"));
+        answerItemList.add(new AnswerListItem(R.drawable.lesson18_asset_40_16, 18, 40, "Answer 4", "13", "14", "15", "16"));*/
 
         // Lesson 19
         answerItemList.add(new AnswerListItem(R.drawable.lesson19_asset_1_part, 19, 1, "Answer 4", "paid", "park", "pale", "part"));
@@ -1265,44 +1267,6 @@ public class QuizzesActivity extends AppCompatActivity {
         answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_35_letme, 26, 35, "Answer 4", "help me", "call me", "tell me", "let me"));
         answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_36_youordered, 26, 36, "Answer 3", "they ordered", "she ordered", "you ordered", "we ordered"));
 
-        // Lesson 26
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_1_signs, 26, 1, "Answer 3", "symbols", "marks", "signs", "alerts"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_2_science, 26, 2, "Answer 1", "science", "symbols", "alerts", "marks"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_3_compliance, 26, 3, "Answer 4", "alerts", "symbols", "marks", "compliance"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_4_dial, 26, 4, "Answer 2", "symbols", "dial", "alerts", "marks"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_5_client, 26, 5, "Answer 3", "marks", "alerts", "client", "symbols"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_6_reliance, 26, 6, "Answer 1", "reliance", "alerts", "marks", "symbols"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_7_prior, 26, 7, "Answer 4", "symbols", "alerts", "marks", "prior"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_8_quiet, 26, 8, "Answer 2", "alerts", "quiet", "marks", "symbols"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_9_appliances, 26, 9, "Answer 3", "marks", "alerts", "appliances", "symbols"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset__10_enjoy, 26, 10, "Answer 1", "enjoy", "symbols", "alerts", "marks"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_11_engagement, 26, 11, "Answer 4", "marks", "symbols", "alerts", "engagement"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_12_endanger, 26, 12, "Answer 2", "alerts", "endanger", "symbols", "marks"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_13_engrave, 26, 13, "Answer 3", "symbols", "alerts", "engrave", "marks"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_14_engine, 26, 14, "Answer 1", "engine", "symbols", "marks", "alerts"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_15_encourage, 26, 15, "Answer 4", "marks", "symbols", "alerts", "encourage"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_16_endeavor, 26, 16, "Answer 2", "endeavor", "marks", "symbols", "alerts"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_17_enlarge, 26, 17, "Answer 3", "symbols", "marks", "enlarge", "alerts"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_18_encouragement, 26, 18, "Answer 1", "encouragement", "alerts", "symbols", "marks"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_19_until, 26, 19, "Answer 4", "symbols", "alerts", "marks", "until"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_20_unfair, 26, 20, "Answer 2", "unfair", "symbols", "marks", "alerts"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_21_unfilled, 26, 21, "Answer 3", "alerts", "symbols", "unfilled", "marks"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_22_unless, 26, 22, "Answer 1", "unless", "symbols", "marks", "alerts"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_23_unpaid, 26, 23, "Answer 4", "marks", "symbols", "alerts", "unpaid"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_24_unreasonable, 26, 24, "Answer 2", "symbols", "unreasonable", "marks", "alerts"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_25_undue, 26, 25, "Answer 3", "alerts", "marks", "undue", "symbols"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_26_uncertain, 26, 26, "Answer 1", "uncertain", "alerts", "symbols", "marks"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_27_undoubtedly, 26, 27, "Answer 4", "symbols", "alerts", "marks", "undoubtedly"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_28_innovation, 26, 28, "Answer 2", "marks", "innovation", "symbols", "alerts"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_29_enact, 26, 29, "Answer 3", "symbols", "marks", "enact", "alerts"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_30_unable, 26, 30, "Answer 1", "unable", "alerts", "marks", "symbols"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_31_morethan, 26, 31, "Answer 4", "symbols", "alerts", "marks", "morethan"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_32_tous, 26, 32, "Answer 2", "tous", "marks", "symbols", "alerts"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_33_yourorder, 26, 33, "Answer 3", "symbols", "alerts", "yourorder", "marks"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_34_wehope, 26, 34, "Answer 1", "wehope", "symbols", "alerts", "marks"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_35_letme, 26, 35, "Answer 4", "symbols", "alerts", "marks", "letme"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson26_asset_36_youordered, 26, 36, "Answer 2", "alerts", "youordered", "symbols", "marks"));
-
         // Lesson 27
         answerItemList.add(new AnswerListItem(R.drawable.lesson27_asset_1_particular, 27, 1, "Answer 2", "practical", "particular", "particularly", "particulate"));
         answerItemList.add(new AnswerListItem(R.drawable.lesson27_asset_2_speak, 27, 2, "Answer 3", "speak", "sneak", "spark", "spike"));
@@ -1455,33 +1419,6 @@ public class QuizzesActivity extends AppCompatActivity {
         answerItemList.add(new AnswerListItem(R.drawable.lesson31_asset_18_gradual, 31, 18, "Answer 3", "graduate", "grade", "gradual", "graduation"));
         answerItemList.add(new AnswerListItem(R.drawable.lesson31_asset_19_scheduled, 31, 19, "Answer 4", "schedule", "shed", "scheduleable", "scheduled"));
         answerItemList.add(new AnswerListItem(R.drawable.lesson31_asset_20_equally, 31, 20, "Answer 2", "equal", "equally", "equator", "equation"));
-
-        // Lesson 32
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_1_steady, 32, 1, "Answer 3", "stay", "steel", "steady", "state"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_2_steadily, 32, 2, "Answer 1", "steadily", "steel", "steady", "state"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_3_readily, 32, 3, "Answer 4", "steady", "stay", "state", "readily"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_4_temporarily, 32, 4, "Answer 2", "steel", "temporarily", "steady", "state"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_5_family, 32, 5, "Answer 2", "steel", "family", "steady", "state"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_6_easily, 32, 6, "Answer 4", "steady", "stay", "steel", "easily"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_7_hastily, 32, 7, "Answer 3", "steady", "steel", "hastily", "state"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_8_families, 32, 8, "Answer 1", "families", "steel", "steady", "state"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_9_alter, 32, 9, "Answer 3", "steady", "steel", "alter", "state"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_10_altogether, 32, 10, "Answer 4", "steady", "stay", "steel", "altogether"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_11_also, 32, 11, "Answer 3", "steady", "steel", "also", "state"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_12_altered, 32, 12, "Answer 4", "steady", "stay", "steel", "altered"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_13_almost, 32, 13, "Answer 1", "almost", "stay", "steel", "steady"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_14_almanac, 32, 14, "Answer 3", "steady", "steel", "almanac", "state"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_15_discuss, 32, 15, "Answer 1", "discuss", "stay", "steel", "steady"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_16_discourage, 32, 16, "Answer 4", "steady", "stay", "steel", "discourage"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_17_distance, 32, 17, "Answer 1", "distance", "stay", "steel", "steady"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_18_discover, 32, 18, "Answer 4", "steady", "stay", "steel", "discover"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_19_dismiss, 32, 19, "Answer 3", "steady", "steel", "dismiss", "state"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_20_dispose, 32, 20, "Answer 1", "dispose", "stay", "steel", "steady"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_21_describe, 32, 21, "Answer 2", "steady", "describe", "steel", "state"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_22_despite, 32, 22, "Answer 1", "despite", "stay", "steel", "steady"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_23_desperate, 32, 23, "Answer 3", "steady", "steel", "desperate", "state"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_24_description, 32, 24, "Answer 4", "steady", "stay", "steel", "description"));
-        answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_25_destroy, 32, 25, "Answer 2", "steady", "destroy", "steel", "state"));
 
         // Lesson 32
         answerItemList.add(new AnswerListItem(R.drawable.lesson32_asset_1_steady, 32, 1, "Answer 2", "steel", "steady", "steal", "stead"));
