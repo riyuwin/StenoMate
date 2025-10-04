@@ -19,7 +19,6 @@ import com.example.stenomate.R;
 public class Lesson5Activity extends AppCompatActivity {
 
     ImageView BackIcon;
-    TextView ContentText;
 
     ImageView[] stenoImageHolders = new ImageView[86];
 
@@ -36,9 +35,29 @@ public class Lesson5Activity extends AppCompatActivity {
             stenoImageHolders[i].setOnClickListener(v -> showFullScreenImage(stenoImageHolders[finalI]));
         }
 
-        /*ContentText = findViewById(R.id.contentText);
-        String formattedText = "<b>S-Z</b> Perhaps the most frequently used consonant in the English language is s, partly because of the great many plurals that end with s. The shorthand s is a tiny downward curve that resembles the longhand comma in shape.";
-        ContentText.setText(Html.fromHtml(formattedText));*/
+        TextView ContentText = findViewById(R.id.contentText);
+        String formattedText = "<b>1 Alphabet Review</b> In Lessons 1 through 4 you studied 20 shorthand strokes. See how fast you can read them.";
+        ContentText.setText(Html.fromHtml(formattedText));
+
+        TextView ContentText1 = findViewById(R.id.contentText1);
+        String formattedText1 = "<b>2 A, A</b> The large circle that represents the long sound of a, as in main. also represents the ";
+        ContentText1.setText(Html.fromHtml(formattedText1));
+
+        TextView ContentText2 = findViewById(R.id.contentText2);
+        String formattedText2 = "<b>3   E, I, Obscure Vowel</b> The tiny circle that represents the sound of e, as in heat, also represents the vowel sounds heard in let, him, and the obscure vowel sound (called \"schwa\" in some dictionaries) in her, hurt.";
+        ContentText2.setText(Html.fromHtml(formattedText2));
+
+        TextView ContentText3 = findViewById(R.id.contentText3);
+        String formattedText3 = "<b>3   E, I, Obscure Vowel</b> The tiny circle that represents the sound of e, as in heat, also represents the vowel sounds heard in let, him, and the obscure vowel sound (called \"schwa\" in some dictionaries) in her, hurt.";
+        ContentText3.setText(Html.fromHtml(formattedText3));
+
+        TextView ContentText4 = findViewById(R.id.contentText4);
+        String formattedText4 = "<b>5   Brief Forms    </b> Here is another group of brief forms for frequently used words. You will be wise to learn them well.";
+        ContentText4.setText(Html.fromHtml(formattedText4));
+
+        TextView ContentText5 = findViewById(R.id.contentText5);
+        String formattedText5 = "<b>6   Common Phrases    </b> Here are some useful phrases employing these brief forms.";
+        ContentText5.setText(Html.fromHtml(formattedText5));
 
         Intent get_intent = getIntent();
         String lesson_type = get_intent.getStringExtra("lesson_type");

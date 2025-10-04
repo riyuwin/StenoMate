@@ -3,6 +3,7 @@ package com.example.stenomate.Lessons;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -15,8 +16,6 @@ import com.example.stenomate.R;
 public class Lesson9Activity extends AppCompatActivity {
 
     ImageView BackIcon;
-    TextView ContentText;
-
     ImageView[] stenoImageHolders = new ImageView[31];
 
     @Override
@@ -37,9 +36,6 @@ public class Lesson9Activity extends AppCompatActivity {
             }
         }
 
-        /*ContentText = findViewById(R.id.contentText);
-        String formattedText = "<b>S-Z</b> Perhaps the most frequently used consonant in the English language is s, partly because of the great many plurals that end with s. The shorthand s is a tiny downward curve that resembles the longhand comma in shape.";
-        ContentText.setText(Html.fromHtml(formattedText));*/
 
         Intent get_intent = getIntent();
         String lesson_type = get_intent.getStringExtra("lesson_type");

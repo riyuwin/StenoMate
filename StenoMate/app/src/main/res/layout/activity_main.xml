@@ -31,16 +31,16 @@
         app:layout_constraintEnd_toEndOf="parent" />-->
 
 
-    <!-- Background Image (full screen, at bottom layer)
+    <!-- Background Image (full screen, at bottom layer) -->
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/stenomate_bg3"
+        android:src="@drawable/steno_bg_4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />-->
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Foreground content -->
     <LinearLayout

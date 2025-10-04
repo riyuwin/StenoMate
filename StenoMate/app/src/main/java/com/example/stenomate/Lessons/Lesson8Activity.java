@@ -20,8 +20,6 @@ import com.example.stenomate.R;
 public class Lesson8Activity extends AppCompatActivity {
 
     ImageView BackIcon;
-    TextView ContentText;
-
     ImageView[] stenoImageHolders = new ImageView[33];
 
     @Override
@@ -41,10 +39,17 @@ public class Lesson8Activity extends AppCompatActivity {
             }
         }
 
+        TextView ContentText = findViewById(R.id.contentText);
+        String formattedText = "<b>1   Brief Forms </b>    Here is another group of nine brief forms for very common words. Learn them well!";
+        ContentText.setText(Html.fromHtml(formattedText));
 
-        /*ContentText = findViewById(R.id.contentText);
-        String formattedText = "<b>S-Z</b> Perhaps the most frequently used consonant in the English language is s, partly because of the great many plurals that end with s. The shorthand s is a tiny downward curve that resembles the longhand comma in shape.";
-        ContentText.setText(Html.fromHtml(formattedText));*/
+        TextView ContentText1 = findViewById(R.id.contentText1);
+        String formattedText1 = "<b>2    Words Ending</b> -ly   The common word ending -ly is represented by the e circle. ";
+        ContentText1.setText(Html.fromHtml(formattedText1));
+
+        TextView ContentText3 = findViewById(R.id.contentText3);
+        String formattedText3 = "<b>3    Amounts and Quantities</b>    When you take dictation in the business office, you will frequently have occasion to write amounts and quantities. Here are some devices that will enable you to write them rapidly.";
+        ContentText3.setText(Html.fromHtml(formattedText3));
 
         Intent get_intent = getIntent();
         String lesson_type = get_intent.getStringExtra("lesson_type");

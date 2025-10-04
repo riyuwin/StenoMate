@@ -106,7 +106,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="1. Word Ending -tion The word ending -tion (sometimes spelled -sion, -cian, or
 -shion) is represented by ish."
                         android:textColor="#4D4A4A"
@@ -116,7 +116,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Spell: a-k-shun, action"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -525,7 +525,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="2. Word Endings -cient, -clency The word ending -cient (or -tient) is represented by ish-t; -ciency, by ish-s-e."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -534,7 +534,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Spell: p-a-shun-t, patient \n
            e-f-e-shun-s-e, efficiency
 "

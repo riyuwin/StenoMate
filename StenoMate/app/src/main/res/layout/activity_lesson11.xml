@@ -105,9 +105,10 @@
                         android:textSize="16dp" />
 
                     <TextView
+                        android:id="@+id/contentText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="1    Brief Forms    Here are nine more brief forms for very common words."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -396,9 +397,10 @@
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/contentText1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="2    Rd     The combination rd is represented by writing the r with an upward turn at the finish"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -776,6 +778,7 @@
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/contentText2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"
@@ -1156,6 +1159,7 @@
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/contentText3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"
@@ -1447,6 +1451,7 @@
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/contentText4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"

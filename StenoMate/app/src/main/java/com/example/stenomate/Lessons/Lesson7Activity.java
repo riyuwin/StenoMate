@@ -3,6 +3,7 @@ package com.example.stenomate.Lessons;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -19,7 +20,6 @@ import com.example.stenomate.R;
 public class Lesson7Activity extends AppCompatActivity {
 
     ImageView BackIcon;
-    TextView ContentText;
 
     ImageView[] stenoImageHolders = new ImageView[35];
     @Override
@@ -39,10 +39,25 @@ public class Lesson7Activity extends AppCompatActivity {
             }
         }
 
+        TextView ContentText = findViewById(R.id.contentText);
+        String formattedText = "<b>1 Sh, Ch, J</b> These three sounds are represented by downward straight lines.";
+        ContentText.setText(Html.fromHtml(formattedText));
 
-        /*ContentText = findViewById(R.id.contentText);
-        String formattedText = "<b>S-Z</b> Perhaps the most frequently used consonant in the English language is s, partly because of the great many plurals that end with s. The shorthand s is a tiny downward curve that resembles the longhand comma in shape.";
-        ContentText.setText(Html.fromHtml(formattedText));*/
+        TextView ContentText1 = findViewById(R.id.contentText1);
+        String formattedText1 = "<b>Sh</b> The shorthand stroke for sh (called \"ish\") is a very short downward straight stroke.";
+        ContentText1.setText(Html.fromHtml(formattedText1));
+
+        TextView ContentText2 = findViewById(R.id.contentText2);
+        String formattedText2 = "<b>Ch</b> The shorthand stroke for ch (called \"chay\") is a somewhat longer straight downward stroke approximately one-half the height of the space between the lines in your shorthand notebook.";
+        ContentText2.setText(Html.fromHtml(formattedText2));
+
+        TextView ContentText3 = findViewById(R.id.contentText3);
+        String formattedText3 = "<b>J</b> The shorthand stroke for the sound of j, as in age and jury, is a long downward straight stroke almost the full height of the space between the lines in your shorthand notebook.";
+        ContentText3.setText(Html.fromHtml(formattedText3));
+
+        TextView ContentText4 = findViewById(R.id.contentText4);
+        String formattedText4 = "2 <b>O, Aw </b> The small deep hook that represents the sound of o, as in no, also represents the vowel sounds heard in hot and all.";
+        ContentText4.setText(Html.fromHtml(formattedText4));
 
         Intent get_intent = getIntent();
         String lesson_type = get_intent.getStringExtra("lesson_type");

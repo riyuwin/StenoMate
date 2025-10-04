@@ -104,6 +104,7 @@
                         android:textSize="16dp" />
 
                     <TextView
+                        android:id="@+id/contentText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"
@@ -420,7 +421,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Be is also used as a word beginning in words such as believe and because. "
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -429,7 +430,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Spell: be-l-e-v, believe"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -534,9 +535,10 @@
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/contentText1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="2    Words Ending    -ly   The common word ending -ly is represented by the e circle. "
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -545,7 +547,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Spell: l-a-t-le, lately"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -949,6 +951,7 @@
                         android:layout_marginTop="10dp"/>
 
                     <TextView
+                        android:id="@+id/contentText3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"

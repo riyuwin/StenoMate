@@ -105,9 +105,10 @@
                         android:textSize="16dp" />
 
                     <TextView
+                        android:id="@+id/contentText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="1 Nd The shorthand strokes for nd are joined without an angle to form the nd blend, as in signed."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -616,6 +617,7 @@
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/contentText1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"
@@ -1001,6 +1003,7 @@
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/contentText2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"
@@ -1527,6 +1530,7 @@
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/contentText3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_bold"

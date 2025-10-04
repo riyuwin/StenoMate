@@ -189,22 +189,29 @@ public class DictationActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 1,
                 1,
-                R.drawable.dictionary_asset,
-                "Hello World!",
+                R.drawable.lesson1_assessment_group_a,
+                "1 Nate may stay for tea. 2 Dave made the Navy team in May. 3 I need a vase. 4 Nate ate the meat. 5 Amy sees Dean Meade on May 15.",
                 1
         ));
         assessmentList.add(new AssessmentItem(
                 1,
                 2,
-                R.drawable.lesson2_assessment_group_a,
-                "Hello World!",
+                R.drawable.lesson1_assessment_group_b,
+                "6 Fay is mean and vain. 7 Fay stayed all day with me. 8 Amy made a date with Dave. 9 Fay Day may meet me on East Main Street. 10 The deed is in Dave's safe.",
                 1
         ));
         assessmentList.add(new AssessmentItem(
                 1,
                 3,
-                R.drawable.lesson2_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson1_assessment_group_c,
+                "11 Dean made $10 on May 18. 12 Dave's fee is $18. 13 Nate stayed at 15 East Main all day. 14 The Meade team faced the Navy on May 10. 15 Dave made a safety.",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                1,
+                4,
+                R.drawable.lesson1_assessment_group_d,
+                "16 Amy made me eat the meal. 17 Fay saved a seat for me. 18 The dean is easy to see. 19 May heard Fay say \"Feed me\". 20 Dean Meade will see Dave on May 18.",
                 1
         ));
         // Lesson 2 -----------------------------------------------------------------------------
@@ -300,8 +307,36 @@ public class DictationActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 4,
                 1,
-                R.drawable.lesson2_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson4_assessment_group_a,
+                "1 My wife will take my niece Gail Kline skating while we are at White Pines. I will go skating too. 2 We will try to keep our room clean. 3 Mr. Sweet will stay a week or so at my home in Green Acres. 4 We have two girls who are going to Wayne High School. 5 I am not willing to wait while Mr. Wade grades our typing papers. I have to go to a meeting in an hour.",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                4,
+                2,
+                R.drawable.lesson4_assessment_group_b,
+                "6 I do not know why he came so late. 7 I will increase Mr. Bailey's pay in a week or so. 8 Mr. Sweet gave me a nice raise; I need it. 9 Wade swears he knows who broke my vase. 10 Our produce sales are increasing. I am well pleased.",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                4,
+                3,
+                R.drawable.lesson4_assessment_group_c,
+                "11 I will not go skiing. I have a fever. It made me weak. 12 We have a weak polo team. I have a vague feeling we will lose to White Plains High School. 13 My wife will mail in our renewal in a week or ten days. 14 I will take Route 15 to Lake Rose.",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                4,
+                4,
+                R.drawable.lesson4_assessment_group_d,
+                "15 Mr. White's keys are not in my blue suit. 16 Mary Bailey types four or five hours a day. 17 Mr. Weeks will prune our maple trees in May. 18 Kate Gates made a poor grade in Dean Wade's legal course. 19 I do not eat sweets; I am trying to lose weight.",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                4,
+                5,
+                R.drawable.lesson4_assessment_group_e,
+                "20 I ate two rolls at noon. I do not feel too well. 21 Whose notes are in my library? 22 It will take me at least an hour to read Mr. Blair's brief. 23 We will not take a plane to Dover; we will drive. 24 Ray Stone will retire in May.",
                 1
         ));
         // Lesson 5 -----------------------------------------------------------------------------
@@ -400,8 +435,52 @@ public class DictationActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 7,
                 1,
-                R.drawable.lesson5_assessment_group_f,
-                "Hi!",
+                R.drawable.lesson7_assessment_group_a,
+                "Mrs. Grace: I am sorry to write you that on July 10 Mr. James Swift notified me that he will not take the job of chief shipping clerk that you have had open in your Dallas branch since June 5. I talked with him on the phone.\n" +
+                        "He tells me that he likes the job, but it is his feeling that the salary we are offering him is too low.\n" +
+                        "Can you see your way clear to authorize an increase in our salary scale? If you cannot, we may well have a problem filling the job. Ethel Wall",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                7,
+                2,
+                R.drawable.lesson7_assessment_group_b,
+                "Dear Sir: If you need a new jeep on your farm, we invite you to stop in at our showroom at 15 Church Avenue. We will show you the eight models we have on our floors. We assure you that we can supply you with a jeep that will meet all your needs at a price that will please you. If you care to test-drive a jeep, our salesman, Mr. Jack Small, will arrange it.\n" +
+                        "\n" +
+                        "We are open till nine at night on all weekdays. Sincerely yours.",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                7,
+                3,
+                R.drawable.lesson7_assessment_group_c,
+                "Dear Madam: On June 30 I bought a Model 16 easy chair at your Cherry Lane store. The chair arrived at my home on Park Drive on July 3, but I cannot accept it as it is. It has two large rips in the pillow as well as a deep scratch on the right rear leg.\n" +
+                        "Please arrange to take the chair back to your factory. Yours very truly",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                7,
+                4,
+                R.drawable.lesson7_assessment_group_d,
+                "Mr. Paul: We will have a meeting of our college sales staff on March 15 at the Hotel George at 150 Fifth Avenue. The meeting will start at nine. My plans are ready, but I need your advice on two vital sales matters.\n" +
+                        "\n" +
+                        "Can you arrange to meet me at eight on March 15 in the lobby of the Hotel George? We will have an hour or so to talk while we have breakfast in the coffee shop of the Hotel George. Horace Small",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                7,
+                5,
+                R.drawable.lesson7_assessment_group_e,
+                "Mr. James: My secretary, Miss Mary Page, tells me that the copying machine in the first floor mailing room is broken again. That machine has given the members of my staff lots of headaches.\n" +
+                        "I have a feeling that the final answer to the problem is a new machine. Please investigate the matter of cost. If the cost of a new, larger copier is not too great, please buy it. Give the bill to Miss Page. She will see that it is paid. Beth Church",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                7,
+                6,
+                R.drawable.lesson7_assessment_group_f,
+                "Mrs. Bridges: As I promised you, I am attaching a copy of a chart showing July sales in our two shoe shops. As you will notice, our Moline shop is doing well but our Dallas shop is not. The Dallas shop has had a sharp decrease since March.\n" +
+                        "Can you tell me why sales in our Moline shop are high while sales in our Dallas shop are causing me gray hairs? Jerry Small",
                 1
         ));
         // Lesson 8 -----------------------------------------------------------------------------
@@ -518,8 +597,49 @@ public class DictationActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 10,
                 1,
-                R.drawable.lesson5_assessment_group_f,
-                "Hi!",
+                R.drawable.lesson10_assessment_group_a,
+                "Dear Professor Moses: Why are people in Atlanta switching their car insurance to National? They are switching because:\n" +
+                        "1. They find that we can save them 15 percent or more on their car insurance.\n" +
+                        "2. They like the efficient way in which our 15 offices in Atlanta serve their needs.\n" +
+                        "3. They know that we render good, fast claim services.\n" +
+                        "Why not invite our agents to read your policy. If they find that you can save by insuring with National, they will tell you so. But if they find that your policy is as good as ours, they will not try to get you to change.\n" +
+                        "There is no charge for this service. If you would like to have it, I will be happy to arrange it, Professor Moses. Simply call me at (703) 555-5176. Yours very truly",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                10,
+                2,
+                R.drawable.lesson10_assessment_group_b,
+                "Dear Parents: Have you had a half hour or so to read the pamphlet on Grand Island Camp that we sent you? If you have, we are sure you liked the steps Grand Island Camp has taken to be sure that your daughter will have a pleasant vacation.\n" +
+                        "Applications for July at Grand Island Camp are currently arriving at the rate of four or five a day. As we can take care of only 200 campers, we anticipate that all our space will be assigned by early June.\n" +
+                        "If you would like your daughter to spend two weeks at Grand Island Camp, please mail your application by June 2 at the latest. We don't want to find it necessary to write you that we cannot take your daughter because your application didn't reach our offices by the closing date. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                10,
+                3,
+                R.drawable.lesson10_assessment_group_c,
+                "Mrs. Bond: As you know, last week I asked Mr. Trent to prepare two mailing pieces on our new line of mattresses. I am attaching copies of the two pieces Mr. Trent wrote. I am well pleased with his copy.\n" +
+                        "I will have our printer print 10,000 copies of each of these mailing pieces. Four thousand copies will be sent to our Dallas office. Four thousand copies will be sent to our Erie office. Two thousand copies will be kept here in our main office on Park Avenue.\n" +
+                        "I am sure that these mailing pieces will increase our sales of mattresses in the fall. Barry Smith",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                10,
+                4,
+                R.drawable.lesson10_assessment_group_d,
+                "Dear Andrew: As you know, our salesman in the East, Bob Moses, left my staff to take a position with the Carpenter Meat Processing Corporation in Flint.\n" +
+                        "An hour or so ago, a chap by the name of Bill Landry came in to see me. He applied for the job. During his visit he said he knew you well. In fact, he said that he often played golf with your sister.\n" +
+                        "He left me with the feeling that he is a talented, efficient man who would do well as a salesman for our firm.\n" +
+                        "Do you share my feeling? Sincerely",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                10,
+                5,
+                R.drawable.lesson10_assessment_group_e,
+                "Dear Professor Sanders: Here is an offer that is a real bargain. For $520 you can get a trip to Paris this winter as well as 50 hours of French lessons while you are in Paris. You may rightly wonder if you can learn French in only 50 hours. With our efficient new methods, though, you will be surprised at the proficiency you will achieve.\n" +
+                        "If you would like more facts, call our main offices at 555-1187. If you prefer, see your local travel agency. The agents are familiar with all our travel plans. Sincerely yours",
                 1
         ));
         // Lesson 11 -----------------------------------------------------------------------------
@@ -622,8 +742,58 @@ public class DictationActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 13,
                 1,
-                R.drawable.lesson11_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson13_assessment_group_a,
+                "Dear Professor Woods: Please accept our thanks for the order you mailed us for a Cook color television set. The order reached us yesterday, and I was glad to get it.\n" +
+                        "You have chosen your set wisely because the Cook color television set is the work of a number of the finest minds in the television industry.\n" +
+                        "Your set will be shipped this afternoon by truck from our factory, and you should have it soon. We know that it will give you hundreds of hours of pleasure.\n" +
+                        "I am enclosing a copy of a circular that lists our entire line of radios, television sets, and record players. Please read the circular when you have a chance. Very truly yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                13,
+                2,
+                R.drawable.lesson13_assessment_group_b,
+                "Dear Sir: Ordering food for hundreds of patients in a nursing home and serving it is not an easy job. It is a real challenge to prepare and to serve three appetizing meals a day. You must work hard to keep the soup hot and the ice cream cold and the salad crisp. That is the job that Cook Food Services does.\n" +
+                        "We prepare the meals in our own kitchens. They are then placed on trays and later put in ovens which heat the food. The meals are then ready to be served. We have been serving food to nursing homes since 1950.\n" +
+                        "A circular listing all our services is enclosed. If you would like to have Mr. Bates, our chief food planner, talk to the officers of your nursing home, we will be glad to send him. To arrange for his visit, just call us. Our number is 555-9274.7 Verv truly yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                13,
+                3,
+                R.drawable.lesson13_assessment_group_c,
+                "Dear Professor Cook: Thank you for the nice letter you wrote in my behalf to Mrs. Helen Dudley of the Woods Book Corporation. She called me yesterday to tell me that the job was mine and that I could begin work on July 1.\n" +
+                        "I am sure that your letter was a vital factor in Mrs. Dudley's selection of me from the dozens of people who were applying for the job. I assure you, Professor Cook, that I will do my utmost to succeed in this job.\n" +
+                        "I plan to stop in to see you soon and thank you again for your kindness. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                13,
+                4,
+                R.drawable.lesson13_assessment_group_d,
+                "Dear Bud: We were sorry to learn yesterday that our shipping room did not fill your July 3 order properly. I made a note on the order that 100 copies of Mrs. Swift's Cooking Guide should be shipped to your Fifth Street stockroom but that the bill for $450 should be sent to your home. The shipping clerk did not see my note and sent the books to your home and enclosed the bill inside the package.\n" +
+                        "Our truck will pick up the books at your home soon and take them to your stockroom.\n" +
+                        "Thanks, Bud, for being so patient with the inefficiency of our clerk. Yours very truly.",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                13,
+                5,
+                R.drawable.lesson13_assessment_group_e,
+                "To the Staff: I am glad to be able to write you that in April and May we had a good increase in the sale of our sugar products. I am well pleased. This increase can be traced to three factors:\n" +
+                        "1. The hard work of our salespeople.\n" +
+                        "2. The fine work of the copywriters who prepared the circulars we mailed to our dealers in March.\n" +
+                        "3. The fine work of our shipping staff who filled all orders the same day they came in.\n" +
+                        "May I thank each of you sincerely for your cooperation. A. G. Smith",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                13,
+                6,
+                R.drawable.lesson13_assessment_group_f,
+                "Mrs. Tucker: Thank you for the copy of the notes you made at our March sales meeting in Tulsa. I was glad to get them because I left my own notes on the plane and was not able to recover them. Your notes will be of great help to Mr. Parks and Mr. White, who will soon start working on their plans for the July meeting.\n" +
+                        "I learned yesterday that the only date on which we can hold our July meeting is July 31. All the meeting rooms in our building will be full from July 1 through July 30.\n" +
+                        "Again, thanks for the notes you enclosed with your letter. It will be nice to see you again at the meeting on July 31. Ethel Booth",
                 1
         ));
         // Lesson 14 -----------------------------------------------------------------------------
@@ -736,8 +906,45 @@ public class DictationActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 16,
                 1,
-                R.drawable.lesson14_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson16_assessment_group_a,
+                "Dear Dr. Yale: If you will fill in and mail the enclosed card, you will receive a valuable gift from the Detroit Insurance Corporation. It is a yellow vinyl traveling case that will keep your suits clean and fresh when you travel. We offer you this gift for the chance to tell you about a financing plan that we think will appeal to you-one that is quite simple and immensely effective.\n" +
+                        "Most businessmen and businesswomen earn not less than $400,000 between their first and last paychecks. Yet many do not have anything to show for their years of toil. Our plan offers you a quick but effective way to save money for the day you retire.\n" +
+                        "Take a minute, Dr. Yale, to mail the enclosed card. When we receive it, we will tell you what our plan can do for you and send you the yellow vinyl traveling case we mentioned. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                16,
+                2,
+                R.drawable.lesson16_assessment_group_b,
+                "Dear Professor Yale: Royal Park's volunteer fire fighters have a drive each year to raise money for the many services they render to Royal Park's citizens. Would you be willing to join us and work as a section manager in this year's drive?\n" +
+                        "Each manager is assigned a section of Royal Park. Your section, in which there are 30 homes, would be from Eighth Street to Doyle Square.\n" +
+                        "As a manager, you would appoint five men or women, each of whom would solicit money or pledges from six homes. After they have visited the homes, they would leave the money and pledges that they collected with you. I would finally collect them from you at your office.\n" +
+                        "I sincerely hope you will be able to say yes. Our goal this year is $100,000. We need your help to get it. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                16,
+                3,
+                R.drawable.lesson16_assessment_group_c,
+                "Dear Doyle: Yesterday I finally yielded to my boys' pleas that we install a swimming pool in our yard. I had to say yes once Mrs. Roy joined them. They had won. I had to give up; I had no choice! I plan to install a pool in a month or so.\n" +
+                        "Could you send me any circulars or booklets that show the types of pools you build? Better still, why not stop by to see me soon and tell me what is involved in building a pool in our yard. Very truly yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                16,
+                4,
+                R.drawable.lesson16_assessment_group_d,
+                "Mr. Doyle: I am glad to write you that the Yale Corporation board at its last meeting ruled that all managers who have been with us for 15 years should hereafter receive one month's vacation.\n" +
+                        "I have listed on the attached sheet all those who are eligible for a month's vacation. Please notify them at once of our new policy. Thank you for taking care of this matter for me.\n" +
+                        "I think this new policy will have a good effect on the morale and efficiency of our managing staff. Ethel J. Smith",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                16,
+                5,
+                R.drawable.lesson16_assessment_group_e,
+                "Dear Sir: If your car is five or six years old, it may not be as good-looking or as smooth-riding or as efficient as it once was. It might even be a safety hazard. You might be wise to order a new car instead of having your old one repaired.\n" +
+                        "You can arrange the financing for a new car at the Reliable Finance Corporation here in Troy. We will be glad to arrange a loan for you that you can take 36 months to repay. It is easy to arrange a well-planned loan. It will take less than half an hour. Sincerely yours\n",
                 1
         ));
         // Lesson 17 -----------------------------------------------------------------------------
@@ -830,8 +1037,36 @@ public class DictationActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 19,
                 1,
-                R.drawable.lesson14_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson19_assessment_group_a,
+                "Ladies and Gentlemen: For the past 20 years the Daily Star has issued a special new-car preview section. This year we will again issue a special new-car preview section. This valuable section will be delivered with the morning issue of the July 5 Daily Star.\n" +
+                        "This unique preview will reach about 500,000 people, a great many of whom are ready to order and are able to buy a new car. Of the people who will read this preview, 81 percent presently own one or more cars, and 62 percent purchased a new or used car last year.\n" +
+                        "As the manufacturer of car equipment, accessories, and parts, you should invest your advertising money where it will do the most good. You should place a well-planned advertisement in this preview. It represents an opportunity for an immediate increase in your sales. Take a few moments immediately to call Ms. Mary Hughes, manager of our advertising department, and arrange to get your advertising message in the July 5 preview section. Ms. Hughes' number is 555-9864. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                19,
+                2,
+                R.drawable.lesson19_assessment_group_b,
+                "Ladies and Gentlemen: For the past 20 years the Daily Star has issued a special new-car preview section. This year we will again issue a special new-car preview section. This valuable section will be delivered with the morning issue of the July 5 Daily Star.\n" +
+                        "This unique preview will reach about 500,000 people, a great many of whom are ready to order and are able to buy a new car. Of the people who will read this preview, 81 percent presently own one or more cars, and 62 percent purchased a new or used car last year.\n" +
+                        "As the manufacturer of car equipment, accessories, and parts, you should invest your advertising money where it will do the most good. You should place a well-planned advertisement in this preview. It represents an opportunity for an immediate increase in your sales. Take a few moments immediately to call Ms. Mary Hughes, manager of our advertising department, and arrange to get your advertising message in the July 5 preview section. Ms. Hughes' number is 555-9864. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                19,
+                3,
+                R.drawable.lesson19_assessment_group_c,
+                "Dear Professor Royal: In the enclosed copy of the Financial Review, you may find a few advertisements from companies about which you would like to have more essential facts. You can have them because all our advertisers want to tell you more about their businesses and the important work they do than they can tell you in the limited space of their advertisements.\n" +
+                        "Therefore, the Financial Review has provided an opportunity for you to send for these facts at no cost. Simply drop the enclosed card, addressed to Ms. Mildred Hugo, Director of Advertising, Department B, in the mail, and she will be glad to send the facts to you immediately.\n" +
+                        "This represents one more illustration of the special, efficient service we render the readers of the Financial Review. Yours very truly",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                19,
+                4,
+                R.drawable.lesson19_assessment_group_d,
+                "Mr. Hugo: Yesterday Mr. White came to see me to ask if I could help him write his new circular for the advertising department. There was not anything I could do to help him, but I asked him to call Mrs. Sweet of the Main Street Advertising Company\n" +
+                        "What do you think about this? May I have a note from you soon? Thanks. Van Smith\n",
                 1
         ));
         // Lesson 20 -----------------------------------------------------------------------------
@@ -933,8 +1168,55 @@ public class DictationActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 22,
                 1,
-                R.drawable.lesson14_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson22_assessment_group_a,
+                "Ms. Fenton: As you know, our domestic automobile business has been growing very fast. In fact, we estimate that it has doubled in recent years and that next year will be bigger than ever. Because of this, we have outgrown our present space. We are using every bit of space on the four floors we now occupy.\n" +
+                        "You will be glad to know, therefore, that we have rented temporary space on the third floor of our building, where there have been no tenants since August or September. We will move several departments to this floor, including your advertising department and Mr. Quimby's mailing department. This move will have the advantage of keeping all our company's operations together.\n" +
+                        "We contemplate moving your department starting on the morning of October 31 and completing the move on Tuesday afternoon, November 1. I suggest, therefore, that everyone begin to make immediate preparations for the move.\n" +
+                        "I am planning to give you more details tomorrow or Wednesday. Charles H. Dempsey\n",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                22,
+                2,
+                R.drawable.lesson22_assessment_group_b,
+                "Dear Mrs. Temple: As head of the Red Cross campaign in Des Moines, I thank you for the valuable work you did to make our campaign succeed.\n" +
+                        "As you know, the goal we set for the end of February was $200,000. You will be glad to know that we will surpass that goal by an estimated $30,000. On Thursday, February 25, we had collected $150,000 in cash and $60,000 in pledges-and we still have Friday, Saturday, and Sunday to go. This outstanding achievement is a source of great pride to me.\n" +
+                        "It was a pleasure to work with you, Mrs. Temple. I have seldom worked with a person whose optimism was so contagious. Cordially yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                22,
+                3,
+                R.drawable.lesson22_assessment_group_c,
+                "Dear Mr. Landon: Today, when your food dollar buys less, it is important that you demand more for your money. That is why National Farm Butter should be on your shopping list.\n" +
+                        "It takes the better part of ten ounces of milk to make one ounce of fresh National Farm Butter. That is why it is so nourishing. It is now evident that inflation is eroding the value of just about everything. Therefore, you should make certain that you are getting real value in the items you purchase.\n" +
+                        "Demand more for your money; demand National Farm Butter. Any high-grade food store stocks it. Get in a good supply at your first opportunity. Yours sincerely",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                22,
+                4,
+                R.drawable.lesson22_assessment_group_d,
+                "Gentlemen: This letter represents our third attempt to collect the $250 that has been due on your account since Monday, December 1; it will be our last.\n" +
+                        "If your check is not in our hands by Tuesday, January 30, we will send your account to our lawyer. This action will hurt both of us. We will lose a good customer, and your credit standing will be irreparably damaged.\n" +
+                        "We would suggest, therefore, that you send us your check soon to pay for the automobile accessories and other items you purchased in October and November. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                22,
+                5,
+                R.drawable.lesson22_assessment_group_e,
+                "Dear Dr. Yale: The repair work on the equipment that was damaged by fire on Wednesday, August 10, was completed yesterday, which is two weeks sooner than our staff had estimated. We were able to get the necessary parts more quickly than we anticipated. Everything is now in order and operating efficiently once again.\n" +
+                        "What this means is that we will be able to ship your six tape recorders in November instead of December. They will be shipped on or before November 10 from our Bond Street warehouse, and you should have them shortly thereafter.\n" +
+                        "Thank you. Dr. Yale, for having been so patient with us. Cordially yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                22,
+                6,
+                R.drawable.lesson22_assessment_group_f,
+                "Ms. Davis: Could you print for me by Monday, January 15, about 200 copies of the enclosed circular, but without the coupon at the bottom? I can use these circulars to good advantage in an hour's talk I have been asked to give before Mr. Swift's business class. I think there are 85 students in his class.\n" +
+                        "I accepted Mr. Swift's offer to talk to his class because of his importance to our manufacturing company as a customer. Mary Fountain",
                 1
         ));
         // Lesson 23 -----------------------------------------------------------------------------
@@ -1011,8 +1293,53 @@ public class DictationActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 25,
                 1,
-                R.drawable.lesson23_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson25_assessment_group_a,
+                "Mr. Fenton: This is a rather difficult letter for me to write because I must refuse your request to change your territory from the state of Michigan to the state of New York. I wish I could satisfy you, but I am unable to do so.\n" +
+                        "If you will read the personnel booklet of the Underwood Envelope Company, you will see that our representatives must have devoted at least two years to their territory before they are eligible to move to a different area. You have been in your territory a little over one year, and you have made very satisfactory progress. It is evident you are doing a good job. You have won many valuable and influential friends, and you should have another good year.\n" +
+                        "If you need any assistance in your work, please let us know. Your success is just as important to our company as it is to you. You can, of course, apply for a change again as soon as you are eligible, which will be in about ten months.\n" +
+                        "I hope you will understand our position. Henry Quill",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                25,
+                2,
+                R.drawable.lesson25_assessment_group_b,
+                "Gentlemen: Your overdue account is not causing us any real concern. We are satisfied that a progressive organization like the General Toy Manufacturing Company intends to pay for the envelopes we printed for you. We think you will be glad to do this in order to maintain your good credit standing.\n" +
+                        "But we are bound under the rules of the Missouri State Credit Bureau to list with them immediately all accounts that are 90 days overdue. If we do not hear from you soon, we will have to take the difficult step of listing your account with the Missouri State Credit Bureau. We do not wish to do this. I hope you will not make it necessary for us to do so.\n" +
+                        "A stamped envelope is enclosed. Please take this opportunity to send your check directly to our office. Thanks for your understanding. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                25,
+                3,
+                R.drawable.lesson25_assessment_group_c,
+                "Ladies and Gentlemen: We know that there is a satisfactory reason why you have not paid us the $30 you owe us or acknowledged our requests for payment for the goods you purchased in October and November. I hope, therefore, that you will take care of the enclosed statement or let us know as soon as possible the reason for your delay.\n" +
+                        "Why not take care of this matter now. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                25,
+                4,
+                R.drawable.lesson25_assessment_group_d,
+                "Ms. Temple: It is difficult for me to understand why we have made so little progress and have had so little success in finding a satisfactory solution to the question of pollution control in the paperboard and envelope division of our factory in Peoria, Illinois. If we do not shortly comply with the law that the state passed in January, we will be in for a difficult time.\n" +
+                        "I wish to call a meeting of the operations committee as soon as possible and request every member to have a definite plan to suggest. I hope we can obtain a solution without delay because of the importance of the matter. Mark C. Yale",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                25,
+                5,
+                R.drawable.lesson25_assessment_group_e,
+                "Mrs. Underwood: As you know, yesterday we made definite plans to have a meeting of our advertising department. We were to meet on the morning of Tuesday, August 5, in Chicago. We may have to change our plans though.\n" +
+                        "I was just told by Mr. Sweet that he has called a tentative meeting of his finance committee for the same time in Philadelphia, Pennsylvania. He says it is an important meeting at which we will take up several important matters concerning the efficiency of our business operations.\n" +
+                        "If his meeting takes place on August 5, we would be well advised to postpone our meeting till next month. I will, of course, call you as soon as I learn anything definite. Harry C. Doyle",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                25,
+                6,
+                R.drawable.lesson25_assessment_group_f,
+                "Dear Dr. Dempsey: Does your house need a paint job or a more efficient kitchen? Whatever your needs, the State Street Finance Company can grant you a loan of up to $10,000 at a lower rate than you can get elsewhere.\n" +
+                        "Here is what you have to do to get a loan. After you have decided on the changes you wish to make, request your contractor to estimate the cost. Then fill out the enclosed application, mail it, and let us do the rest. We will be able to give you a yes-or-no answer in 48 hours. Under our plan, repayment is easy. Very truly yours",
                 1
         ));
         // Lesson 26 -----------------------------------------------------------------------------
@@ -1101,8 +1428,62 @@ public class DictationActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 28,
                 1,
-                R.drawable.lesson26_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson28_assessment_group_a,
+                "Mr. Dix: As you are probably aware, the regular spring meeting of our newspaper advertising editors is less than six weeks away. I am particularly anxious to plan ahead so that we will not run into the perplexing problems we encountered last year. I wish it to be a well-organized success. Before I go ahead with the preparation of a tentative agenda, I would definitely like to have your frank opinion regarding the following general questions:\n" +
+                        " 1 Where should we hold the meeting-in our State Street building in Chicago or away from Chi-cago, perhaps in Phoenix or Los Angeles or Philadelphia? \n" +
+                        "2  What speakers do you suggest we invite and what subjects should they be requested to speak on? \n" +
+                        "3 Should we touch on the budget for the coming year, or should we leave that subject for our summer meeting in August?\n" +
+                        " 4 Are there any additional topics that in your judgment we should take up? \n" +
+                        "I hope that you will send your suggestions and ideas to me as soon as possible; I will welcome them. Max Wilson",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                28,
+                2,
+                R.drawable.lesson28_assessment_group_b,
+                "Dear Mrs. Short: As a conscientious, efficient taxpayer, you certainly wish to pay all the taxes that are due on your income under present tax laws. But why should you pay more? To help you decide just how much you owe  Uncle Sam is the purpose of our booklet, The Tax Guide. Thousands of people depend on it to enable them to take advantage of current tax laws covering capital gains and losses and company dividends.\n" +
+                        "Plan ahead, Mrs. Short; order a copy of this valuable tax guide today. You can place your order for one by  filling out the coupon at the bottom of the enclosed circular and mailing it in the envelope we have provided. The Tax Guide costs only $4. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                28,
+                3,
+                R.drawable.lesson28_assessment_group_c,
+                "Dear Ms. Overmeyer: You may find it very difficult to believe, but in this day of progressively rising taxes, there are quite a few business people who fail to take advantage of every tax deduction that the law permits. They are people like doctors, lawyers, and some small manufacturers who devote from 12 to 143 hours a day to making a success of something.\n" +
+                        " Under the present tax law, you can put away as much as 15 percent of your income up to a maximum of $7,000 each year for your retirement. If you have several people on your staff, the plan works to satisfy their needs as well. \n" +
+                        "Would you like more important facts, Ms. Overmever? We will be glad to give them to you. Simply let us know what time will be satisfactory for our representative to call on you. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                28,
+                4,
+                R.drawable.lesson28_assessment_group_d,
+                "Dear Mr. Weston: Immediately after the first of next year, we will open a new Sunshine Hotel over-looking Hong Kong harbor. It will contain approximately 900 guest rooms which were designed by a decorator who is the acknowledged leader in the field. It will have a health spa and social club unlike anything you can find in other parts of the globe. In addition, there will be a heated outdoor swimming pool. Six floors of the hotel will be devoted completely to unique shopping areas where you will be able to obtain fine values on many different types of goods. \n" +
+                        "But we cannot tell you everything about this new hotel in a letter Therefore, we are enclosing a booklet that contains the whole story. \n" +
+                        "Whenever you have an opportunity to travel to Hong Kong, come to the Sunshine Hotel. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                28,
+                5,
+                R.drawable.lesson28_assessment_group_e,
+                "Dear Mr. Lincoln: A man by the name of Max Long has written me applying for the position of assis-tant sales manager that we have open in our Miami newspaper office. In his application he mentions that he once worked for you as a commer-cial artist on the Trenton Bulletin. He says you can vouch for his efficiency. \n" +
+                        "He seems to have a great deal of potential, and I hope to hire him. But before I do, I would like to speak with you regarding several parts of his application that seem rather strange.\n" +
+                        " Could you spare me perhaps half an hour next week, Mr. Lincoln? 1 value your opinion highly. Please call me at 555-6402.6 Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                28,
+                6,
+                R.drawable.lesson28_assessment_group_f,
+                "Dear Dr. Underwood: As you are undoubtedly aware, knowing how to earn money is a particularly valuable skill. But knowing how to spend it wisely is much more important. \n" +
+                        "You can quickly lose large sums of money that you worked hard to earn if you do not plan your spending properly. How can you be sure of getting full value for the dollars you spend? The answer is to get a copy of the Complete Consumer's Guide. The Complete Consumer's Guide will show you: \n" +
+                        "1.\tHow to tell an honest bargain from a fraud.\n" +
+                        "2.\tHow to get good value when you are buying household goods. \n" +
+                        "3. How to reduce your income taxes legally. \n" +
+                        "4. How to borrow money wisely. \n" +
+                        "5. How to plan for the days ahead. \n" +
+                        "These are only a few of the things you will find in the Complete Consumer's Guide. We hope you will send for a copy as soon as possible. It costs only $8. An order blank is enclosed. Sincerely yours,",
                 1
         ));
         // Lesson 29 -----------------------------------------------------------------------------
@@ -1179,8 +1560,46 @@ public class DictationActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 31,
                 1,
-                R.drawable.lesson29_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson31_assessment_group_a,
+                "Ms. Samuels: This morning our New York office received from the state government an envelope containing an order for 10,000 copies of our Executive Manual of Correspondence written by Dr. James Sweet. We thought we had sufficient stock of this publication to satisfy our needs throughout the remaining months of the year, but an order for this quantity will completely exhaust our stock by the end of September.\n" +
+                        " We, of course, recognized the fact that we had a great thing in the Executive Manual of Correspondence, but we had never before received an order for so large a quantity. Because of the specialized character of this book, we felt it would have a limited sale, and we set as our objective a sale of 20,000 copies annually. I have an idea, though, that we will actually sell more than 50,000 copies this year. I am, quite naturally, very happy about this. \n" +
+                        "May I request, Ms. Samuels, that you be responsible for setting up a schedule for printing another 50.000 copies of the Executive Manual of Correspondence. Please acknowledge this note as soon as you receive it. A. C. Quinn",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                31,
+                2,
+                R.drawable.lesson31_assessment_group_b,
+                "Dear Mr. Worth: I think I have been successful in finding a home that should be exactly what you need. The house is on Banks Street. I am enclosing several pictures, each of which was taken from a different angle so that you can have a fairly clear idea of what the house actually looks like. \n" +
+                        "The house will soon be advertised in every local newspaper. Because of its many excellent features, Mr. Worth, it will probably be sold in a short time. If you wish to pursue the matter, I encourage you to arrange to see the house immediately and to speak to the owner personally. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                31,
+                3,
+                R.drawable.lesson31_assessment_group_c,
+                " Dear Mr. Dempsey: Here are a few of the important advantages of the house I talked to you about on the phone yesterday:\n" +
+                        " 1 It is one block away from an elementary school. Your children will be able to walk to school. \n" +
+                        "2 It is only one mile from a new shopping area and a half mile from the town government center.\n" +
+                        " 3 It is four blocks from a public park.\n" +
+                        " 4 It is only six blocks from the Harper Manufacturing Company. where your office will be located.\n" +
+                        " 5 The taxes are actually quite low. The house. Mr. Dempsey, is in a nice section of town, and it will not long remain on the market. I suggest, therefore, that you let me arrange an appointment for you to see it in the near future. Very truly yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                31,
+                4,
+                R.drawable.lesson31_assessment_group_d,
+                "Dear Mrs. Overmeyer: Why do the beautiful trees in your yard need feeding? Nature satisfactorily takes care of trees in a wooded area. On most grounds, though, all leaves are eventually raked up. Thus your trees are gradually deprived of a natural quantity of food and moisture throughout the winter. You must replenish this food supply annually if your trees are to remain healthy. Failure to do so will usually affect the beauty and special character of your trees. \n" +
+                        "Our experts are prepared to apply chemical food to the roots of your trees with the most progressive machinery. This food will enable your trees to resist the ordinary ravages of winter and the difficulties that insects create when spring and summer arrive.\" \n" +
+                        "We suggest that you invite our experienced representatives to give you an objective opinion of the cost of taking care of your trees. You will never regret doing so, Mrs. Overmeyer. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                31,
+                5,
+                R.drawable.lesson31_assessment_group_e,
+                "To the Staff: Yesterday afternoon I received the sales figures for June. I understand that they are much higher than those of the corresponding month of last year. Keep up the good work! Frank Long",
                 1
         ));
         // Lesson 32 -----------------------------------------------------------------------------
@@ -1299,8 +1718,51 @@ public class DictationActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 34,
                 1,
-                R.drawable.lesson32_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson34_assessment_group_a,
+                "Dear Mr. Stern: Mr. Morton, manager of the sporting goods department of our State Street store, informed me yesterday morning that you gave him an order for a quantity of our sporting goods that were to be delivered to your southern division office in Atlanta. \n" +
+                        "I wish we could start work on your order immediately. Unfortunately, this is not possible because our quarterly credit report on your organization is not complete.\n" +
+                        " We realize that you want these sporting goods promptly. May we suggest, therefore, that you send us an advance check for $2,000. We will begin manufacturing the uniforms, jackets, and gloves as soon as we receive it. \n" +
+                        "We hope, Mr. Stern, that we will be able to obtain a complete report on your credit condition soon because we want to grant you our usual discount terms on future orders. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                34,
+                2,
+                R.drawable.lesson34_assessment_group_b,
+                "Dear Mr. Norton: An important newspaper executive named Mrs. Mildred Turner had a telephone extension installed in the kitchen a few days ago. Behind that extension lies a story.\n" +
+                        "Mrs. Turner's teenage daughter Jane blamed her mother for the failure of a fruitcake. Jane claimed that the phone in the living room rang. and she left the kitchen to answer it. The cake slipped her mind temporarily, and on her return to the kitchen, it was burned almost to a crisp. She further claimed that this discouraging incident never would have happened if there had been an extension in the kitchen. Our news-paper executive recognized the wisdom of her daughter's contention and installed an extension promptly.\n" +
+                        "Do you want to be blamed for the failure of a cake, a  cherry pie, or an apple turnover? I have an idea that you probably don't. Mr. Norton. So speak to our representative today, requesting the installation of an extension in your kitchen promptly. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                34,
+                3,
+                R.drawable.lesson34_assessment_group_c,
+                "Dear Ms. Turner: Here are a few things we will do for you when you make reservations at the Eastport Hotel:\n" +
+                        "1. We will pick you up at the terminal at any hour of the day at no charge.\n" +
+                        "2. We will give you a modern, well-furnished, and soundproof room.\n" +
+                        "3. We will take you to the airport promptly when you want to leave-also with our compliments.\n" +
+                        "\n" +
+                        "What is our object in doing all these thoughtful things for our guests? The answer to that question is that we want our guests to return regularly year after year. We are not satisfied to have them come only once. \n" +
+                        "Call us the next time pleasure or government business takes you to Eastport, Ms. Turner. We will take very good care of you throughout your stay and make it an extraordinary experience. Cordially yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                34,
+                4,
+                R.drawable.lesson34_assessment_group_d,
+                "Dear Mrs. Worth: You will recall that in the Wednesday, February 5. issue of World Travel News, we published a short article that de-scribed the modern X-ray units being used to check carry-on baggage. The publication of this article prompted some members of the traveling public to ask whether the radiation had any effect on different types of film.\n" +
+                        " The Norton Company is responsible for the installation of this equip-ment. A few days ago we wrote them regarding this subject. They informed us that, in their opinion, the X-ray units will have no effect whatsoever on film.\n" +
+                        " To speed up the processing of baggage at airport terminals, we have had Norton units installed in the terminals listed in the enclosed circular. We wanted you to have this information, Mrs. Worth; we hope it will be of value to you. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                34,
+                5,
+                R.drawable.lesson34_assessment_group_e,
+                "Dear Dr. Dexter: The new Franklin Hotel isn't near the Miami airport it is actually in the terminal. Think of the perfect opportu nity this offers you if you want to hold a meeting of general sales representatives, correspondents, or customers.\n" +
+                        "The Franklin Hotel is a successful, progressive, and full-service hotel. It has 900 modern rooms that have character and charm.\n" +
+                        "You can obtain reservations promptly and without difficulty, Dr. Dexter. Just call us collect. Sincerely yours,",
                 1
         ));
         // Lesson 35 -----------------------------------------------------------------------------
@@ -1384,8 +1846,56 @@ public class DictationActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 37,
                 1,
-                R.drawable.lesson35_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson37_assessment_group_a,
+                "Gentlemen: I am embarrassed. I am, in fact, exceedingly embarrassed. I just discovered your letter of Friday, November 18, requesting our opinion of the financial condition of the Bryant Furniture Manufacturing Company of Des Moines. I assure you that ordinarily I acknowledge my correspondence more promptly. \n" +
+                        "\n" +
+                        "Throughout the period of time that we have dealt with several of the senior executives of this company, we have never had an unpleasant experience. These executives are practical, forceful, and responsible men and women.\n" +
+                        " The company is outstandingly successful. Since they entered the furniture field about fifteen years ago, their financial situation has improved satisfactorily every year. If there is any other information I can add to this short report, please let me know. Sincerely your",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                37,
+                2,
+                R.drawable.lesson37_assessment_group_b,
+                "Dear Mr. Jennings: Thank you for sending to us for possible publication your manual entitled Improving Employee Morale. I read it yesterday afternoon and found it to be interestingly, convincingly, and impartially written. I was genuinely impressed with it. \n" +
+                        "\n" +
+                        "I wish I could tell you that there is an exceedingly large market for a manual of this character. Your manual, unfortunately, cannot be sold in quantity lots. It would have to be sold by correspondence on a single-copy basis and, obviously, would have to be priced accordingly. Because of the serious and difficult marketing situation your manual presents, Mr. Jennings, I must decline to publish it.\n" +
+                        " If you should do any writing in some other subject-matter area, please give us an opportunity to review your work. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                37,
+                3,
+                R.drawable.lesson37_assessment_group_c,
+                "Dear Mr. Dexter: If you are not presently employed but would seriously like a job in business, in government, or in industry, read the classified ads in our newspaper, World News. We think you will be particularly interested in the jobs offered by the various private employment agencies. \n" +
+                        "\n" +
+                        "Employment agencies are the suppliers for personnel. Thousands of employers rely on them increasingly to find good clerical assistants. Employment agencies depend on World News for job applicants. They run more listings in our news-paper than in all other public news-papers in this area combined. They recognize the unusual impact and pulling power of World News, and they are impressed by our ads, which are convincingly written and expertly displayed. \n" +
+                        "If your immediate objective is a better job, turn to the classified ads in World News, one of the state's leading newspapers. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                37,
+                4,
+                R.drawable.lesson37_assessment_group_d,
+                "Dear Ms. Worth: If you are to improve your financial condition, it is important that you save regularly. It is surprisingly easy to save at the Empire Bank for Savings. You will be exceedingly impressed as you watch your account grow steadily, almost from day to day, with the addition of large quarterly dividends. If you want to provide for your financial future, stop at the Empire Bank for Savings the next time you are in the State Street area. We are one of the most progressive financial organizations in Chicago. If you come in, a friendly, courteous, and genuine welcome by our employees awaits you, Ms. Worth. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                37,
+                5,
+                R.drawable.lesson37_assessment_group_e,
+                " Mrs. Overton: The personnel department has informed me that on Tuesday, November 15, you will complete twenty-five years of service with the General Envelope Company. This is genuinely hard for me to believe because your outlook is so refreshingly young. I well remember what a good impression you made the day you were employed and were introduced to me by Dr. Underwood. You have certainly made a very definite mark on our organization with your exceedingly valuable suggestions and your practical ideas on how to improve our advertising. I know I speak for everyone when I say that you have unquestionably won the high regard, affection, and respect of all our employees. \n" +
+                        "I hope, Mrs. Overton, that you will be with us for many years to come. If you have an opportunity, stop by my office for a personal conversation sometime soon. I will be glad to see you. James J. Quinn",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                37,
+                6,
+                R.drawable.lesson37_assessment_group_f,
+                "Dear Friend: This is the fourth report of the year on the very difficult problems we have experienced operating The Empire State Railroad.\n" +
+                        "Like everyone else, we are affected by the nation's serious energy shortage. Although we genuinely believe that railroads are one of the most efficient forms of travel, our supplies of fuel for our engines have, unfortunately, been subjected to the same pressures as other travel industries.\n" +
+                        "While we had willingly under-taken measures to conserve energy some time ago, we are now considering implementing more stringent measures. We hope that these new measures will not cause any major reduction of essential services.\n" +
+                        "You may be sure that we are always working to make travel on our trains more enjoyable and comfortable. The Empire State Railroad",
                 1
         ));
         // Lesson 38 -----------------------------------------------------------------------------
@@ -1488,10 +1998,59 @@ public class DictationActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 40,
                 1,
-                R.drawable.lesson38_assessment_group_a,
-                "Dear Mr. Garcia: At the meeting of the transportation committee of Westport on November 26, Dr. James Swift will present an interesting, entertaining, and enlightening slide report on the transportation needs of our town. Dr. Swift actually performed all the significant statistical research work involved in this report.\n" +
-                        "If you have not heard Dr. Swift speak before, you are in for a special treat. He is recognized throughout the world as an acknowledged leader in the field of transportation. Immediately following Dr. Swift's report, everyone will have an opportunity to ask pertinent questions, to voice opinions, and to suggest new ideas.\n" +
-                        "As you are a recognized authority in the transportation area, we hope you will attend and give us the benefit of your experience. Sincerely yours",
+                R.drawable.lesson40_assessment_group_a,
+                "Dear Ms. Poland: Have you always wished to acquire the ability to speak a foreign language but felt you didn't have the aptitude to do so? Here is an unusual opportunity for you to discover whether you have that aptitude with no financial expenditure on your part. \n" +
+                        "Come to the Empire Language Institute on Banks Street, where we will give you, without charge, your first lesson in the language of your choice. If you enroll and are not satisfied with your progress at any time, we will immediately refund your money on request.\n" +
+                        " After you have completed one of our valuable courses, we think you will congratulate yourself on your ability to speak a second language easily and fluently. Sincerely yours, PS. A complete listing of all our courses is included in the enclosed circular.",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                40,
+                2,
+                R.drawable.lesson40_assessment_group_b,
+                "Dear Ms. Gates: Would you like to learn a second language, taught with the most modern and successful methods? At the Imperial Language Institute, you will study with Dr. Carlos Lopez, dean of our faculty, and his staff.\n" +
+                        " As you have probably read in the newspapers, Dr. Lopez has developed psychologically sound methods for language teaching and has contributed several articles of major importance to educational publications on the subject. After only two or three hours' work, you should be able to carry on an elementary conversation in a second language without any difficulty. \n" +
+                        "We hope you will come in soon, Ms. Gates, and let us give you your first lesson free of charge. You will be glad you did. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                40,
+                3,
+                R.drawable.lesson40_assessment_group_c,
+                "Dear Mr. Dwyer: As a well-deserved tribute to the inspiration and leadership of Henry Trenton, chief executive of the Trenton Hotel Corporation, our board of directors decided yesterday to change the name of the famous Interboro Hotel to the Trenton Hotel.\n" +
+                        "\n" +
+                        " In addition to being one of the world's largest hotels, the Trenton has won for itself an enviable reputation throughout the world as a friendly and most efficient public institution. The Trenton contains more than 3,000 rooms and requires the services of over 2,000 people. All of them are anxious to make your stay as pleasant as possible.\n" +
+                        " We hope, Mr. Dwyer, that you will stay with us frequently. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                40,
+                4,
+                R.drawable.lesson40_assessment_group_d,
+                "Dear Dr. Knox: I was particularly sorry to learn in this morning's newspaper that you intend to submit your resignation as president of the Interboro Psychological Institute shortly after the first of the year. I wish I could persuade you to change your mind. I understand, though, that your decision to leave the institute is final.\n" +
+                        "\n" +
+                        "\n" +
+                        " As everyone will acknowledge, you have introduced many extraordinary, useful, and important ideas to the Interboro Psychological Institute and have guided it throughout its difficult formative years. Your influence will be felt for a long time. The citizens of our township owes you a public debt of gratitude. \n" +
+                        "\n" +
+                        "Even though you will retire, I know that you will never hesitate to give the institute the advantage of your experience, your ideas, and your opinions in the future. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                40,
+                5,
+                R.drawable.lesson40_assessment_group_e,
+                "Dear Mrs. Stern: If you have already been approached for a contribution to the Stamford Neurological Institute fund, please forgive this letter. Sometimes because of the shortage of general clerical help and the increase in the quantity of paperwork in our correspondence department, contributions are not entered on the books as promptly as they might be.\n" +
+                        " As you may know, the institute is in the process of conducting a capital fund drive, the object of which is to build the new facilities that we will require. In the fourteen years since the present building was built, the character of Stamford and the surrounding areas has changed substantially, and its population has almost doubled. Consequently, we must expand, and we want your help. \n" +
+                        "\n" +
+                        "Any contribution, Mrs. Stern. will be accepted with gratitude. Please use the stamped, addressed envelope that is enclosed. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                40,
+                6,
+                R.drawable.lesson40_assessment_group_f,
+                "Gentlemen: I wish I could write you that I am enclosing a check as the World Advertising Company's contribution to the annual fund drive of the Wilson Institute of Technology. But because our organization frequently receives requests from almost every state in the union in which we contribute to responsible charities and other worthy causes. our board of governors now requires us to maintain a budgetary limit on the contributions we can make. Unfortunately, our funds for the present year were exhausted several months ago. \n" +
+                        "We recognize the fact that Wilson Institute's cause is an exceedingly good one. but we regret that it will be impossible for us to contribute to it. Sincerely yours",
                 1
         ));
         // Lesson 41 -----------------------------------------------------------------------------
@@ -1543,7 +2102,7 @@ public class DictationActivity extends AppCompatActivity {
         ));
         // Lesson 42 -----------------------------------------------------------------------------
         assessmentList.add(new AssessmentItem(
-                41,
+                42,
                 1,
                 R.drawable.lesson41_assessment_group_a,
                 "Hi!",
@@ -1553,8 +2112,55 @@ public class DictationActivity extends AppCompatActivity {
         assessmentList.add(new AssessmentItem(
                 43,
                 1,
-                R.drawable.lesson41_assessment_group_a,
-                "Hi!",
+                R.drawable.lesson43_assessment_group_a,
+                "Gentlemen: When I talked to you on November 10, you promised to print and deliver to us by Monday, December 15, an order of 3,000 copies of the circular advertising our book, Misunderstandings and Misconceptions of Supervisors in Business. The circulars were delivered yesterday morning, but several hours ago my assistant, Mr. Under-wood, discovered a major difficulty. The name of the author has been misspelled throughout the circular. How this exceedingly embarrassing mistake occurred is a mystery to me, for his name is spelled correctly on the manuscript from which you set the circular. As photographic copy is enclosed.\n" +
+                        "\n" +
+                        " Because of this misprint, we will not be able to use the circulars. Consequently, we must request that you do them over immediately. We hope you will do this speedily and efficiently. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                43,
+                2,
+                R.drawable.lesson43_assessment_group_b,
+                "Dear Commuter: In September we plan to introduce a new service. We plan to place a \"commuting classroom on our commuter train. You will have an excellent opportunity to earn the equivalent of a master's degree in office supervision while you are commuting between your home community and your office. The class will be supervised by Dr. James Langdon, and all work will be completed while you are on the commuter train\n" +
+                        "College graduates should find this commuting classroom of particular interest to them. They can now work on an advanced degree while continuing to earn income and gain significant business experience.\n" +
+                        " The commuting classroom is fully described in the enclosed circular. If you have any questions about the course, you may call our main office at 555-1026. We will be glad to answer them. \n" +
+                        "Take advantage of this superb opportunity and enroll without delay. Just fill out, sign, and return the enclosed form in the envelope that we have provided. You will be making no mistake. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                43,
+                3,
+                R.drawable.lesson43_assessment_group_c,
+                "Mr. Hastings: I am transmitting to you with this memorandum a manuscript entitled \"Music for the Masses\" by Ms. Lydia Lyons, supervisor of music at the Municipal Institute of Fine Arts 2 in Westport. If I am not mistaken, this is the same Ms. Lyons who submitted to us a manuscript on government support of the arts more than ten years ago. We rejected that manuscript at that time\n" +
+                        " In my opinion, this manuscript is superior, and we should seriously consider publishing it next year. I have had my good opinion confirmed by Dr. Charles H. Radford, superintendent of the National Music Academy in Easton. After reviewing the manuscript, Dr. Radford made this comment: \"I have neverread such an interesting, entertaining manuscript. You will be making no mistake if you publish it.\"\n" +
+                        " If you agree that we should publish \"Music for the Masses,\" please acknowledge receipt of the manuscript and send Ms. Lyons our regular royalty contract. Max C. Rogers",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                43,
+                4,
+                R.drawable.lesson43_assessment_group_d,
+                "Dear Mrs. Lincoln: John C. Swanson, president of International Enterprises, which is one of the largest manufacturers of calculators in the world, pays this tribute to the Nelson Correspondence Course for Supervisory Personnel: \"In this continuing education course our men and women learn about modern supervisory procedures. They learn how to play a leadership role that is mutually beneficial to the company and to themselves. All our present supervisors, superintendents, and other supervisory executives have taken this valuable course, and we plan to continue to have all new executives take it.\" \n" +
+                        "Why not give your executives an opportunity to improve themselves by taking our correspondence course. If you want further details regarding the Nelson Correspondence Course for Supervisory Personnel, call us at 555-8164. You will be making no mistake, Mrs. Lincoln. Sincerely yours",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                43,
+                5,
+                R.drawable.lesson43_assessment_group_e,
+                "Dear Mr. Smith: What will the Mutual Insurance Company course for supervisors do for your execu-tives? Here are a few things:\n" +
+                        " 1. It will increase their under standing of the functions and importance of insurance and correct any misapprehensions and misconceptions they may have about it.\n" +
+                        " 2. It will develop their ability to build teamwork, stimulate interest. and create enthusiasm among their employees. \n" +
+                        "Would you like to learn more about the Mutual Insurance Company course for supervisors? We will be glad to give you full information about this management course if you will call us at 555-9263.6 Sincerely yours,\n",
+                1
+        ));
+        assessmentList.add(new AssessmentItem(
+                43,
+                6,
+                R.drawable.lesson43_assessment_group_f,
+                "Dear Ms. Worth: It was ex-tremely thoughtful of you to write me a congratulatory note regarding my appointment as superintendent of the Albany Public School System. As I am sure you realize, the job of superintendent is one of very great responsibility. I say with all sincerity that definitely need the support and backing of everyone. \n" +
+                        "I genuinely appreciate receiving your practical suggestions, and I hope that you will continue to let me have the benefit of your ideas in the days ahead. Sincerely yours",
                 1
         ));
         // Lesson 44 -----------------------------------------------------------------------------

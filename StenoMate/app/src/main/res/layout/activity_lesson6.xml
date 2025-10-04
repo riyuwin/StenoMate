@@ -107,7 +107,7 @@
                         android:id="@+id/contentText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Lesson 6 is a  &quot;breather&quot;; it contains no new shorthand principles for you to learn. In this lesson you will find an Alphabet Review, a simple explanation of the principles that govern the joining of the strokes you have studied thus far, a Recall Chart, and a Reading Practice."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -116,7 +116,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="1. Alphabet Review Here are the 22 shorthand strokes you studied in Lessons 1 through 5. Can you read them in 20 seconds or less?"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -151,7 +151,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="As a matter of interest, you might like to know the principles under which the words you have already learned are written. Notice the groups into which the joinings naturally fall."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -160,7 +160,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="2. Circles are written inside curves and outside angles."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -418,7 +418,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="3 Circles are written clockwise (in this direction) on a straight stroke or between two straight strokes in the same direction."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -676,7 +676,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="4. Between two curves written in opposite directions, the circle is written on the back of the first curve."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -933,7 +933,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="5. The o hook is written on its side before n, m unless a downward stroke comes before the hook."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -1198,7 +1198,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="6. The oo hook is written on its side after n, m."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -1331,7 +1331,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="7. The under ith is used when it is joined to o, r, l; in other cases, the over ith is used."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />

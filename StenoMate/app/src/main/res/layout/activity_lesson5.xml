@@ -129,6 +129,7 @@
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/contentText1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"
@@ -911,6 +912,7 @@
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/contentText2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"
@@ -2207,6 +2209,7 @@
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/contentText3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"
@@ -2967,6 +2970,7 @@
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/contentText4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"
@@ -3297,6 +3301,7 @@
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/contentText5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"

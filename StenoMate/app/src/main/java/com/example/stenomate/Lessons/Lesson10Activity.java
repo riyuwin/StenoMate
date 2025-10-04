@@ -3,6 +3,7 @@ package com.example.stenomate.Lessons;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -15,8 +16,6 @@ import com.example.stenomate.R;
 public class Lesson10Activity extends AppCompatActivity {
 
     ImageView BackIcon;
-    TextView ContentText;
-
     ImageView[] stenoImageHolders = new ImageView[61];
 
     @Override
@@ -37,9 +36,21 @@ public class Lesson10Activity extends AppCompatActivity {
             }
         }
 
-        /*ContentText = findViewById(R.id.contentText);
-        String formattedText = "<b>S-Z</b> Perhaps the most frequently used consonant in the English language is s, partly because of the great many plurals that end with s. The shorthand s is a tiny downward curve that resembles the longhand comma in shape.";
-        ContentText.setText(Html.fromHtml(formattedText));*/
+        TextView ContentText = findViewById(R.id.contentText);
+        String formattedText = "1<b>Nd</b> The shorthand strokes for nd are joined without an angle to form the nd blend, as in signed.";
+        ContentText.setText(Html.fromHtml(formattedText));
+
+        TextView ContentText1 = findViewById(R.id.contentText1);
+        String formattedText1 = "2 <b>Nt </b> The stroke that represents nd also represents nt, as in sent.";
+        ContentText1.setText(Html.fromHtml(formattedText1));
+
+        TextView ContentText2 = findViewById(R.id.contentText2);
+        String formattedText2 = "3 <b>Ses </b> The sound of ses, as in senses, is represented by joining the two forms of s.";
+        ContentText2.setText(Html.fromHtml(formattedText2));
+
+        TextView ContentText3 = findViewById(R.id.contentText3);
+        String formattedText3 = "4 <b>Sis, Sus </b> The similar sounds of sis, as in sister, and sus, as in versus, are also represented by joining the two forms of s.";
+        ContentText3.setText(Html.fromHtml(formattedText3));
 
         Intent get_intent = getIntent();
         String lesson_type = get_intent.getStringExtra("lesson_type");

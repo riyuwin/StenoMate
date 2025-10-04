@@ -19,7 +19,6 @@ import com.example.stenomate.R;
 public class Lesson4Activity extends AppCompatActivity {
 
     ImageView BackIcon;
-    TextView ContentText;
 
     ImageView[] stenoImageHolders = new ImageView[64];
 
@@ -36,9 +35,25 @@ public class Lesson4Activity extends AppCompatActivity {
             stenoImageHolders[i].setOnClickListener(v -> showFullScreenImage(stenoImageHolders[finalI]));
         }
 
-        /*ContentText = findViewById(R.id.contentText);
-        String formattedText = "<b>S-Z</b> Perhaps the most frequently used consonant in the English language is s, partly because of the great many plurals that end with s. The shorthand s is a tiny downward curve that resembles the longhand comma in shape.";
-        ContentText.setText(Html.fromHtml(formattedText));*/
+        TextView ContentText = findViewById(R.id.contentText);
+        String formattedText = "1 <b>Alphabet Review</b> You have already studied 17 strokes in the Gregg Shorthand alphabet. How fast can you read them?";
+        ContentText.setText(Html.fromHtml(formattedText));
+
+        TextView ContentText1 = findViewById(R.id.contentText1);
+        String formattedText1 = "2 <b>OO </b> The shorthand stroke for the sound of oo, as in to, is a tiny upward hook.";
+        ContentText1.setText(Html.fromHtml(formattedText1));
+
+        TextView ContentText2 = findViewById(R.id.contentText2);
+        String formattedText2 = "3 <b>W,</b> Sw At the beginning of words w, as in we, is represented by the oo hook; sw, as in sweet, by s-oo.";
+        ContentText2.setText(Html.fromHtml(formattedText2));
+
+        TextView ContentText3 = findViewById(R.id.contentText3);
+        String formattedText3 = "4 <b>Wh</b> Wh, as in why and while, is also represented by the oo hook.";
+        ContentText3.setText(Html.fromHtml(formattedText3));
+
+        TextView ContentText4 = findViewById(R.id.contentText4);
+        String formattedText4 = "5 <b>Useful Phrases</b> Here are a number of useful phrases that use the oo hook.";
+        ContentText4.setText(Html.fromHtml(formattedText4));
 
         Intent get_intent = getIntent();
         String lesson_type = get_intent.getStringExtra("lesson_type");

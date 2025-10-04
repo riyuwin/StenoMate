@@ -3,6 +3,7 @@ package com.example.stenomate.Lessons;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -37,9 +38,25 @@ public class Lesson11Activity extends AppCompatActivity {
             }
         }
 
-        /*ContentText = findViewById(R.id.contentText);
-        String formattedText = "<b>S-Z</b> Perhaps the most frequently used consonant in the English language is s, partly because of the great many plurals that end with s. The shorthand s is a tiny downward curve that resembles the longhand comma in shape.";
-        ContentText.setText(Html.fromHtml(formattedText));*/
+        TextView ContentText = findViewById(R.id.contentText);
+        String formattedText = "<b>1    Brief Forms</b> Here are nine more brief forms for very common words. ";
+        ContentText.setText(Html.fromHtml(formattedText));
+
+        TextView ContentText1 = findViewById(R.id.contentText1);
+        String formattedText1 = "<b>2    Rd</b> The combination rd is represented by writing the r with an upward turn at the finish ";
+        ContentText1.setText(Html.fromHtml(formattedText1));
+
+        TextView ContentText2 = findViewById(R.id.contentText2);
+        String formattedText2 = "<b>3    Ld</b> The combination ld is represented by writing the l with an upward turn at the finish.";
+        ContentText2.setText(Html.fromHtml(formattedText2));
+
+        TextView ContentText3 = findViewById(R.id.contentText3);
+        String formattedText3 = "<b>4    Been in Phrases</b> The word been is represented by b after have, has, had.";
+        ContentText3.setText(Html.fromHtml(formattedText3));
+
+        TextView ContentText4 = findViewById(R.id.contentText4);
+        String formattedText4 = "<b>5    Able in Phrases </b> The word able is represented by a after be or been.";
+        ContentText4.setText(Html.fromHtml(formattedText4));
 
         Intent get_intent = getIntent();
         String lesson_type = get_intent.getStringExtra("lesson_type");
