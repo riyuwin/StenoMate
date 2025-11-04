@@ -81,7 +81,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Lesson 45"
+                    android:text="Chapter 45"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -106,9 +106,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="1. Word Ending-hood The word ending-tood is represented by a disjoined a.
-Spell: n-a-b-r-hood, neighborhood"
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="1. Word Ending-hood The word ending -tood is represented by a disconnected ‘a.’"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -128,7 +127,7 @@ Spell: n-a-b-r-hood, neighborhood"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="neighbor-\nhood"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -157,7 +156,7 @@ Spell: n-a-b-r-hood, neighborhood"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="boyhood"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -186,7 +185,7 @@ Spell: n-a-b-r-hood, neighborhood"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="likeli-\nhood"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -223,7 +222,7 @@ Spell: n-a-b-r-hood, neighborhood"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="childhood"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -252,7 +251,7 @@ Spell: n-a-b-r-hood, neighborhood"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="girlhood"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -281,7 +280,7 @@ Spell: n-a-b-r-hood, neighborhood"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="parent-\nhood"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -305,9 +304,10 @@ Spell: n-a-b-r-hood, neighborhood"
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="2. Word Ending -ward The word ending-ward is also represented by a disjoined d.
-Spell: o-n-ward, onward"
+Spell: o-n-ward, onward
+"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -327,7 +327,7 @@ Spell: o-n-ward, onward"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="onward"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -356,7 +356,7 @@ Spell: o-n-ward, onward"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="outward"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -385,7 +385,7 @@ Spell: o-n-ward, onward"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="rewarding"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -421,7 +421,7 @@ Spell: o-n-ward, onward"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="backward"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -450,7 +450,7 @@ Spell: o-n-ward, onward"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="upward"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -479,7 +479,7 @@ Spell: o-n-ward, onward"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="forward"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -515,7 +515,7 @@ Spell: o-n-ward, onward"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="afterward"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -544,7 +544,7 @@ Spell: o-n-ward, onward"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="inward"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -573,7 +573,7 @@ Spell: o-n-ward, onward"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="forwarded"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -598,9 +598,8 @@ Spell: o-n-ward, onward"
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="3. Ul Ul is represented by oo when it precedes a forward or upward stroke.
-Spell: re-s-ul-t, result"
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="3. Ul Ul is represented by oo when it comes before a forward or upward stroke."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -620,7 +619,7 @@ Spell: re-s-ul-t, result"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="result"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -649,7 +648,7 @@ Spell: re-s-ul-t, result"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="consultant"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -678,7 +677,7 @@ Spell: re-s-ul-t, result"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="cultured"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -714,7 +713,7 @@ Spell: re-s-ul-t, result"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="consult"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -743,7 +742,7 @@ Spell: re-s-ul-t, result"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="ultimately"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -772,7 +771,7 @@ Spell: re-s-ul-t, result"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="culminate"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -808,7 +807,7 @@ Spell: re-s-ul-t, result"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="insult"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -837,7 +836,7 @@ Spell: re-s-ul-t, result"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="multitude"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -866,7 +865,7 @@ Spell: re-s-ul-t, result"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="simultaneous"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -891,7 +890,7 @@ Spell: re-s-ul-t, result"
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="4. Quantities and Amounts Here are a few more helpful abbreviations for quantities and amounts."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -912,7 +911,7 @@ Spell: re-s-ul-t, result"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="600"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -941,7 +940,7 @@ Spell: re-s-ul-t, result"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="$5,000,000,000"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -970,7 +969,7 @@ Spell: re-s-ul-t, result"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="several hundred"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1007,7 +1006,7 @@ Spell: re-s-ul-t, result"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="$600"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1036,7 +1035,7 @@ Spell: re-s-ul-t, result"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="a dollar"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1065,7 +1064,7 @@ Spell: re-s-ul-t, result"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="five pounds"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1102,7 +1101,7 @@ Spell: re-s-ul-t, result"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="$8,000,000"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1131,7 +1130,7 @@ Spell: re-s-ul-t, result"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="a million"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1162,7 +1161,7 @@ Spell: re-s-ul-t, result"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="8 feet"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1186,8 +1185,8 @@ Spell: re-s-ul-t, result"
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="• Observe that the n for hundred is written under the figure as a positive distinction from million, in which the m is written beside the figure."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="• Note that the ‘n’ for hundred is written beneath the figure as a distinct marker, whereas for million, the ‘m’ is written beside the figure."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>

@@ -81,7 +81,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Lesson 33"
+                    android:text="Chapter 33"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -106,7 +106,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="1. Word Beginnings For-, Fore- The word beginnings for-, fore- are represented by f.
      Spell: for-gay-e-t, forget
 "
@@ -129,7 +129,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="forget"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -158,7 +158,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="form"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -187,7 +187,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="forerunner"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -223,7 +223,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="forgive"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -252,7 +252,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="inform"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -281,7 +281,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="forlorn"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -317,7 +317,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="effort"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -346,7 +346,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="information"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -375,7 +375,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="forever"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -399,19 +399,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="Observe: 1.The f is joined with an angle to s or 1, as in forerunner and forlorn, to indicate that it represents a word beginning.
-                \n2. The f is disjoined if the following character is a vowel, as in forever.
-"
-                        android:textColor="#4D4A4A"
-                        android:textSize="12dp"
-                        android:layout_marginTop="10dp"/>
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="Observe: 1. The f is connected with an angle to s or l (as in forerunner and forlorn) to show that it represents the start of a word.
+                \n\n2. The f is written separately if the next character is a vowel, as in forever.
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="2. Word Beginning Fur. The word beginning fur is also represented by f.
+\n\n2. Word Beginning Fur. The word beginning fur is also represented by f.
      Spell: fur-n-ish, furnish
 "
                         android:textColor="#4D4A4A"
@@ -433,7 +425,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="furnish"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -462,7 +454,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="furniture"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -491,7 +483,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="further"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -527,7 +519,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="furnished"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -556,7 +548,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="furnace"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -585,7 +577,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="furthermore"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -609,8 +601,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="3. Ago in Phrases   In expressions of time, ago is represented by gay."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="3. Ago in Phrases   In time expressions, ago is represented by the stroke for gay."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -630,7 +622,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="days \nago"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -659,7 +651,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="years \nago"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -688,7 +680,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="several \ndays ago"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -725,7 +717,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="weeks \nago"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -754,7 +746,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="months \nago"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -783,7 +775,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="few days \nago"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />

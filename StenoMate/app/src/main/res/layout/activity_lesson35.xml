@@ -81,7 +81,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Lesson 35"
+                    android:text="Chapter 35"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -106,8 +106,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="1   Word Beginnings Inter-, Intr-, Enter-, Entr-    These similar-sounding word beginnings (and the word enter) are represented by a disjoined n. These disjoined word beginnings, as well as other disjoined word beginnings that you will study in later lessons, are placed above the line of writing close to the remainder of the word."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="1   Word Beginnings Inter-, Intr-, Enter-, Entr The similar-sounding beginnings of words, along with the word ‘enter,’ are represented by a disjointed ‘n.’ These disjointed word beginnings, as well as other examples you will study in later lessons, are placed above the line of writing, close to the rest of the word."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -752,8 +752,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="2    Word Ending -ings    The word ending -ings is represented by a disjoined left s."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="2    Word Ending -ings    The ending ‘-ings’ is represented by a detached left ‘s.’"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -959,8 +959,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="3    Omission of Words in Phrases     It is often possible to omit one or more unimportant words in a shorthand phrase. In the phrase one of the, for example the word of is ommitted; we write one the. When transcribing, the stenographer would insert of, as the phrase would make no sense without that word."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="It is often possible to omit one or more unimportant words in a shorthand phrase. In the phrase one of the, for example the word of is ommitted; we write one the. When transcribing, the stenographer would insert of, as the phrase would make no sense without that word. "
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>

@@ -82,7 +82,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Lesson 26"
+                    android:text="Chapter 26"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -108,7 +108,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"
-                        android:text="1    Long I and a Following Vowel     Any vowel following long i is represented by a small circle within a large circle."
+                        android:text="1    Long I and a Following Vowel     Any vowel that follows the long ‘i’ is represented by a small circle within a large circle."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -1092,7 +1092,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_light"
-                        android:text="3   In-, En-, Un- Followed by a Vowel    When in-, en-, un- are followed by a vowel, they are written in full."
+                        android:text="3   In-, En-, Un- Followed by a Vowel    When the prefixes ‘in-’, ‘en-’, or ‘un-’ are followed by a vowel, they should be written in their full form."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 
@@ -1197,7 +1197,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_light"
-                        android:text="4    Useful Business Phrases    Here are six more frequently used business phrases."
+                        android:text="4    Useful Business Phrases    Here are six additional commonly used business phrases."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 

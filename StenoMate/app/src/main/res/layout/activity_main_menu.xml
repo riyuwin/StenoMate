@@ -112,8 +112,8 @@
                             <!-- Learning Materials -->
                             <LinearLayout
                                 android:id="@+id/learningMaterialsId"
-                                android:layout_width="300dp"
-                                android:layout_height="270dp"
+                                android:layout_width="350dp"
+                                android:layout_height="320dp"
                                 android:layout_marginLeft="80dp"
                                 android:layout_marginStart="20dp"
                                 android:layout_marginEnd="40dp"
@@ -125,15 +125,15 @@
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/learning_materials_element1" />
+                                    android:src="@drawable/learning_materials_element1_carousel" />
 
                             </LinearLayout>
 
                             <!-- Dictionary -->
                             <LinearLayout
                                 android:id="@+id/dictionaryId"
-                                android:layout_width="300dp"
-                                android:layout_height="270dp"
+                                android:layout_width="350dp"
+                                android:layout_height="320dp"
                                 android:layout_marginEnd="40dp"
                                 android:layout_marginRight="40dp"
                                 android:gravity="center"
@@ -143,15 +143,15 @@
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/steno_translation_element2" />
+                                    android:src="@drawable/steno_translation_element2_carousel" />
 
                             </LinearLayout>
 
                             <!-- Quiz -->
                             <LinearLayout
                                 android:id="@+id/quizId"
-                                android:layout_width="300dp"
-                                android:layout_height="270dp"
+                                android:layout_width="350dp"
+                                android:layout_height="320dp"
                                 android:layout_marginEnd="40dp"
                                 android:layout_marginRight="40dp"
                                 android:gravity="center"
@@ -161,15 +161,15 @@
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/quizzes_elements_1" />
+                                    android:src="@drawable/quizzes_elements_1_carousel" />
 
                             </LinearLayout>
 
                             <!-- Assessments -->
                             <LinearLayout
                                 android:id="@+id/assessmentsId"
-                                android:layout_width="300dp"
-                                android:layout_height="270dp"
+                                android:layout_width="350dp"
+                                android:layout_height="320dp"
                                 android:layout_marginEnd="40dp"
                                 android:layout_marginRight="40dp"
                                 android:gravity="center"
@@ -179,15 +179,15 @@
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/assessments_element1" />
+                                    android:src="@drawable/assessments_element1_carousel" />
 
                             </LinearLayout>
 
                             <!-- Dictation -->
                             <LinearLayout
                                 android:id="@+id/dictationId"
-                                android:layout_width="300dp"
-                                android:layout_height="270dp"
+                                android:layout_width="350dp"
+                                android:layout_height="320dp"
                                 android:layout_marginEnd="40dp"
                                 android:layout_marginRight="40dp"
                                 android:gravity="center"
@@ -197,7 +197,7 @@
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/dictation_element1" />
+                                    android:src="@drawable/dictation_element1_carousel" />
 
                             </LinearLayout>
 
@@ -207,8 +207,8 @@
 
                 <LinearLayout
                     android:id="@+id/aboutUsId"
-                    android:layout_width="200dp"
-                    android:layout_height="70dp"
+                    android:layout_width="170dp"
+                    android:layout_height="60dp"
                     android:layout_marginTop="30dp"
                     android:layout_marginBottom="80dp"
                     android:orientation="vertical"

@@ -82,7 +82,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Lesson 29"
+                    android:text="Chapter 29"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -408,7 +408,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_light"
-                        android:text="2   Word Beginning Ex-   The word beginning ex- is represented by e-s."
+                        android:text="2   Word Beginning Ex-   The prefix ‘ex-’ is represented as ‘e-s.’"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 
@@ -711,7 +711,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_light"
-                        android:text="3    Word Ending -ful    The word ending -ful is represented by f."
+                        android:text="3    Word Ending -ful    The suffix ‘-ful’ is represented by the letter ‘f.’"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 
@@ -1012,7 +1012,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_light"
-                        android:text="4   Word Endings -cal, -cle    The word endings -cal, -cle are represented by a disjoined k."
+                        android:text="4   Word Endings -cal, -cle    The word endings -cal and -cle are represented by a disjoined 'k.'"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 

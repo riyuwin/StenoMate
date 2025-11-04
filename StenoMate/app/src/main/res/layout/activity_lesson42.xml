@@ -81,7 +81,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Lesson 42"
+                    android:text="Chapter 42"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -106,8 +106,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="There are no new shorthand devices for you to learn in Lesson 42. However, Lesson 42 does contain an Accuracy Practice, a review of word beginnings and endings you have studied thus far, and a Reading and Writing Practice."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="Lesson 42 doesn't introduce any new shorthand devices. However, it includes an Accuracy Practice, a review of the word beginnings and endings you've studied so far, and a Reading and Writing Practice."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -115,7 +115,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Accuracy Practice"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -124,7 +124,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="1"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -147,7 +147,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="My"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -171,7 +171,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="Lie"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -195,7 +195,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="Fight"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -212,12 +212,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="To write these combinations accurately:
-\n• a Join the broken circle in the same way that you would join an a circle, but turn the end inside the circle.
-\n• b Before turning the end of the circle inside, be sure that the stroke touches the stroke to which the i is joined.
-\n• c Avoid making a point at the places indicated by arrows.
-"
+\n• a. Join the broken circle the same way you would join a regular circle, but turn the end inside the circle.
+\n• b. Before turning the end of the circle inside, ensure the stroke touches the stroke it’s joined to.
+\n• c. Avoid creating a point at the locations marked by the arrows."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -225,7 +224,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Practice Drill"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -251,7 +250,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="My, night, sight, line, mile."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -260,7 +259,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="2"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -284,7 +283,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="Ow"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -308,7 +307,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="Oi"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -325,10 +324,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="To write these combinations accurately:
-\n• a Keep the hooks deep and narrow.
-\n• b Place the circles outside the hooks as indicated by the dotted lines.
+\n• a. Keep the hooks deep and narrow.
+\n• b. Position the circles outside the hooks, as shown by the dotted lines.
 "
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -337,7 +336,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Practice Drill"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -361,7 +360,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Out, now, doubt, scout, toy, soil, annoy."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -385,7 +384,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="Ith"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -409,7 +408,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="Nt, Nd."
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -433,7 +432,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="Mt, Md"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -450,7 +449,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="To write these combinations accurately:
 \n• a Slant the strokes as indicated by the dotted lines.
 \n• b Start these strokes to the right and upward.
@@ -462,7 +461,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Practice Drill"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -489,7 +488,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="There are, and will, empty, health, lined, ashamed."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -498,7 +497,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Compare:"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -525,7 +524,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Hint, heard; tamed, detailed."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -534,10 +533,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="4 Recall Chart There are 90 word beginnings and endings in the following chart.
-Can you read them in 5 minutes or less?
-"
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="4 Recall Chart The chart contains 90 word beginnings and endings. Do you think you can read through them in 5 minutes or less?"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -553,7 +550,7 @@ Can you read them in 5 minutes or less?
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/kanit_bold"
+                            android:fontFamily="@font/kanit_regular"
                             android:text="WORD BEGINNINGS AND ENDINGS"
                             android:textColor="#4D4A4A"
                             android:textSize="12dp"

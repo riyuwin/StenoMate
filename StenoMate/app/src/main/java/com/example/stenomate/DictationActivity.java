@@ -3,9 +3,11 @@ package com.example.stenomate;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
+import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.UtteranceProgressListener;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -14,7 +16,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -27,7 +31,7 @@ import java.util.Locale;
 public class DictationActivity extends AppCompatActivity {
 
     private TextToSpeech tts;
-    private LinearLayout btnSpeak;
+    private Button btnSpeak;
     private HeartBeatView heartbeat;
     ArrayList<AssessmentItem> assessmentList;
     int lesson_number, assessment_list_group_name;
@@ -39,7 +43,11 @@ public class DictationActivity extends AppCompatActivity {
 
     private TextView DictationNumber;
     private int attemptCounter = 0; // optional counter
+    Button speedButton1, speedButton2, speedButton3, speedButton4, speedButton5;
+    private Button selectedSpeedButton = null;
 
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +66,57 @@ public class DictationActivity extends AppCompatActivity {
         Toast.makeText(this, "Dictation No. " + lesson_number + " - " + assessment_list_group_name, Toast.LENGTH_SHORT).show();
         DictationNumber.setText("Dictation No. " + lesson_number + " - " + assessment_list_group_name);
 
+        // --- Button Initialization ---
+        speedButton1 = findViewById(R.id.speedButton1);
+        speedButton2 = findViewById(R.id.speedButton2);
+        speedButton3 = findViewById(R.id.speedButton3);
+        speedButton4 = findViewById(R.id.speedButton4);
+        speedButton5 = findViewById(R.id.speedButton5);
+        btnSpeak = findViewById(R.id.btnSpeak);
+
+        btnSpeak.setEnabled(false);
+        btnSpeak.setAlpha(0.5f);
+
+        float[] selectedRate = {0f}; // 0 means none selected yet
+
+        View.OnClickListener speedListener = v -> {
+            int id = v.getId();
+
+            if (id == R.id.speedButton1) {
+                selectedRate[0] = 0.1f;   // very slow
+            } else if (id == R.id.speedButton2) {
+                selectedRate[0] = 0.5f;   // slow
+            } else if (id == R.id.speedButton3) {
+                selectedRate[0] = 1f;   // moderate
+            } else if (id == R.id.speedButton4) {
+                selectedRate[0] = 1.5f;   // normal
+            } else if (id == R.id.speedButton5) {
+                selectedRate[0] = 2.0f;   // normal
+            }
+
+
+
+            // ✅ apply selected rate to TTS
+            if (tts != null) {
+                tts.setSpeechRate(selectedRate[0]);
+                Toast.makeText(this, "Speech speed set to " + selectedRate[0] + "x", Toast.LENGTH_SHORT).show();
+            }
+
+            // ✅ enable Start Dictation button once a speed is chosen
+            btnSpeak.setEnabled(true);
+            btnSpeak.setAlpha(1f);
+
+            // Optional: highlight selected button
+            resetSpeedButtonColors(speedButton1, speedButton2, speedButton3, speedButton4, speedButton5);
+            ((Button) v).setBackgroundColor(ContextCompat.getColor(this, R.color.teal_700));
+        };
+
+        speedButton1.setOnClickListener(speedListener);
+        speedButton2.setOnClickListener(speedListener);
+        speedButton3.setOnClickListener(speedListener);
+        speedButton4.setOnClickListener(speedListener);
+        speedButton5.setOnClickListener(speedListener);
+
 
         // To generate dictation list
         DictationListGenerator();
@@ -65,8 +124,8 @@ public class DictationActivity extends AppCompatActivity {
         // Init TTS
         tts = new TextToSpeech(this, status -> {
             if (status == TextToSpeech.SUCCESS) {
-                tts.setLanguage(Locale.CANADA); // pwede mo baguhin (e.g., Locale.UK, Locale.CANADA, Locale("fil", "PH"))
-                tts.setSpeechRate(0.5f); // mas mabagal (default = 1.0f)
+                tts.setLanguage(Locale.US); // pwede mo baguhin (e.g., Locale.UK, Locale.CANADA, Locale("fil", "PH"))
+                tts.setSpeechRate(1.0f);  // mas mabagal (default = 1.0f)
                 tts.setPitch(1.0f);      // pitch normal (pwede rin baguhin)
             }
         });
@@ -74,6 +133,10 @@ public class DictationActivity extends AppCompatActivity {
         btnSpeak.setOnClickListener(v -> {
             // disable button so it can only be pressed once until done
             btnSpeak.setEnabled(false);
+            btnSpeak.setAlpha(0.5f);
+
+            // 🚫 disable all speed buttons once dictation starts
+            setSpeedButtonsEnabled(false, speedButton1, speedButton2, speedButton3, speedButton4, speedButton5);
 
             AssessmentItem item = getAssessmentItem(lesson_number, assessment_list_group_name);
 
@@ -102,7 +165,7 @@ public class DictationActivity extends AppCompatActivity {
             }
         });
 
-        // handle when TTS finishes
+
         tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
             @Override
             public void onStart(String utteranceId) {}
@@ -111,7 +174,9 @@ public class DictationActivity extends AppCompatActivity {
             public void onDone(String utteranceId) {
                 runOnUiThread(() -> {
                     heartbeat.stopSpeaking();
-                    showResultDialog(); // 👉 show dialog after speaking
+                    // 🚫 keep the button disabled here
+                    // (it will only be re-enabled if user presses Retry)
+                    showResultDialog();
                 });
             }
 
@@ -129,6 +194,29 @@ public class DictationActivity extends AppCompatActivity {
         loadAttempts(); // load history at start
 
     }
+    private void resetSpeedButtonColors(Button... buttons) {
+        for (Button b : buttons) {
+            b.setBackgroundColor(ContextCompat.getColor(this, android.R.color.darker_gray));
+            b.setTextColor(ContextCompat.getColor(this, android.R.color.white));
+        }
+        if (selectedSpeedButton != null) {
+            selectedSpeedButton.setBackgroundColor(ContextCompat.getColor(this, R.color.teal_700));
+            selectedSpeedButton.setTextColor(ContextCompat.getColor(this, android.R.color.white));
+        }
+    }
+
+
+    private void setSpeedButtonsEnabled(boolean enabled, Button... buttons) {
+        for (Button b : buttons) {
+            b.setEnabled(enabled);
+            if (!enabled) {
+                b.setAlpha(0.8f); // slightly dim when disabled
+            } else {
+                b.setAlpha(1f);
+            }
+        }
+    }
+
 
     private void loadAttempts() {
         attemptsList.clear();
@@ -153,26 +241,75 @@ public class DictationActivity extends AppCompatActivity {
 
 
     // dialog method
+//    private void showResultDialog() {
+//        new androidx.appcompat.app.AlertDialog.Builder(this)
+//                .setTitle("Dictation Finished")
+//                .setMessage("Would you like to retry or mark this dictation as completed?")
+//                .setCancelable(false)
+//                .setPositiveButton("Retry", (dialog, which) -> {
+//                    // enable button again for retry
+//                    btnSpeak.setEnabled(true);
+//                })
+//                .setNegativeButton("Completed", (dialog, which) -> {
+//                    Intent intent = new Intent(DictationActivity.this, DictationList.class);
+//                    if (lesson_number >= 1 && lesson_number <= 23){
+//                        intent.putExtra("lesson_type", "Short");
+//                    } else if (lesson_number >= 24 && lesson_number <= 45){
+//                        intent.putExtra("lesson_type", "Advance");
+//                    }
+//                    startActivity(intent);
+//                })
+//                .show();
+//    }
+
     private void showResultDialog() {
         new androidx.appcompat.app.AlertDialog.Builder(this)
                 .setTitle("Dictation Finished")
                 .setMessage("Would you like to retry or mark this dictation as completed?")
                 .setCancelable(false)
                 .setPositiveButton("Retry", (dialog, which) -> {
-                    // enable button again for retry
                     btnSpeak.setEnabled(true);
+                    btnSpeak.setAlpha(1f);
+                    setSpeedButtonsEnabled(true, speedButton1, speedButton2, speedButton3, speedButton5);
+                })
+                .setNeutralButton("View Answer", (dialog, which) -> {
+                    showAnswerDialog();
                 })
                 .setNegativeButton("Completed", (dialog, which) -> {
                     Intent intent = new Intent(DictationActivity.this, DictationList.class);
-                    if (lesson_number >= 1 && lesson_number <= 23){
+                    if (lesson_number >= 1 && lesson_number <= 23) {
                         intent.putExtra("lesson_type", "Short");
-                    } else if (lesson_number >= 24 && lesson_number <= 45){
+                    } else if (lesson_number >= 24 && lesson_number <= 45) {
                         intent.putExtra("lesson_type", "Advance");
                     }
                     startActivity(intent);
+                    finish();
                 })
                 .show();
     }
+
+
+    private void showAnswerDialog() {
+        AssessmentItem item = getAssessmentItem(lesson_number, assessment_list_group_name);
+        String correctAnswer = (item != null) ? item.getAnswerKey() : "N/A";
+
+        new androidx.appcompat.app.AlertDialog.Builder(this)
+                .setTitle("Correct Answer")
+                .setMessage("The correct dictation answer is:\n\n" + correctAnswer)
+                .setCancelable(true)
+                .setPositiveButton("OK", (dialog, which) -> {
+                    Intent intent = new Intent(DictationActivity.this, DictationList.class);
+                    if (lesson_number >= 1 && lesson_number <= 23) {
+                        intent.putExtra("lesson_type", "Short");
+                    } else if (lesson_number >= 24 && lesson_number <= 45) {
+                        intent.putExtra("lesson_type", "Advance");
+                    }
+                    startActivity(intent);
+                    finish();
+                })
+                .show();
+    }
+
 
     private AssessmentItem getAssessmentItem(int lessonNum, int groupNum) {
         for (AssessmentItem item : assessmentList) {

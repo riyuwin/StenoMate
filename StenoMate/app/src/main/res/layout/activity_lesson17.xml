@@ -82,7 +82,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Lesson 17"
+                    android:text="Chapter 17"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -108,7 +108,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"
-                        android:text="1    Brief Forms     When you have learned the following eight brief forms, you will have learned more that half the brief forms of Gregg Shorthand."
+                        android:text="1    Brief Forms     Once you have mastered these eight brief forms, you will have learned more than fifty percent of the brief forms in Gregg Shorthand."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -377,18 +377,18 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_medium"
+                        android:fontFamily="@font/kanit_light"
                         android:text="2    Word Beginnings Per-, Pur-    The word beginnings per-, pur- are represented by p-r."
-                        android:textColor="#000000"
-                        android:textSize="16dp" />
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_medium"
+                        android:fontFamily="@font/kanit_light"
                         android:text="Spell: pur-s-n, person; pur-chay-a-s, purchase"
-                        android:textColor="#000000"
-                        android:textSize="16dp" />
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -782,6 +782,22 @@
                                 android:src="@drawable/lesson17_asset_20_purpose"/>
                         </LinearLayout>
                     </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="3    Word Beginnings De-, Di- The the word beginning de- and di- are denoted by the letter d.  "
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kanit_light"
+                        android:text="Spell: d-e-l-a, delay; d-e-r-e-k-t, direct"
+                        android:textColor="#4D4A4A"
+                        android:textSize="12dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -1201,7 +1217,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_light"
-                        android:text="The English language contains many groups of words that sound alike, but each member of the group is spelled differently and has its own meaning."
+                        android:text="The English language includes numerous sets of words that have similar pronunciations, yet each word in the set is spelled differently and carries its own specific meaning."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 
@@ -1219,7 +1235,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_light"
-                        android:text="In addition, there are many groups of words that sound almost alike."
+                        android:text="Furthermore, there are numerous sets of words that have similar sounds."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 
@@ -1237,7 +1253,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_light"
-                        android:text="The secretary who is not alert may, while transcribing, select the wrong member of the group, with the result that the transcript makes no sense. "
+                        android:text="A secretary who lacks attentiveness might pick the incorrect member of the group while transcribing, leading to a transcript that lacks coherence."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 
@@ -1246,7 +1262,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_light"
-                        android:text="In this lesson and in a number of other lessons that follow, you will find a Similar-Words Drill that will call to your attention similar words which may cause the unwary transcriber to stumble."
+                        android:text="In this lesson, as well as in several subsequent lessons, you will encounter a Similar-Words Drill designed to highlight words that might trip up an unsuspecting transcriber."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 

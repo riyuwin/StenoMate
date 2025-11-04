@@ -5,8 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutUs"
-    android:orientation="vertical">
+    tools:context=".AboutUs">
 
     <ImageView
         android:layout_width="match_parent"
@@ -18,7 +17,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Scrollable content -->
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
@@ -30,7 +28,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Header -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -44,7 +41,6 @@
                     android:background="@drawable/black_top_rect_shape_no_radius"
                     android:padding="5dp">
 
-                    <!-- Back icon -->
                     <ImageView
                         android:id="@+id/backIcon"
                         android:layout_width="70dp"
@@ -54,19 +50,15 @@
                         android:padding="10dp"
                         android:src="@drawable/back_vector" />
 
-                    <!-- Logo -->
                     <ImageView
                         android:id="@+id/logo"
                         android:layout_width="wrap_content"
                         android:layout_height="50dp"
                         android:layout_centerHorizontal="true"
                         android:src="@drawable/logo_landscape_1" />
-
                 </RelativeLayout>
-
             </LinearLayout>
 
-            <!-- About Us -->
             <TextView
                 android:id="@+id/aboutUsId"
                 android:layout_width="wrap_content"
@@ -87,9 +79,9 @@
                 android:padding="16dp"
                 android:text="       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
                 android:textColor="#000000"
-                android:textSize="12dp" />
+                android:textSize="12dp"
+                tools:ignore="TextSizeCheck" />
 
-            <!-- Researchers Title -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -97,12 +89,67 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:fontFamily="@font/kanit_medium"
-                android:text="Researchers"
+                android:text="Proponents"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
-            <!-- Researcher Cards (repeat as needed) -->
             <LinearLayout
+                android:id="@+id/nicoleInfoContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/profileImageHolders1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/nicole_pic" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="NICOLE B. GOCE"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="0dp"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/kanit_light"
+                    android:padding="16dp"
+                    android:text="Ms. Nicole B. Goce graduated from Camarines Norte State College with a Bachelor of Science in Office Administration. During her third year of college, she participated in quiz competitions at the University of Saint Anthony and Camarines Sur Polytechnic College. Additionally, she was awarded second place in the keyboarding competition at the Steno and Keyboarding Battle. Ms. Goce was the valedictorian of her elementary school and consistently maintained her status as an honor student through the 12th grade in high school. In 2024, she was recognized as a Dean's Lister, and in 2025, she received the Achiever of the Year award."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/nicolLessInfoBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/kanit_italic"
+                    android:text="Less info..."
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nicoleOriginalLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -112,18 +159,18 @@
                 <LinearLayout
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="@drawable/dirty_white_shape_1"
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/profileImageHolders2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/stenomate_logo" />
+                        android:src="@drawable/nicole_pic" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -138,18 +185,76 @@
                         android:textSize="16dp" />
 
                     <TextView
+                        android:id="@+id/nicolSeeMoreBtn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginBottom="20dp"
-                        android:fontFamily="@font/kanit_light"
-                        android:text="BSOA-4A"
+                        android:fontFamily="@font/kanit_italic"
+                        android:text="See more..."
                         android:textColor="#000000"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        tools:ignore="TextSizeCheck" />
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/kristianInfoContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/profileImageHolders3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/kristian_pic" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="KRISTIAN ANDREI A. GUBAN"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="0dp"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/kanit_light"
+                    android:padding="16dp"
+                    android:text="Mr. Kristian Andrei A. Guban is a graduate of the Bachelor of Science in Office Administration (BSOA), Batch 2025-2026, from Camarines Norte State College (CNSC). Throughout his academic journey, he has exhibited exemplary leadership as the Executive Spokesperson of the Philippine Association of Students in Office Administration (PASOA) – CNSC Chapter for three consecutive years, where he successfully managed communications, organized events, and guided fellow students.\n\nMr. Guban earned several distinguished recognitions, including the Achiever of the Year Award at the 2025 Recognition Rights Ceremony. He showcased his expertise as the Keyboarding Master during the Steno and Keyboarding Battle in November 2024. Actively engaged in academic and cultural activities, he competed in a quiz bee organized by EGYA and earned multiple awards in the HAYAG Festival, CNSC’s cultural and arts event. He also participated in non-academic activities at Camarines Sur Polytechnic College (CSPC) and the University of Saint Anthony (USANT).\n\nHis foundational education includes graduating from Daet Elementary School in 2016, followed by completing high school with honors at La Consolacion College of Daet in 2022 under the Accountancy, Business, and Management (ABM) strand."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/kristianLessInfoBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/kanit_italic"
+                    android:text="Less info..."
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/kristianOriginalLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -159,13 +264,13 @@
                 <LinearLayout
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="@drawable/dirty_white_shape_1"
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/profileImageHolders4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/stenomate_logo" />
+                        android:src="@drawable/kristian_pic" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -185,35 +290,93 @@
                         android:textSize="16dp" />
 
                     <TextView
+                        android:id="@+id/kristianSeeMoreBtn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginBottom="20dp"
-                        android:fontFamily="@font/kanit_light"
-                        android:text="BSOA-4A"
+                        android:fontFamily="@font/kanit_italic"
+                        android:text="See more..."
                         android:textColor="#000000"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        tools:ignore="TextSizeCheck,TextSizeCheck" />
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/miraInfoContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/profileImageHolders5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mira_pic" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="MIRA JOYCE D. TERNIDA"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="0dp"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/kanit_light"
+                    android:padding="16dp"
+                    android:text="Ms. Mira Joyce D. Ternida is a graduate of Camarines Norte State College, where she earned her Bachelor of Science in Office Administration, Batch 2025–2026. Throughout her academic journey, she consistently demonstrated excellence and dedication to her studies, earning recognition as a Dean’s Lister in 2024. Ms. Ternida was a consistent honor student from elementary through senior high school. She completed her elementary education at Daet Elementary School and continued her secondary and senior high school studies at La Consolacion College of Daet, where she upheld her record of academic achievement."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/miraLessInfoBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/kanit_italic"
+                    android:text="Less info..."
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/miraOriginalLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:padding="16dp"
-                android:layout_marginBottom="30dp">
+                android:layout_marginBottom="0dp">
 
                 <LinearLayout
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="@drawable/dirty_white_shape_1"
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/profileImageHolders6"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/stenomate_logo" />
+                        android:src="@drawable/mira_pic" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -233,31 +396,76 @@
                         android:textSize="16dp" />
 
                     <TextView
+                        android:id="@+id/miraSeeMoreBtn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginBottom="20dp"
-                        android:fontFamily="@font/kanit_light"
-                        android:text="BSOA-4A"
+                        android:fontFamily="@font/kanit_italic"
+                        android:text="See more..."
                         android:textColor="#000000"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        tools:ignore="TextSizeCheck" />
                 </LinearLayout>
             </LinearLayout>
 
-
-            <!-- Researchers Title -->
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/crisantoInfoContainer"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:fontFamily="@font/kanit_medium"
-                android:text="Adviser"
-                android:textColor="#000000"
-                android:textSize="20dp" />
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/profileImageHolders7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/sir_pic" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="Crisanto S. Ramirez, MBA"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="0dp"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/kanit_light"
+                    android:padding="16dp"
+                    android:text="Mr. Crisanto S. Ramirez, MBA, is the current Program Chairperson of the Bachelor of Science in Office Administration (BSOA) at Camarines Norte State College, where he leads academic planning, curriculum enhancement, and instructional delivery aligned with the principles of Outcomes-Based Education (OBE). He is also designated as the Head of the Alumni Affairs Office, actively bridging alumni engagement with institutional development and graduate outcome tracking.\n\n Mr. Ramirez is a graduate of Master in Business Administration from the University of Nueva Caceres, and is currently completing the dissertation phase of his Doctoral degree in Business Management at Camarines Sur Polytechnic Colleges. His academic journey is grounded in business and administrative education, allowing him to develop a strong understanding of competency-based instruction and strategic academic planning.\n\n He previously served as the Learning and Development Coordinator of the College of Business and Public Administration, where he spearheaded training programs, capacity-building initiatives, and curriculum review sessions focused on instructional effectiveness and continuous quality improvement. His experience in this role further deepened his expertise in curriculum design, particularly in aligning course syllabi with program outcomes, performance indicators, and industry-based competencies."
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/crisantoLessInfoBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/kanit_italic"
+                    android:text="Less info..."
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+            </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/crisantoOriginalLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -267,13 +475,13 @@
                 <LinearLayout
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="@drawable/dirty_white_shape_1"
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/profileImageHolders8"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/stenomate_logo" />
+                        android:src="@drawable/sir_pic" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -288,26 +496,26 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="20dp"
                         android:fontFamily="@font/kanit_medium"
-                        android:text="Juan Dela Cruz"
+                        android:text="Crisanto S. Ramirez, MBA"
                         android:textColor="#000000"
                         android:textSize="16dp" />
 
                     <TextView
+                        android:id="@+id/crisantoSeeMoreBtn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginBottom="20dp"
-                        android:fontFamily="@font/kanit_light"
-                        android:text="Course"
+                        android:fontFamily="@font/kanit_italic"
+                        android:text="See more..."
                         android:textColor="#000000"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        tools:ignore="TextSizeCheck" />
                 </LinearLayout>
             </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
 
-    <!-- Fixed Footer -->
     <LinearLayout
         android:id="@+id/footerLayout"
         android:layout_width="match_parent"
@@ -322,9 +530,9 @@
             android:layout_gravity="left"
             android:fontFamily="@font/kanit_light"
             android:padding="16dp"
-            android:text="Made by SolidTech Solutions"
+            android:text="Made by StackFabs Solutions"
             android:textColor="#FFFFFF"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck" />
     </LinearLayout>
-
 </RelativeLayout>

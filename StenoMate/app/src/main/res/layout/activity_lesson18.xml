@@ -82,7 +82,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_bold"
-                    android:text="Lesson 18"
+                    android:text="Chapter 18"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -107,8 +107,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="Lesson 18 is another &quot;breather.&quot; It contains no new shorthand devices for you to learn. In this lesson you will find: (1) several principles of joining, (2) a recall chart, (3) a Reading and Writing Practice that you will find interesting and informative."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="Lesson 18 is another ‘breather’ and doesn't introduce any new shorthand devices. In this lesson, you'll find: (1) several joining principles, (2) a recall chart, and (3) a Reading and Writing Practice that should be both interesting and informative."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -124,12 +124,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="1. At the beginning of a word and after k, gay, or a downstroke, the combination
-oo-s is written without an angle.
-"
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="1. At the start of a word, or after k, g, or a downstroke, the combination oo-s is written without an angle."
                         android:textColor="#4D4A4A"
-                        android:textSize="16dp" />
+                        android:textSize="12dp"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -146,7 +144,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="husky"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -176,7 +174,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="gust"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -205,7 +203,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="just"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -230,7 +228,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="but"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -250,7 +248,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="loose"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -279,7 +277,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="does"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -308,7 +306,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="rust"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -333,8 +331,8 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="2. The word beginning re- is represented by r before a downstroke or a vowel."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="2. The word beginning with re- is represented by r when it comes before a downstroke or a vowel."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 
@@ -354,7 +352,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="research"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -383,7 +381,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="reference"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -412,7 +410,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="reopen"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -437,7 +435,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="but"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -457,7 +455,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="relate"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -486,7 +484,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="retake"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -515,7 +513,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="retreat"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -540,8 +538,8 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="3. The word beginning de-, di- are represented by d except before k or gay"
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="3. The words beginning with de- or di- are represented by d, except when they come before k or g."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 
@@ -560,7 +558,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="depressed"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -589,7 +587,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="deliver"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -618,7 +616,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="direction"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -644,7 +642,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="but"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -664,7 +662,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="declare"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -693,7 +691,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="decay"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -722,7 +720,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="degrade"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -747,8 +745,8 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="4. As you have perhaps already noticed from your study of Lessons 1 through 17, the past tense of a verb is formed by adding the stroke for the sound that is heard in the past tense. In some words the past tense has the sound of t, as in baked; in others, it has the sound of d, as in saved. In some words, the past tense is incorporated in a blend, as in planned, feared, mailed."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="4. As you may have noticed from your study of Lessons 1 through 17, the past tense of a verb is formed by adding the stroke for the sound heard in the past tense. In some words, the past tense takes the sound of t, like in baked; in others, it uses the sound of d, as in saved. Additionally, in some words, the past tense is blended into a combination of sounds, like in planned, feared, or mailed."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 
@@ -767,7 +765,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="baked"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -796,7 +794,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="saved"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -825,7 +823,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="feared"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -861,7 +859,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="missed"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -890,7 +888,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="planned"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -919,7 +917,7 @@ oo-s is written without an angle.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="mailed"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"  />
@@ -944,10 +942,8 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="5. Recall Chart   The following chart reviews the brief forms of Chapter 3 as well as the shorthand devices you studied in Chapters 1, 2, and 3.
-\nThe chart contains 96 words and phrases. Can you read it in 8 minutes or less?
-"
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="5. Recall Chart   The following chart reviews the brief forms from Chapter 3, as well as the shorthand devices you studied in Chapters 1, 2, and 3. It contains 96 words and phrases. Can you read through it in 8 minutes or less?"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 
@@ -955,7 +951,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="BRIEF FORMS AND DERIVATIVES"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -964,7 +960,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="1"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -988,7 +984,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="2"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -1011,7 +1007,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="3"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -1034,7 +1030,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="4"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -1057,7 +1053,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="5"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -1080,7 +1076,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="PHRASES AND AMOUNTS"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -1089,7 +1085,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="6"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -1112,7 +1108,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="7"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -1135,7 +1131,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="8"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -1158,7 +1154,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="WORDS"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -1167,7 +1163,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="9"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -1190,7 +1186,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="10"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -1213,7 +1209,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="11"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -1236,7 +1232,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="12"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -1259,7 +1255,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="13"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -1282,7 +1278,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="14"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -1305,7 +1301,7 @@ oo-s is written without an angle.
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="15"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />

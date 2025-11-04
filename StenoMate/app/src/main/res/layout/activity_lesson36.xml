@@ -81,7 +81,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Lesson 36"
+                    android:text="Chapter 36"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -106,8 +106,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="Lesson 36 is another breather. In Lesson 36 you will find the last principle of joining, a chart that contains a review of many shorthand devices you studied in Lessons 1 through 35, an Accuracy Practice, and a Reading and Writing Practice."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="Lesson 36 is another ‘breather.’ In this lesson, you’ll find the final principle of joining, a chart reviewing many of the shorthand devices you’ve studied in Lessons 1 through 35, an Accuracy Practice, and a Reading and Writing Practice."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -115,10 +115,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="Principles of Joining
-1.The word endings -ure and -ual are represented by r and l except when those endings are preceded by a downstroke.
-"
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="Principles of Joining\n
+1.The endings -ure and -ual are typically represented by the letters ‘r’ and ‘l,’ unless a downstroke appears before those endings."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -139,7 +138,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="nature"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -168,7 +167,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="procedure"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -197,7 +196,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="creature"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -234,7 +233,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="annual"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -263,7 +262,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="gradual"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -292,7 +291,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="equal"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -316,7 +315,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="but"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -338,7 +337,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="pressure"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -367,7 +366,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="treasure"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -396,7 +395,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="ensure"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -433,7 +432,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="casual"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -462,7 +461,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="visual"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -491,7 +490,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="visually"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -515,7 +514,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="but"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -540,7 +539,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="O"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -565,7 +564,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="On"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -590,7 +589,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="Sho"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -615,7 +614,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="Non"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -634,12 +633,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="To write these combinations accurately:
-\n• a. Keep the o hock narrow, being sure that the beginning and end are on the same level of writing as indicated by the dotted line.
-\n• b. Keep the o in on and sho parallel with the consonant, as indicated by the dotted line.
-\n• c. Make the beginning of the o in non retrace the end of the first n.
-\n• d. Avoid a point at the curved part indicated by the arrows.
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="To write these combinations correctly:\n
+\n• a. Ensure the o hock remains narrow, making sure the start and end are level with the writing, as shown by the dotted line.
+\n• b. Keep the ‘o’ in on and sho aligned parallel with the consonant, following the dotted line.
+\n• c. Let the beginning of the ‘o’ in non retrace the end of the first ‘n.’
+\n• d. Avoid forming a point at the curved section marked by the arrows.
 "
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -648,7 +647,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Practice Drill"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -664,7 +663,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/kanit_bold"
+                            android:fontFamily="@font/kanit_regular"
                             android:text="Spell: s-e-ing, sing"
                             android:textColor="#4D4A4A"
                             android:textSize="12dp"
@@ -681,7 +680,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Of, know, low, own, home, hot, known, moan, shown."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -706,7 +705,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="OO"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -731,7 +730,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="Noo"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -756,7 +755,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="Noom"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -775,13 +774,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="To write these combinations accurately:
-\n• a. Keep the oo hook narrow and deep.
-\n• b. Keep the beginning and end of the hook on the same level of writing.
-\n• c. In noo-and noom, keep the hook parallel with the straight line that precedes it.
-\n• d. In noom, retrace the beginning of the m on the bottom of the oo hook.
-\n• e. Avoid a point at the places indicated by arrows.
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="To write these combinations accurately:/n
+/n• a. Make the ‘oo’ hook narrow and deep.
+/n• b. Ensure both the start and end of the hook are on the same level as the rest of the writing.
+/n• c. In noo and noom, keep the hook parallel to the straight line that comes before it.
+/n• d. In noom, retrace the beginning of the ‘m’ at the bottom of the ‘oo’ hook.
+/n• e. Avoid forming a point at the locations marked by arrows.
 "
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -790,7 +789,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Practice Drill"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -815,7 +814,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="You, yours truly, you would, to, do, noon, moon, renew."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -840,7 +839,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="Hard"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -865,7 +864,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="Hailed"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -884,10 +883,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="To write these combinations accurately:
-\n• a. Give the end of the r and the end of the l a lift upward
-\n• b. Do not lift the end too soon, or the strokes may resemble the nd, md com-binations.
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="To write these combinations accurately:\n
+\n• a. Lift the end of the ‘r’ and the end of the ‘l’ upward.
+\n• b. Avoid lifting the end too early, or the strokes might resemble the ‘nd’ or ‘md’ combinations.
 "
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -897,7 +896,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Practice Drill"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -922,7 +921,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Neared, feared, cheered, dared, hold, sold, bold."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -931,10 +930,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="5. Recall Chart This chart provides a review of most of the shorthand devices you studied in previous lessons. It contains 84 outlines. Can you read the entire
-chart in 5 minutes?
-"
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="5. Recall Chart This chart offers a review of the majority of shorthand devices you’ve studied in previous lessons, featuring 84 outlines. Can you manage to read through the entire chart in 5 minutes?"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -950,7 +947,7 @@ chart in 5 minutes?
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/kanit_bold"
+                            android:fontFamily="@font/kanit_regular"
                             android:text="BRIEF FORMS AND DERIVATIVES"
                             android:textColor="#4D4A4A"
                             android:textSize="12dp"
@@ -975,7 +972,7 @@ chart in 5 minutes?
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/kanit_bold"
+                            android:fontFamily="@font/kanit_regular"
                             android:text="PHRASES"
                             android:textColor="#4D4A4A"
                             android:textSize="12dp"
@@ -1000,7 +997,7 @@ chart in 5 minutes?
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/kanit_bold"
+                            android:fontFamily="@font/kanit_regular"
                             android:text="WORDS"
                             android:textColor="#4D4A4A"
                             android:textSize="12dp"

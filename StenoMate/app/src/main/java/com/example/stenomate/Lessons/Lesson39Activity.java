@@ -17,15 +17,15 @@ public class Lesson39Activity extends AppCompatActivity {
     ImageView BackIcon;
     TextView ContentText;
 
-    ImageView[] stenoImageHolders = new ImageView[61];
+    ImageView[] stenoImageHolders = new ImageView[20];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lesson14);
+        setContentView(R.layout.acitivity_lesson39);
 
 
-        for (int i = 0; i < 61; i++) {
+        for (int i = 0; i < 20; i++) {
             int resId = getResources().getIdentifier("stenoImageHolder" + (i + 1), "id", getPackageName());
             stenoImageHolders[i] = findViewById(resId);
 

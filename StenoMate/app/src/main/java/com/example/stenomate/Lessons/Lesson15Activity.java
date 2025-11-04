@@ -22,7 +22,7 @@ public class Lesson15Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lesson14);
+        setContentView(R.layout.activity_lesson15);
 
 
         for (int i = 0; i < 61; i++) {

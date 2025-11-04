@@ -82,7 +82,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Lesson 23"
+                    android:text="Chapter 23"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -107,8 +107,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="1   Brief Forms    After this group, you have only four more groups to learn."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="1   Brief Forms    Once you complete this group, there are just four more groups left for you to study."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -409,7 +409,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"
-                        android:text="2    Def, Dif      By rounding off the angle between d-f, we obtain the fluent def, dif blend."
+                        android:text="2    Def, Dif      By rounding the angle between d-f, we derive the fluent def, dif blend."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -748,7 +748,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"
-                        android:text="3    Div, Dev    The stroke that represents def, dif also represents div and dev."
+                        android:text="3    Div, Dev    The stroke symbolizing def and dif also signifies div and dev."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -956,7 +956,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"
-                        android:text="4    Ea, Ia    The sounds of ea, as in create, and ia, as in piano, are represented by a large circle with a dot placed within it."
+                        android:text="4    Ea, Ia    The phonetic sounds of ‘ea,’ as found in ‘create,’ and ‘ia,’ as seen in ‘piano,’ are depicted by a large circle containing a dot inside of it."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -1266,7 +1266,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="5 SIMILAR-WORDS DRILL - to, too, two"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"

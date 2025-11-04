@@ -82,7 +82,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Lesson 32"
+                    android:text="Chapter 32"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -107,8 +107,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="1   Word Ending -ily    The word ending -ily is represented by a narrow loop. "
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="1   Word Ending -ily    The suffix ‘-ily’ is indicated by a narrow loop."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -396,7 +396,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_italic"
-                        android:text="•	Observe the special joining of s in families. This joining helps form an outline that is easily read."
+                        android:text="•	Notice the unique connection of ‘s’ in families. This connection creates an outline that is easily readable."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 
@@ -405,7 +405,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_light"
-                        android:text="2 Word Beginning Al-    The word beginning al- is represented by the shorthand letter o. "
+                        android:text="2      Word Beginning Al-    The prefix ‘al-’ is represented by the shorthand letter ‘o.’"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 
@@ -613,7 +613,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_light"
-                        android:text="3    Word Beginning Dis, Des-   The word beginnings dis-, des- represented by d-s."
+                        android:text="3    Word Beginning Dis, Des-   The prefix ‘dis-’ or ‘des-’ is represented by the letters ‘d-s.’"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 

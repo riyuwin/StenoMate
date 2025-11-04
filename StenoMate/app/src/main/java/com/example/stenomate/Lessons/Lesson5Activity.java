@@ -27,7 +27,7 @@ public class Lesson5Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson5);
 
-        for (int i = 0; i < 61; i++) {
+        for (int i = 0; i < 86; i++) {
             int resId = getResources().getIdentifier("stenoImageHolder" + (i + 1), "id", getPackageName());
             stenoImageHolders[i] = findViewById(resId);
 

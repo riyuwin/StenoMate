@@ -81,7 +81,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Lesson 38"
+                    android:text="Chapter 38"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -106,8 +106,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="1     Word Ending -ship     The word ending -ship is represented by a disjoined ish."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="1     Word Ending -ship     The suffix ‘-ship’ is represented as a detached form ‘ish.’ "
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -115,7 +115,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Spell: f-r-e-end-ship, friendship"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -518,7 +518,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"
-                        android:text="3    Word Ending -ultate    The word ending -ulate is represented by a disjoined oo hook."
+                        android:text="3    Word Ending -ultate    The suffix ‘-ulate is represented by a separate ‘oo’ hook."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -724,7 +724,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"
-                        android:text="4     Word Ending -ulation     The word ending  -ulation is represented by oo-shun."
+                        android:text="4     Word Ending -ulation     The word ending or suffix  -ulation is represented by oo-shun."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -931,7 +931,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"
-                        android:text="5    Word Ending -rity    The word ending -rity (and a preceding vowel) is represented by a disjoined r."
+                        android:text="5    Word Ending -rity    The word ending or suffix -rity (and a preceding vowel) is represented by a disjoined r."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -1249,7 +1249,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="PUNCTUATION PRACTICE – as, clause"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -1260,10 +1260,9 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_light"
                         android:text="A subordinate clause introduced by as and followed by the main clause is separated from the main clause by a comma.
-		\nAs you can see, most of the work is finished.
-\nAs you probably know, Ms. Jane Ortega was made president of the company.
-\nEach time a subordinate clause beginning with as occurs in the Reading and Writing Practice, it will be indicated thus in the shorthand.
-"
+		As you can see, most of the work is finished.
+As you probably know, Ms. Jane Ortega was made president of the company.
+Each time a subordinate clause beginning with as occurs in the Reading and Writing Practice, it will be indicated thus in the shorthand."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>

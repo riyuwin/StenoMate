@@ -61,7 +61,7 @@ public class AssessmentGuide extends AppCompatActivity {
                     indexNumber++;
 
                     HeaderText.setText("Best of luck! \uD83D\uDE80");
-                    ContentText.setText("When you're ready, hit the button and let the challenge begin. Goodluck!");
+                    ContentText.setText("When you're ready, hit the button to begin the challenge. Remember, you cannot go back once the assessment has started. Good luck!");
                     GuideImageHolder.setImageResource(R.drawable.loading_steno_dictation_no_bg_stroke);
 
                 } else if (indexNumber == 2) {

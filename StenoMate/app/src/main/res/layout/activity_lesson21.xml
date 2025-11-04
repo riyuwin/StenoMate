@@ -82,7 +82,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Lesson 21"
+                    android:text="Chapter 21"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -107,7 +107,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="1. Brief Forms"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -128,7 +128,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="advantage"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -157,7 +157,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="several"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -186,7 +186,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="ever,"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -194,7 +194,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="every"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -230,7 +230,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="suggest"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -259,7 +259,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="out"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -288,7 +288,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="very"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -312,8 +312,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="2. Ten   By rounding off the angle between t-n, we obtain the fluent ten blend."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="2. Ten   By smoothing the angle between t and n, you form the smooth ten blend."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -338,7 +338,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Spell: ten-d, tend; k-o-ten, cotton"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -359,7 +359,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="tend"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -388,7 +388,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="potential"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -417,7 +417,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="bulletin"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -453,7 +453,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="attend"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -482,7 +482,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="competent"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -511,7 +511,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="stand"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -546,7 +546,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="attention"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -575,7 +575,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="consistent"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -604,7 +604,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="cotton"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -641,7 +641,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="tentative"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -670,7 +670,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="straighten"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -699,7 +699,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="tonight"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -723,8 +723,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="3. Den   The stroke that represents t-n also represents d-n."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="3. Den   The stroke for t-n also serves to represent d-n."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -732,7 +732,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Spell: den-I, deny"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -753,7 +753,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="deny"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -782,7 +782,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="evidence"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -811,7 +811,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="danger"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -848,7 +848,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="dentist"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -877,7 +877,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="condense"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -906,7 +906,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="dinner"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -943,7 +943,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="sudden"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -972,7 +972,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="president"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1001,7 +1001,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="guidance"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1025,7 +1025,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="4. Tain   The stroke that represents t-n, den also represents -tain."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -1034,7 +1034,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Spell: o-b-tain, obtain"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -1055,7 +1055,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="obtain"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1084,7 +1084,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="attain"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1113,7 +1113,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="pertain"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1150,7 +1150,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="contain"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1179,7 +1179,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="retain"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1208,7 +1208,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="certain"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1245,7 +1245,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="maintain"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1274,7 +1274,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="detain"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1303,7 +1303,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="obtainable"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />

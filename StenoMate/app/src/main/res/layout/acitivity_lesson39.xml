@@ -35,10 +35,32 @@
             android:orientation="vertical"
             android:padding="5dp">
 
-            <ImageView
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:src="@drawable/steno_mate_white_logo2" />
+                android:layout_height="wrap_content"
+                android:background="@drawable/black_top_rect_shape_no_radius"
+                android:padding="5dp">
+
+                <!-- Back icon -->
+                <ImageView
+                    android:id="@+id/backIcon"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:padding="10dp"
+                    android:src="@drawable/back_vector" />
+
+                <!-- Logo -->
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/logo_landscape_1" />
+
+            </RelativeLayout>
 
         </LinearLayout>
 
@@ -60,7 +82,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Lesson 39"
+                    android:text="Chapter 39"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -85,8 +107,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="1. Word Ending -lity The word ending-lity (and a preceding vowel) is represented by disjointed l."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="1. Word Ending -lity The word ending-lity (along with the preceding vowel) is represented by disjointed l."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -94,7 +116,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Spell: a-b-lity, ability"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -116,7 +138,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="ability"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -145,7 +167,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="friend"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -174,7 +196,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="kind"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -210,7 +232,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="perso-\nnality"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -239,7 +261,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="relia-\nbility"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -268,7 +290,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="responsi-\nbilities"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -292,8 +314,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="2. Word Ending -Ity The word ending lty (and a preceding vowel) is also represented by a disjoined l."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="2. Word Ending -Ity The word ending -lty (along with the preceding vowel) is also represented by a disjointed ‘l.’"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -301,7 +323,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Spell: f-a-k-ulty, faculty"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -322,7 +344,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="faculty"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -351,7 +373,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="loyalty"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -380,7 +402,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="understand"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -404,7 +426,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="3. Word Ending -self The word ending -self is represented by s."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -413,7 +435,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Spell: h-e-r-self, herself"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -434,7 +456,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="herself"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -463,7 +485,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="itself"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -492,7 +514,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="myself"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -529,7 +551,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="himself"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -558,7 +580,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="yourself"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -587,7 +609,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="oneself"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -611,7 +633,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="4. Word Ending -selves The word ending -selves is represented by ses."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -620,7 +642,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Spell: them-selves, themselves"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -641,7 +663,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="them-\nseleves"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -670,7 +692,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="our-\nselves"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -699,7 +721,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="your-\nseleves"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />

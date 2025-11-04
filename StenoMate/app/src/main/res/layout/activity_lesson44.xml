@@ -81,7 +81,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Lesson 44"
+                    android:text="Chapter 44"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -106,8 +106,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="1     Word Beginning Self-    The word beginning self-  is represented by a disjoined left s."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="1     Word Beginning Self-    The word starting with self- is represented by a detached left s."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -411,8 +411,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="2    Word Beginning Circum-   The word beginning circum- is also represented by a disjoined left s."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="2    Word Beginning Circum-   The word starting circum- is also represented by a disjoined left s."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -523,8 +523,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="3   Word Ending  -ification    The word ending -ification is represented by a disjoined f."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="3   Word Ending  -ification    The word ending -ification is represented by a separated f."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -836,7 +836,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="4 PUNCTUATION PRACTICE – and omitted"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"

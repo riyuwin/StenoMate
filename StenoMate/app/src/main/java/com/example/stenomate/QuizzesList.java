@@ -112,63 +112,63 @@ public class QuizzesList extends AppCompatActivity {
             int finalI = i;
             outerLayout.setOnClickListener(v -> {
                 if (finalI == 1) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 1);
                     startActivity(intent);
                 } if (finalI == 2) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 2);
                     startActivity(intent);
                 } if (finalI == 3) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 3);
                     startActivity(intent);
                 } if (finalI == 4) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 4);
                     startActivity(intent);
                 } if (finalI == 5) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 5);
                     startActivity(intent);
                 } if (finalI == 6) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 6);
                     startActivity(intent);
                 } if (finalI == 7) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 7);
                     startActivity(intent);
                 } if (finalI == 8) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 8);
                     startActivity(intent);
                 } if (finalI == 9) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 9);
                     startActivity(intent);
                 } if (finalI == 10) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 10);
                     startActivity(intent);
                 } if (finalI == 11) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 11);
                     startActivity(intent);
                 } if (finalI == 12) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 12);
                     startActivity(intent);
                 } if (finalI == 13) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 13);
                     startActivity(intent);
                 } if (finalI == 14) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 14);
                     startActivity(intent);
                 } if (finalI == 15) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 15);
                     startActivity(intent);
                 }
@@ -242,63 +242,63 @@ public class QuizzesList extends AppCompatActivity {
             int finalI = i;
             outerLayout.setOnClickListener(v -> {
                 if (finalI == 16) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 16);
                     startActivity(intent);
                 } if (finalI == 17) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 17);
                     startActivity(intent);
                 } if (finalI == 18) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 18);
                     startActivity(intent);
                 } if (finalI == 19) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 19);
                     startActivity(intent);
                 } if (finalI == 20) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 20);
                     startActivity(intent);
                 } if (finalI == 21) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 21);
                     startActivity(intent);
                 } if (finalI == 22) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 22);
                     startActivity(intent);
                 } if (finalI == 23) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 23);
                     startActivity(intent);
                 } if (finalI == 24) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 24);
                     startActivity(intent);
                 } if (finalI == 25) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 25);
                     startActivity(intent);
                 } if (finalI == 26) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 26);
                     startActivity(intent);
                 } if (finalI == 27) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 27);
                     startActivity(intent);
                 } if (finalI == 28) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 28);
                     startActivity(intent);
                 } if (finalI == 29) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 29);
                     startActivity(intent);
                 } if (finalI == 30) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 30);
                     startActivity(intent);
                 }
@@ -373,63 +373,63 @@ public class QuizzesList extends AppCompatActivity {
             int finalI = i;
             outerLayout.setOnClickListener(v -> {
                  if (finalI == 31) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 31);
                     startActivity(intent);
                 } if (finalI == 32) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 32);
                     startActivity(intent);
                 } if (finalI == 33) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 33);
                     startActivity(intent);
                 } if (finalI == 34) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 34);
                     startActivity(intent);
                 } if (finalI == 35) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 35);
                     startActivity(intent);
                 } if (finalI == 36) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 36);
                     startActivity(intent);
                 } if (finalI == 37) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 37);
                     startActivity(intent);
                 } if (finalI == 38) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 38);
                     startActivity(intent);
                 } if (finalI == 39) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 39);
                     startActivity(intent);
                 } if (finalI == 40) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 40);
                     startActivity(intent);
                 } if (finalI == 41) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 41);
                     startActivity(intent);
                 } if (finalI == 42) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 42);
                     startActivity(intent);
                 } if (finalI == 43) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 43);
                     startActivity(intent);
                 } if (finalI == 44) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 44);
                     startActivity(intent);
                 } if (finalI == 45) {
-                    Intent intent = new Intent(QuizzesList.this, QuizzesActivity.class);
+                    Intent intent = new Intent(QuizzesList.this, QuizzesGuide.class);
                     intent.putExtra("lesson_number", 45);
                     startActivity(intent);
                 }

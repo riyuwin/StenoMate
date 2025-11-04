@@ -81,7 +81,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Lesson 6"
+                    android:text="Chapter 6"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -108,7 +108,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_regular"
-                        android:text="Lesson 6 is a  &quot;breather&quot;; it contains no new shorthand principles for you to learn. In this lesson you will find an Alphabet Review, a simple explanation of the principles that govern the joining of the strokes you have studied thus far, a Recall Chart, and a Reading Practice."
+                        android:text="Lesson 6 serves as a ‘breather’ and doesn’t introduce any new shorthand principles. In this lesson, you will go through an Alphabet Review, a straightforward explanation of the rules for joining the strokes you’ve learned so far, a Recall Chart, and some Reading Practice."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -117,7 +117,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_regular"
-                        android:text="1. Alphabet Review Here are the 22 shorthand strokes you studied in Lessons 1 through 5. Can you read them in 20 seconds or less?"
+                        android:text="1.	Alphabet Review These are the 22 shorthand strokes you learned in Lessons 1 through 5. Can you read all of them in under 20 seconds?"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -152,7 +152,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_regular"
-                        android:text="As a matter of interest, you might like to know the principles under which the words you have already learned are written. Notice the groups into which the joinings naturally fall."
+                        android:text="For your interest, you might want to know the principles behind how the words you’ve learned are written. Take note of the groups that the joinings naturally form."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 
@@ -161,7 +161,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_regular"
-                        android:text="2. Circles are written inside curves and outside angles."
+                        android:text="2. Circles are placed inside curves and outside angles."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 
@@ -169,124 +169,140 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
+                        android:gravity="center"
                         android:layout_marginTop="10dp"
-                        android:gravity="center">
+                        android:paddingHorizontal="8dp"
+                        android:weightSum="3">
 
+                        <!-- APPEAL -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical" >
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="appeal,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="a-p-e-l"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_2_appeal" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- LATE -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_2_appeal"/>
-
-                        </LinearLayout>
-
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="late,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="l-a-t"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_3_late" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- SAME -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_3_late"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="same,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="s-a-m"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
-                        </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder4"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_4_same"/>
-
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_4_same" />
+                            </LinearLayout>
                         </LinearLayout>
 
                     </LinearLayout>
@@ -295,646 +311,742 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
+                        android:gravity="center"
                         android:layout_marginTop="10dp"
-                        android:gravity="center">
+                        android:paddingHorizontal="8dp"
+                        android:weightSum="3">
 
+                        <!-- GIVE -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical" >
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="give,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="gay-e-v"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_5_give" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- RELIEF -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder5"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_5_give"/>
-
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="relief,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="r-e-l-e-f"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_6_relief" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- NEEDLES -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder6"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_6_relief"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="needles,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="n-e-d-l-e-s"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_7_needles" />
+                            </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder7"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_7_needles"/>
-
-                        </LinearLayout>
                     </LinearLayout>
+
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_regular"
-                        android:text="3 Circles are written clockwise (in this direction) on a straight stroke or between two straight strokes in the same direction."
+                        android:text="3. Circles are drawn clockwise on a straight stroke or positioned between two straight strokes that run in the same direction."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 
+                    <!-- ROW 1: may, date, aim -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
+                        android:gravity="center"
                         android:layout_marginTop="10dp"
-                        android:gravity="center">
+                        android:paddingHorizontal="8dp"
+                        android:weightSum="3">
 
+                        <!-- MAY -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical" >
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="may,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="m-a"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_9_may" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- DATE -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder8"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_9_may"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="date,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="d-a-t"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_10_date" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- AIM -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder9"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_10_date"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="aim,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="a-m"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
-                        </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder10"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_11_aim"/>
-
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_11_aim" />
+                            </LinearLayout>
                         </LinearLayout>
 
                     </LinearLayout>
 
+                    <!-- ROW 2: man, stayed, name -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
+                        android:gravity="center"
                         android:layout_marginTop="10dp"
-                        android:gravity="center">
+                        android:paddingHorizontal="8dp"
+                        android:weightSum="3">
 
+                        <!-- MAN -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical" >
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="man,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="m-a-n"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_12_man" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- STAYED -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder11"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_12_man"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="stayed,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="s-t-a-d"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_13_stayed" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- NAME -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder12"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_13_stayed"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="name,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="n-a-m"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_14_name" />
+                            </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder13"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_14_name"/>
-
-                        </LinearLayout>
                     </LinearLayout>
+
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_regular"
-                        android:text="4. Between two curves written in opposite directions, the circle is written on the back of the first curve."
+                        android:text="4. When two curves are written in opposite directions, the circle is placed on the back of the first curve."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 
+                    <!-- CARE – GEAR – VAPOR -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
+                        android:gravity="center"
                         android:layout_marginTop="10dp"
-                        android:gravity="center">
+                        android:paddingHorizontal="8dp"
+                        android:weightSum="3">
 
+                        <!-- CARE -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical" >
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="care,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="k-a-r"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_15_care" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- GEAR -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder14"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_15_care"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="gear,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="gay-e-r"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_16_gear" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- VAPOR -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder15"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_16_gear"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="vapor,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="v-a-p-r"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
-                        </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder16"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_17_vapor"/>
-
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder16"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_17_vapor" />
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
 
+
+                    <!-- ROCK – LAKE – PAVE -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
+                        android:gravity="center"
                         android:layout_marginTop="10dp"
-                        android:gravity="center">
+                        android:paddingHorizontal="8dp"
+                        android:weightSum="3">
 
+                        <!-- ROCK -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical" >
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="rock,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="r-a-k"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder17"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_18_rock" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- LAKE -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder17"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_18_rock"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="lake,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="l-a-k"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder18"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_19_lake" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- PAVE -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder18"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_19_lake"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="pave,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="p-a-v"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
-                        </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder19"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_20_pave"/>
-
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder19"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_20_pave" />
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
+
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_regular"
-                        android:text="5. The o hook is written on its side before n, m unless a downward stroke comes before the hook."
+                        android:text="5. The ‘o’ hook is written on its side before n or m, unless it follows a downward stroke."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 
@@ -942,131 +1054,150 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
+                        android:gravity="center"
                         android:layout_marginTop="10dp"
-                        android:gravity="center">
+                        android:paddingHorizontal="8dp"
+                        android:weightSum="3">
 
+                        <!-- OWN -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical" >
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="own,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="o-n"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder20"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_21_own" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- STONE -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder20"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_21_own"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="stone,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="s-t-o-n"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder21"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_22_stone" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- LOAN -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder21"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_22_stone"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="loan,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="l-o-n"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder22"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_23_loan" />
+                            </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder22"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_23_loan"/>
-
-                        </LinearLayout>
                     </LinearLayout>
+
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="but"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -1075,123 +1206,142 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
+                        android:gravity="center"
                         android:layout_marginTop="10dp"
-                        android:gravity="center">
+                        android:paddingHorizontal="8dp"
+                        android:weightSum="3">
 
+                        <!-- PHONE -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical" >
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="phone,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="f-o-n"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder23"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_24_phone" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- BONE -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder23"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_24_phone"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="bone,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="b-o-n"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder24"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_25_bone" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- ZONE -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder24"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_25_bone"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="zone,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="s-o-n"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder25"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_26_zone" />
+                            </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder25"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_26_zone"/>
-                        </LinearLayout>
                     </LinearLayout>
 
                     <TextView
@@ -1207,132 +1357,151 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
+                        android:gravity="center"
                         android:layout_marginTop="10dp"
-                        android:gravity="center">
+                        android:paddingHorizontal="8dp"
+                        android:weightSum="3">
 
+                        <!-- NEWS -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical" >
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="news,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="n-oo-s"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder26"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_27_news" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- NOON -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder26"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_27_news"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="noon,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="n-oo-n"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder27"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_28_noon" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- MOVED -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder27"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_28_noon"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="moved,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="m-oo-v-d"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder28"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_29_moved" />
+                            </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder28"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_29_moved"/>
-
-                        </LinearLayout>
                     </LinearLayout>
+
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_regular"
-                        android:text="7. The under ith is used when it is joined to o, r, l; in other cases, the over ith is used."
+                        android:text="7. The under ith is used when it connects to o, r, or l; in all other cases, the over ith is applied."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 
@@ -1340,132 +1509,150 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
+                        android:gravity="center"
                         android:layout_marginTop="10dp"
-                        android:gravity="center">
+                        android:paddingHorizontal="8dp"
+                        android:weightSum="3">
 
+                        <!-- THOUGH -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical" >
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="though,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="ith-r-oo"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder29"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_30_though" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- THROUGH -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder29"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_30_though"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="through,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="ith-r-oo"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder30"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_31_through" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- HEALTH -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder30"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_31_through"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="health,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="h-e-l-ith"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
-                        </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder31"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_32_health"/>
-
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder31"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_32_health" />
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
+
 
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="but"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
@@ -1474,125 +1661,144 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
+                        android:gravity="center"
                         android:layout_marginTop="10dp"
-                        android:gravity="center">
+                        android:paddingHorizontal="8dp"
+                        android:weightSum="3">
 
+                        <!-- THESE -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical" >
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="these,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="ith-e-s"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder32"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_33_these" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- THICK -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder32"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_33_these"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="thick,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="ith-e-k"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder33"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_34_thick" />
+                            </LinearLayout>
                         </LinearLayout>
 
+                        <!-- THEN -->
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder33"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_34_thick"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:orientation="vertical"
-                            android:layout_marginLeft="10dp">
+                            android:gravity="center"
+                            android:layout_marginStart="8dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="then,"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp"  />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_light"
                                 android:text="ith-e-n"
                                 android:textColor="#4D4A4A"
-                                android:textSize="12dp" />
+                                android:textSize="12sp"
+                                android:gravity="center" />
 
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/dirty_white_shape"
+                                android:gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/stenoImageHolder34"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/lesson6_asset_35_then" />
+                            </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:background="@drawable/dirty_white_shape"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp">
-
-                            <ImageView
-                                android:id="@+id/stenoImageHolder34"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/lesson6_asset_35_then"/>
-
-                        </LinearLayout>
                     </LinearLayout>
+
                     <!--Break Here!-->
                 </LinearLayout>
             </LinearLayout>

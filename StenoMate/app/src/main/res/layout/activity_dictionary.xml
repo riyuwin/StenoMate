@@ -101,8 +101,19 @@
                 android:fontFamily="@font/kanit_medium"
                 android:text="Steno Translations"
                 android:textColor="#000000"
-                android:textSize="20dp"
-                android:layout_marginBottom="20dp"/>
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/contentText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_light"
+                android:text="Note: Only words from Chapters 1–45 are included in this translation."
+                android:textColor="#4D4A4A"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_marginBottom="10dp"/>
 
             <ListView
                 android:id="@+id/dictionaryListView"

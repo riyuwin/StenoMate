@@ -3,11 +3,11 @@ package com.example.stenomate;
 public class AssessmentItem {
     private int imageResId;
     private String answerKey;
-    private int timerMinutes;
+    private float timerMinutes; // changed from int → float
     private int lessonNumber;
     private int itemNumber;
 
-    public AssessmentItem(int lessonNumber, int itemNumber, int imageResId, String answerKey, int timerMinutes) {
+    public AssessmentItem(int lessonNumber, int itemNumber, int imageResId, String answerKey, float timerMinutes) {
         this.lessonNumber = lessonNumber;
         this.itemNumber = itemNumber;
         this.imageResId = imageResId;
@@ -23,7 +23,7 @@ public class AssessmentItem {
         return answerKey;
     }
 
-    public int getTimerMinutes() {
+    public float getTimerMinutes() {
         return timerMinutes;
     }
 

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:gravity="center">
+
+    <!-- white card -->
+    <LinearLayout
+    android:id="@+id/resultCard"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_result_card"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:elevation="8dp">
+
+    <ImageView
+        android:id="@+id/resultIcon"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:tint="@color/red"
+        android:src="@drawable/ic_close" />
+
+    <TextView
+        android:id="@+id/resultTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Failed"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/resultSimilarity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3.0% Similarity"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/resultMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Answer:\nasdfa\n\nCorrect Answer:\nLorem ipsum..."
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnViewAttempts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Attempts"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</FrameLayout>

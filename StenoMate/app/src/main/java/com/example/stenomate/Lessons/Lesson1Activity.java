@@ -23,14 +23,14 @@ public class Lesson1Activity extends AppCompatActivity {
 
     ImageView BackIcon;
 
-    ImageView[] stenoImageHolders = new ImageView[54];
+    ImageView[] stenoImageHolders = new ImageView[4];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson1);
 
-        for (int i = 0; i < 54; i++) {
+        for (int i = 1; i < 4; i++) {
             int resId = getResources().getIdentifier("stenoImageHolder" + (i + 1), "id", getPackageName());
             stenoImageHolders[i] = findViewById(resId);
 

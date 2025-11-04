@@ -128,8 +128,8 @@ public class AssessmentActivity extends AppCompatActivity {
     }
 
 
-    private void startTimer(int minutes) {
-        long millisInFuture = minutes * 60 * 1000;
+    private void startTimer(float minutes) {
+        long millisInFuture = (long) (minutes * 60 * 1000); // convert float minutes → milliseconds
 
         countDownTimer = new CountDownTimer(millisInFuture, 1000) {
             @Override
@@ -150,11 +150,13 @@ public class AssessmentActivity extends AppCompatActivity {
         }.start();
     }
 
+
     public void AnswerChecker(AssessmentItem selectedItem, String answer) {
         String correctAnswer = selectedItem.getAnswerKey();
         int similarity = calculateSimilarityPercentage(answer, correctAnswer);
-        showConfirmationDialog(similarity, answer);
+        showConfirmationDialog(similarity, answer, selectedItem);
     }
+
 
 
     public int calculateSimilarityPercentage(String input, String correctAnswer) {
@@ -189,31 +191,56 @@ public class AssessmentActivity extends AppCompatActivity {
         return costs[s2.length()];
     }
 
-    private void showConfirmationDialog(float percentage, String answer) {
+    private void showConfirmationDialog(float percentage, String answer, AssessmentItem selectedItem) {
         new androidx.appcompat.app.AlertDialog.Builder(this)
                 .setTitle("Confirmation")
                 .setMessage("Are you sure you want to submit? This action cannot be undone.")
                 .setCancelable(false)
                 .setPositiveButton("Confirm", (dialog, which) -> {
-                    insertAssessment(percentage, answer);
+                    insertAssessment(percentage, answer, selectedItem.getAnswerKey());
                 })
                 .setNegativeButton("Back", null)
                 .show();
     }
 
-    public void insertAssessment(float percentage, String answer) {
+//    private void showConfirmationDialog(float percentage, String answer) {
+//        new androidx.appcompat.app.AlertDialog.Builder(this)
+//                .setTitle("Confirmation")
+//                .setMessage("Are you sure you want to submit? This action cannot be undone.")
+//                .setCancelable(false)
+//                .setPositiveButton("Confirm", (dialog, which) -> {
+//                    insertAssessment(percentage, answer);
+//                })
+//                .setNegativeButton("Back", null)
+//                .show();
+//    }
+
+//    public void insertAssessment(float percentage, String answer) {
+//        boolean isInserted = dbHelper.insertAssessment(lesson_number, assessment_list_group_name, percentage, answer);
+//        if (isInserted) {
+//            Toast.makeText(this, "Assessment added for Lesson " + lesson_number, Toast.LENGTH_SHORT).show();
+//            showResultDialog(percentage);
+//        } else {
+//            Toast.makeText(this, "Failed to add Assessment", Toast.LENGTH_SHORT).show();
+//        }
+//    }
+
+    public void insertAssessment(float percentage, String answer, String correctAnswer) {
         boolean isInserted = dbHelper.insertAssessment(lesson_number, assessment_list_group_name, percentage, answer);
         if (isInserted) {
             Toast.makeText(this, "Assessment added for Lesson " + lesson_number, Toast.LENGTH_SHORT).show();
-            showResultDialog(percentage);
+            showResultDialog(percentage, correctAnswer, answer); // pass correct + user answer
         } else {
             Toast.makeText(this, "Failed to add Assessment", Toast.LENGTH_SHORT).show();
         }
     }
 
-    private void showResultDialog(float percentage) {
+
+    private void showResultDialog(float percentage, String correctAnswer, String userAnswer) {
         String remarks = (percentage >= 75) ? "Status: ✅ Passed" : "Status: ❌ Failed";
-        String message = "Similarity: " + percentage + "%\n" + remarks;
+        String message = "Your Answer:\n\n" + userAnswer +
+                "\n\nSimilarity: " + percentage + "%" +
+                "\n" + remarks;
 
         new androidx.appcompat.app.AlertDialog.Builder(this)
                 .setTitle("Assessment Complete!")
@@ -222,10 +249,33 @@ public class AssessmentActivity extends AppCompatActivity {
                 .setPositiveButton("View Attempts", (dialog, which) -> {
                     showAttemptsDialog();
                 })
+                .setNeutralButton("View Answer", (dialog, which) -> {
+                    showAnswerDialog(correctAnswer, userAnswer, percentage);
+                })
                 .setNegativeButton("Back", (dialog, which) -> {
-                    Intent intent = new Intent(AssessmentActivity.this, AssessmentList.class);
+                    Intent intent = new Intent(AssessmentActivity.this, AssessmentCategory.class);
                     startActivity(intent);
                     finish();
+                })
+                .show();
+    }
+
+    private void showAnswerDialog(String correctAnswer, String userAnswer, float percentage) {
+        String remarks = (percentage >= 75) ? "Status: ✅ Passed" : "Status: ❌ Failed";
+
+        String message = "Your Answer:\n\n" + userAnswer +
+                "\n\nCorrect Answer:\n\n" + correctAnswer +
+                "\n\nAccuracy: " + percentage + "%" +
+                "\n" + remarks;
+
+        new androidx.appcompat.app.AlertDialog.Builder(this)
+                .setTitle("Answer Key")
+                .setMessage(message)
+                .setCancelable(true)
+                .setPositiveButton("OK", (dialog, which) -> {
+                    Intent intent = new Intent(AssessmentActivity.this, AssessmentList.class);
+                    startActivity(intent);
+                    finish(); // Close the current activity
                 })
                 .show();
     }
@@ -279,28 +329,28 @@ public class AssessmentActivity extends AppCompatActivity {
                 1,
                 R.drawable.lesson1_assessment_group_a,
                 "1 Nate may stay for tea. 2 Dave made the Navy team in May. 3 I need a vase. 4 Nate ate the meat. 5 Amy sees Dean Meade on May 15.",
-                1
+                1.6F //1.6F
         ));
         assessmentList.add(new AssessmentItem(
                 1,
                 2,
                 R.drawable.lesson1_assessment_group_b,
                 "6 Fay is mean and vain. 7 Fay stayed all day with me. 8 Amy made a date with Dave. 9 Fay Day may meet me on East Main Street. 10 The deed is in Dave's safe.",
-                1
+                1.85F
         ));
         assessmentList.add(new AssessmentItem(
                 1,
                 3,
                 R.drawable.lesson1_assessment_group_c,
                 "11 Dean made $10 on May 18. 12 Dave's fee is $18. 13 Nate stayed at 15 East Main all day. 14 The Meade team faced the Navy on May 10. 15 Dave made a safety.",
-                1
+                1.8F
         ));
         assessmentList.add(new AssessmentItem(
                 1,
                 4,
                 R.drawable.lesson1_assessment_group_d,
                 "16 Amy made me eat the meal. 17 Fay saved a seat for me. 18 The dean is easy to see. 19 May heard Fay say \"Feed me\". 20 Dean Meade will see Dave on May 18.",
-                1
+                1.85F
         ));
         // Lesson 2 -----------------------------------------------------------------------------
         assessmentList.add(new AssessmentItem(
@@ -308,41 +358,41 @@ public class AssessmentActivity extends AppCompatActivity {
                 1,
                 R.drawable.lesson2_assessment_group_a,
                 "1 Ray Stone may phone me at my home.  2 Lee may fail writing. 3 My whole right side is sore. 4 My train leaves at seven; Dale Reeve's train leaves later. 5 Steven may buy a mail meter.",
-                1
+                1.45F
         ));
         assessmentList.add(new AssessmentItem(
                 2,
                 2,
                 R.drawable.lesson2_assessment_group_b,
                 "6 Lee Reed stayed home last evening. 7 He made me a $5 loan. 8 My reading rate is low. Is Dave's reading rate high? 9 Ray may rely on me. 10 My final rating is 80.",
-                1
+                1.85F
         ));
         assessmentList.add(new AssessmentItem(
                 2,
                 3,
                 R.drawable.lesson2_assessment_group_c,
                 "11 I hear he might fly to Rome in a day or so. 12 I need more light in my retail store on Vail Drive. 13 Ray is leaving home; Lee is remaining here. 14 My writing style is fair. 15 Dale wrote a fine story. 16 He drove the whole night. 17 The freight train is late.",
-                1
+                2.9F
         ));
         assessmentList.add(new AssessmentItem(
                 2,
                 4,
                 R.drawable.lesson2_assessment_group_d,
                 "18 Is it snowing or raining or hailing? 19 Is my trian late? 20 He notified me he may fly home later. 21 I may sign my lease. 22 Dale may fly home later.",
-                1
+                1.7F
         ));
         assessmentList.add(new AssessmentItem(
                 2,
                 5,
                 R.drawable.lesson2_assessment_group_e,
                 "23 Dave is feeling fine. 24 Fay dyed her hair; Mary might dye her hair too. 25 He notified me my radio was stolen.",
-                1
+                1.2F
         ));
         // Lesson 3 -----------------------------------------------------------------------------
         assessmentList.add(new AssessmentItem(
                 3,
                 1,
-                R.drawable.lesson2_assessment_group_a,
+                R.drawable.lesson3_assessment_group_a,
                 "1 Mr. Peters will write four plays.\n" +
                         "2 My niece reads at a slow pace. I am not pleased.\n" +
                         "3 Our wills are inside our steel safe in our library.\n" +
@@ -350,12 +400,12 @@ public class AssessmentActivity extends AppCompatActivity {
                         "5 I will read Mary's brief at home. Please leave it in my library\n" +
                         "6 Our sales? in our Reno store are high, I am indeed pleased.\n" +
                         "7 Our sales in our Erie store are low.\n",
-                1
+                3.65F
         ));
         assessmentList.add(new AssessmentItem(
                 3,
                 2,
-                R.drawable.lesson2_assessment_group_b,
+                R.drawable.lesson3_assessment_group_b,
                 "8 I have a slight pain in my right ear. I will stay inside.\n" +
                         "9 I will mail Mr. Deering a brief note.\n" +
                         "\n" +
@@ -364,12 +414,12 @@ public class AssessmentActivity extends AppCompatActivity {
                         "12 My neighbor, Mr. Peter Bates, saved my life.\n" +
                         "13 Fay made a will in Mary's favor.\n" +
                         "14 Mr. Blair's neighbors are polo players.\n",
-                1
+                3.7F
         ));
         assessmentList.add(new AssessmentItem(
                 3,
                 3,
-                R.drawable.lesson2_assessment_group_c,
+                R.drawable.lesson3_assessment_group_c,
                 "15 I realize I am late.\n" +
                         "16 My niece owns an airplane. It flies at 350 miles an hour.\n" +
                         "17 I will sign a lease in May.\n" +
@@ -377,19 +427,19 @@ public class AssessmentActivity extends AppCompatActivity {
                         "19 Our papers are in my file.\n" +
                         "20 Mr. Bates stayed in my library an hour or so writing a paper.\n" +
                         "21 Please buy me a spare tire.\n",
-                1
+                3.25F
         ));
         assessmentList.add(new AssessmentItem(
                 3,
                 4,
-                R.drawable.lesson2_assessment_group_d,
+                R.drawable.lesson3_assessment_group_d,
                 "22 I am not failing filing, I might fail in typing.\n" +
                         "23 I need a file in my library. Please buy it in Mr. Blair's store.\n" +
                         "24 I hear Mr. Stone will remain in Spain.\n" +
                         "25 I will read my evening paper at home.\n" +
                         "26 He will see Mr. Stone in Rome in May.\n" +
                         "27 Mr. Ray will not buy a home in Mobile. He will buy a home in Moline.\n",
-                1
+                3.55F
         ));
         // Lesson 4 -----------------------------------------------------------------------------
         assessmentList.add(new AssessmentItem(
@@ -397,35 +447,35 @@ public class AssessmentActivity extends AppCompatActivity {
                 1,
                 R.drawable.lesson4_assessment_group_a,
                 "1 My wife will take my niece Gail Kline skating while we are at White Pines. I will go skating too. 2 We will try to keep our room clean. 3 Mr. Sweet will stay a week or so at my home in Green Acres. 4 We have two girls who are going to Wayne High School. 5 I am not willing to wait while Mr. Wade grades our typing papers. I have to go to a meeting in an hour.",
-                1
+                4.05F
         ));
         assessmentList.add(new AssessmentItem(
                 4,
                 2,
                 R.drawable.lesson4_assessment_group_b,
                 "6 I do not know why he came so late. 7 I will increase Mr. Bailey's pay in a week or so. 8 Mr. Sweet gave me a nice raise; I need it. 9 Wade swears he knows who broke my vase. 10 Our produce sales are increasing. I am well pleased.",
-                1
+                2.6F
         ));
         assessmentList.add(new AssessmentItem(
                 4,
                 3,
                 R.drawable.lesson4_assessment_group_c,
                 "11 I will not go skiing. I have a fever. It made me weak. 12 We have a weak polo team. I have a vague feeling we will lose to White Plains High School. 13 My wife will mail in our renewal in a week or ten days. 14 I will take Route 15 to Lake Rose.",
-                1
+                2.85F
         ));
         assessmentList.add(new AssessmentItem(
                 4,
                 4,
                 R.drawable.lesson4_assessment_group_d,
                 "15 Mr. White's keys are not in my blue suit. 16 Mary Bailey types four or five hours a day. 17 Mr. Weeks will prune our maple trees in May. 18 Kate Gates made a poor grade in Dean Wade's legal course. 19 I do not eat sweets; I am trying to lose weight.",
-                1
+                2.7F
         ));
         assessmentList.add(new AssessmentItem(
                 4,
                 5,
                 R.drawable.lesson4_assessment_group_e,
                 "20 I ate two rolls at noon. I do not feel too well. 21 Whose notes are in my library? 22 It will take me at least an hour to read Mr. Blair's brief. 23 We will not take a plane to Dover; we will drive. 24 Ray Stone will retire in May.",
-                1
+                2.65F
         ));
         // Lesson 5 -----------------------------------------------------------------------------
         assessmentList.add(new AssessmentItem(
@@ -435,7 +485,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 "Mrs. Sweet: Your letter of April 10 to Mr. Keith Booth gives the facts relating to his clothing bill, but I am afraid that your letter is a little too terse. It will hurt his pride. \n" +
                         "Can you rewrite your letter so that the tone is not so severe? Remember, we have to keep Mr. Booth happy with our service.\n" +
                         " Please mail me a carbon of the rewrite that you prepare. Ethel Parks\n",
-                1
+                3.6F
         ));
         assessmentList.add(new AssessmentItem(
                 5,
@@ -453,7 +503,7 @@ public class AssessmentActivity extends AppCompatActivity {
                         "\n" +
                         "The rooms at Smith's Motel are first class, but Mr. Smith has kept his rates low. His rates are given in the pamphlet that is clipped to my letter.\n" +
                         "If you are planning a sales meeting, have it at Smith's Motel in Salem. Fred White\n",
-                1
+                3.45F
         ));
         assessmentList.add(new AssessmentItem(
                 5,
@@ -462,7 +512,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 "Dear Neighbor: We are happy to write you that the new Weaver cars have arrived. The new cars are well built as well as attractive.\n" +
                         " You can buy the car you like or you can lease it. If you buy it, we will help you finance it. But if you prefer to lease it, we will prepare a lease that will appeal to you. \n" +
                         "See these fine cars during your noon hour or in the evening. We are open till eight. Your Weaver Car Dealer\n",
-                1
+                4.25F
         ));
         assessmentList.add(new AssessmentItem(
                 5,
@@ -470,7 +520,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 R.drawable.lesson5_assessment_group_d,
                 "Dear Edith: Harry Smith wrote me that in April you addressed a meeting of our dealers in Dallas. He said that you spoke with the help of notes but that you spoke like a veteran. \n" +
                         "I am indeed happy that you did so well. I plan to ask you to address the new members of our sales staff the last week of May. Are you free the last week of May? J. C. Farmer\n",
-                1
+                3.7F
         ));
         assessmentList.add(new AssessmentItem(
                 5,
@@ -481,7 +531,7 @@ public class AssessmentActivity extends AppCompatActivity {
                         "If you know of a home that the Whites can lease or buy, please telephone me at 555-1612.4 \n" +
                         "\n" +
                         "I know you will help the Whites if you can. Beth Harvey\n",
-                1
+                4.45F
         ));
         assessmentList.add(new AssessmentItem(
                 5,
@@ -489,7 +539,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 R.drawable.lesson5_assessment_group_f,
                 "Dear Ted: As you may know, my clerk, Bill Smith, will celebrate his twentieth birthday the last week of May. We plan to give Bill a pair of theater tickets as a surprise, but we need a little help that I have a feeling you can supply. We do not know the plays that Bill has seen. I know that with your tact, you can get me a list of four or five plays that Bill has not seen.\n" +
                         "I know you will help me surprise Bill Willis\n",
-                1
+                4.4F
         ));
         // Lesson 6 -----------------------------------------------------------------------------
         assessmentList.add(new AssessmentItem(
@@ -499,7 +549,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 "Mrs. Vail: In his note of May 18 our salesman, Mr. Harry Ruth, writes that you broke a bone in your left leg while skiing last week, but he adds that the break is healing fast. In fact, he tells me that it is healing so well that you will go home in a week or ten days. \n" +
                         "     Why not plan to stay four or five days with me at my cabin near Lake Pine. I have a guest room that you can sleep in. We can have our meals in a little diner that is close to my cabin.\n" +
                         "     Are you in favor of my plan? Edith Harper\n",
-                1
+                5.45F
         ));
         assessmentList.add(new AssessmentItem(
                 6,
@@ -508,7 +558,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 "Mr. Sweet: As you know, Harty Allen is not happy with the salary he is making as our tire salesman in Dallas. He said he wrote you two letters to that effect. \n" +
                         "     Last evening I had an hour's meeting with him at my motel, but I do not feel I made him happy. If you do not increase his salary, I am afraid we will lose him.\n" +
                         "     Harry is a fine salesman. Can you give him a raise effective in April or May? Mark Palmer",
-                1
+                4.25F
         ));
         assessmentList.add(new AssessmentItem(
                 6,
@@ -517,7 +567,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 "Dear Ned: Last night while eating in the main dining room of the Three Acres Motel in Dallas, I had a real I surprise. Bill Wade, whom I had not seen since our high school days, came in. I had an hour's visit with him.\n" +
                         "     It seems that he owns a travel service in Dallas that is doing well. He has a little girl who is in the first grade.\n" +
                         "     If you care to telephone Bill, you can get him at (206) 555-8172. You can ask him to try to get you tickets to a Dallas game. Henry Lopez",
-                1
+                4.95F
         ));
         // Lesson 7 -----------------------------------------------------------------------------
         assessmentList.add(new AssessmentItem(
@@ -579,7 +629,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 "Dear Passenger: Early in June, members of our staff made a survey in which they asked 1,000 passengers of our railroad if they smoked on their way to the office or on their way home in the evening. This survey by our staff showed that merely 100 of them, or 10 percent, smoked. Nearly 200 of them, or 20 percent, said they would prefer that there be no smoking on our trains because \"smoking is not good for you.\" \n" +
                         "Therefore, beginning this week, only two cars on each ten-car train will be smoking cars. If you would like to smoke on our trains, please ride in the first or last car, both of which are smoking cars. Sincerely yours\n" +
                         "\n",
-                1
+                2.88F
         ));
         assessmentList.add(new AssessmentItem(
                 8,
@@ -588,7 +638,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 "Mr. Parks: I do not relish writing you this letter because I have to tell you that we are increasing the price of our letter pads slightly. I believe you know that our costs have increased greatly. In March they increased by nearly 5 percent. In April they increased by nearly 8 percent. We have absorbed these increased costs, but we cannot go on absorbing them. I am, therefore, with a good deal of regret, making a price increase, but only a small increase of 8 percent. \n" +
                         "Beginning July 15, the following price changes will be in effect: Style 153 pads will be $80 a gross. Style 20 pads will be $90.50 a gross. Style 26 pads will be $98 a gross.\n" +
                         "\tI sincerely hope. Mr. Parks, that this price increase will not affect your sales adversely. James R. Baker\n",
-                1
+                3.5F
         ));
         assessmentList.add(new AssessmentItem(
                 8,
@@ -596,7 +646,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 R.drawable.lesson8_assessment_group_c,
                 " Mrs. Charles: Last night at 6 o'clock I met for an hour with Jack Sweet urging him earnestly not to leave his job as head of our mailing room. I even promised to give him an increase of 20 percent, which would raise his salary to $15,000, but he would not accept it. He will leave on July 18.\n" +
                         " I am sincerely sorry to lose Jack because he did a good job operating the mailing room. As you well know, good people are not easy to get these days. Mary Farmer\n",
-                1
+                2.28F
         ));
         assessmentList.add(new AssessmentItem(
                 8,
@@ -604,7 +654,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 R.drawable.lesson8_assessment_group_d,
                 " Dear Madam: Early in March 1 wrote you to the effect that the trees in back of your home need a good spraying because the insects will start to attack them late in May or early in June. I have not had an answer to my letter. Did it reach you?\n" +
                         " If you would like my staff to take care of spraying your trees, please call me collect at (300) 555-1171. The cost of spraying your trees properly with a new type of spray that will not harm animals or trees will be only $150. Yours very truly\n",
-                1
+                2.45F
         ));
         assessmentList.add(new AssessmentItem(
                 8,
@@ -614,7 +664,7 @@ public class AssessmentActivity extends AppCompatActivity {
                         " As the meeting will close well before 3 o'clock, 2 there will still be at least four hours of daylight in which we can play 18 holes of golf.\n" +
                         " Will you be free on June 15? It would give me great pleasure to treat you to a fine steak following our golf game. \n" +
                         "I sincerely hope you will be free. Sincerely yours\n",
-                1
+                2.38F
         ));
         // Lesson 9 -----------------------------------------------------------------------------
         assessmentList.add(new AssessmentItem(
@@ -624,7 +674,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 "To the Stall: Because our salespeople need a good deal more space to operate efficiently, we are going to move them to the first floor, a location which the National Television Corporation is planning to vacate. They will move on or before July 18.\n" +
                         "     We plan to proceed with our move on the 19th of July 3 Therefore, I would like all members of the sales section to finish their preparations for moving well before 5 o'clock on July 18. The movers will be here at 9 o'clock on July 19. If no hitch occurs, the sales section will be operating efficiently again by July 21 at the latest.\n" +
                         "     I know that I can rely on your cooperation as well as on your patience while this move is taking place. Beth Sweeney",
-                1
+                3.3F
         ));
         assessmentList.add(new AssessmentItem(
                 9,
@@ -634,7 +684,7 @@ public class AssessmentActivity extends AppCompatActivity {
                         "June 28. In honor of this occasion, I am planning to have a birthday celebration for him on that day at my efficiency cabin in Ocean Grove. I am inviting seven or eight of his college classmates to this celebration.\n" +
                         "     Are you free on June 28? If you are, please plan to be in Ocean Grove an hour or so before 5 o'clock.\n" +
                         "     I sincerely hope, Jim, that we will see you on June 28. Yours very truly,",
-                1
+                2.25F
         ));
         assessmentList.add(new AssessmentItem(
                 9,
@@ -643,7 +693,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 "Corporation, has not paid his bill for $650 in spite of the four collection letters we wrote him.\n" +
                         "     Please arrange to visit Mr. Baker to see if you can get his check for $650.\n" +
                         "     May I caution you, Mrs. Abbey, to be patient but firm with him. As I am sure I need not tell you, his goodwill means a great deal to our firm. C.F. Miller",
-                1
+                2.025F
         ));
         assessmentList.add(new AssessmentItem(
                 9,
@@ -652,7 +702,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 "Operations, to the National Hotel in Memphis. Please make sure that they reach the National Hotel before March 20, the day on which I am to address a group of 300 clothing store owners.\n" +
                         "     Mr. Keith, the chairman of the meeting l said he would be happy to place a leaflet on each chair in the meeting room if the leaflets arrive at the National Hotel by 4 o'clock on March 19. \n" +
                         "     I am pleased to have the chance to talk to these people, They are fine prospects for the service we offer to the clothing trade, Sincerely yours,",
-                1
+                2.85F
         ));
         assessmentList.add(new AssessmentItem(
                 9,
@@ -661,7 +711,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 "To the Staff: It is with a heavy heart that I write this letter to the staff. I have the sad task of telling you that our treasurer, Mrs. Mary Gates, will retire on July 30. As you will remember, Mrs. Gates had a severe stroke early in March. While she is rapidly regaining her health, her physician feels that she would be wise to retire.\n" +
                         "     Mrs. Gates has served our firm with efficiency since 1970. We will all miss her patient advice as well as her inspiration.\n" +
                         "     No action will be taken to fill Mrs.Gates position before the fall. A. Smith",
-                1
+                2.55F
         ));
         assessmentList.add(new AssessmentItem(
                 9,
@@ -671,7 +721,7 @@ public class AssessmentActivity extends AppCompatActivity {
                         "planning.\n" +
                         "     In all of these hotels you can get a fine room for as little as $50 a day, which includes three meals a day.\n" +
                         "     Before you make a final selection of a vacation hotel, why not stop in at the National Travel Agency. We have ten efficient people on our staff who will help you select a vacation hotel that will provide you with the greatest pleasure at the lowest cost. Sincerely yours,",
-                1
+                2.63F
         ));
         assessmentList.add(new AssessmentItem(
                 9,
@@ -679,7 +729,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 R.drawable.lesson9_assessment_group_g,
                 "To the Staff: I am sure that there are occasions on which you have professional visitors with whom you would like to talk privately. Please feel free to take your visitors to Room 15.\n" +
                         "     This room has three chairs as well as a large desk. If you need to provide more chairs, you can borrow those in Room 17. Helen J. Smith",
-                1
+                1.55F
         ));
         // Lesson 10 -----------------------------------------------------------------------------
         assessmentList.add(new AssessmentItem(
@@ -739,7 +789,7 @@ public class AssessmentActivity extends AppCompatActivity {
                         "We will provide the services of a highly skilled and efficient crew that will get you to your meeting in style and take you home after the meeting. I know you will be pleased with our efficiency.\n" +
                         "If you could arrange to share the rental of a chartered plane with your colleagues, you would be able to have the pleasure and speed that a chartered plane provides at small cost. \n" +
                         "We were the first to offer charter service in Westfield. If you would like to have all the facts, mail the attached card. We will be happy to send them to you. Better still, stop in and get the facts at our Field Street office. I am there from nine to five daily. Sincerely yours\n",
-                1
+                4.53F
         ));
         assessmentList.add(new AssessmentItem(
                 11,
@@ -747,7 +797,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 R.drawable.lesson11_assessment_group_b,
                 "give a good talk entitled \"Children and Their Problems. \"After she finished. I asked her if we could print her talk in our magazine, Child Care. She offered to send me two copies. When I get them from her, should I send them to you, or should I send them to Mr. Sweet at his office address? \n" +
                         "I told Mrs. Fields that if all goes well, we should be able to print her talk in our July issue. Can we do this? Sincerely yours\n",
-                1
+                2.5F
         ));
         assessmentList.add(new AssessmentItem(
                 11,
@@ -756,7 +806,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 " Dear Friend: If you have been trying to find the offices of Coastal Airlines at 49th Street and Garden Road but have not been able to locate them, here is the answer to the problem: We have moved from our old location to a new building at 415 Third Street, which is across the street from the National Insurance Building.\n" +
                         " Our new offices are bigger, and we have hired more people who will be able to help you plan all your trips. \n" +
                         "When you again have occasion to fly to a city that we serve, visit our Third Street offices and let our people take care of your needs. They are eager to help. Yours very truly\n",
-                1
+                2.93F
         ));
         assessmentList.add(new AssessmentItem(
                 11,
@@ -767,7 +817,7 @@ public class AssessmentActivity extends AppCompatActivity {
                         " I thought that with your influence, you might be able to get tickets for my friends, even if they are in the center field bleachers!\n" +
                         " I know you will do your best for me. Sincerely yours\n" +
                         "\n",
-                1
+                3.73F
         ));
         assessmentList.add(new AssessmentItem(
                 11,
@@ -777,7 +827,7 @@ public class AssessmentActivity extends AppCompatActivity {
                         " You were billed for these handbags, and our bill should have been paid by June 1. \n" +
                         "Mr. James, a member of our billing section, has called you on the phone on three occasions, but he has not been able to reach you. We are, therefore, writing to ask you to send your check for $40 to pay for these bags. \n" +
                         "Won't you please take care of this matter. Yours very truly\n",
-                1
+                2.33F
         ));
         // Lesson 12 -----------------------------------------------------------------------------
         assessmentList.add(new AssessmentItem(
@@ -788,7 +838,7 @@ public class AssessmentActivity extends AppCompatActivity {
                         "Avenue, I bought a set of records for your children. I am sending them by parcel post to your West Street office in Flint marked \"Do not open before Christmas.\" They should arrive well before Christmas. Please drop me a note when they reach you\n" +
                         "     Mary and I had hoped that we could spend Christmas with you and the children, but I have had word from our Atlanta plant that they are having labor problems. Therefore, we canceled our plans. If we can arrange it, we will visit you after I get back from Atlanta. \n" +
                         "     Have a Merry Christmas! Sincerely yours,",
-                1
+                2.85F
         ));
         assessmentList.add(new AssessmentItem(
                 12,
@@ -797,7 +847,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 "Dear National Cardholder: We are highly gratified that since 1975 we have been able to increase the benefits offered to National card- holders, but there has been no increase in our fee. The pressures of inflation, though, make it necessary for National to raise its fee from $15 to $20 an increase of 33 1/3 percent. The $20 fee will be in effect in July.\n" +
                         "     While we are increasing our fee, we are happy to be able to tell you that we are adding five new services to the large list of those that we have been offering since 1978. The attached pamphlet lists them on page 18 and page 19.\n" +
                         "     We sincerely hope that it will not be necessary to increase our fee again. Yours very truly,",
-                1
+                3.2F
         ));
         assessmentList.add(new AssessmentItem(
                 12,
@@ -806,7 +856,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 "Dear Madam: It is a pleasure to learn from your letter of June 18 that our staff rendered efficient service to your treasurer, Mr. Ruth, and his sister, Mrs. Sweet, on their trip from Dallas to the West Coast on our airline.\n" +
                         "     We do not often get letters like yours. Most people write a letter only when they feel that our services have not been good.\n" +
                         "     We assure you that we will strive to serve all our riders with the same efficiency which moved you to write your letter of June 18. Sincerely yours,",
-                1
+                2.35F
         ));
         assessmentList.add(new AssessmentItem(
                 12,
@@ -814,7 +864,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 R.drawable.lesson12_assessment_group_d,
                 "Dear Sir: Could you spare mean hour or so at your office during the week of July 18? I would like to show you a novel plan that I have prepared for getting people to pay bills that are past due.\n" +
                         "     Simply indicate on the attached card when I may call. As I said, it will take me only an hour to show you the way my plan operates. Sincerely yours,",
-                1
+                1.78F
         ));
         assessmentList.add(new AssessmentItem(
                 12,
@@ -824,7 +874,7 @@ public class AssessmentActivity extends AppCompatActivity {
                         "     If your firm is having cash-flow problems – we have them too! – and cannot spare $450, we know we can arrange for you to settle your bill in a way that will not strain your\n" +
                         "finances.\n" +
                         "     But we have to hear from you! Sincerely yours,",
-                1
+                1.75F
         ));
         // Lesson 13 -----------------------------------------------------------------------------
         assessmentList.add(new AssessmentItem(
@@ -892,7 +942,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 "Mrs. Quinn: The final copy for the circular promoting our hardware products arrived yesterday. I was indeed glad to have it, and I thank you for it. You must have spent hours and hours working during the weekend to have finished it so soon.\n" +
                         " I am placing an order today with the Broadway Printing Shop for 20,000 copies. We should have them by March 10. They will be mailed to our dealers between March 15 and April 10.\n" +
                         " I am enclosing our check for $320 to pay for the work you did on the circular. Thank you again for your good service. Harry J. Quill",
-                1
+                2.63F
         ));
         assessmentList.add(new AssessmentItem(
                 14,
@@ -902,7 +952,7 @@ public class AssessmentActivity extends AppCompatActivity {
                         "This means that I will not be able to chair our weekly production meeting. Will you be free on March 204 so that you could fill in for me?\n" +
                         " If you are \n" +
                         "not free, we may have to cancel the production meeting. Gwen Sweet\n",
-                1
+                2.48F
         ));
         assessmentList.add(new AssessmentItem(
                 14,
@@ -911,7 +961,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 "Dear Professor Dwight: You will recall that on June 22 vou asked me to quote you a price on the building¹ of a study on the east side of your dwelling at 600 Park Street. After I visited your premises.  I quoted you a price of $5,000 if you would authorize us to begin work by July 15, but I have not had an answer to my offer. \n" +
                         "As you well know, inflation is taking its toll, and if I cannot get started by July 15, I will have to withdraw the price I quoted you and increase it by 105 percent. \n" +
                         "Why not call me today, Professor Dwight, and authorize me to pro-ceed with the building of your study. Very truly yours\n",
-                1
+                3.075F
         ));
         assessmentList.add(new AssessmentItem(
                 14,
@@ -921,7 +971,7 @@ public class AssessmentActivity extends AppCompatActivity {
                         " 1. Are you 18 or older? \n" +
                         "2. Do you have a steady job at which you earn at least $90 a week? If so, we are ready to finance a new car for you when you need it. If you prefer, we will hold your loan for three weeks. Meanwhile, you can look for just the car that meets your needs. \n" +
                         "Send for our booklet listing all our loan plans. Better still, stop in at the National Credit Corporation today. There is no red tape involved in arranging a loan. It is quick and easy. Sincerely yours\n",
-                1
+                3.025F
         ));
         assessmentList.add(new AssessmentItem(
                 14,
@@ -930,7 +980,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 "Mr. White: Yesterday I visited the Broadway Office Supplies Shop and selected two desk lamps for the office of Mr. Smith, our chief editor. He has needed these lamps for weeks. They should help him increase his efficiency. The lamps were on sale, and I was able to get both for only $85. \n" +
                         "The lamps have been shipped from the shop and should arrive at our office soon. \n" +
                         "The bill for $85 is attached. Grace Baldwin",
-                1
+                1.9F
         ));
         assessmentList.add(new AssessmentItem(
                 14,
@@ -938,7 +988,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 R.drawable.lesson14_assessment_group_f,
                 "Dear Madam: When you have a National air travel credit card, buying tickets on Coastal Airlines is quick and quite simple. All you need do is pick up your phone, call 555-8702, tell our efficient clerk the  city you plan to visit, and give him or her your credit card number. Your tickets will be mailed the same day. \n" +
                         "If you would like us to provide this credit card service to your officers, fill in and send us the enclosed card. We will take care of all the details. Very truly yours",
-                1
+                2.3F
         ));
         // Lesson 15 -----------------------------------------------------------------------------
         assessmentList.add(new AssessmentItem(
@@ -949,7 +999,7 @@ public class AssessmentActivity extends AppCompatActivity {
                         "     Any ad you place in our paper will reach about Y 800.000 thinking people whose respect we have won since our paper first appeared in 1930.\n" +
                         "     The Winfield News will assist you in building your sales. No matter what you sell or what you produce, you will be ables to reach the largest possible number of prospects when you place your ads in our paper. Let our capable research staff help you prepare a well-planned campaign that will produce a sizable increase in your sales.\n" +
                         "     Our rates are listed on the enclosed circular, Dr. Quinn. You will find them quite reasonable. Yours very truly,",
-                1
+                3.85F
         ));
         assessmentList.add(new AssessmentItem(
                 15,
@@ -959,7 +1009,7 @@ public class AssessmentActivity extends AppCompatActivity {
                         "     You have a favorable credit rating with us, Dr. Sweet, but you could jeopardize it it we do not receive a check from you by June 26 for $90 to pay for the repair work we did on\n" +
                         "your car recently.\n" +
                         "     Do not do anything that would harm your credit rating; send us your check for $90 today. Yours very truly,",
-                1
+                2.73F
         ));
         assessmentList.add(new AssessmentItem(
                 15,
@@ -968,7 +1018,7 @@ public class AssessmentActivity extends AppCompatActivity {
                 "Dear Dr. Dwight: If your home is insured at yesterday’s prices, just hope that it does not catch on fire. Inflation has raised the value of all the things you own. This means that it would cost more to replace or install anything you lose than your insurance would provide. That is why it is vital for you to be sure that your insurance keeps up with inflation.\n" +
                         "     It you are wise, you will have your insurance coverage restudied by a reliable, capable independent broker. If you don’t have an independent broker and would like to talk to one,\n" +
                         "call me before noon any weekday at 555-8261. I will be glad to give you the name of one who is located near your home or your business. Do this soon, today if possible. Sincerely yours,",
-                1
+                3.38F
         ));
         assessmentList.add(new AssessmentItem(
                 15,
@@ -978,7 +1028,7 @@ public class AssessmentActivity extends AppCompatActivity {
                         "     After weighing what you tell him about your needs, he will be able to tell you what stocks you should order, what stocks (if any) you should sell, and what stocks you should\n" +
                         "hold.\n" +
                         "     To learn more about what. Mr. Baker can do for you, stop in to see him during the noon hour at our office at 15 Park Street. Or if you prefer, call him. His number is 555-8720. Sincerely yours,",
-                1
+                2.8F
         ));
         assessmentList.add(new AssessmentItem(
                 15,
@@ -988,7 +1038,7 @@ public class AssessmentActivity extends AppCompatActivity {
                         "     By asking people to pay their bills firmly and in a friendly way, you will resolve your collection problems and increase your receipts.\n" +
                         "     As you will see by the samples I am enclosing. our collection stickers make efficient reminders. They are brief and they are friendly.\n" +
                         "     Why not try them. An order card is enclosed. Sincerely yours,",
-                1
+                2.73F
         ));
         // Lesson 16 -----------------------------------------------------------------------------
         assessmentList.add(new AssessmentItem(

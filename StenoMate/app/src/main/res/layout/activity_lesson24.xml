@@ -82,7 +82,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Lesson 24"
+                    android:text="Chapter 24"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -107,8 +107,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="In Lesson 24 you will have no new shorthand devices to learn; you will have a little time to &quot;digest&quot; the devices that you studied in previous lessons. In Lesson 24 you will find a new feature-Accuracy Practice-that will help you improve your shorthand writing style."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="In Lesson 24, you won’t be introduced to any new shorthand devices. Instead, you'll have some time to ‘digest’ the devices you've learned in previous lessons. This lesson also introduces a new feature –Accuracy Practice–designed to help you refine your shorthand writing style."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -116,7 +116,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Accuracy Practice"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -125,9 +125,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="The speed and accuracy with which you will be able to transcribe your short. hand notes will depend on how well you write them. If you follow the suggestions given in this lesson when you work with each Accuracy Practice, you will soon find that you can read your own notes with greater ease and facility.
-So that you may have a clear picture of the proper shapes of the shorthand strokes that you are studying, enlarged models of the alphabetic characters and of the typical joinings are given, together with a short explanation of the things that you should keep in mind as you practice.
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="Your ability to transcribe shorthand notes quickly and accurately depends on how well you write them. By following the suggestions in this lesson during each Accuracy Practice session, you’ll soon find that your notes become easier to read and more fluid.
+To ensure you have a clear understanding of the proper shapes for the shorthand strokes you're studying, this lesson provides enlarged models of the alphabetic characters and typical joinings, along with brief explanations on how to apply them as you practice.
 "
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -136,8 +136,8 @@ So that you may have a clear picture of the proper shapes of the shorthand strok
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="To get the most out of each Accuracy Practice, follow this simple procedure:
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="Here’s a simple procedure to get the most out of each Accuracy Practice:
 \na. Read the explanations carefully.
 \nb. Study the model to see the application of each explanation.
 \nc. Write the first outline in the Practice Drill.
@@ -169,7 +169,7 @@ So that you may have a clear picture of the proper shapes of the shorthand strok
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="To write these strokes accurately:\n
 \na. Start and finish each one on the same level of writing.
 \nb. Make the beginning of the curve in r and 1 deep. Make the end of the curve in k and g deep.
@@ -201,7 +201,7 @@ So that you may have a clear picture of the proper shapes of the shorthand strok
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Are-our-hour, will-well, can, good,
 \n\nAir, lay, ache, gate
 "
@@ -230,7 +230,7 @@ So that you may have a clear picture of the proper shapes of the shorthand strok
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="To write these combinations accurately:\n
 \na. Make the curves rather flat.
 \nb. Make the combinations kr and rk somewhat shorter, than the combined length of r and k when written separately.
@@ -243,7 +243,7 @@ So that you may have a clear picture of the proper shapes of the shorthand strok
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Practice Drill"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -269,7 +269,7 @@ So that you may have a clear picture of the proper shapes of the shorthand strok
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Cream, crate, maker, mark, dark.\n
 Gleam, glean, glare, eagle.
 "
@@ -280,10 +280,9 @@ Gleam, glean, glare, eagle.
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="3. Recall Chart This chart contains the brief forms in Chapter 4 and illustrations of all the shorthand devices you have studied in Chapters 1 through 4.
 The chart contains 96 shorthand outlines. Can you read the entire chart in 7 minutes or less?
-
 "
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -292,7 +291,7 @@ The chart contains 96 shorthand outlines. Can you read the entire chart in 7 min
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="WORDS"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -301,7 +300,7 @@ The chart contains 96 shorthand outlines. Can you read the entire chart in 7 min
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="1"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -324,7 +323,7 @@ The chart contains 96 shorthand outlines. Can you read the entire chart in 7 min
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="2"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -347,7 +346,7 @@ The chart contains 96 shorthand outlines. Can you read the entire chart in 7 min
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="3"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -370,7 +369,7 @@ The chart contains 96 shorthand outlines. Can you read the entire chart in 7 min
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="4"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -393,7 +392,7 @@ The chart contains 96 shorthand outlines. Can you read the entire chart in 7 min
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="5"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -416,7 +415,7 @@ The chart contains 96 shorthand outlines. Can you read the entire chart in 7 min
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="6"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -439,7 +438,7 @@ The chart contains 96 shorthand outlines. Can you read the entire chart in 7 min
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="7"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -462,7 +461,7 @@ The chart contains 96 shorthand outlines. Can you read the entire chart in 7 min
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="8"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -485,7 +484,7 @@ The chart contains 96 shorthand outlines. Can you read the entire chart in 7 min
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="9"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -508,7 +507,7 @@ The chart contains 96 shorthand outlines. Can you read the entire chart in 7 min
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="10"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -531,7 +530,7 @@ The chart contains 96 shorthand outlines. Can you read the entire chart in 7 min
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="11"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -554,7 +553,7 @@ The chart contains 96 shorthand outlines. Can you read the entire chart in 7 min
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="BRIEF FORMS"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -563,7 +562,7 @@ The chart contains 96 shorthand outlines. Can you read the entire chart in 7 min
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="12"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -586,7 +585,7 @@ The chart contains 96 shorthand outlines. Can you read the entire chart in 7 min
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="13"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -609,7 +608,7 @@ The chart contains 96 shorthand outlines. Can you read the entire chart in 7 min
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="14"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -632,7 +631,7 @@ The chart contains 96 shorthand outlines. Can you read the entire chart in 7 min
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="PHRASES"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -641,7 +640,7 @@ The chart contains 96 shorthand outlines. Can you read the entire chart in 7 min
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="15"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -664,7 +663,7 @@ The chart contains 96 shorthand outlines. Can you read the entire chart in 7 min
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="16"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"

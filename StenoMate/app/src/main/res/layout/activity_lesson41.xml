@@ -81,7 +81,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Lesson 41"
+                    android:text="Chapter 41"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -106,7 +106,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="1      Abbreviated Words- in Families (Continued) "
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -115,7 +115,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="-graph"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -440,7 +440,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_light"
-                        android:text="2     Abbreviated Words- Not in Families   The ending may be omitted from long words even though they do not fall into a family."
+                        android:text="2     Abbreviated Words- Not in Families   The endings may be omitted even if they do not belong to a family."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 
@@ -850,7 +850,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/kanit_light"
-                        android:text="3    Word Beginning Trans-    The word beginning trans- is represented by a disjoined t. "
+                        android:text="3    Word Beginning Trans – The prefix “trans-“ is represented by a separate 't.'"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp" />
 

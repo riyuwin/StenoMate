@@ -82,7 +82,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Lesson 30"
+                    android:text="Chapter 30"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -107,8 +107,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="There are no new shorthand strokes or principles in Lesson 30. In this lesson you will find an Accuracy Practice devoted to the curved strokes of Gregg Shorthand, a Recall Chart, and a Reading and Writing Practice."
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="Lesson 30 introduces no new shorthand strokes or principles. In this lesson, you’ll find an Accuracy Practice focused on the curved strokes of Gregg Shorthand, a Recall Chart, and a Reading and Writing Practice."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -116,17 +116,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Accuracy Practice"
-                        android:textColor="#4D4A4A"
-                        android:textSize="12dp"
-                        android:layout_marginTop="10dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="To get the most benefit from the Accuracy Practice, be sure to follow the pro cedures suggested on page 123."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -140,7 +131,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/kanit_bold"
+                            android:fontFamily="@font/kanit_regular"
                             android:text="1."
                             android:textColor="#4D4A4A"
                             android:textSize="14dp"
@@ -157,7 +148,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="B"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -188,7 +179,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="V"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -219,7 +210,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="P"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -250,7 +241,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="F"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -281,7 +272,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="S"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -305,7 +296,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="To write these strokes accurately:"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -314,10 +305,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="a. Give them approximately the slant indicated by the dotted lines.
-\Nb. Make the curve deep at the beginning of v, f, comma s; make the curve deep
-at the end of b, p, left s.
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="a. Follow the slant suggested by the dotted lines.
+\nb. Make the curve deep at the beginning of v, f, and comma s; make the curve deep at the end of b, p, and left s.
 "
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -326,7 +316,7 @@ at the end of b, p, left s.
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Practice Drill"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -350,7 +340,7 @@ at the end of b, p, left s.
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Pay, spare, business, bears, stairs, sphere, leaves, briefs."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -367,7 +357,7 @@ at the end of b, p, left s.
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/kanit_bold"
+                            android:fontFamily="@font/kanit_regular"
                             android:text="2"
                             android:textColor="#4D4A4A"
                             android:textSize="14dp"
@@ -384,7 +374,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="P-r"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -414,7 +404,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="P-1"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -444,7 +434,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="B-r"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -474,7 +464,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="B-l"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -497,7 +487,7 @@ at the end of b, p, left s.
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="To write these combinations accurately:"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -506,9 +496,9 @@ at the end of b, p, left s.
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="a. Write each without a pause between the first and second letter of each combination.
-\nb. Watch your proportions carefully.
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="a. Write each combination without pausing between the first and second letter.
+\nb. Pay close attention to the proportions of each stroke.
 "
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -517,7 +507,7 @@ at the end of b, p, left s.
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Practice Drill"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -541,7 +531,7 @@ at the end of b, p, left s.
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Pray, press, prim, please, plan, place, plea.
 \nBrim, bread, bridge, blame, bless, blast.
 "
@@ -560,7 +550,7 @@ at the end of b, p, left s.
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/kanit_bold"
+                            android:fontFamily="@font/kanit_regular"
                             android:text="3"
                             android:textColor="#4D4A4A"
                             android:textSize="14dp"
@@ -577,7 +567,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="F-r"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -607,7 +597,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="F-l"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -630,7 +620,7 @@ at the end of b, p, left s.
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="To write the combinations accurately:"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -639,7 +629,7 @@ at the end of b, p, left s.
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Write them with one sweep of the pen, with no stop between the f and the ror l."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -648,7 +638,7 @@ at the end of b, p, left s.
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Practice Drill"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -672,7 +662,7 @@ at the end of b, p, left s.
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Free, freeze, frame, flee, flame, flap."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -681,10 +671,8 @@ at the end of b, p, left s.
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="4. Recall Chart   This chart contains all the brief forms and phrases presented in Chapter 5 and illustrations of the word-building principles you studied in Chapters 1 through 5.
-\n   Can you read the entire chart in 6 minutes or less?
-"
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="4. Recall Chart   This chart includes all the brief forms and phrases from Chapter 5, as well as illustrations of the word-building principles you learned in Chapters 1 through 5. Can you go through the entire chart in 6 minutes or less?"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -692,7 +680,7 @@ at the end of b, p, left s.
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="BRIEF FORMS, DERIVATIVES, AND PHRASES"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -715,7 +703,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="1."
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -739,7 +727,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="2."
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -763,7 +751,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="3."
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -787,7 +775,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="4."
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -811,7 +799,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="5."
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -835,7 +823,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="6."
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -859,7 +847,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="7."
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -875,7 +863,7 @@ at the end of b, p, left s.
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/kanit_bold"
+                            android:fontFamily="@font/kanit_regular"
                             android:text="WORDS"
                             android:textColor="#4D4A4A"
                             android:textSize="12dp"
@@ -892,7 +880,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="8."
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -916,7 +904,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="9."
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -940,7 +928,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="10."
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -964,7 +952,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="11."
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -988,7 +976,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="12."
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -1012,7 +1000,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="13."
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -1036,7 +1024,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="14."
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -1060,7 +1048,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="15."
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -1084,7 +1072,7 @@ at the end of b, p, left s.
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="16."
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"

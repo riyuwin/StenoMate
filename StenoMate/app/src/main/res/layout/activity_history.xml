@@ -112,6 +112,7 @@
                         android:fontFamily="@font/kanit_medium"
                         android:text="GREGG SHORTHAND, THE UNIVERSAL SYSTEM"
                         android:textColor="#000000"
+                        android:justificationMode="inter_word"
                         android:textSize="16dp" />
 
                     <TextView
@@ -122,6 +123,7 @@
                         android:text="Gregg Shorthand was first published on May 28, 1888, and has been learned and used successfully by millions of writers throughout the entire world. Gregg Shorthand was written in English but has been successfully adapted to numerous other languages, including Spanish and French. The terms shorthand and Gregg are synonymous to most people. Gregg Shorthand is the universal system of shorthand; it is used by more shorthand writers than any other system in the world. "
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
+                        android:justificationMode="inter_word"
                         android:layout_marginTop="10dp"/>
 
                     <TextView
@@ -131,6 +133,7 @@
                         android:text="Gregg Shorthand is used by secretaries as a tool that enables them to obtain and hold interesting and rewarding positions. It is used by business and professional people who are relieved of the burden of writing longhand in making notes, preparing important papers, and drafting reports."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
+                        android:justificationMode="inter_word"
                         android:layout_marginTop="10dp"/>
 
                     <TextView
@@ -140,6 +143,7 @@
                         android:text=" The success of any system of shorthand rests on the merits of its alphabet. The Gregg alphabet is the most logical, consistent, and efficient shorthand alphabet devised in more than 2,000 years of shorthand history. The fact that this alphabet, virtually without change, has been the basis of Gregg Shorthand for more than 90 years is a tribute to the genius of its inventor, John Robert Gregg."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
+                        android:justificationMode="inter_word"
                         android:layout_marginTop="10dp"/>
 
                     <LinearLayout
@@ -170,6 +174,7 @@
                         android:fontFamily="@font/kanit_medium"
                         android:text="Gregg Shorthand for Colleges, Volume One, Series 90 "
                         android:textColor="#000000"
+                        android:justificationMode="inter_word"
                         android:textSize="16dp" />
 
                     <TextView
@@ -179,6 +184,7 @@
                         android:text="The Series 90 revision of Gregg Shorthand was first published in the ninetieth anniversary year of the Gregg system. This revision involves a small number of system changes which have been deemed desirable to make learning and writing Gregg Shorthand even easier and more consistent. A major change has been made in the order of presentation of the theory principles. This change was made to provide better, more logical business letters even in the very early lessons in the text. Teachers will find the system changes to be logical and the teaching and learning suggestions helpful. "
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
+                        android:justificationMode="inter_word"
                         android:layout_marginTop="10dp"/>
 
                     <TextView
@@ -188,6 +194,7 @@
                         android:text="To meet the needs of business schools, colleges, junior colleges, community colleges, universities and other post-high school institutions, Gregg Shorthand, Series 90, has been made available in a college edition. This edition provides shorthand instructional materials that are different from those used in high schools, materials that are more challenging and that are geared to the interests of the more mature college student."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
+                        android:justificationMode="inter_word"
                         android:layout_marginTop="10dp"/>
 
 

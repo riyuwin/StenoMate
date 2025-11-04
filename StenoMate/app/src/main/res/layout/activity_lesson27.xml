@@ -82,7 +82,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="Lesson 27"
+                    android:text="Chapter 27"
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -107,9 +107,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="1. Brief Forms   After you have learned the following brief forms, you will have
-only two more groups to go!"
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="1. Brief Forms   Once you've learned the following brief forms, you'll have just two more groups left to master!"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -129,7 +128,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="particular"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -158,7 +157,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="speak"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -187,7 +186,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="newspaper"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -223,7 +222,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="probable"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -252,7 +251,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="subject"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -281,7 +280,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="opinion"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -317,7 +316,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="regular"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -346,7 +345,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="regard"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -375,7 +374,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="idea"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -414,7 +413,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="2. Ng   The sound of ng, as in aing, is written"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp"
@@ -434,7 +433,7 @@ only two more groups to go!"
                         <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Compare:"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -455,7 +454,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="seen"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -484,7 +483,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="sing"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -508,7 +507,7 @@ only two more groups to go!"
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Spell: s-e-ing, sing"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -529,7 +528,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="sing"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -558,7 +557,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="bring"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -587,7 +586,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="length"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -623,7 +622,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="sang"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -652,7 +651,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="rang"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -681,7 +680,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="strength"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -717,7 +716,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="song"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -746,7 +745,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="wrong"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -775,7 +774,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="single"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -811,7 +810,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="3. Ngk   The sound of ngk, as in sink, is written "
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -835,7 +834,7 @@ only two more groups to go!"
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Compare:"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -856,7 +855,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="seem"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -885,7 +884,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="sink"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -909,7 +908,7 @@ only two more groups to go!"
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
+                        android:fontFamily="@font/kanit_regular"
                         android:text="Spell: r-a-ink, rank"
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
@@ -930,7 +929,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="rank"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -959,7 +958,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="drink"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -988,7 +987,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="uncle"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1024,7 +1023,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="frank"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1053,7 +1052,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="shrink"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1082,7 +1081,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="banquet"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1118,7 +1117,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="bank"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1147,7 +1146,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="ink"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1176,7 +1175,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="anxious"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1200,10 +1199,8 @@ only two more groups to go!"
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kanit_bold"
-                        android:text="4. Omission of Vowel Preceding-tion When t, d, n, or m is followed by -ition or
--ation, the circle is omitted.
-"
+                        android:fontFamily="@font/kanit_regular"
+                        android:text="4. Omission of Vowel Preceding-tion When t, d, n, or m is followed by -ition or -ation, the circle is not used."
                         android:textColor="#4D4A4A"
                         android:textSize="12dp"
                         android:layout_marginTop="10dp"/>
@@ -1223,7 +1220,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="addition"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1252,7 +1249,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="quotation"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1281,7 +1278,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="permission"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1317,7 +1314,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="edition"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1346,7 +1343,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="combination"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1375,7 +1372,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="commission"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1411,7 +1408,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="notation"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1440,7 +1437,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="reputation"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />
@@ -1469,7 +1466,7 @@ only two more groups to go!"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/kanit_bold"
+                                android:fontFamily="@font/kanit_regular"
                                 android:text="estimation"
                                 android:textColor="#4D4A4A"
                                 android:textSize="12dp" />

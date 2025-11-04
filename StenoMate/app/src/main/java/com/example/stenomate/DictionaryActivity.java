@@ -115,7 +115,7 @@ public class DictionaryActivity extends AppCompatActivity {
         itemList.add(new DictionaryListItem(R.drawable.lesson1_asset_53_fees, "fees", "f-e-s"));
         itemList.add(new DictionaryListItem(R.drawable.lesson1_asset_48_hyphen, "Mae", ""));
         itemList.add(new DictionaryListItem(R.drawable.lesson1_asset_25_mean, "mean", "m-e-n"));
-        itemList.add(new DictionaryListItem(R.drawable.lesson1_asset_29_meet, "meet", "m-e-t"));
+        itemList.add(new DictionaryListItem(R.drawable.lesson1_asset_28_meet, "meet", "m-e-t"));
         itemList.add(new DictionaryListItem(R.drawable.lesson1_asset_37_made, "made", "m-a-d"));
         itemList.add(new DictionaryListItem(R.drawable.lesson1_asset_24_may, "may", "m-a"));
         itemList.add(new DictionaryListItem(R.drawable.lesson1_asset_31_neat, "neat", "n-e-t"));
