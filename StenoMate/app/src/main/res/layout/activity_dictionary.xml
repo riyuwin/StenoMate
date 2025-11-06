@@ -108,7 +108,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/kanit_light"
-                android:text="Note: Only words from Chapters 1–45 are included in this translation."
+                android:text="Note: Only Words and Stroke from Chapters 1–45 are included in this translation."
                 android:textColor="#4D4A4A"
                 android:textSize="12dp"
                 android:gravity="center"

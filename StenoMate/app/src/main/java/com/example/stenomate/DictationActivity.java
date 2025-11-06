@@ -83,26 +83,23 @@ public class DictationActivity extends AppCompatActivity {
             int id = v.getId();
 
             if (id == R.id.speedButton1) {
-                selectedRate[0] = 0.1f;   // very slow
+                selectedRate[0] = 0.05f;   // super slow (5% of normal)
             } else if (id == R.id.speedButton2) {
-                selectedRate[0] = 0.5f;   // slow
+                selectedRate[0] = 0.1f;    // very slow (10% of normal)
             } else if (id == R.id.speedButton3) {
-                selectedRate[0] = 1f;   // moderate
+                selectedRate[0] = 0.5f;    // slow (50% of normal)
             } else if (id == R.id.speedButton4) {
-                selectedRate[0] = 1.5f;   // normal
+                selectedRate[0] = 1f;      // normal
             } else if (id == R.id.speedButton5) {
-                selectedRate[0] = 2.0f;   // normal
+                selectedRate[0] = 1.5f;    // faster
             }
 
 
-
-            // ✅ apply selected rate to TTS
             if (tts != null) {
                 tts.setSpeechRate(selectedRate[0]);
                 Toast.makeText(this, "Speech speed set to " + selectedRate[0] + "x", Toast.LENGTH_SHORT).show();
             }
 
-            // ✅ enable Start Dictation button once a speed is chosen
             btnSpeak.setEnabled(true);
             btnSpeak.setAlpha(1f);
 
@@ -270,7 +267,7 @@ public class DictationActivity extends AppCompatActivity {
                 .setPositiveButton("Retry", (dialog, which) -> {
                     btnSpeak.setEnabled(true);
                     btnSpeak.setAlpha(1f);
-                    setSpeedButtonsEnabled(true, speedButton1, speedButton2, speedButton3, speedButton5);
+                    setSpeedButtonsEnabled(true, speedButton1, speedButton2, speedButton3, speedButton4, speedButton5);
                 })
                 .setNeutralButton("View Answer", (dialog, which) -> {
                     showAnswerDialog();

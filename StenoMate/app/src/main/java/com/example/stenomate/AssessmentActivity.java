@@ -239,7 +239,7 @@ public class AssessmentActivity extends AppCompatActivity {
     private void showResultDialog(float percentage, String correctAnswer, String userAnswer) {
         String remarks = (percentage >= 75) ? "Status: ✅ Passed" : "Status: ❌ Failed";
         String message = "Your Answer:\n\n" + userAnswer +
-                "\n\nSimilarity: " + percentage + "%" +
+                "\n\nAccuracy: " + percentage + "%" +
                 "\n" + remarks;
 
         new androidx.appcompat.app.AlertDialog.Builder(this)

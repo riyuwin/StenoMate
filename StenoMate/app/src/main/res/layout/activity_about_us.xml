@@ -111,7 +111,7 @@
                         android:id="@+id/profileImageHolders1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/nicole_pic" />
+                        android:src="@drawable/nicole" />
                 </LinearLayout>
 
                 <TextView
@@ -165,7 +165,7 @@
                         android:id="@+id/profileImageHolders2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/nicole_pic" />
+                        android:src="@drawable/nicole" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -216,7 +216,7 @@
                         android:id="@+id/profileImageHolders3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/kristian_pic" />
+                        android:src="@drawable/kristian" />
                 </LinearLayout>
 
                 <TextView
@@ -270,7 +270,7 @@
                         android:id="@+id/profileImageHolders4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/kristian_pic" />
+                        android:src="@drawable/kristian" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -321,7 +321,7 @@
                         android:id="@+id/profileImageHolders5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/mira_pic" />
+                        android:src="@drawable/mira" />
                 </LinearLayout>
 
                 <TextView
@@ -376,7 +376,7 @@
                         android:id="@+id/profileImageHolders6"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/mira_pic" />
+                        android:src="@drawable/mira" />
                 </LinearLayout>
 
                 <LinearLayout

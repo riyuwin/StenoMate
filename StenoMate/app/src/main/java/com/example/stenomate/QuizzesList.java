@@ -84,7 +84,7 @@ public class QuizzesList extends AppCompatActivity {
                     ViewGroup.LayoutParams.WRAP_CONTENT,
                     ViewGroup.LayoutParams.WRAP_CONTENT
             ));
-            title.setText("Lesson " + i);
+            title.setText("Chapter " + i);
             title.setTypeface(ResourcesCompat.getFont(this, R.font.kanit_bold));
             title.setTextColor(Color.parseColor("#C5000000"));
             title.setLetterSpacing(0.01f);
@@ -214,7 +214,7 @@ public class QuizzesList extends AppCompatActivity {
                     ViewGroup.LayoutParams.WRAP_CONTENT,
                     ViewGroup.LayoutParams.WRAP_CONTENT
             ));
-            title.setText("Lesson " + i);
+            title.setText("Chapter " + i);
             title.setTypeface(ResourcesCompat.getFont(this, R.font.kanit_bold));
             title.setTextColor(Color.parseColor("#C5000000"));
             title.setLetterSpacing(0.01f);
@@ -345,7 +345,7 @@ public class QuizzesList extends AppCompatActivity {
                     ViewGroup.LayoutParams.WRAP_CONTENT,
                     ViewGroup.LayoutParams.WRAP_CONTENT
             ));
-            title.setText("Lesson " + i);
+            title.setText("Chapter " + i);
             title.setTypeface(ResourcesCompat.getFont(this, R.font.kanit_bold));
             title.setTextColor(Color.parseColor("#C5000000"));
             title.setLetterSpacing(0.01f);

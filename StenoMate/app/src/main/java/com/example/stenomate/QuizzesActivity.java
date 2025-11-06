@@ -1817,7 +1817,10 @@ public class QuizzesActivity extends AppCompatActivity {
                     AssessmentIntiliazer(LessonNumber); // Start the quiz
                 })
                 .setNegativeButton("No", (dialog, which) -> {
-                    finish(); // Exit the activity
+                    //finish(); // Exit the activity
+
+                    Intent intent = new Intent(QuizzesActivity.this, QuizCategory.class);
+                    startActivity(intent);
                 })
                 .show();
     }
